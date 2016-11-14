@@ -1,0 +1,44 @@
+// change to false if its not imported into bootstrap
+$use-bootstrap: false;
+
+
+
+// margin and padding shorthands
+$font-prefixes : (
+  fs  : font-size
+) !default;
+
+$breakpoints : $grid-breakpoints-custom;
+@if $use-bootstrap {
+  $breakpoints : $grid-breakpoints;
+}
+
+// main function definition
+@mixin make-font($values, $prefixes, $breakpoints) {
+  @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    // if xs value = 0, set it global without media queries
+    @if($breakpoint-value == 0) {
+      @each $attr-short, $attr-long in $prefixes {
+        @each $value in $values {
+          .#{$attr-short}-#{$breakpoint-name}-#{str-replace($value, '.', '-')} {
+            #{$attr-long}: #{$value}em;
+          }
+        }
+      }
+    }
+    // breakpoint values that not equal to 0
+    @else {
+      @media (min-width: $breakpoint-value) {
+        @each $attr-short, $attr-long in $prefixes {
+          @each $value in $values {
+            .#{$attr-short}-#{$breakpoint-name}-#{str-replace($value, '.', '-')} {
+              #{$attr-long}: #{$value}em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include make-font($font-values, $font-prefixes, $breakpoints);

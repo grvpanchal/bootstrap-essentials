@@ -1,0 +1,23 @@
+.list-inline {
+    &.separated li:first-child {
+        padding-right: 0;
+    }
+    &.separated li {
+        padding: 0;
+    }
+    &.separated li+li:before {
+        content: ' | ';
+        padding: 0;
+    }
+    &.separated li+li * {
+        display: inline-block;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .center-list-xs {
+        display: table;
+        margin: 0 auto;
+        padding-left:0;
+    }
+}

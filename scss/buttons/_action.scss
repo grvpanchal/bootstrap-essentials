@@ -1,0 +1,20 @@
+.action-btn {
+    position: fixed !important;
+    bottom: 15px;
+    right: 15px;
+    left: auto !important;    
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 0.35s !important;
+
+    &.affix-top {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s linear 0.35s, opacity 0.35s !important;
+    }
+
+    &.action-btn-left {
+        left: 15px;
+        right: auto !important;
+    }
+}

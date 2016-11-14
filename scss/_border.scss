@@ -1,0 +1,13 @@
+.b-0 {
+    border: none;
+}
+
+.list-group.b-0>li.list-group-item {
+    border-left: none;
+    border-right: none;
+}
+
+.list-group.b-0>.list-group-item:first-child,
+.list-group.b-0>.list-group-item:last-child {
+    border-radius: 0;
+}

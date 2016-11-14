@@ -1,0 +1,15 @@
+@media (max-width: $screen-xs-max) {
+    .btn-block-xs {
+        display: block;
+        width: 100%;
+        + .btn-block-xs {
+            margin-top: 5px;
+        }
+    }
+
+    .modal-footer { 
+        .btn-block-xs + .btn-block-xs {
+            margin-left: 0;
+        }
+    }
+}

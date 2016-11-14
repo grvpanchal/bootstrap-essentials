@@ -1,0 +1,134 @@
+/*
+Slide and Slide-In Navigation
+*/
+
+body.slide-active {
+    position: relative
+}
+
+.navbar-slide-nav {
+    z-index: 1030;
+    .navbar-toggle {
+        cursor: pointer;
+    }
+    &.navbar.navbar-fixed-top.slide-active {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:$screen-xs-max) {
+    .navbar-toggle.pull-left {
+        float: left;
+        margin-left: 15px;
+        margin-right: 0;
+    }
+    .navbar-slide-nav {
+        border-top: 0;
+        .navbar-nav {
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .container {
+            margin: 0;
+            padding: 0!important;
+            background-color: inherit;
+            border-color: inherit;
+        }
+        .navbar-header {
+            margin: 0 auto;
+        }
+        .navbar-slide {
+            left: -#{$navbar-slide-width};
+            right: auto;
+            width: $navbar-slide-width;
+            min-width: 0;
+            position: fixed;
+            z-index: 1030;
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            margin: 0;
+            overflow: auto;
+            background-color: inherit;
+            border-color: inherit;
+            transition: left $navbar-slide-trasition;
+            .navbar-nav {
+                .dropdown-menu li a {
+                    width: 100%;
+                    white-space: normal;
+                }
+            }
+            &.in {
+                left: 0;
+                transition: left $navbar-slide-trasition;
+            }
+            .modal-backdrop {
+                z-index: 1029;
+            }
+        }
+        .navbar-form {
+            width: 100%;
+            margin: 8px 0;
+            text-align: center;
+            overflow: hidden;
+        }
+        &.navbar {
+            .navbar-header,
+            &.slide-active .navbar-header,
+            ~*:not(.slide-modal),
+            ~*.slide-active:not(.slide-modal) {
+                transition: left $navbar-slide-trasition;
+                position: relative;
+            }
+            .navbar-header,
+            ~*:not(.slide-modal) {
+                left: 0;
+            }
+            &.slide-active .navbar-header {
+                left: $navbar-slide-width;
+                z-index: 1030;
+            }
+            ~*.slide-active:not(.slide-modal) {
+                left: $navbar-slide-width;
+            }
+        }
+        &.slide-right {
+            .navbar-slide {
+                left: auto !important;
+                right: -#{$navbar-slide-width};
+                transition: right $navbar-slide-trasition;
+                &.in {
+                    right: 0 !important;
+                    transition: right $navbar-slide-trasition;
+                }
+            }
+            .navbar-header,
+            &.slide-active .navbar-header,
+            ~*:not(.slide-modal),
+            ~*.slide-active:not(.slide-modal) {
+                transition: right $navbar-slide-trasition;
+                left: auto !important;
+                position: relative;
+            }
+            .navbar-header,
+            ~*:not(.slide-modal) {
+                right: 0;
+            }
+            &.slide-active .navbar-header,
+            ~*.slide-active:not(.slide-modal) {
+                right: $navbar-slide-width;
+            }
+        }
+    }
+}
+
+@media (min-width:$screen-sm-min) {
+    .navbar-slide-nav {
+        ~div {
+            left: 0 !important;
+        }
+        &.navbar.navbar-fixed-top.slide-active {
+            position: fixed;
+        }
+    }
+}
