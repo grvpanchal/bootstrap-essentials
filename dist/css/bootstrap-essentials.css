@@ -624,6 +624,10 @@
   opacity: 0 !important;
 }
 
+.navmenu > .modal-backdrop {
+  z-index: 1029;
+}
+
 .btn-file {
   position: relative;
   overflow: hidden;

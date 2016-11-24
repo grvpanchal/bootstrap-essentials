@@ -325,8 +325,8 @@
     placement: 'auto',
     autohide: true,
     recalc: true,
-    disableScrolling: true,
-    modal: false
+    disableScrolling: false,
+    modal: true
   }
 
   OffCanvas.prototype.offset = function () {
