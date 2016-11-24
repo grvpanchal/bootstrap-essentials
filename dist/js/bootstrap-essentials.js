@@ -538,7 +538,7 @@
     if (this.state == 'slide-in') {
       var doAnimate = $.support.transition;
 
-      this.$backdrop = $('<div class="modal-backdrop fade" />')
+      this.$backdrop = $('<div class="modal-backdrop fade" style="z-index:1029" />')
       .insertAfter(this.$element);
 
       if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
