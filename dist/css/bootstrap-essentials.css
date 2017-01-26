@@ -1458,6 +1458,22 @@ body:not(.bse-no-conflict) [class*="container"] > .navbar-toggle.pull-left {
     text-align: center;
   }
 }
+.pt-navbar-height {
+  padding-top: 50px;
+}
+
+.pb-navbar-height {
+  padding-bottom: 50px;
+}
+
+.mt-navbar-height {
+  margin-top: 50px;
+}
+
+.mb-navbar-height {
+  margin-bottom: 50px;
+}
+
 .p-xs-0 {
   padding: 0;
 }
