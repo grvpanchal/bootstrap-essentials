@@ -29,11 +29,14 @@ $screen-phone:               $screen-xs-min !global;
 
     $font-size-base:          14px !global;
     $font-size-large:         ceil(($font-size-base * 1.25)) !global; // ~18px
+    $font-size-small:         ceil(($font-size-base * 0.85)) !global; // ~12px
 
     $line-height-base:        1.428571429 !global; // 20/14
     //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
     $line-height-computed:       floor(($font-size-base * $line-height-base)) !global; // ~20px
 
+    $dropdown-header-color:          $gray-light !global;
+    $dropdown-divider-bg:            #e5e5e5 !global;
     //== Media queries breakpoints
     //
     //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
@@ -105,6 +108,7 @@ $screen-phone:               $screen-xs-min !global;
     $zindex-navmenu-fixed:      1030 !global;
     $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !global;
     $nav-link-padding:           10px 15px !global;
+    $navbar-inverse-border:                     darken(#222, 10%) !global;
 
     //== Components
     //
@@ -145,6 +149,17 @@ $screen-phone:               $screen-xs-min !global;
     $state-success-text:             #3c763d !global;
     $state-success-bg:               #dff0d8 !global;
     $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !global;
+
+    // panel
+    $panel-body-padding:         15px !global;
+
+    //tabs
+    $nav-tabs-border-color:                     #ddd !global;
+
+    //Navbar Static
+    $navbar-height: 50px !global;
+    $navbar-padding-vertical: 15px !global;
+    $navbar-padding-horizontal: 15px !global;
 }
 
 $grid-breakpoints-custom: (
@@ -199,61 +214,31 @@ $space-values : (
 ) !default;
 
 //== Containers
-$container-login:                   300px;
-$container-login-2:                 800px;
+$container-login:                   (300px + $grid-gutter-width) !default;
+$container-login-2:                 (800px + $grid-gutter-width) !default;
 $container-login-offset:            100px;
 $container-login-bp:                $container-login + $grid-gutter-width;
+
+//== Progress Bar Sizes
+$progress-sm:                       10px !default;
+$progress-xs:                       5px !default;
+$progress-margin:                   5px !default;
+
+//== list
+$inline-list-separator: '\00a0\00a0|\00a0\00a0\00a0' !default;
+
+//== Gutter
+$gutter-array:                      0 5 10 15 20 !default;
+
+//= button Circle
+$btn-circle-size: 30px;
+$btn-circle-size-lg: 50px;
+
 //== Navmenu
 
 // Basics of a navmenu
-$navmenu-width:                     300px !default;
+$navmenu-width:                     240px !default;
 $navmenu-margin-vertical:           (0.5 * 20px) !default;
-$navmenu-default-color:             #777 !default;
-$navmenu-default-bg:                #f8f8f8 !default;
-$navmenu-default-border:            darken($navmenu-default-bg, 6.5%) !default;
-
-// Navmenu links
-$navmenu-default-link-color:                #777 !default;
-$navmenu-default-link-hover-color:          #333 !default;
-$navmenu-default-link-hover-bg:             transparent !default;
-$navmenu-default-link-active-color:         #555 !default;
-$navmenu-default-link-active-bg:            darken($navmenu-default-bg, 6.5%) !default;
-$navmenu-default-link-disabled-color:       #ccc !default;
-$navmenu-default-link-disabled-bg:          transparent !default;
-
-// Navmenu brand label
-$navmenu-default-brand-color:               $navmenu-default-link-color !default;
-$navmenu-default-brand-hover-color:         darken($navmenu-default-link-color, 10%) !default;
-$navmenu-default-brand-hover-bg:            transparent !default;
-
-// Inverted navmenu
-
-// Reset inverted navmenu basics
-$navmenu-inverse-color:                      $gray-light !default;
-$navmenu-inverse-bg:                         #222 !default;
-$navmenu-inverse-border:                     darken($navmenu-inverse-bg, 10%) !default;
-
-// Inverted navmenu links
-$navmenu-inverse-link-color:                 $gray-light !default;
-$navmenu-inverse-link-hover-color:           #fff !default;
-$navmenu-inverse-link-hover-bg:              transparent !default;
-$navmenu-inverse-link-active-color:          $navmenu-inverse-link-hover-color !default;
-$navmenu-inverse-link-active-bg:             darken($navmenu-inverse-bg, 10%) !default;
-$navmenu-inverse-link-disabled-color:        #444 !default;
-$navmenu-inverse-link-disabled-bg:           transparent !default;
-
-// Inverted navmenu brand label
-$navmenu-inverse-brand-color:                $navmenu-inverse-link-color !default;
-$navmenu-inverse-brand-hover-color:          #fff !default;
-$navmenu-inverse-brand-hover-bg:             transparent !default;
-
-// Inverted navmenu search
-// Normal navmenu needs no special styles or vars
-$navmenu-inverse-search-bg:                  lighten($navmenu-inverse-bg, 25%) !default;
-$navmenu-inverse-search-bg-focus:            #fff !default;
-$navmenu-inverse-search-border:              $navmenu-inverse-bg !default;
-$navmenu-inverse-search-placeholder-color:   #ccc !default;
 
 // Navbar Slide variables
-$navbar-slide-width:  240px;
 $navbar-slide-trasition: 0.35s;

@@ -1,49 +1,54 @@
-/* 
-	Table Container to vertical-align middle
- */
-
 .container-table {
     display: table;
     width: 100%;
     border-collapse: collapse;
-    &.full-page {
-        height: 100%;
-    }
     >.row {
         display: table-row;
-        &.row-vertical-center>[class*=col-] {
-            vertical-align: middle;
-            text-align: center;
+        >[class*=col-] {
+            display: block;
         }
-    }
-    >.row>[class*=col-] {
-        display: block;
-    }
-    >.row>[class^=col-xs-] {
-        display: table-cell;
-        float: none;
-    }
-    >.row>[class*=col-sm] {
-        @media (min-width: $screen-sm) {
+        >[class^=col-xs-] {
             display: table-cell;
             float: none;
         }
-    }
-    >.row>[class*=col-md] {
-        @media (min-width: $screen-md) {
-            display: table-cell;
-            float: none;
+        >[class*=col-sm] {
+            @media (min-width: $screen-sm) {
+                display: table-cell;
+                float: none;
+            }
+        }
+        >[class*=col-md] {
+            @media (min-width: $screen-md) {
+                display: table-cell;
+                float: none;
+            }
+        }
+        >[class*=col-lg] {
+            @media (min-width: $screen-lg) {
+                display: table-cell;
+                float: none;
+            }
         }
     }
-    >.row>[class*=col-lg] {
-        @media (min-width: $screen-lg) {
-            display: table-cell;
-            float: none;
-        }
-    }
+}
+
+.vertical-middle>* {
+    vertical-align: middle;
+}
+
+.vertical-top>* {
+    vertical-align: top;
+}
+
+.vertical-center>* {
+    vertical-align: bottom;
 }
 
 .fill {
     height: 100%;
     width: 100%;
+}
+
+.full-height {
+    height: 100%;
 }

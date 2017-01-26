@@ -1,14 +1,7 @@
 .row {
-    // 20px gutter
-    @include gutter(20);
-    // 15px gutter
-    @include gutter(15);
-    // 10px gutter
-    @include gutter(10);
-    // 5px gutter
-    @include gutter(5);
-    //0 gutter
-    @include gutter(0);
+    @each $gutter in $gutter-array {
+        @include gutter($gutter);
+    }
     &.gutter-justified {
         @media (min-width: $screen-sm-min) {
             margin-right: 0;

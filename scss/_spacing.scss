@@ -1,5 +1,3 @@
-// change to false if its not imported into bootstrap
-$use-bootstrap: false;
 // margin and padding shorthands
 $space-prefixes: ( p: padding, pt: padding-top, pr: padding-right, pb: padding-bottom, pl: padding-left, m: margin, mt: margin-top, mr: margin-right, mb: margin-bottom, ml: margin-left, ) !default;
 $breakpoints: $grid-breakpoints-custom;

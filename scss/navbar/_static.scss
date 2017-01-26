@@ -1,0 +1,21 @@
+.navbar-right-static {
+    float: right !important;
+    .navbar-nav {
+        margin: 0;
+        >li {
+            float: left;
+            >a {
+                padding-top: 0;
+                padding-bottom: 0;
+                line-height: $navbar-height;
+            }
+        }
+    }
+    .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+}
+[class*="container"] > .navbar-right-static {
+    margin-right: -$navbar-padding-horizontal;
+}

@@ -8,8 +8,8 @@
     list-style: none;
     margin: 0;
     li {
-        background: #FAFAFB;
-        border: 1px solid #e7eaec;
+        background: $well-bg;
+        border: 1px solid $well-border;
         margin: 0 0 10px 0;
         padding: 10px;
         -moz-border-radius: 2px;
@@ -19,16 +19,16 @@
             background: #fff;
         }
         &.warning-element {
-            border-left: 3px solid #f8ac59;
+            border-left: 3px solid $brand-warning;
         }
         &.danger-element {
-            border-left: 3px solid #ed5565;
+            border-left: 3px solid $brand-danger;
         }
         &.info-element {
-            border-left: 3px solid #1c84c6;
+            border-left: 3px solid $brand-info;
         }
         &.success-element {
-            border-left: 3px solid #1ab394;
+            border-left: 3px solid brand-success;
         }
     }
 }

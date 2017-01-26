@@ -56,3 +56,11 @@
 @mixin box-shadow($shadow) {
     box-shadow: $shadow;
 }
+
+//circle button
+@mixin btn-circle($size) {
+    width: $size;
+    height: $size;
+    border-radius: ($size/2);
+    font-size: (($size/10) * 4);
+}

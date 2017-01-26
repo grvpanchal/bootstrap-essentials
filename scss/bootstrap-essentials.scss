@@ -13,6 +13,7 @@
 @import "list";
 @import "avatar";
 @import "progress";
+//@import "bs-docs";
 @import "navmenu";
 @import "offcanvas";
 @import "fileinput";
@@ -33,7 +34,9 @@
 @import "containers/table";
 @import "containers/login";
 // Navigation Addons
-@import "nav/slide";
-@import "nav/submenu";
+@import "navbar/slide";
+@import "navbar/submenu";
+@import "navbar/static";
+@import "navbar/justified";
 //Spacing CSS
 @import "spacing";

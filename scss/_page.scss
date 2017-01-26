@@ -1,9 +1,9 @@
 .page-heading {
-    border-bottom: 1px solid #e7eaec !important;
+    // border-bottom: 1px solid #e7eaec !important;
 }
 
 .page-content {
-    padding: 15px;
+    padding: $panel-body-padding;
     border: none;
     border-radius: 0;
     margin-bottom: 0;
