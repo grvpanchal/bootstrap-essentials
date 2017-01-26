@@ -27,6 +27,7 @@
     this.options  = $.extend({}, OffCanvas.DEFAULTS, options)
     this.state    = null
     this.placement = null
+    this.$calcClone = null
 
     if (this.options.recalc) {
       this.calcClone()
@@ -34,6 +35,7 @@
     }
 
     if (this.options.autohide && !this.options.modal) {
+      var eventName = (navigator.userAgent.match(/(iPad|iPhone)/i) === null) ? 'click' : 'touchstart'
       $(document).on('click touchstart', $.proxy(this.autohide, this))
     }
 
@@ -52,6 +54,14 @@
     recalc: true,
     disableScrolling: false,
     modal: true
+  }
+
+  OffCanvas.prototype.setWidth = function () {
+    var size = this.$element.outerWidth()
+    var max = $(window).width()
+    max -= 68 //Minimum space between menu and screen edge
+
+    this.$element.css('width', size > max ? max : size)
   }
 
   OffCanvas.prototype.offset = function () {
@@ -174,7 +184,9 @@
     if (startEvent.isDefaultPrevented()) return
 
     this.state = 'slide-in'
-    this.calcPlacement();
+    this.$element.css('width', '')
+    this.calcPlacement()
+    this.setWidth()
 
     var elements = this.getCanvasElements()
     var placement = this.placement
@@ -215,7 +227,7 @@
     }, this), 1)
   }
 
-  OffCanvas.prototype.hide = function () {
+  OffCanvas.prototype.hide = function (fast) {
     if (this.state !== 'slid') return
 
     var startEvent = $.Event('hide.bs.offcanvas')
@@ -225,6 +237,7 @@
     this.state = 'slide-out'
 
     var elements = $('.canvas-slid')
+    var placement = this.placement
     var offset = -1 * this.offset()
 
     var complete = function () {
@@ -299,10 +312,16 @@
   }
 
   OffCanvas.prototype.calcClone = function() {
-    this.$calcClone = this.$element.clone()
-      .html('')
-      .addClass('offcanvas-clone').removeClass('in')
-      .appendTo($('body'))
+    this.$calcClone = $('.offcanvas-clone')
+
+    if (!this.$calcClone.length) {
+      this.$calcClone = this.$element.clone()
+        .addClass('offcanvas-clone')
+        .appendTo($('body'))
+        .html('')
+    }
+
+    this.$calcClone.removeClass('in')
   }
 
   OffCanvas.prototype.recalc = function () {

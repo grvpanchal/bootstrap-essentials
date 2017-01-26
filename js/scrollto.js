@@ -13,7 +13,7 @@
         if (this.options.toggle) this.toggle();
     }
 
-    Scrollto.VERSION = '0.1.0'
+    Scrollto.VERSION = '0.2.0'
 
     Scrollto.TRANSITION_DURATION = 'slow'
 
