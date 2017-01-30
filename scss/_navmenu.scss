@@ -21,22 +21,32 @@
     overflow-y: auto;
 }
 
-.navmenu-fixed-left{
+.navmenu-fixed-left {
     left: 0;
     right: auto;
-    border-width: 0 1px 0 0;
     bottom: 0;
 }
 
-.navmenu-fixed-right{
+.navbar-default.navmenu-fixed-left,
+.navbar-inverse.navmenu-fixed-left {
+    border-width: 0 1px 0 0;
+}
+
+.navmenu-fixed-right {
     left: auto !important;
     right: 0;
     border-width: 0 0 0 1px;
 }
 
-.navmenu.navbar-inverse .dropdown-menu .divider{
+.navbar-default.navmenu-fixed-right,
+.navbar-inverse.navmenu-fixed-right {
+    border-width: 0 0 0 1px;
+}
+
+.navmenu.navbar-inverse .dropdown-menu .divider {
     background-color: $navbar-inverse-border;
 }
+
 .navmenu .navbar-nav {
     margin: 0;
     margin-bottom: $navmenu-margin-vertical;
@@ -70,7 +80,6 @@
 // Alternate navmenus
 // --------------------------------------------------
 // Default navmenu
-
 .navmenu {
     .navbar-brand {
         float: none;

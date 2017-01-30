@@ -105,7 +105,6 @@ $screen-phone:               $screen-xs-min !global;
     //
     //##
 
-    $zindex-navmenu-fixed:      1030 !global;
     $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !global;
     $nav-link-padding:           10px 15px !global;
     $navbar-inverse-border:                     darken(#222, 10%) !global;
@@ -237,6 +236,7 @@ $btn-circle-size-lg: 50px;
 //== Navmenu
 
 // Basics of a navmenu
+$zindex-navmenu-fixed:              1030 !global;
 $navmenu-width:                     240px !default;
 $navmenu-margin-vertical:           (0.5 * 20px) !default;
 

@@ -355,12 +355,21 @@ body:not(.bse-no-conflict) .panel .btn {
   right: auto;
   bottom: 0;
   left: 0;
+}
+
+.navbar-default.navmenu-fixed-left,
+.navbar-inverse.navmenu-fixed-left {
   border-width: 0 1px 0 0;
 }
 
 .navmenu-fixed-right {
   right: 0;
   left: auto !important;
+  border-width: 0 0 0 1px;
+}
+
+.navbar-default.navmenu-fixed-right,
+.navbar-inverse.navmenu-fixed-right {
   border-width: 0 0 0 1px;
 }
 
