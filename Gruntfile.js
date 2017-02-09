@@ -112,6 +112,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-autoprefixer');
     //'jshint',
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'csscomb', 'csslint', 'uglify']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'csscomb', 'uglify']);
 
 };

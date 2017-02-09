@@ -6,7 +6,10 @@
     padding-bottom: $navbar-height;
 }
 .mt-navbar-height {
-    margin-top: $navbar-height
+    margin-top: $navbar-height;
+    &.navmenu {
+        height: calc(100% - $navbar-height);
+    }
 }
 .mb-navbar-height {
     margin-bottom: $navbar-height;
