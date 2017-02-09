@@ -8,7 +8,7 @@
 .mt-navbar-height {
     margin-top: $navbar-height;
     &.navmenu {
-        height: calc(100% - $navbar-height);
+        height: calc(100% - #{$navbar-height});
     }
 }
 .mb-navbar-height {

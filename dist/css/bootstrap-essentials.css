@@ -1479,8 +1479,8 @@ body:not(.bse-no-conflict) [class*="container"] > .navbar-toggle.pull-left {
   margin-top: 50px;
 }
 .mt-navbar-height.navmenu {
-  height: -webkit-calc(100% - $navbar-height);
-  height:         calc(100% - $navbar-height);
+  height: -webkit-calc(100% - 50px);
+  height:         calc(100% - 50px);
 }
 
 .mb-navbar-height {
