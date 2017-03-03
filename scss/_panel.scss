@@ -9,4 +9,7 @@ body:not(.bse-no-conflict) .panel {
     .btn {
         margin-bottom: 5px;
     }
+    .panel-heading .btn-group {
+        margin-top: -5px;
+    }
 }

@@ -7,9 +7,12 @@
 .navmenu {
     width: $navmenu-width;
     height: 100%;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: $border-radius-base;
+    .navbar-default,
+    .navbar-inverse {
+        border-width: 1px;
+        border-style: solid;
+        border-radius: $border-radius-base;
+    }
 }
 
 .navmenu-fixed-left,
