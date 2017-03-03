@@ -1216,7 +1216,7 @@ a.btn-circle.btn-lg {
   font-style: italic;
 }
 
-.no-underline, .no-underline:hover, .no-underline:active {
+.no-underline, .no-underline:hover, .no-underline:visited {
   text-decoration: none !important;
 }
 
