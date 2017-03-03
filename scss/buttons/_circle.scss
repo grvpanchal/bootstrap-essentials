@@ -6,22 +6,16 @@
     &.btn-lg {
         @include btn-circle($btn-circle-size-lg);
         line-height: 1.33;
-        &.action-btn {
-            padding-top: ($btn-circle-size-lg / 5)
-        }
     }
     .glyphicon {
         left: 1px;
         line-height: inherit;
     }
-    &.action-btn {
-        padding-top: ($btn-circle-size / 5)
-    }
 }
 
 a.btn-circle {
-    padding-top: 5px;
+    &,
     &.btn-lg {
-        padding-top: 10px;
+        padding-top: ($btn-circle-size / 5)
     }
 }

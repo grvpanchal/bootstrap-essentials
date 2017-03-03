@@ -681,22 +681,13 @@ body:not(.bse-no-conflict) .panel .panel-heading .btn-group {
   line-height: 1.33;
   border-radius: 25px;
 }
-.btn-circle.btn-lg.action-btn {
-  padding-top: 10px;
-}
 .btn-circle .glyphicon {
   left: 1px;
   line-height: inherit;
 }
-.btn-circle.action-btn {
-  padding-top: 6px;
-}
 
-a.btn-circle {
-  padding-top: 5px;
-}
-a.btn-circle.btn-lg {
-  padding-top: 10px;
+a.btn-circle, a.btn-circle.btn-lg {
+  padding-top: 6px;
 }
 
 .btn-outline {
