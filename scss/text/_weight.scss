@@ -1,5 +1,20 @@
 // Weight and italics
+.font-weight-normal {
+    font-weight: normal;
+}
 
-.font-weight-normal  { font-weight: normal; }
-.font-weight-bold    { font-weight: bold; }
-.font-italic         { font-style: italic; }
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.no-underline {
+    &,
+    &:hover,
+    &:active {
+        text-decoration: none !important;
+    }
+}

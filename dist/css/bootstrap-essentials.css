@@ -6,6 +6,67 @@
   border-radius: 0;
 }
 
+.page-main {
+  height: auto;
+  overflow: hidden;
+}
+.page-main .page-content {
+  width: auto;
+  overflow: hidden;
+}
+.page-main .page-sidebar {
+  float: left;
+  width: 240px;
+}
+.page-main .page-sidebar-right {
+  float: right;
+}
+@media (min-width: 768px) {
+  .page-main .page-sidebar.offcanvas-xs {
+    position: relative;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+}
+@media (min-width: 992px) {
+  .page-main .page-sidebar.offcanvas-sm {
+    position: relative;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-main .page-sidebar.offcanvas-md {
+    position: relative;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+}
+.page-main.fixed-width-right {
+  padding-right: 240px;
+}
+@media (max-width: 767px) {
+  .page-main.fixed-width-right {
+    padding-right: 0;
+  }
+}
+.page-main.fixed-width-right .page-content {
+  float: left;
+  width: 100%;
+}
+.page-main.fixed-width-right .page-sidebar {
+  float: right;
+  margin-right: -240px;
+}
+@media (max-width: 767px) {
+  .page-main.fixed-width-right .page-content,
+  .page-main.fixed-width-right .page-sidebar {
+    float: left;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 /* Tabs */
 @media (max-width: 767px) {
   .nav-justified-xs {
@@ -116,6 +177,9 @@ body:not(.bse-no-conflict) .panel h5 {
 }
 body:not(.bse-no-conflict) .panel .btn {
   margin-bottom: 5px;
+}
+body:not(.bse-no-conflict) .panel .panel-heading .btn-group {
+  margin-top: -5px;
 }
 
 .b-0 {
@@ -337,6 +401,9 @@ body:not(.bse-no-conflict) .panel .btn {
 .navmenu {
   width: 240px;
   height: 100%;
+}
+.navmenu .navbar-default,
+.navmenu .navbar-inverse {
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
@@ -623,6 +690,13 @@ body:not(.bse-no-conflict) .panel .btn {
 }
 .btn-circle.action-btn {
   padding-top: 6px;
+}
+
+a.btn-circle {
+  padding-top: 5px;
+}
+a.btn-circle.btn-lg {
+  padding-top: 10px;
 }
 
 .btn-outline {
@@ -1142,6 +1216,10 @@ body:not(.bse-no-conflict) .panel .btn {
   font-style: italic;
 }
 
+.no-underline, .no-underline:hover, .no-underline:active {
+  text-decoration: none !important;
+}
+
 .container-smooth {
   max-width: 1170px;
 }
@@ -1487,6 +1565,26 @@ body:not(.bse-no-conflict) [class*="container"] > .navbar-toggle.pull-left {
   margin-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+  .break-xs {
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .break-sm {
+    width: 100% !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .break-md {
+    width: 100% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .break-lg {
+    width: 100% !important;
+  }
+}
 .p-xs-0 {
   padding: 0;
 }

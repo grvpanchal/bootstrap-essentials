@@ -18,3 +18,10 @@
         padding-top: ($btn-circle-size / 5)
     }
 }
+
+a.btn-circle {
+    padding-top: 5px;
+    &.btn-lg {
+        padding-top: 10px;
+    }
+}
