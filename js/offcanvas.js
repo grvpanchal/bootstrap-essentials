@@ -52,7 +52,7 @@
     placement: 'auto',
     autohide: true,
     recalc: true,
-    disableScrolling: false,
+    disableScrolling: true,
     modal: true
   }
 
@@ -155,8 +155,9 @@
     if ($('body').data('offcanvas-style') === undefined) {
       $('body').data('offcanvas-style', $('body').attr('style') || '')
     }
-
-    $('body').css('overflow', 'hidden')
+    setTimeout(function() {
+      $('body').css('position', 'fixed')
+    }, 350)
 
     if ($('body').width() > bodyWidth) {
       var padding = parseInt($('body').css(prop), 10) + $('body').width() - bodyWidth
