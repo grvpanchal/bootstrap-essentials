@@ -21,7 +21,13 @@
     "web"
   ],
   "homepage": "https://github.com/grvpanchal/bootstrap-essentials",
-  "moduleType": [
-    "globals"
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples"
   ]
 }
