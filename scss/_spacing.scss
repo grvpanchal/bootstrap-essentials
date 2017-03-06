@@ -15,7 +15,7 @@ $breakpoints: $grid-breakpoints-custom;
             $attr-long in $prefixes {
                 @each $value in $values {
                     .#{$attr-short}-#{$breakpoint-name}-#{$value} {
-                        #{$attr-long}: #{$value}px;
+                        #{$attr-long}: #{$value}px !important;
                     }
                 }
             }
@@ -26,7 +26,7 @@ $breakpoints: $grid-breakpoints-custom;
                 @each $attr-short, $attr-long in $prefixes {
                     @each $value in $values {
                         .#{$attr-short}-#{$breakpoint-name}-#{$value} {
-                            #{$attr-long}: #{$value}px;
+                            #{$attr-long}: #{$value}px !important;
                         }
                     }
                 }

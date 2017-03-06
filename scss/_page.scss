@@ -3,10 +3,15 @@
 // }
 
 .page-content {
-    padding: $grid-gutter-width/2;
     border: none;
     border-radius: 0;
     margin-bottom: 0;
+    
+}
+.page-sidebar + .page-content,
+.page-content + .page-sidebar,
+.page-sidebar-right + .page-content {
+    padding: 0.1px;
 }
 
 .page-main {
@@ -22,6 +27,7 @@
     }
     .page-sidebar-right {
         float: right;
+        width: $navmenu-width;
     }
     .page-sidebar {
         @media (min-width: $screen-sm-min) {
