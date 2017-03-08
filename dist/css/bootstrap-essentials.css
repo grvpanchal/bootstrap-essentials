@@ -408,8 +408,7 @@ body:not(.bse-no-conflict) .panel .panel-heading .btn-group {
   width: 240px;
   height: 100%;
 }
-.navmenu .navbar-default,
-.navmenu .navbar-inverse {
+.navmenu.navbar-default, .navmenu.navbar-inverse {
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
@@ -421,7 +420,6 @@ body:not(.bse-no-conflict) .panel .panel-heading .btn-group {
   top: 0;
   z-index: 1030;
   overflow-y: auto;
-  border-radius: 0;
 }
 
 .navmenu-fixed-left {
@@ -433,17 +431,18 @@ body:not(.bse-no-conflict) .panel .panel-heading .btn-group {
 .navbar-default.navmenu-fixed-left,
 .navbar-inverse.navmenu-fixed-left {
   border-width: 0 1px 0 0;
+  border-radius: 0;
 }
 
 .navmenu-fixed-right {
   right: 0;
   left: auto !important;
-  border-width: 0 0 0 1px;
 }
 
 .navbar-default.navmenu-fixed-right,
 .navbar-inverse.navmenu-fixed-right {
   border-width: 0 0 0 1px;
+  border-radius: 0;
 }
 
 .navmenu.navbar-inverse .dropdown-menu .divider {

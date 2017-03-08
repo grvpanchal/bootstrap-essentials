@@ -7,8 +7,8 @@
 .navmenu {
     width: $navmenu-width;
     height: 100%;
-    .navbar-default,
-    .navbar-inverse {
+    &.navbar-default,
+    &.navbar-inverse {
         border-width: 1px;
         border-style: solid;
         border-radius: $border-radius-base;
@@ -20,7 +20,6 @@
     position: fixed;
     z-index: $zindex-navmenu-fixed;
     top: 0;
-    border-radius: 0;
     overflow-y: auto;
 }
 
@@ -33,17 +32,18 @@
 .navbar-default.navmenu-fixed-left,
 .navbar-inverse.navmenu-fixed-left {
     border-width: 0 1px 0 0;
+    border-radius: 0;
 }
 
 .navmenu-fixed-right {
     left: auto !important;
-    right: 0;
-    border-width: 0 0 0 1px;
+    right: 0; 
 }
 
 .navbar-default.navmenu-fixed-right,
 .navbar-inverse.navmenu-fixed-right {
     border-width: 0 0 0 1px;
+    border-radius: 0;
 }
 
 .navmenu.navbar-inverse .dropdown-menu .divider {
