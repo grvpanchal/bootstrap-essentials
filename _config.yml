@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Server
+source:           docs
+destination:      _gh_pages
+port:             4000
+url:              http://getbootstrap.com
+encoding:         UTF-8
+
+gems:
+  - jekyll-sitemap
+
+# Custom vars
+current_version:  0.3
+repo:             https://github.com/grvpanchal/bootstrap-essentials
+
+download:
+  source:         https://github.com/grvpanchal/bootstrap-essentials/archive/v0.0.3.zip
+  dist:           https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.0.3/bootstrap-0.0.3-dist.zip
