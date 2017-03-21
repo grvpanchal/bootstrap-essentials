@@ -1,12 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    {% include head.html %}
-    <body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="70" id="body" class="pt-navbar-height ">
-        {% include nav.html %}
+{% include docs/head.html %}
 
-        {{content}}
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="20" id="body" class="pt-navbar-height">
 
-        {% include footer.html %}
-    </body>
+    {% include docs/nav.html %}
+    <div class="jumbotron">
+        <div class="container text-xs-center text-sm-left">
+            <h1>{{page.title}}</h1>
+            <p>{{page.lead}}</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--Main Content -->
+            {{content}}
+        </div>
+    </div>
+    {% include docs/footer.html %}
+</body>
+
 </html>

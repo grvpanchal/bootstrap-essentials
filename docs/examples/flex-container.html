@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Flex Container Example for Bootstrap</title>
+	<!-- Bootstrap Core CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="http://bootswatch.com/sandstone/bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../dist/css/bootstrap-essentials.css">
+	<link href="https://cdn.jsdelivr.net/animatecss/3.5.1/animate.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		/*
+      @media (max-width: 767px) {
+        .navbar-slide-nav.navbar.slide-active .navbar-header {
+            left: 280px;
+            z-index: 1030;
+        }
+        .navbar-slide-nav .navbar-slide {
+          left: -280px;
+          width: 280px;
+        }
+        .navbar-slide-nav ~ *.slide-active {
+          left: 280px !important;
+          position: relative;
+        }
+      }
+      */
+	</style>
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top navbar-slide-nav">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" href="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+				<a class="navbar-brand" href="#">Project name</a>
+			</div>
+			<div id="navbar" class="navbar-slide offcanvas">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">Nav header</li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+	<div class="mt-xs-50">
+		<!-- Main component for a primary marketing message or call to action -->
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Flex Container</h1>
+				<p>The flex container is great to make UI consistent. Difference in text content can make panels and thumbnails inconsistent
+					in terms height.</p>
+				<p>To fix this issue <code>.container-flex</code> or <code>.row-flex.row-flex-wrap</code>.</p>
+				<p>
+					<a class="btn btn-lg btn-primary btn-block-xs" href="../css/#flex" role="button">View flex container docs »</a>
+				</p>
+			</div>
+		</div>
+		<div class="container container-flex">
+			<div class="page-header">
+				<h1>Panels</h1>
+			</div>
+			<h2>Simple</h2>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-success">
+						<div class="panel-body">Nisi nulla nulla Lorem culpa id aliqua mollit incididunt ad culpa aliquip eiusmod do ea. Minim ea fugiat aliqua tempor
+							eu. Quis officia laboris aliquip enim occaecat. Aute reprehenderit aute Lorem aliqua sit nulla est enim culpa et Lorem
+							adipisicing.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-info">
+						<div class="panel-body">Reprehenderit pariatur Lorem dolore sit ullamco amet fugiat ipsum consequat id sint et.</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-warning">
+						<div class="panel-body">Eu eiusmod eu Lorem reprehenderit consectetur officia eu mollit et. Est cillum et laboris sit ea labore sunt excepteur
+							non dolore. Est pariatur exercitation consequat cillum ea adipisicing et. Deserunt magna cupidatat mollit adipisicing
+							sit magna ipsum labore tempor et.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-danger">
+						<div class="panel-body"> Panel content </div>
+					</div>
+				</div>
+			</div>
+			<h2>With Header</h2>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">Nisi nulla nulla Lorem culpa id aliqua mollit incididunt ad culpa aliquip eiusmod do ea. Minim ea fugiat aliqua tempor
+							eu. Quis officia laboris aliquip enim occaecat. Aute reprehenderit aute Lorem aliqua sit nulla est enim culpa et Lorem
+							adipisicing.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">Reprehenderit pariatur Lorem dolore sit ullamco amet fugiat ipsum consequat id sint et.</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body">Eu eiusmod eu Lorem reprehenderit consectetur officia eu mollit et. Est cillum et laboris sit ea labore sunt excepteur
+							non dolore. Est pariatur exercitation consequat cillum ea adipisicing et. Deserunt magna cupidatat mollit adipisicing
+							sit magna ipsum labore tempor et.
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<h3 class="panel-title">Panel title</h3>
+						</div>
+						<div class="panel-body"> Panel content </div>
+					</div>
+				</div>
+			</div>
+			<h2>With Footer</h2>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-success flex-col">
+						<div class="panel-body flex-grow">Content here -- div with .flex-grow Excepteur veniam cupidatat deserunt voluptate et. Qui velit velit ea ut qui irure
+							voluptate. Mollit amet nulla magna cupidatat reprehenderit amet sint quis culpa.</div>
+						<div class="panel-footer">Footer</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-info flex-col">
+						<div class="panel-body flex-grow">Content here -- div with .flex-grow. Culpa ipsum amet nulla ipsum excepteur tempor cupidatat laborum.</div>
+						<div class="panel-footer">Footer</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-warning flex-col">
+						<div class="panel-body flex-grow">Content here -- div with .flex-grow</div>
+						<div class="panel-footer">Footer</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-danger flex-col">
+						<div class="panel-body flex-grow">Content here -- div with .flex-grow. Aliqua anim voluptate quis incididunt non incididunt et consequat pariatur sint.</div>
+						<div class="panel-footer">Footer</div>
+					</div>
+				</div>
+			</div>
+			<h2>With Header and Footer</h2>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-success flex-col">
+						<div class="panel-heading">Title flex-col</div>
+						<div class="panel-body flex-grow">Content here -- div with .flex-grow Excepteur veniam cupidatat deserunt voluptate et. Qui velit velit ea ut qui irure
+							voluptate. Mollit amet nulla magna cupidatat reprehenderit amet sint quis culpa.</div>
+						<div class="panel-footer">Footer</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-info flex-col">
+						<div class="panel-heading">Title flex-col</div>
+						<div class="panel-body flex-grow">Content here -- div with .flex-grow. Culpa ipsum amet nulla ipsum excepteur tempor cupidatat laborum.</div>
+						<div class="panel-footer">Footer</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-warning flex-col">
+						<div class="panel-heading">Title flex-col</div>
+						<div class="panel-body flex-grow">Content here -- div with .flex-grow</div>
+						<div class="panel-footer">Footer</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-danger flex-col">
+						<div class="panel-heading">Title flex-col</div>
+						<div class="panel-body flex-grow">Content here -- div with .flex-grow. Aliqua anim voluptate quis incididunt non incididunt et consequat pariatur sint.</div>
+						<div class="panel-footer">Footer</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container container-flex">
+			<div class="page-header">
+				<h1>Thumbnails</h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail flex-col">
+						<div>
+							<img alt="100%x200" data-src="holder.js/100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTkyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE5MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU3Y2UzMmU5ODkgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTdjZTMyZTk4OSI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI3MS41IiB5PSIxMDQuNSI+MTkyeDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+											data-holder-rendered="true">
+						</div>
+						<div class="caption flex-grow">
+							<div>
+								<h3>Thumbnail label</h3>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam
+									id dolor id nibh ultricies vehicula ut id elit.</p>
+							</div>
+						</div>
+						<div class="caption">
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail flex-col"> <img alt="100%x200" data-src="holder.js/100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTkyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE5MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU3Y2UzMmM2NTQgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTdjZTMyYzY1NCI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI3MS41IiB5PSIxMDQuNSI+MTkyeDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+										data-holder-rendered="true">
+						<div class="caption flex-grow">
+							<div>
+								<h3>Thumbnail label</h3>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. .</p>
+							</div>
+						</div>
+						<div class="caption">
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail flex-col"> <img alt="100%x200" data-src="holder.js/100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTkyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE5MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU3Y2UzMzA1NjcgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTdjZTMzMDU2NyI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI3MS41IiB5PSIxMDQuNSI+MTkyeDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+										data-holder-rendered="true">
+						<div class="caption flex-grow">
+							<div>
+								<h3>Thumbnail label</h3>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
+							</div>
+						</div>
+						<div class="caption">
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail flex-col">
+						<div>
+							<img alt="100%x200" data-src="holder.js/100%x200" style="height: 200px; width: 100%; display: block;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTkyIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE5MiAyMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MjAwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTU3Y2UzMzA1NjcgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTdjZTMzMDU2NyI+PHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI3MS41IiB5PSIxMDQuNSI+MTkyeDIwMDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+											data-holder-rendered="true">
+						</div>
+						<div class="caption flex-grow">
+							<div>
+								<h3>Thumbnail label</h3>
+								<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam
+									id dolor id nibh ultricies vehicula ut id elit.</p>
+							</div>
+						</div>
+						<div class="caption">
+							<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container container-flex">
+			<div class="page-header">
+				<h1>Mixed</h1>
+			</div>
+			<div class="row gutter-20 gutter-justified">
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-default flex-col">
+						<div class="panel-heading">Title flex-col</div>
+						<div class="panel-body flex-grow">Content here -- div with .flex-grow</div>
+						<div class="panel-footer">Footer</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="panel panel-default">
+						<div class="panel-heading">Title</div>
+						<div class="panel-body">Content here -- div with no footer</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="thumbnail panel-body">
+						Duis pharetra varius quam sit amet vulputate.
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<div class="well">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue,
+						molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis nisi.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /container -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../dist/js/bootstrap-essentials.js"></script>
+	<script>
+    </script>
+</body>
+
+</html>

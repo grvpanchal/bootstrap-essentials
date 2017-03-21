@@ -1,0 +1,254 @@
+<section id="helper">
+                    <h1 class="page-header">Helper Classes</h1>
+                        <div id="fileinput">
+                            <h2>File Input</h2>
+                            <p>This Jasny designed file input allows you have uniform file input design for all browsers.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body mb-xs-0 pb-xs-0">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <img src="../assets/img/fileinput.jpg" class="img-responsive" alt="file Input">
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;div class=&quot;fileinput fileinput-new input-group&quot; data-provides=&quot;fileinput&quot;&gt;
+        &lt;div class=&quot;form-control&quot; data-trigger=&quot;fileinput&quot;&gt;
+            &lt;i class=&quot;glyphicon glyphicon-file fileinput-exists&quot;&gt;&lt;/i&gt; &lt;span class=&quot;fileinput-filename&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;input-group-addon btn btn-default btn-file&quot;&gt;
+            &lt;span class=&quot;fileinput-new&quot;&gt;Select file&lt;/span&gt;
+            &lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;/span&gt;
+            &lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;
+        &lt;/span&gt;
+        &lt;a href=&quot;#&quot; class=&quot;input-group-addon btn btn-default fileinput-exists&quot; data-dismiss=&quot;fileinput&quot;&gt;Remove&lt;/a&gt;
+    &lt;/div&gt;
+
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="progress">
+                            <h2>Progress Bar</h2>
+                            <div class="panel panel-default">
+                                <div class="panel-body well b-0 mb-xs-0 pb-xs-0">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <code>.progress-xs</code> for Some Task
+                                                <h2>30% Complete</h2>
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                                        <span class="sr-only">70% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <code>.progress-sm</code> for Some Task
+                                                <h2>70% Complete</h2>
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                                        <span class="sr-only">70% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">  
+    &lt;div class=&quot;progress progress-xs&quot;&gt;
+        &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot;
+            aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;70% Complete&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="list">
+                            <h2>List</h2>
+                            <h3>Seperated Links</h3>
+                            <p>List seperated by dashes is a common feature used for links in footer. Some website also use
+                                such seperated list above navigation bar as Quick link. Below is an example of additional
+                                class added to <code>.list-inline</code></p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <ul class="list-inline separated">
+                                        <li>abcd</li>
+                                        <li>abcdefg</li>
+                                        <li>abcdef</li>
+                                    </ul>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">  
+    &lt;ul class="list-inline separated"&gt; 
+        ... 
+    &lt;/ul&gt;
+                                </code></pre>
+                                </div>
+                            </div>
+                            <h3>Center Align List </h3>
+                            <p>Center align a bullet list is a tricky thing to achieve. Neither <code>text-align: center</code>                                nor <code>margin:auto</code> would be perfectly able to center align a bullet list. Thus
+                                <code>.list-center</code> is added to display list as table in mobile devices. Below is an
+                                example for center aligned bullet list.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <ul class="center-list-xs">
+                                        <li>abcd</li>
+                                        <li>abcdefg</li>
+                                        <li>abcdef</li>
+                                    </ul>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">  
+    &lt;ul class="center-list-xs"&gt; 
+        ... 
+    &lt;/ul&gt;
+                            </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nounderline">
+                            <h2>No Underline</h2>
+                            <p>Underline below links make you feel that it is a hyperlink. but sometimes we just dont
+                                 require underline. In that case you can use <code>.no-undeline</code> to remove the undeline</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <p><a href="#" >Normal Link</a></p>
+                                    <p><a href="#" class="no-underline">Link with no underline</a></p>
+                                    </ul>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;p&gt;&lt;a href=&quot;#&quot; &gt;Normal Link&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;no-underline&quot;&gt;Link with no underline&lt;/a&gt;&lt;/p&gt;
+                                </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="noborder">
+                            <h2>No Border</h2>
+                            <p>No border class <code>.b-0</code>, <code>.bt-0</code>, <code>.br-0</code>, <code>.bb-0</code> and <code>.bl-0</code> provide useful customisation option to remove the borders.
+                                Below are the examples for elements without border.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <div class="col-lg-2">
+                                        <div class="panel panel-danger b-0">
+                                            <div class="panel-body bg-warning p-xs-50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="panel panel-danger bt-0">
+                                            <div class="panel-body bg-warning p-xs-50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="panel panel-danger br-0">
+                                            <div class="panel-body bg-warning p-xs-50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="panel panel-danger bb-0">
+                                            <div class="panel-body bg-warning p-xs-50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="panel panel-danger bl-0">
+                                            <div class="panel-body bg-warning p-xs-50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">
+&lt;div class=&quot;col-lg-2&quot;&gt;
+    &lt;div class=&quot;panel panel-danger b-0&quot;&gt;
+        &lt;div class=&quot;panel-body bg-warning p-xs-50&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-lg-2&quot;&gt;
+    &lt;div class=&quot;panel panel-danger bt-0&quot;&gt;
+        &lt;div class=&quot;panel-body bg-warning p-xs-50&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-lg-2&quot;&gt;
+    &lt;div class=&quot;panel panel-danger br-0&quot;&gt;
+        &lt;div class=&quot;panel-body bg-warning p-xs-50&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-lg-2&quot;&gt;
+    &lt;div class=&quot;panel panel-danger bb-0&quot;&gt;
+        &lt;div class=&quot;panel-body bg-warning p-xs-50&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-lg-2&quot;&gt;
+    &lt;div class=&quot;panel panel-danger bl-0&quot;&gt;
+        &lt;div class=&quot;panel-body bg-warning p-xs-50&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <div class="col-sm-3">
+                                        <div class="well b-0">
+                                            Here is a Deep well but well has no borders
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="panel panel-primary b-0">
+                                            <div class="panel-heading">
+                                                <label class="panel-title">Panel title</label>
+                                            </div>
+                                            <div class="panel-body">
+                                                Panel content
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <ul class="list-group b-0">
+                                            <li class="list-group-item">Item 1 <span class="badge">5</span></li>
+                                            <li class="list-group-item">Item 2 <span class="badge">4</span></li>
+                                            <li class="list-group-item">Item 3 <span class="badge">3</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="thumbnail b-0"> <img alt="100%x100" src="http://www.leapcms.com/images/100pixels1.gif" data-holder-rendered="true"
+                                                style="height: 100px; width: 100%; display: block;">
+                                            <div class="caption">
+                                                <h3>Thumbnail</h3>
+                                                <p><a href="#" class="btn btn-primary btn-block" role="button">Button</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;div class="... b-0"&gt; 
+        ... 
+    &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                </section>
