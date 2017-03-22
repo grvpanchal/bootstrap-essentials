@@ -9,7 +9,8 @@ permalink:        pretty
 source:           docs
 destination:      _gh_pages
 port:             4000
-url:              http://getbootstrap.com
+url:              http://grvpanchal.github.io/bootstrap-essentials
+baseurl:          "/bootstrap-essentials"
 encoding:         UTF-8
 
 gems:
