@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="fill">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Basic Role Layout - Bootstrap Essentials</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../dist/css/bootstrap-essentials.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="fill">
+
+    <!-- Layout Start -->
+
+    <div class="container container-smooth mt-xs-20 mb-xs-20">
+        <header role="banner">
+
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a class="navbar-brand" href="#">Brand Name</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-block-xs">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+
+        </header>
+        <main role="main" class="page-main">
+            <div class="page-heading">
+                <h1 class="page-header mt-xs-20">
+                    Page Title
+                </h1>
+                
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="active">Current</li>
+                </ol>
+                
+            </div>
+            <aside role="complementary" class="page-sidebar break-xs">
+
+                <div class="list-group ">
+                    <a href="#item1" class="list-group-item">Item 1</a>
+                    <a href="#item2" class="list-group-item">Item 2</a>
+                    <a href="#item3" class="list-group-item">Item 3</a>
+                </div>
+
+            </aside>
+            <div class="page-content pl-sm-30">
+                <h2 id="item1">Item 1</h2>
+                <p>
+                    Id minim ex id nisi laboris occaecat deserunt elit quis. Tempor adipisicing sit sunt deserunt Lorem cupidatat enim irure
+                    cillum deserunt officia anim. Nostrud Lorem veniam adipisicing eiusmod nisi ex ad reprehenderit sint.
+                    Elit adipisicing anim reprehenderit exercitation fugiat. Duis Lorem enim tempor qui culpa consequat ex
+                    sint quis. Proident ipsum cupidatat eiusmod sit deserunt. Proident non mollit non minim.
+                </p>
+                <h2 id="item2">Item 2</h2>
+                <p>
+                    Id minim ex id nisi laboris occaecat deserunt elit quis. Tempor adipisicing sit sunt deserunt Lorem cupidatat enim irure
+                    cillum deserunt officia anim. Nostrud Lorem veniam adipisicing eiusmod nisi ex ad reprehenderit sint.
+                    Elit adipisicing anim reprehenderit exercitation fugiat. Duis Lorem enim tempor qui culpa consequat ex
+                    sint quis. Proident ipsum cupidatat eiusmod sit deserunt. Proident non mollit non minim.
+                </p>
+                <h2 id="item3">Item 3</h2>
+                <p>
+                    Id minim ex id nisi laboris occaecat deserunt elit quis. Tempor adipisicing sit sunt deserunt Lorem cupidatat enim irure
+                    cillum deserunt officia anim. Nostrud Lorem veniam adipisicing eiusmod nisi ex ad reprehenderit sint.
+                    Elit adipisicing anim reprehenderit exercitation fugiat. Duis Lorem enim tempor qui culpa consequat ex
+                    sint quis. Proident ipsum cupidatat eiusmod sit deserunt. Proident non mollit non minim.
+                </p>
+
+
+            </div>
+        </main>
+    </div>
+    <footer role="contentinfo" class="navbar-inverse">
+        <div class="container">
+            <p class="navbar-text">Put copyright, etc. here.</p>
+        </div>
+    </footer>
+    <!-- Layout End -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap-essentials.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+                <section id="containers">
+                    <h1 class="page-header">Containers</h2>
+                        <p class="lead">Currently Bootstrap 3.3.7 support <code>.container</code> and <code>container-fluid</code> classes.
+                            We have extended the support to suit the page needs.</p>
+                        <div id="smooth">
+                            <h2>Smooth</h2>
+                            <p>As per jasny suggestions, we have added <code>.container-smooth</code> a container to use the
+                                same <code>max-width</code> for all view-port sizes. This means that the container size won't
+                                jump at media query breakpoints.</p>
+                            <pre><code class="css">
+    .container-smooth {
+        max-width: 1170px;
+    }
+    @media (min-width: 1px) {
+        .container-smooth {
+            width: auto;
+        }
+    }
+                        </code></pre>
+                        </div>
+                        <div id="table">
+                            <h2>Table</h2>
+                            <p><code>.container-table</code> provides a better option to to <code>vertical-align:
+                  middle</code> for <code>col-*</code></p>
+                            <div class="alert alert-danger">
+                                <strong>Note:</strong> You need to add <code>.vertical-middle text-center</code> and define
+                                height to make in align it in middle.
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <style>
+                                        @media (min-width: 768px) {
+                                            #contable {
+                                                height: 200px;
+                                            }
+                                        }
+                                        
+                                        #contable,
+                                        #contable .row,
+                                        #contable .row>div {
+                                            border: 1px solid #333;
+                                        }
+                                    </style>
+                                    <div class="container-table" id="contable">
+                                        <div class="row vertical-middle text-center">
+                                            <div class="col-sm-4 col-md-8 col-lg-4 text-center">
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                            </div>
+                                            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                            </div>
+                                            <div class="col-sm-4 hidden-md col-lg-4 text-center">
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer pb-xs-0 ">
+                                    <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;style&gt;
+        @media (min-width: 768px) {
+            #contable {
+                height: 200px;
+            }
+        }
+        #contable,
+        #contable .row,
+        #contable .row &gt; div {
+            border: 1px solid #333;
+        }
+    &lt;/style&gt;
+
+    &lt;div class=&quot;container-table&quot; id=&quot;contable&quot;&gt;
+        &lt;div class=&quot;row vertical-middle text-center&quot; &gt;
+            &lt;div class=&quot;col-sm-4 col-md-8 col-lg-4 text-center&quot;&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 col-md-4 col-lg-4 text-center&quot;&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 hidden-md col-lg-4 text-center&quot;&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;      
+                        </code></pre>
+                                </div>
+                            </div>
+                            <div class="alert alert-danger">
+                                <strong>Note:</strong> <code>.container-table</code> can only manage 12 columns in a <code>.row</code>.
+                                further rows are required to adjust additional columns
+                            </div>
+                            <h3>Full Page</h3>
+                            <p>Another use of container is to generate full height and width container with text in center.
+                                The table functions just like <a href="http://alvarotrigo.com/fullPage/">fullpage.js</a>                                with minimal amount of CSS.</p>
+                            <p>Please <a href="../examples/fullpage.html" target="_blank">Click here</a> to view the Demo</p>
+                        </div>
+                        <div id="flex">
+                            <h2>Flex</h2>
+                            <p>Flex container helps to make columns to even heights. Below is an examples for the implementation
+                                on panels, wells and thumbnails </p>
+                            <div class="alert alert-danger">
+                                <strong>Note:</strong> You need to use flex-col and flex-grow to make footer / action buttons
+                                to align at the bottom. These classes are best to adjust the body-row of a 3 rowed element.
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <div class="container-flex">
+                                        <div class="row gutter-20 gutter-justified">
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="panel panel-default flex-col">
+                                                    <div class="panel-heading">Title flex-col</div>
+                                                    <div class="panel-body flex-grow">Content here -- div with .flex-grow</div>
+                                                    <div class="panel-footer">Footer</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">Title</div>
+                                                    <div class="panel-body">Content here -- div with no footer</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="thumbnail">
+                                                    Duis pharetra varius quam sit amet vulputate.
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="well">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue,
+                                                    molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet
+                                                    felis dolor, in sagittis nisi.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer p-xs-0">
+                                    <pre class="b-0 p-xs-0 mb-xs-0"><code class="html">        
+    &lt;div class="container-flex" &gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-3"&gt;
+                &lt;div class="panel panel-default flex-col"&gt;
+                    &lt;div class="panel-heading"&gt;Title flex-col&lt;/div&gt;
+                    &lt;div class="panel-body flex-grow"&gt;Content here -- div with .flex-grow&lt;/div&gt;
+                    &lt;div class="panel-footer"&gt;Footer&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-3"&gt;
+                &lt;div class="panel panel-default"&gt;
+                    &lt;div class="panel-heading"&gt;Title&lt;/div&gt;
+                    &lt;div class="panel-body"&gt;Content here -- div with no footer&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-3"&gt;
+                &lt;div class="thumbnail"&gt;
+                    Duis pharetra varius quam sit amet vulputate.
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-3"&gt;
+                &lt;div class="well"&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis pharetra varius quam sit amet vulputate. Quisque 
+                    mauris augue, molestie tincidunt condimentum vitae, 
+                    gravida a libero. Aenean sit amet felis dolor, in 
+                    sagittis nisi.
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="login">
+                            <h2>Login</h2>
+                            <p>Currenlty, Login containers exists in 2 types: standard center-align login box and 2 column login
+                                box. See the below examples to understand the layout</p>
+                            <h3>Standard login box</h3>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="container-login text-center">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div>
+                                                    <h1 class="logo-name">Example</h1>
+                                                </div>
+                                                <h3>Welcome to Example</h3>
+                                                <p>Designed this css after observing more than 1000 website login methods.
+                                                </p>
+                                                <p>Login in. To see it in action.</p>
+                                                <form class="m-t" role="form" action="index.html">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" placeholder="Username" required="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" placeholder="Password" required="">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                                    <a href="#"><small>Forgot password?</small></a>
+                                                    <p class="text-muted text-center"><small>Do not have an account?</small></p>
+                                                    <a class="btn btn-default btn-block" href="#">Create an account</a>
+                                                </form>
+                                                <p class="mt-xs-5"> <small>framework based on Bootstrap 3 © 2016</small> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer p-xs-0">
+                                    <pre class="b-0 p-xs-0 mb-xs-0"><code class="html">  
+    &lt;div class=&quot;container-login&quot;&gt;
+        ...
+    &lt;/div&gt; 
+                                </code></pre>
+                                </div>
+                            </div>
+                            <h3>2 Columns login box</h3>
+                            <p>Two column login container is commonly used to support feature like Social Login options. Login
+                                system have been essential in web development. Hence, Login-container of <code>300px</code>                                and <code>800px</code> are commonly used by several websites.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="container-login-2 center-block">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h2 class="font-weight-bold">Welcome to Example</h2>
+                                                <p>
+                                                    Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
+                                                </p>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                    text ever since the 1500s.
+                                                </p>
+                                                <p>
+                                                    When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                </p>
+                                                <p>
+                                                    <small>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</small>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body">
+                                                        <form class="m-t" role="form" action="index.html">
+                                                            <div class="form-group">
+                                                                <input type="email" class="form-control" placeholder="Username" required="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="password" class="form-control" placeholder="Password" required="">
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                                            <a href="#">
+                                                                <small>Forgot password?</small>
+                                                            </a>
+                                                            <p class="text-muted text-center">
+                                                                <small>Do not have an account?</small>
+                                                            </p>
+                                                            <a class="btn btn-default btn-block" href="#">Create an account</a>
+                                                        </form>
+                                                        <p class="m-t">
+                                                            <small>Framework based on Bootstrap 3 &copy; 2016</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                Copyright Example Company
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <small>© 2014-2015</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer p-xs-0">
+                                    <pre class="b-0 p-xs-0 mb-xs-0"><code class="html">
+    &lt;div class=&quot;container-login-2&quot;&gt;
+        ...
+    &lt;/div&gt;
+                                </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                </section>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="fill">
+
+<head>
+    <title>Fullpage Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap-essentials.css">
+    <style>
+        body {
+            position: relative;
+        }
+        
+        #section1 {
+            color: #fff;
+            background-color: #1E88E5;
+        }
+        
+        #section2 {
+            color: #fff;
+            background-color: #673ab7;
+        }
+        
+        #section3 {
+            color: #fff;
+            background-color: #ff9800;
+        }
+        
+        #section4 {
+            color: #fff;
+            background-color: #00bcd4;
+        }
+        
+        #section5 {
+            color: #fff;
+            background-color: #009688;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="fill">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a data-toggle="scroll" href="#section1">Section 1</a></li>
+                        <li><a data-toggle="scroll" href="#section2">Section 2</a></li>
+                        <li><a data-toggle="scroll" href="#section3">Section 3</a></li>
+                        <li><a data-toggle="scroll" href="#section4">Section 4</a></li>
+                        <li><a data-toggle="scroll" href="#section5">Section 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="section1" class="container-table full-height">
+        <div class="row vertical-middle text-center">
+            <div class="col-xs-12">
+                <h1 class="fs-xs-4-0">These are Awesome Sections</h1>
+            </div>
+        </div>
+    </div>
+    <div id="section2" class="container-table full-height">
+        <div class="row vertical-middle text-center">
+            <div class="col-xs-12">
+                <h1 class="fs-xs-4-0" onclick="abc();">Created</h1>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                    look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                    look at the navigation bar while scrolling!</p>
+            </div>
+        </div>
+    </div>
+    <div id="section3" class="container-table full-height">
+        <div class="row vertical-middle text-center">
+            <div class="col-xs-12">
+                <h1 class="fs-xs-4-0">Using</h1>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                    look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                    look at the navigation bar while scrolling!</p>
+            </div>
+        </div>
+    </div>
+    <div id="section4" class="container-table full-height">
+        <div class="row vertical-middle text-center">
+            <div class="col-xs-12">
+                <h1 class="fs-xs-4-0">Container-table</h1>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                    look at the navigation bar while scrolling!</p>
+                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and
+                    look at the navigation bar while scrolling!</p>
+            </div>
+        </div>
+    </div>
+    <div id="section5" class="container-table full-height">
+        <div class="row vertical-middle text-center">
+            <div class="col-xs-12">
+                <h1 class="fs-xs-3.2">Use <code>.container-table</code> to adjust the height according to screen height</h1>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap-essentials.js"></script> </div>
+    <script>
+    function abc(){
+      $("#section4").scrollto();
+    }
+</script>
+</body>
+
+</html>
