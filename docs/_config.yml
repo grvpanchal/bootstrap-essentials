@@ -6,20 +6,22 @@ highlighter:      rouge
 permalink:        pretty
 
 # Server
-source:           docs
-destination:      _gh_pages
-port:             4000
 url:              http://grvpanchal.github.io/bootstrap-essentials
-baseurl:          "/bootstrap-essentials"
+
 encoding:         UTF-8
 
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Custom vars
 current_version:  0.3
-repo:             https://github.com/grvpanchal/bootstrap-essentials
+repository:       https://github.com/grvpanchal/bootstrap-essentials
 
 download:
   source:         https://github.com/grvpanchal/bootstrap-essentials/archive/v0.0.3.zip
   dist:           https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.0.3/bootstrap-0.0.3-dist.zip
+
+exclude: 
+  - .gitignore
+  - README.md
