@@ -89,6 +89,16 @@ module.exports = function (grunt) {
                 dest: 'dist/js/<%= pkg.name %>.js'
             }
         },
+        copy: {
+            docs: {
+                expand: true,
+                cwd: 'dist/',
+                src: [
+                '**/*'
+                ],
+                dest: 'docs/dist/'
+            }
+        },
         uglify: {
             options: {
                 compress: {
@@ -108,10 +118,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-autoprefixer');
     //'jshint',
-    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'csscomb', 'csslint', 'uglify']);
+    grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'concat', 'csscomb', 'csslint', 'uglify', 'copy']);
 
 };

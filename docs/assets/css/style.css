@@ -263,3 +263,8 @@ pre>code {
 #myNavmenuCanvas .navmenu-modal {
     background-color: transparent;
 }
+.footer-example .footer {
+    position: initial !important;
+    bottom: auto !important;
+    height: auto;
+}
