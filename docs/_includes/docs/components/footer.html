@@ -1,0 +1,200 @@
+<section id="footer-comp">
+    <h1 class="page-header">Footer</h2>
+
+        <p>Footers are generally made with
+            <code>.navbar-inverse</code>
+            <code>.navbar-default</code>
+            or
+            <code>.bg-primary</code> background color. The link and the text are of same color and links have an hover underline effect
+            on it.</p>
+
+        <div class="panel panel-default">
+            <div class="panel-body footer-example">
+                <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                <div class="footer navbar-default">
+                    <div class="container-fluid">
+                        <h4>Footer Links</h4>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="#">Examples</a>
+                            </li>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                        </ul>
+                        <hr class="mt-xs-0 mb-xs-10">
+                        <p>Some &copy; Copyright Stuff of Company ltd.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer navbar-inverse">
+                    <div class="container-fluid">
+                        <h4>Footer Links</h4>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="#">Examples</a>
+                            </li>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                        </ul>
+                        <hr class="mt-xs-0 mb-xs-10">
+                        <p>Some &copy; Copyright Stuff of Company ltd.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer bg-primary">
+                    <div class="container-fluid">
+                        <h4>Footer Links</h4>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="#">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="#">Examples</a>
+                            </li>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                        </ul>
+                        <hr class="mt-xs-0 mb-xs-10">
+                        <p>Some &copy; Copyright Stuff of Company ltd.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer pb-xs-0">
+                <pre class="p-xs-0 b-0 mb-xs-0"><code class="html">
+    &lt;footer class=&quot;footer navbar-default&quot; role=&quot;contentinfo&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;p&gt;
+                Some footer Content
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;footer class=&quot;footer navbar-inverse&quot; role=&quot;contentinfo&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;p&gt;
+                Some footer Content
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;footer class=&quot;footer bg-primary&quot; role=&quot;contentinfo&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+            &lt;p&gt;
+                Some footer Content
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+
+</code></pre>
+            </div>
+        </div>
+        <div class="alert alert-warning">
+            <h4>Make footers accessible</h4>
+            <p>Be sure to add a <code>role="contentinfo"</code> to help with accessibility.</p>
+        </div>
+        <div id="sticky-footer">
+            <h2>Sticky footer</h2>
+            <p>
+                <a href="https://getbootstrap.com/examples/sticky-footer/">Bootstrap Example of sticky footer</a> is by far
+                the best method (ignoring flex) for achieveing a Sticky footer. Bootstrap essentials has made class
+                <code>.has-sticky-footer</code> to make <code>.footer</code> class sticky. So, if HTML needs a sticky footer
+                use class
+                <code>.has-sticky-footer</code> on html tag
+            </p>
+            <pre><code class="html">
+    &lt;!DOCTYPE html&gt;
+    &lt;html class=&quot;has-sticky-footer&quot;&gt;
+        &lt;head&gt;
+            ...
+            &lt;style&gt;
+                /* Values of body margin-bottom and footer height should be SAME */
+                body {
+                    margin-bottom: 60px;
+                }
+                .footer {
+                    height: 60px;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+                
+        &lt;body&gt;
+            ...
+            &lt;footer class=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
+                Some footer Content
+            &lt;/footer&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+            </code></pre>
+            <div class="alert alert-danger">
+                <h4>Class on HTML tag only valid on doctype HTML5</h4>
+                Please refer to <a href="https://www.w3.org/TR/html5/dom.html#global-attributes">W3C document</a> to know
+                more.
+            </div>
+            
+            <button type="button" class="btn btn-primary mb-xs-10" data-toggle="collapse" data-target="#more-sticky">Learn More</button>
+            <div class="collapse" id="more-sticky">
+                <div class="panel panel-default panel-body mb-xs-0">
+                <h3>The logic - How to make sticky footer?</h3>
+                <p>
+                    Experts suggest solutions like <b>flex, calc and viewport height, negative margins and bottom margin</b>. Except flex the rest methods need a fixed
+                    height value. As I do not favour flex due to browser specific limitation, I favour bootstrap method and here's how its done.
+                </p>
+                <p>
+                    Three elements play role in sticky footer:
+                    <ul>
+                        <li><code>HTML</code> tag: This element is positioned relatively with minimum height of 100%.</li>
+                        <li><code>FOOTER</code> tag: This element is positioned absolute to bottom of page.</li>
+                        <li><code>BODY</code> tag: This element is give a bottom margin i.e. equal to the height of the footer.</li>
+                        
+                    </ul>
+                    
+                </p>
+                <p class="text-center lead m-xs-50 font-weight-bold">
+                    FOOTER Height = BODY Margin Bottom
+                </p>
+                
+                <h3>Step to make a Sticky footer</h3>
+                <p>
+                    There is a lot of confusion in between young developers to achieve a sticky footer. Below are the step to do a sticky footer
+                </p>
+
+                <ol class="lead">
+                    <li class="pb-sm-10"> 
+                        <p>Add a class <code>has-sticky-footer</code> to HTML tag.</p>
+                        <pre><code class="html"> &lt;html class="has-sticky-footer" &gt;</code></pre>
+                    </li>
+                    <li class="pb-sm-10"> 
+                        <p>Add a class <code>.footer</code> to your footer.</p>
+                        <pre><code class="html"> &lt;footer class="footer" &gt;</code></pre>
+                    </li>
+                    <li class="pb-sm-10"> 
+                        <p>Calculate the height of your footer and add style of <code>height: /* Your-footer-height */;</code> to your footer element</p>
+                        <pre><code class="html"> &lt;footer class="footer" style="height: 60px;"&gt;</code></pre>
+                    </li>
+                    <li> 
+                        <p>(IMPORTANT) Finally, add style of <code>margin-bottom: /* Your-footer-height */;</code> to your BODY tag</p>
+                        <pre><code class="html"> &lt;body style="margin-bottom: 60px;"&gt;</code></pre>
+                    </li>
+                </ol>
+            </div>
+            </div>
+        </div>
+</section>

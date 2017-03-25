@@ -105,9 +105,11 @@ $screen-phone:               $screen-xs-min !global;
     //
     //##
 
+    $navbar-default-color:             #777 !global;
+    $navbar-inverse-color:             lighten($gray-light, 15%) !global;
     $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !global;
-    $nav-link-padding:           10px 15px !global;
-    $navbar-inverse-border:                     darken(#222, 10%) !global;
+    $nav-link-padding:                 10px 15px !global;
+    $navbar-inverse-border:            darken(#222, 10%) !global;
 
     //== Components
     //
