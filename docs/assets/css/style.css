@@ -205,11 +205,10 @@ section[id]>h1 {
 
 .bs-navmenu-fixed-example {
     height: 200px;
-    padding-left: 315px;
 }
 
 .bs-navmenu-fixed-example:after {
-    left: 315px;
+    left: 255px;
 }
 
 .bs-navmenu-offcanvas-example {
