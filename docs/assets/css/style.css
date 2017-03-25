@@ -263,8 +263,43 @@ pre>code {
 #myNavmenuCanvas .navmenu-modal {
     background-color: transparent;
 }
+
 .footer-example .footer {
     position: initial !important;
     bottom: auto !important;
     height: auto;
+}
+
+.navbar .bootstrap-select {
+    width: auto !important;
+    margin-top: -3px;
+}
+
+.navbar .bootstrap-select .dropdown-menu {
+    min-width: 160px;
+    margin-top: 7.5px;
+    margin-right: -15px;
+}
+
+.navbar .bootstrap-select button,
+.navbar .bootstrap-select button:hover,
+.navbar .bootstrap-select button:focus,
+.navbar .bootstrap-select button:active {
+    background: none!important;
+    border: none;
+    padding: 0 !important;
+    color: inherit !important;
+    cursor: pointer;
+    box-shadow: none !important;
+    outline: none;
+    font-size: inherit;
+    font-weight: inherit;
+    text-transform: inherit;
+    outline: none !important;
+    line-height: 1 !important;
+}
+
+.navbar .bootstrap-select button.dropdown-toggle .caret {
+    position: relative;
+    margin-left: 2px;
 }
