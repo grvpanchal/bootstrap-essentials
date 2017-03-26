@@ -1,4 +1,7 @@
-# Bootstrap Essentials 
+# Bootstrap Essentials
+
+![Bower version](https://img.shields.io/bower/v/bootstrap-essentials.svg)
+[![npm version](https://img.shields.io/npm/v/bootstrap-essentials.svg)](https://www.npmjs.com/package/bootstrap-essentials)
 
 This project is specifically designed as an extention for bootstrap to provide a comprehensive support for building interfaces. It contains essential and common classes for bootstrap for faster web development.
 
