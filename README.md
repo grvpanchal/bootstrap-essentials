@@ -1,6 +1,6 @@
 # Bootstrap Essentials 
 
-This project is specifically designed as an extention for bootstrap to provide a comprehensive support for building interfaces. It contains essential and common classes for bootstrap for faster web development.\
+This project is specifically designed as an extention for bootstrap to provide a comprehensive support for building interfaces. It contains essential and common classes for bootstrap for faster web development.
 
 ## Prerequisites
 
