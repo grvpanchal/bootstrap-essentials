@@ -7,27 +7,28 @@
         >[class*=col-] {
             display: block;
         }
-        >[class^=col-xs-] {
-            display: table-cell;
-            float: none;
-        }
-        >[class*=col-sm] {
-            @media (min-width: $screen-sm) {
+
+        >[class*=col-lg]:not(.col-lg-12) {
+            @media (min-width: $screen-lg) {
                 display: table-cell;
                 float: none;
             }
         }
-        >[class*=col-md] {
+        >[class*=col-md]:not(.col-md-12) {
             @media (min-width: $screen-md) {
                 display: table-cell;
                 float: none;
             }
         }
-        >[class*=col-lg] {
-            @media (min-width: $screen-lg) {
+        >[class*=col-sm]:not(.col-sm-12) {
+            @media (min-width: $screen-sm) {
                 display: table-cell;
                 float: none;
             }
+        }
+        >[class^=col-xs-]:not(.col-xs-12) {
+            display: table-cell;
+            float: none;
         }
     }
 }

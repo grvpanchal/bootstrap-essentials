@@ -153,6 +153,7 @@ $screen-phone:               $screen-xs-min !global;
 
     // panel
     $panel-body-padding:         15px !global;
+    $panel-inner-border:          #ddd !global;
 
     //tabs
     $nav-tabs-border-color:                     #ddd !global;
@@ -181,7 +182,7 @@ $font-values : (
   '0.7',
   '0.8',
   '0.9',
-  '1',
+  '1.0',
   '1.1',
   '1.2',
   '1.3',
@@ -244,3 +245,6 @@ $navmenu-margin-vertical:           (0.5 * 20px) !default;
 
 // Navbar Slide variables
 $navbar-slide-trasition: 0.35s;
+
+//Borders
+$default-border-color: $panel-inner-border;

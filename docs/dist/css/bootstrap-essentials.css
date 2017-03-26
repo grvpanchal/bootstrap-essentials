@@ -188,26 +188,6 @@ body:not(.bse-no-conflict) .panel .panel-heading .btn-group {
   margin-top: -5px;
 }
 
-.b-0 {
-  border: 0 !important;
-}
-
-.bt-0 {
-  border-top: 0 !important;
-}
-
-.br-0 {
-  border-right: 0 !important;
-}
-
-.bb-0 {
-  border-bottom: 0 !important;
-}
-
-.bl-0 {
-  border-left: 0 !important;
-}
-
 .list-group.b-0 > .list-group-item {
   border-right: 0;
   border-left: 0;
@@ -216,6 +196,63 @@ body:not(.bse-no-conflict) .panel .panel-heading .btn-group {
 .list-group.b-0 > .list-group-item:first-child,
 .list-group.b-0 > .list-group-item:last-child {
   border-radius: 0;
+}
+
+@media (min-width: 1200px) {
+  .row-split [class*='col-lg']:not(:last-child):not(.col-ld-12) {
+    border-right: 1px solid #ddd;
+  }
+}
+
+@media (min-width: 992px) {
+  .row-split [class*='col-md']:not(:last-child):not(.col-md-12) {
+    border-right: 1px solid #ddd;
+  }
+}
+
+@media (min-width: 768px) {
+  .row-split [class*='col-sm']:not(:last-child):not(.col-sm-12) {
+    border-right: 1px solid #ddd;
+  }
+}
+
+.row-split [class*='col-xs']:not(:last-child):not(.col-xs-12) {
+  border-right: 1px solid #ddd;
+}
+
+.b {
+  border: 1px solid #ddd;
+}
+.b-0 {
+  border: 0 !important;
+}
+
+.bt {
+  border-top: 1px solid #ddd;
+}
+.bt-0 {
+  border-top: 0 !important;
+}
+
+.br {
+  border-right: 1px solid #ddd;
+}
+.br-0 {
+  border-right: 0 !important;
+}
+
+.bb {
+  border-bottom: 1px solid #ddd;
+}
+.bb-0 {
+  border-bottom: 0 !important;
+}
+
+.bl {
+  border-left: 1px solid #ddd;
+}
+.bl-0 {
+  border-left: 0 !important;
 }
 
 .row.gutter-0 {
@@ -859,8 +896,8 @@ a.btn-circle, a.btn-circle.btn-lg {
   font-size: .9em;
 }
 
-.fs-xs-1 {
-  font-size: 1em;
+.fs-xs-1-0 {
+  font-size: 1.0em;
 }
 
 .fs-xs-1-1 {
@@ -956,8 +993,8 @@ a.btn-circle, a.btn-circle.btn-lg {
     font-size: .9em;
   }
 
-  .fs-sm-1 {
-    font-size: 1em;
+  .fs-sm-1-0 {
+    font-size: 1.0em;
   }
 
   .fs-sm-1-1 {
@@ -1053,8 +1090,8 @@ a.btn-circle, a.btn-circle.btn-lg {
     font-size: .9em;
   }
 
-  .fs-md-1 {
-    font-size: 1em;
+  .fs-md-1-0 {
+    font-size: 1.0em;
   }
 
   .fs-md-1-1 {
@@ -1150,8 +1187,8 @@ a.btn-circle, a.btn-circle.btn-lg {
     font-size: .9em;
   }
 
-  .fs-lg-1 {
-    font-size: 1em;
+  .fs-lg-1-0 {
+    font-size: 1.0em;
   }
 
   .fs-lg-1-1 {
@@ -1335,27 +1372,27 @@ a.btn-circle, a.btn-circle.btn-lg {
 .container-table > .row > [class*=col-] {
   display: block;
 }
-.container-table > .row > [class^=col-xs-] {
-  display: table-cell;
-  float: none;
-}
-@media (min-width: 768px) {
-  .container-table > .row > [class*=col-sm] {
+@media (min-width: 1200px) {
+  .container-table > .row > [class*=col-lg]:not(.col-lg-12) {
     display: table-cell;
     float: none;
   }
 }
 @media (min-width: 992px) {
-  .container-table > .row > [class*=col-md] {
+  .container-table > .row > [class*=col-md]:not(.col-md-12) {
     display: table-cell;
     float: none;
   }
 }
-@media (min-width: 1200px) {
-  .container-table > .row > [class*=col-lg] {
+@media (min-width: 768px) {
+  .container-table > .row > [class*=col-sm]:not(.col-sm-12) {
     display: table-cell;
     float: none;
   }
+}
+.container-table > .row > [class^=col-xs-]:not(.col-xs-12) {
+  display: table-cell;
+  float: none;
 }
 
 .vertical-middle > * {

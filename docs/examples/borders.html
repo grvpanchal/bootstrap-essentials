@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Borders and vertical divider - Bootstrap Essentials</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="http://bootswatch.com/sandstone/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap-essentials.css">
+    <link href="https://cdn.jsdelivr.net/animatecss/3.5.1/animate.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="pt-navbar-height">
+
+
+    <div class="container mt-xs-20">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+            <div class="container">
+                <div class="navbar-right-static">
+                    <span class="navbar-text m-xs-15">
+                    <span class="visible-xs">Breakpoint: xs</span>
+                    <span class="visible-sm">Breakpoint: sm</span>
+                    <span class="visible-md">Breakpoint: md</span>
+                    <span class="visible-lg">Breakpoint: lg</span>
+                    </span>
+                </div>
+                <a class="navbar-brand" href="#">Bootstrap Essentials</a>
+
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Borders and Split row</h1>
+                <p>This is an emaple to demonstrate vertical divider on bootstrap grid system</p>
+                <p>
+                    <a class="btn btn-primary btn-lg">Learn more</a>
+                </p>
+            </div>
+        </div>
+
+        <h1>lg-grid and md-full-width</h1>
+        <div class="row">
+
+            <div class="col-sm-8">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-lg-4 col-md-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-lg-4 col-md-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-lg-6 col-md-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-lg-6 col-md-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>md-grid and sm-full-width</h1>
+        <div class="row">
+
+            <div class="col-sm-8">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-md-4 col-sm-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-md-4 col-sm-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-md-4 col-sm-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-md-6 col-sm-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-md-6 col-sm-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>sm-grid and xs-full-width</h1>
+        <div class="row">
+
+            <div class="col-sm-8">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-sm-4 col-xs-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-sm-4 col-xs-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-sm-6 col-xs-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-sm-6 col-xs-12 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>xs-grid</h1>
+        <div class="row">
+
+            <div class="col-sm-8">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-xs-4 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-xs-4 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-xs-4 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-xs-6 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-xs-6 bb text-center">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>lg-grid and xs-full-width</h1>
+        <div class="row">
+
+            <div class="col-sm-8">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-lg-4 col-xs-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-lg-4 col-xs-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-lg-4 col-xs-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split">
+                            <div class="col-lg-6 col-xs-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                            <div class="col-lg-6 col-xs-12 text-center bb">
+                                <h6>Stats</h6>
+                                <h3>50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Variable content</h1>
+        <div class="row">
+
+            <div class="col-sm-8">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split vertical-middle">
+                            <div class="col-sm-4 col-xs-12 bb text-center">
+                                Duis nisi ad eiusmod deserunt adipisicing fugiat et quis mollit ut sunt Lorem.
+                            </div>
+                            <div class="col-sm-4 col-xs-12 bb text-center">
+                                Officia cupidatat occaecat sint amet officia nostrud laboris sunt fugiat.
+                            </div>
+                            <div class="col-sm-4 col-xs-12 bb text-center">
+                                Ad deserunt Lorem Lorem esse et aute et mollit occaecat labore pariatur. Sunt labore ex eu eiusmod exercitation qui.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="container-table">
+                        <div class="row row-split vertical-middle">
+                            <div class="col-sm-6 col-xs-12 bb text-center">
+                                Duis nisi ad eiusmod deserunt adipisicing fugiat et quis mollit ut sunt Lorem
+                            </div>
+                            <div class="col-sm-6 col-xs-12 bb text-center">
+                                Content
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Normal split with container table</h1>
+        <div class="container-table mt-xs-50 mb-xs-50">
+            <div class="row row-split vertical-middle">
+                <div class="col-sm-2 col-xs-12 text-center">
+                    <p>Duis nisi ad eiusmod deserunt adipisicing fugiat et quis mollit ut sunt Lorem.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12 text-center">
+                    <p>Ad deserunt Lorem Lorem esse et aute et mollit occaecat labore pariatur. Sunt labore ex eu eiusmod exercitation qui.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12 text-center">
+                    <p>Officia cupidatat occaecat sint amet officia nostrud laboris sunt fugiat.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12 text-center">
+                   <p> Ad deserunt Lorem Lorem esse et aute et mollit occaecat labore pariatur. Sunt labore ex eu eiusmod exercitation qui.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12 text-center">
+                    <p>Duis nisi ad eiusmod deserunt adipisicing fugiat et quis mollit ut sunt Lorem.</p>
+                </div>
+                <div class="col-sm-2 col-xs-12 text-center">
+                    <p>Ad deserunt Lorem Lorem esse et aute et mollit occaecat labore pariatur. Sunt labore ex eu eiusmod exercitation qui.</p>
+                </div>
+            </div>
+        </div>
+        <h1>Normal split without container table</h1>
+        <p> To make this work make sure all the content is of same height.
+        
+        <div class="row row-split text-center">
+            
+            <div class="col-md-3">
+                <div class="m-xs-10 p-xs-30 bg-primary">Content</div>
+            </div>
+            <div class="col-md-3">
+                <div class="m-xs-10 p-xs-30 bg-primary">Content</div>
+            </div>
+            <div class="col-md-3">
+                <div class="m-xs-10 p-xs-30 bg-primary">Content</div>
+            </div>
+            <div class="col-md-3">
+                <div class="m-xs-10 p-xs-30 bg-primary">Content</div>
+            </div>
+            
+        </div>
+        
+    </div>
+    <footer class="footer navbar-default mt-xs-30">
+        
+        <div class="container">
+            <p>Some Footer Content</p>
+            
+        </div>
+        
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap-essentials.js"></script>
+</body>
+
+</html>
