@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var bse = document.getElementById('bse-css');
         var cookieCSS = readCookie('css')
         var themeSelect = document.getElementById('change-css');
-        bs.href = 'https://grvpanchal.github.io/bse-theme-compiler/dist/' + cookieCSS + '/css/' + cookieCSS + '-bootstrap.css';
-        bse.href = 'https://grvpanchal.github.io/bse-theme-compiler/dist/' + cookieCSS + '/css/' + cookieCSS + '-bootstrap-essentials.css';
+        bs.href = 'https://grvpanchal.github.io/bse-theme-compiler/dist/themes/' + cookieCSS + '/css/' + cookieCSS + '-bootstrap.css';
+        bse.href = 'https://grvpanchal.github.io/bse-theme-compiler/dist/themes/' + cookieCSS + '/css/' + cookieCSS + '-bootstrap-essentials.css';
         var opts = themeSelect.options;
         for (var opt, j = 0; opt = opts[j]; j++) {
             if (opt.value == cookieCSS) {
@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
     element.addEventListener('change', function (event) {
         var bs = document.getElementById('bs-css');
         var bse = document.getElementById('bse-css');
-        bs.href = 'https://grvpanchal.github.io/bse-theme-compiler/dist/' + this.options[this.selectedIndex].value + '/css/' + this.options[this.selectedIndex].value + '-bootstrap.css';
-        bse.href = 'https://grvpanchal.github.io/bse-theme-compiler/dist/' + this.options[this.selectedIndex].value + '/css/' + this.options[this.selectedIndex].value + '-bootstrap-essentials.css';
+        bs.href = 'https://grvpanchal.github.io/bse-theme-compiler/dist/themes/' + this.options[this.selectedIndex].value + '/css/' + this.options[this.selectedIndex].value + '-bootstrap.css';
+        bse.href = 'https://grvpanchal.github.io/bse-theme-compiler/dist/themes/' + this.options[this.selectedIndex].value + '/css/' + this.options[this.selectedIndex].value + '-bootstrap-essentials.css';
         if (readCookie('css')) {
             eraseCookie('css');
         }
