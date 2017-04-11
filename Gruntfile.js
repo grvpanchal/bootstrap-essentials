@@ -48,6 +48,14 @@ module.exports = function (grunt) {
                 files: {
                     'dist/css/<%= pkg.name %>.min.css': ['dist/css/<%= pkg.name %>.css']
                 }
+            },
+            docs: {
+                options: {
+                    banner: ''
+                },
+                files: {
+                    'docs/assets/css/style.min.css': ['docs/assets/css/style.css']
+                }
             }
         },
         csslint: {
@@ -110,6 +118,10 @@ module.exports = function (grunt) {
             core: {
                 src: '<%= concat.bootstrap.dest %>',
                 dest: 'dist/js/<%= pkg.name %>.min.js'
+            },
+            docs: {
+                src: 'docs/assets/js/style-switcher.js',
+                dest: 'docs/assets/js/style-switcher.min.js'
             },
         }
     });
