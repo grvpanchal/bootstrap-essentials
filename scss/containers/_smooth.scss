@@ -2,6 +2,9 @@
 // -------------------------
 .container-smooth {
     max-width: $container-lg;
+    &.container-md {
+        max-width: $container-md;
+    }
     @media (min-width: 1px) {
         width: auto;
     }

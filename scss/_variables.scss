@@ -216,6 +216,7 @@ $space-values : (
 ) !default;
 
 //== Containers
+$container-xs:                      480px !default;
 $container-login:                   (300px + $grid-gutter-width) !default;
 $container-login-2:                 (800px + $grid-gutter-width) !default;
 $container-login-offset:            100px;

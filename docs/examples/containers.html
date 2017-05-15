@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>All Containers for Bootstrap</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="http://bootswatch.com/sandstone/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../dist/css/bootstrap-essentials.css">
+    <link href="https://cdn.jsdelivr.net/animatecss/3.5.1/animate.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="well b-0 p-xs-0 mb-xs-0">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container panel">
+        <h1 class="text-center fs-sm-4-0">Simple Container<br/><small><code>.container</code></small></h1>
+    </div>
+
+    <div class="container-fluid panel">
+        <h1 class="text-center fs-sm-4-0">Fluid Container<br/><small><code>.container-fluid</code></small></h1>
+    </div>
+
+    <div class="container container-smooth panel">
+        <h1 class="text-center fs-sm-4-0">Smooth Container<br/><small><code>.container-smooth</code></small></h1>
+    </div>
+
+    <div class="container-login panel">
+        <h1 class="text-center fs-sm-4-0">Login Container<br/><small><code>.container-login</code></small></h1>
+    </div>
+
+    <div class="container-login-2 panel">
+        <h1 class="text-center fs-sm-4-0">2 Column Login Container<br/><small><code>.container-login-2</code></small></h1>
+    </div>
+
+
+    <div class="container panel">
+        <h1 class="text-center fs-sm-4-0">Table Container<br/><small><code>.container-table</code></small></h1>
+        <div class="container-table mb-xs-20">
+            <div class="row vertical-middle text-center row-split">
+                <div class="col-sm-4">
+                    <p>Some content</p>
+                    <p>Some content</p>
+                    <p>Some content</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Some content</p>
+                    <p>Some content</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Some content</p>
+                    <p>Some content</p>
+                    <p>Some content</p>
+                    <p>Some content</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container panel">
+        <h1 class="text-center fs-sm-4-0">Flex Container<br/><small><code>.container-flex</code></small></h1>
+        <div class="container-flex">
+            <div class="row gutter-20 gutter-justified">
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default flex-col">
+                        <div class="panel-heading">Title flex-col</div>
+                        <div class="panel-body flex-grow">Content here -- div with .flex-grow</div>
+                        <div class="panel-footer">Footer</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Title</div>
+                        <div class="panel-body">Content here -- div with no footer</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        Duis pharetra varius quam sit amet vulputate.
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="well">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue,
+                        molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
+                        nisi.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container-xs container-smooth">
+        <div class="page-header">
+            <h1>Different size Containers (for reading text)</h1>
+        </div>
+    </div>
+    <div class="container panel" style="max-width:480px">
+        <h1 class="text-center">Container XS<br/><small><code>.container-xs</code></small></h1>
+        <p>
+            Occaecat fugiat et dolore culpa nulla Lorem. Ea voluptate nisi anim laboris irure reprehenderit. Aliquip in aute amet aute
+            ex fugiat consectetur. Enim nisi velit eu nostrud dolore ullamco consequat.
+        </p>
+        <p>
+            Aliquip ad ut voluptate nostrud adipisicing ut. Et mollit exercitation do ea nisi. Labore occaecat aute qui sunt nisi mollit
+            culpa voluptate ea reprehenderit est magna sint. Sunt aute enim duis non ea nulla amet consectetur. Culpa minim
+            eiusmod eiusmod mollit. Enim incididunt irure reprehenderit quis sint aliquip aliqua reprehenderit amet.
+        </p>
+    </div>
+    <div class="container container-sm panel" style="max-width:750px">
+        <h1 class="text-center">Container SM<br/><small><code>.container-sm</code></small></h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>
+                    Incididunt irure quis culpa aliqua amet exercitation irure excepteur irure magna deserunt in anim. Minim et dolor nulla quis
+                    ut incididunt enim. Nisi magna do nostrud sint do officia ullamco veniam eiusmod cillum exercitation
+                    aute labore.
+                </p>
+                <p>
+                    Cillum nostrud dolor eu anim qui culpa duis enim eu nostrud cillum aute id. Duis proident nostrud cillum deserunt dolor proident.
+                    Ad est sit id mollit exercitation.
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <p>
+                    Nostrud do reprehenderit consequat in labore incididunt qui deserunt elit. Id non ea sint veniam quis ipsum ea ea cupidatat
+                    ipsum dolor. Amet nisi cupidatat deserunt enim aute do ea veniam irure adipisicing fugiat.
+                </p>
+                <p>
+                    Sunt in aliqua cupidatat excepteur non eiusmod et dolor sint. Laborum eiusmod minim adipisicing in incididunt culpa eiusmod
+                    cillum qui do amet consequat. Aute laboris veniam dolor cillum mollit irure cillum excepteur enim occaecat
+                    anim esse Lorem eiusmod. Esse non ut sit laborum dolore.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container container-md panel">
+        <h1 class="text-center">Container MD<br/><small><code>.container-md</code></small></h1>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <p>
+                    Incididunt irure quis culpa aliqua amet exercitation irure excepteur irure magna deserunt in anim. Minim et dolor nulla quis
+                    ut incididunt enim. Nisi magna do nostrud sint do officia ullamco veniam eiusmod cillum exercitation
+                    aute labore.
+                </p>
+                <p>
+                    Cillum nostrud dolor eu anim qui culpa duis enim eu nostrud cillum aute id. Duis proident nostrud cillum deserunt dolor proident.
+                    Ad est sit id mollit exercitation.
+                </p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <p>
+                    Nostrud do reprehenderit consequat in labore incididunt qui deserunt elit. Id non ea sint veniam quis ipsum ea ea cupidatat
+                    ipsum dolor. Amet nisi cupidatat deserunt enim aute do ea veniam irure adipisicing fugiat.
+                </p>
+                <p>
+                    Sunt in aliqua cupidatat excepteur non eiusmod et dolor sint. Laborum eiusmod minim adipisicing in incididunt culpa eiusmod
+                    cillum qui do amet consequat. Aute laboris veniam dolor cillum mollit irure cillum excepteur enim occaecat
+                    anim esse Lorem eiusmod. Esse non ut sit laborum dolore.
+                </p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <p>
+                    Labore aute ut fugiat fugiat culpa elit do commodo ut velit id incididunt Lorem ipsum. Dolore cillum eiusmod qui sit culpa
+                    duis consequat dolore. Pariatur labore aliqua reprehenderit cupidatat tempor dolor mollit. Id est enim
+                    commodo ut eu amet non. Sit eu Lorem magna velit. Velit eu est qui Lorem tempor do consequat cillum ipsum.
+                </p>
+                <p>
+                    Aute laboris veniam dolor cillum mollit irure cillum excepteur enim occaecat anim esse Lorem eiusmod. Esse non ut sit laborum
+                    dolore.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container panel">
+        <h1 class="text-center">Container (LG)<br/><small><code>.container</code></small></h1>
+    </div>
+
+    <div class="container container-smooth">
+        <div class="page-header">
+            <h1>Smooth MD size Container</h1>
+        </div>
+    </div>
+    <div class="container panel container-smooth container-md">
+        <h1 class="text-center">Container MD with smooth<br/><small><code>.container-md</code></small></h1>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <p>
+                    Incididunt irure quis culpa aliqua amet exercitation irure excepteur irure magna deserunt in anim. Minim et dolor nulla quis
+                    ut incididunt enim. Nisi magna do nostrud sint do officia ullamco veniam eiusmod cillum exercitation
+                    aute labore.
+                </p>
+                <p>
+                    Cillum nostrud dolor eu anim qui culpa duis enim eu nostrud cillum aute id. Duis proident nostrud cillum deserunt dolor proident.
+                    Ad est sit id mollit exercitation.
+                </p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <p>
+                    Nostrud do reprehenderit consequat in labore incididunt qui deserunt elit. Id non ea sint veniam quis ipsum ea ea cupidatat
+                    ipsum dolor. Amet nisi cupidatat deserunt enim aute do ea veniam irure adipisicing fugiat.
+                </p>
+                <p>
+                    Sunt in aliqua cupidatat excepteur non eiusmod et dolor sint. Laborum eiusmod minim adipisicing in incididunt culpa eiusmod
+                    cillum qui do amet consequat. Aute laboris veniam dolor cillum mollit irure cillum excepteur enim occaecat
+                    anim esse Lorem eiusmod. Esse non ut sit laborum dolore.
+                </p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <p>
+                    Labore aute ut fugiat fugiat culpa elit do commodo ut velit id incididunt Lorem ipsum. Dolore cillum eiusmod qui sit culpa
+                    duis consequat dolore. Pariatur labore aliqua reprehenderit cupidatat tempor dolor mollit. Id est enim
+                    commodo ut eu amet non. Sit eu Lorem magna velit. Velit eu est qui Lorem tempor do consequat cillum ipsum.
+                </p>
+                <p>
+                    Aute laboris veniam dolor cillum mollit irure cillum excepteur enim occaecat anim esse Lorem eiusmod. Esse non ut sit laborum
+                    dolore.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../dist/js/bootstrap-essentials.js"></script>
+</body>
+
+</html>

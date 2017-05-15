@@ -1279,8 +1279,23 @@ a.btn-circle, a.btn-circle.btn-lg {
   text-decoration: none !important;
 }
 
+.container-xs {
+  max-width: 480px;
+}
+
+.container-sm {
+  max-width: 750px;
+}
+
+.container-md {
+  max-width: 970px;
+}
+
 .container-smooth {
   max-width: 1170px;
+}
+.container-smooth.container-md {
+  max-width: 970px;
 }
 @media (min-width: 1px) {
   .container-smooth {
@@ -1393,27 +1408,6 @@ a.btn-circle, a.btn-circle.btn-lg {
 .container-table > .row > [class^=col-xs-]:not(.col-xs-12) {
   display: table-cell;
   float: none;
-}
-
-.vertical-middle > * {
-  vertical-align: middle;
-}
-
-.vertical-top > * {
-  vertical-align: top;
-}
-
-.vertical-center > * {
-  vertical-align: bottom;
-}
-
-.fill {
-  width: 100%;
-  height: 100%;
-}
-
-.full-height {
-  height: 100%;
 }
 
 .container-login {
@@ -1644,6 +1638,37 @@ body:not(.bse-no-conflict) [class*="container"] > .navbar-toggle.pull-left {
     width: 100% !important;
   }
 }
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.vertical-middle > * {
+  vertical-align: middle;
+}
+.vertical-top > * {
+  vertical-align: top;
+}
+.vertical-bottom > * {
+  vertical-align: bottom;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
 .p-xs-0 {
   padding: 0 !important;
 }

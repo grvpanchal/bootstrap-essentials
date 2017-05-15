@@ -21,3 +21,38 @@
         width: 100% !important;
     }
 }
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.vertical {
+    &-middle>* {
+    vertical-align: middle;
+    }
+
+    &-top>* {
+        vertical-align: top;
+    }
+
+    &-bottom>* {
+        vertical-align: bottom;
+    }
+}
+
+.fill {
+    height: 100%;
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
