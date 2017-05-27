@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+{% include fulldocs/head.html %}
+
+<body id="body" class="pt-navbar-height" style="margin-bottom:160px;">
+
+    {% include fulldocs/navbar.html %}
+    {% include fulldocs/classes/navmenu.html %}
+    
+    <div class="container-fluid pl-sm-30 pr-sm-30 pb-xs-50">
+            <div class="pull-right p-sm-20 hidden-xs">
+    {% for tag in page.tags %}
+        <span class="label 
+        {% if tag == 'bootstrap' %} label-info {% endif %}
+        {% if tag == 'bootstrap-essentials' %} label-warning {% endif %}
+        {% if tag == 'jasny' %} label-danger {% endif %}
+        {% if tag == 'css' %} label-default {% endif %}
+        {% if tag == 'component' %} label-success {% endif %}
+        ">{{ tag }}</span>
+    {% endfor %}
+</div>
+<div class="page-header">
+    <h1>{{page.title}} <small><code>{{page.class}}</code></small></h1>
+    
+    <ol class="breadcrumb">
+        <li>
+            <a href="{{site.github.url}}/fulldocs">Documentation</a>
+        </li>
+        <li>
+            <a href="{{site.github.url}}/fulldocs/classes">Classes</a>
+        </li>
+        <li class="active">{{page.title}}</li>
+    </ol>
+    
+</div>
+<h2>Description</h2>
+<p class="lead">
+    {{page.description}}
+</p>
+<hr/>
+<h2>Use Cases</h2>
+            <!--Main Content -->
+            {{content}}
+         
+    </div>
+    {% include fulldocs/footer.html %}
+</body>
+
+</html>

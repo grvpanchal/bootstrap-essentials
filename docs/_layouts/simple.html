@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" >
+{% include fulldocs/head.html %}
+
+<body id="body" class="pt-navbar-height" style="margin-bottom:160px;">
+
+    {% include fulldocs/navbar.html %}
+    {% include fulldocs/navmenu.html %}
+    
+    <div class="container-fluid pb-xs-50">
+        <div class="row">
+            <!--Main Content -->
+            {{content}}
+        </div>
+    </div>
+    {% include fulldocs/footer.html %}
+</body>
+
+</html>
