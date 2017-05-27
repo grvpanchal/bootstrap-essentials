@@ -30,8 +30,23 @@
     background-color: transparent;
 }
 
+.bg-well {
+    background-color: $well-bg;
+}
+
+.bg-jumbotron {
+    background-color: $jumbotron-bg;
+}
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: rgb(65, 65, 65);
+}
+
 .text-white {
-    color: #fff;
+    color: #fff !important;
 }
 
 .vertical {

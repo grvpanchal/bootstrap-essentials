@@ -15,7 +15,7 @@ gems:
   - jekyll-seo-tag
 
 # Custom vars
-current_version:  0.4
+current_version:  0.5
 repository:       https://github.com/grvpanchal/bootstrap-essentials
 
 download:
