@@ -162,6 +162,10 @@ $screen-phone:               $screen-xs-min !global;
     $navbar-height: 50px !global;
     $navbar-padding-vertical: 15px !global;
     $navbar-padding-horizontal: 15px !global;
+
+    //Background Colors
+    $well-bg:                     #f5f5f5 !global;
+    $jumbotron-bg:                #eee !global;
 }
 
 $grid-breakpoints-custom: (
