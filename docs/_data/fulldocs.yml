@@ -1,58 +1,33 @@
 css:
     - title: Overview
       slug: overview
-      menu:
-        - title: HTML5 doctype
-          slug: overview-doctype
-
-        - title: Mobile first
-          slug: overview-mobile
-        - title: Typography and links
-          slug: overview-type-links
-        - title: Normalize.css
 
     - title: Containers
       slug: containers
+      menu: 
+      - title: Fluid Container
+        slug: container-fluid
+
+      - title: Smooth Container
+        slug: container-smooth
+
+      - title: Container Sizes
+        slug: container-sizes
+
+      - title: Login Container
+        slug: container-login
+
+      - title: Table Container
+        slug: container-table
+
+      - title: Flex Container
+        slug: container-flex
 
     - title: Grid system
       slug: grid
-      menu:
-        - title: Media queries
-          slug: grid-media-queries
 
-        - title: Grid options
-          slug: grid-options
-
-        - title: Stacked-to-horizontal
-          slug: grid-example-basic
-
-        - title: Fluid container
-          slug: grid-example-fluid
-
-        - title: Mobile and desktop
-          slug: grid-example-mixed
-
-        - title: Mobile, tablet, desktop
-          slug: grid-example-mixed-complete
-
-        - title: Column wrapping
-          slug: grid-example-wrapping
-
-        - title: Responsive column resets
-          slug: grid-responsive-resets
-
-        - title: Offsetting columns
-          slug: grid-offsetting
-
-        - title: Nesting columns
-          slug: grid-nesting
-
-        - title: Column ordering
-          slug: grid-column-ordering
-
-        - title: Less mixins and variables
-          slug: grid-less
-
+    - title: Gutter
+      slug: gutter
 
     - title: Typography
       slug: type
@@ -105,7 +80,7 @@ css:
         - title: Sample output
           slug: code-sample-output
 
-    - title: tables
+    - title: Tables
       slug: tables
       menu:
         - title: Striped rows
@@ -137,6 +112,9 @@ css:
 
         - title: Supported controls
           slug: forms-controls
+
+        - title: File Input Control
+          slug: forms-control-file
 
         - title: Static control
           slug: forms-controls-static
@@ -171,6 +149,18 @@ css:
         - title: Sizes
           slug: buttons-sizes
 
+        - title: Outline
+          slug: buttons-outline
+
+        - title: Rounded
+          slug: buttons-rounded
+
+        - title: Circle
+          slug: buttons-circle
+
+        - title: Action
+          slug: buttons-action
+
         - title: Active state
           slug: buttons-active
 
@@ -180,44 +170,11 @@ css:
     - title: Images
       slug: images
       menu:
-        - title: Responsive images
-          slug: images-responsive
-
         - title: Image shapes
           slug: images-shapes
 
     - title: Helper Classes
-      slug: helper-classes
-      menu:
-        - title: Contextual colors
-          slug: helper-classes-colors
-
-        - title: Contextual backgrounds
-          slug: helper-classes-backgrounds
-
-        - title: Close icon
-          slug: helper-classes-close
-
-        - title: Carets
-          slug: helper-classes-carets
-
-        - title: Quick floats
-          slug: helper-classes-floats
-
-        - title: Center content blocks
-          slug: helper-classes-center
-
-        - title: Clearfix
-          slug: helper-classes-clearfix
-
-        - title: Showing and hiding content
-          slug: helper-classes-show-hide
-
-        - title: Screen reader and keyboard navigation content
-          slug: helper-classes-screen-readers
-
-        - title: Image replacement
-          slug: helper-classes-image-replacement
+      slug: helpers
 
     - title: Responsive Classes
       slug: responsive-utilities
@@ -231,7 +188,20 @@ css:
         - title: Test cases
           slug: responsive-utilities-tests
 
+    - title: Borders
+      slug: borders
+      menu: 
+        - title: Row Split
+          slug: borders-row-split
+
+        - title: No Border
+          slug: borders-no-border
+
+
 components:
+    - title: Avatar
+      slug: avatar
+
     - title: Glyphicons
       slug: glyphicons
       menu:
@@ -349,6 +319,9 @@ components:
         - title: Component alignment
           slug: navbar-component-alignment
 
+        - title: Right Static
+          slug: navbar-right-static
+
         - title: Fixed to top
           slug: navbar-fixed-top
 
@@ -360,6 +333,33 @@ components:
 
         - title: Inverted navbar
           slug: navbar-inverted
+
+        - title: Sliding navbar
+          slug: navbar-slide
+
+        - title: Submenu
+          slug: navbar-submenu
+
+    - title: Navmenu
+      slug: navmenu
+      menu:
+        - title: Default navmenu
+          slug: navmenu-default
+
+        - title: Fixed to left or right
+          slug: navmenu-fixed
+
+        - title: offcanvas
+          slug: navmenu-offcanvas
+
+        - title: Inverted Navmenu
+          slug: navmenu-inverse
+
+    - title: Footer
+      slug: footer
+      menu:
+        - title: Sticky footer
+          slug: footer-sticky
 
     - title: Breadcrumbs
       slug: breadcrumbs

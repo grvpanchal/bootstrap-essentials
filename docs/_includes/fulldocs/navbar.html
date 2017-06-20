@@ -18,8 +18,8 @@
 			</div>
 			<div id="navbar" class="navbar-slide offcanvas">
 				<ul class="nav navbar-nav">
-					<li {% if page.url == "/fulldocs/css/" %} class="active" {% endif %}><a href="{{site.github.url}}/fulldocs/css">CSS</a></li>
-					<li {% if page.url == "/fulldocs/components/" %} class="active" {% endif %}><a href="{{site.github.url}}/fulldocs/components">Components</a></li>
+					<li {% if page.category == "css" %} class="active" {% endif %}><a href="{{site.github.url}}/fulldocs/css">CSS</a></li>
+					<li {% if page.category == "components" %} class="active" {% endif %}><a href="{{site.github.url}}/fulldocs/components">Components</a></li>
 				</ul>
 				
 				<ul class="nav navbar-nav navbar-right">
