@@ -1,0 +1,37 @@
+<p>Add either <code>.navmenu-fixed-left</code> or <code>.navmenu-fixed-right</code>.</p>
+                    <div class="panel panel-default">
+                    <div class="panel-body bs-navmenu-fixed-example">
+                        
+                        <nav class="navmenu navbar-default navmenu-fixed-left" role="navigation">
+                            <a class="navbar-brand" href="#">Brand</a>
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- /example -->
+                    <div class="panel-footer pb-xs-0">
+                        <pre class="p-xs-0 b-0 mb-xs-0"><code class="html">
+    &lt;nav class=&quot;navmenu navbar-default navmenu-fixed-left offcanvas-sm&quot; role=&quot;navigation&quot;&gt;
+            ...
+    &lt;/nav&gt;
+                        </code></pre>
+                    </div>
+                </div>
+
+                    <div class="alert alert-danger">
+                        <h4>Body padding required</h4>
+                        <p>The fixed navmenu will overlay your other content, unless you add <code>padding</code> to the left or right of the <code>&lt;body&gt;</code>. Try out your own values or use our snippet below. Tip: By default, the navmenu is 240px wide.</p>
+                        <div class="highlight">
+                            <pre><code class="css">
+    @media (min-width: 992px) {
+        body {
+            padding-left: 240px;
+        }
+    }
+                            </code></pre>
+                        </div>
+                        <p>Make sure to include this <strong>after</strong> the Jasny Bootstrap CSS.</p>
+                    </div>

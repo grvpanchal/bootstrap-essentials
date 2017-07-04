@@ -1,0 +1,14 @@
+<p>As per jasny suggestions, we have added <code>.container-smooth</code> a container to use the
+    same <code>max-width</code> for all view-port sizes. This means that the container size won't
+    jump at media query breakpoints.</p>
+<pre><code class="css">
+    .container-smooth {
+        max-width: 1170px;
+    }
+    @media (min-width: 1px) {
+        .container-smooth {
+            width: auto;
+        }
+    }
+    </code></pre>
+</div>

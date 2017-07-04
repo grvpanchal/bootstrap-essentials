@@ -1,8 +1,4 @@
 css:
-    - title: Overview
-      menu-title: Overview
-      slug: overview
-
     - title: Containers
       menu-title: Containers
       slug: containers
@@ -119,7 +115,7 @@ css:
           menu-title: Hover rows
           slug: tables-hover-rows
 
-        - title: Table with Condensed table
+        - title: Table with Condensed Rows
           menu-title: Condensed table
           slug: tables-condensed
 
@@ -183,10 +179,6 @@ css:
       menu-title: Buttons
       slug: buttons
       menu:
-        - title: Button tags
-          menu-title: Button tags
-          slug: buttons-tags
-
         - title: Button Options
           menu-title: Options
           slug: buttons-options
@@ -462,7 +454,7 @@ components:
           slug: navmenu-fixed
 
         - title: Navmenu offcanvas
-          menu-title: offcanvas
+          menu-title: Offcanvas
           slug: navmenu-offcanvas
 
         - title: Inverted Navmenu
@@ -560,10 +552,6 @@ components:
         - title: List group with Badges
           menu-title: Badges
           slug: list-group-badges
-
-        - title: List group with Linked items
-          menu-title: Linked items
-          slug: list-group-linked
 
         - title: List group with Linked items
           menu-title: Linked items

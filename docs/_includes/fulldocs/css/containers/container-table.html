@@ -1,0 +1,89 @@
+<div id="table">
+    <p><code>.container-table</code> provides a better option to to <code>vertical-align:
+                  middle</code> for <code>col-*</code></p>
+                            <div class="alert alert-danger">
+                                <strong>Note:</strong> You need to add <code>.vertical-middle text-center</code> and define
+                                height to make in align it in middle.
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <style>
+                                        @media (min-width: 768px) {
+                                            #contable {
+                                                height: 200px;
+                                            }
+                                        }
+                                        
+                                        #contable,
+                                        #contable .row,
+                                        #contable .row>div {
+                                            border: 1px solid #333;
+                                        }
+                                    </style>
+                                    <div class="container-table" id="contable">
+                                        <div class="row vertical-middle text-center">
+                                            <div class="col-sm-4 col-md-8 col-lg-4 text-center">
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                            </div>
+                                            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                            </div>
+                                            <div class="col-sm-4 hidden-md col-lg-4 text-center">
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer pb-xs-0 ">
+                                    <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;style&gt;
+        @media (min-width: 768px) {
+            #contable {
+                height: 200px;
+            }
+        }
+        #contable,
+        #contable .row,
+        #contable .row &gt; div {
+            border: 1px solid #333;
+        }
+    &lt;/style&gt;
+
+    &lt;div class=&quot;container-table&quot; id=&quot;contable&quot;&gt;
+        &lt;div class=&quot;row vertical-middle text-center&quot; &gt;
+            &lt;div class=&quot;col-sm-4 col-md-8 col-lg-4 text-center&quot;&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 col-md-4 col-lg-4 text-center&quot;&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 hidden-md col-lg-4 text-center&quot;&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;      
+                        </code></pre>
+                                </div>
+                            </div>
+                            <div class="alert alert-danger">
+                                <strong>Note:</strong> <code>.container-table</code> can only manage 12 columns in a <code>.row</code>.
+                                further rows are required to adjust additional columns
+                            </div>
+                            <h3>Full Page</h3>
+                            <p>Another use of container is to generate full height and width container with text in center.
+                                The table functions just like <a href="http://alvarotrigo.com/fullPage/">fullpage.js</a>                                with minimal amount of CSS.</p>
+                            <p>Please <a href="../examples/fullpage.html" target="_blank">Click here</a> to view the Demo</p>
+                        </div>
