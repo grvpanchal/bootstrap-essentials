@@ -43,10 +43,6 @@ css:
           menu-title: Headings
           slug: type-headings
 
-        - title: Body copy
-          menu-title: Body copy
-          slug: type-body-copy
-
         - title: Inline text elements
           menu-title: Inline text elements
           slug: type-inline-text
@@ -235,6 +231,18 @@ css:
           menu-title: Print classes
           slug: responsive-utilities-print
 
+        - title: Responsive Margin
+          menu-title: Margin
+          slug: responsive-utilities-margin
+          
+        - title: Responsive Padding
+          menu-title: Padding
+          slug: responsive-utilities-padding
+          
+        - title: Responsive Font Size
+          menu-title: Font Size
+          slug: responsive-utilities-font-size
+          
         - title: Responsiveness Test cases
           menu-title: Test cases
           slug: responsive-utilities-tests

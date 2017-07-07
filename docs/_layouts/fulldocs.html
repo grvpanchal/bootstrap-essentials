@@ -21,24 +21,23 @@
 </div>
 <div class="page-header">
     <h1>{{page.title}} <small><code>{{page.class}}</code></small></h1>
-    
-    <ol class="breadcrumb">
-        <li>
-            <a href="{{site.github.url}}/fulldocs">Documentation</a>
-        </li>
-        <li>
-            <a href="{{site.github.url}}/fulldocs/classes">CSS</a>
-        </li>
-        <li class="active">{{page.title}}</li>
-    </ol>
-    
+    {% include nav-breadcrumbs.html %}
 </div>
 
 <!--Main Content -->
-{{content}}
+<div class="row">
+    <div class="col-xs-12 col-lg-10">
+        {{content}}
+        {% include fulldocs/more-options.html %}
+    </div>
+    <div class="col-lg-2 hidden-lg">
+
+    </div>
+</div>
     </div>
 {% include fulldocs/footer.html %}
 
 </body>
 
 </html>
+

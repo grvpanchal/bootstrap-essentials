@@ -1,0 +1,21 @@
+{% assign more-options = site.data.fulldocs[page.category] | where_exp:"item", "item.slug == page.slug" %}
+{% if more-options[0].menu %}
+<div id="more_options">
+    <div class="page-header">
+        <h2>More Options</h2>
+    </div>
+    <div class="container-flex">
+        <div class="row gutter-20">
+        {% for item in more-options[0].menu %}
+            <div class="col-xs-6 col-sm-4">
+                <a href="{{site.github.url}}/fulldocs/{{page.category}}/{{page.slug}}/{{item.slug}}" class="thumbnail no-underline btn-block">
+                    <div class="caption">
+                        <h3>{{item.title}}</h3>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
