@@ -5,8 +5,14 @@ highlighter:      rouge
 # Permalinks
 permalink:        pretty
 
+title: Bootstrap Essentials
+description: Essential and common classes for bootstrap for faster web development
+
 # Server
 url:              http://grvpanchal.github.io/bootstrap-essentials
+
+author:
+  twitter: grvpanchal
 
 encoding:         UTF-8
 
@@ -15,12 +21,14 @@ gems:
   - jekyll-seo-tag
 
 # Custom vars
-current_version:  0.5
+bootstrap_version: 3.3.7
+current_version:  0.5.0
 repository:       https://github.com/grvpanchal/bootstrap-essentials
 
 download:
-  source:         https://github.com/grvpanchal/bootstrap-essentials/archive/v0.0.3.zip
-  dist:           https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.0.3/bootstrap-0.0.3-dist.zip
+  source:         https://github.com/grvpanchal/bootstrap-essentials/archive/v0.5.0.zip
+  dist:           https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.5.0/bootstrap-essentials-0.5.0-dist.zip
+  bootstrap:       https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip
 
 exclude: 
   - .gitignore

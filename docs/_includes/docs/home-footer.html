@@ -1,4 +1,7 @@
-<footer class="footer pb-xs-30 navbar-inverse" role="contentinfo">
+<footer class="footer pb-xs-30 navbar-inverse" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+	<meta itemprop="name" content="Webpage footer for {{page.title}}"/>
+  <meta itemprop="description" content="Bootstrap Essentials designed by @grvpanchal and maintained by Söoryen Innovation Labs"/>
+  <meta itemprop="keywords" content="grvpanchal, mdo, fat, bootstrap, bootstrap-essentials"/>
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -40,7 +43,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Select Theme</h4>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-center">
         </a>
         </div>
       </div>
@@ -56,7 +59,7 @@
 <script type="text/javascript" src="{{site.github.url}}/assets/js/style-switcher.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function () {
-		if(window.innerWidth < 768) {
+		if(window.innerWidth < 992) {
 			var themeselect = $('#themeSelector').html();
 			$('#themeSelector').remove();
 			$('#themeModal .modal-body').append(themeselect);
