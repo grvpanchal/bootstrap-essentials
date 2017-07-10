@@ -1,5 +1,9 @@
+<header role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+	<meta itemprop="name" content="{{page.title}}"/>
+    <meta itemprop="description" content="{{page.lead}}"/>
+    <meta itemprop="keywords" content="{{page.keywords}}"/>
 <!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-fixed-top navbar-slide-nav mb-xs-0" role="navigation">
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-slide-nav mb-xs-0" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
 		<div class="container">
 			<div class="navbar-right-static">
 				
@@ -18,11 +22,11 @@
 			</div>
 			<div id="navbar" class="navbar-slide offcanvas">
 				<ul class="nav navbar-nav">
-					<li {% if page.url == "/getting-started/" %} class="active" {% endif %}><a href="{{site.github.url}}/getting-started">Getting Started</a></li>
+					<li {% if page.url == "/getting-started/" %} class="active" {% endif %}><a href="{{site.github.url}}/getting-started" itemprop="url"><span itemprop="name">Getting Started</span></a></li>
 					<li {% if page.url == "/css/" %} class="active" {% endif %}><a href="{{site.github.url}}/css">CSS</a></li>
-					<li {% if page.url == "/components/" %} class="active" {% endif %}><a href="{{site.github.url}}/components">Components</a></li>
-					<li {% if page.url == "/javascript/" %} class="active" {% endif %}><a href="{{site.github.url}}/javascript">JavaScript</a></li>
-					<li {% if page.url == "/fulldocs/" %} class="active" {% endif %}><a href="{{site.github.url}}/fulldocs">Full Docs</a></li>
+					<li {% if page.url == "/components/" %} class="active" {% endif %}><a href="{{site.github.url}}/components" itemprop="url"><span itemprop="name">Components</span></a></li>
+					<li {% if page.url == "/javascript/" %} class="active" {% endif %}><a href="{{site.github.url}}/javascript" itemprop="url"><span itemprop="name">JavaScript</span></a></li>
+					<li {% if page.url == "/fulldocs/" %} class="active" {% endif %}><a href="{{site.github.url}}/fulldocs" itemprop="url"><span itemprop="name">Full Docs</span></a></li>
 				</ul>
 				
 				<ul class="nav navbar-nav navbar-right">
@@ -50,3 +54,4 @@
 			<!--/.nav-collapse -->
 		</div>
 	</nav>
+</header>

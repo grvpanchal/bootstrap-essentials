@@ -1,7 +1,7 @@
----
-title: Classes
-layout: simple
-category: classes
+--- 
+title: Classes 
+layout: simple 
+category: classes 
 description: Listing all bootstrap and bootstrap essentials classes.
 ---
 
@@ -12,3 +12,19 @@ description: Listing all bootstrap and bootstrap essentials classes.
     </div>
 </div>
 
+
+<div class="container container-md">
+    <p class="lead">We have listed all the classes included in bootstrap and bootstrap essentials and generated a usage information to help
+        you understand individual classes in better</p>
+    <div class="page-header"><h2>All Available Classes</h2></div>
+    <ul class="list-inline">
+        {% for item in site.data.classes %}
+            <li>
+                {% assign filename = item.class-name | remove: "." %}
+                <a href="{{site.github.url}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">
+                    {{ item.class-name }}
+                </a>
+            </li>      
+        {% endfor %}
+    </ul>
+</div>

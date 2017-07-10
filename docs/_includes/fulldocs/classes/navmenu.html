@@ -1,7 +1,7 @@
-<div class="navmenu navbar-default navmenu-fixed-left offcanvas-xs mt-xs-50">
+<nav class="navmenu navbar-default navmenu-fixed-left offcanvas-xs mt-navbar-height" id="navmenu">
     <ul class="nav navbar-nav">
         {% for item in site.data.classes %}
-            <li class="{% if item.class-name == page.slug %} active {% endif %}">
+            <li class="{% if item.class-name == page.class %} active {% endif %}">
                     {% assign filename = item.class-name | remove: "." %}
                 <a href="{{site.github.url}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">
                     {{ item.class-name }}
@@ -9,4 +9,4 @@
             </li>      
         {% endfor %}
     </ul>
-</div>
+</nav>

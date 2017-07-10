@@ -2,7 +2,7 @@
 <html lang="en" class="has-sticky-footer">
 {% include fulldocs/head.html %}
 
-<body id="body" class="pt-navbar-height">
+<body id="body" class="pt-navbar-height" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
     {% include fulldocs/navbar.html %}
     {% include fulldocs/navmenu.html %}
@@ -29,14 +29,17 @@
     <div class="col-xs-12 col-lg-10">
         {{content}}
         <p>
-            <span class="h5"><strong>Related classes:</strong></span>
-            <ul class="list-inline separated text-muted">
             {% assign classes = site.data.classes | where_exp:"class", "class.category == page.slug" %}
-            {% for class in classes %}
-                {% assign filename = class.class-name | remove: "." %}
-                <li><a href="{{site.github.url}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">{{ class.class-name }} </a></li>
-            {% endfor %}
-            </ul>
+            {% if classes[0] %}
+                <span class="h5"><strong>Related classes:</strong></span>
+                <ul class="list-inline separated text-muted">
+                {% for class in classes %}
+                    {% assign filename = class.class-name | remove: "." %}
+                    <li><a href="{{site.github.url}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">{{ class.class-name }} </a></li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+            
         </p>
         {% include fulldocs/more-options.html %}
     </div>

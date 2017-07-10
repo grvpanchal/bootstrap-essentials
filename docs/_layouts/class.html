@@ -2,7 +2,7 @@
 <html lang="en" class="has-sticky-footer">
 {% include fulldocs/head.html %}
 
-<body id="body" class="pt-navbar-height" style="margin-bottom:160px;">
+<body id="body" class="pt-navbar-height" style="margin-bottom:160px;" itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
     {% include fulldocs/navbar.html %}
     {% include fulldocs/classes/navmenu.html %}
@@ -21,18 +21,10 @@
 </div>
 <div class="page-header">
     <h1>{{page.title}} <small><code>{{page.class}}</code></small></h1>
-    
-    <ol class="breadcrumb">
-        <li>
-            <a href="{{site.github.url}}/fulldocs">Documentation</a>
-        </li>
-        <li>
-            <a href="{{site.github.url}}/fulldocs/classes">Classes</a>
-        </li>
-        <li class="active">{{page.title}}</li>
-    </ol>
-    
+    {% include nav-breadcrumbs.html %}    
 </div>
+<div class="row">
+    <div class="col-xs-12 col-lg-9">
 <h2>Description</h2>
 <p class="lead">
     {{page.description}}
@@ -73,6 +65,11 @@
 </div>
     <!--Main Content -->
     {{content}}
+    </div>
+    <div class="col-lg-3 visible-lg">
+
+    </div>
+</div>
          
     </div>
     {% include fulldocs/footer.html %}

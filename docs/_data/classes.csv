@@ -56,6 +56,7 @@ a"
 .breadcrumb,Breadcrumbs,A pagination. Indicates the current pages location within a navigational hierarchy,Component,breadcrumbs,bootstrap,,-,-,ol
 .btn,Common Button Class ,This class creates a basic button (gray background and rounded corners) and also sets the spacing and size of the button.,CSS,buttons,bootstrap,,-,-,"button,  a, input"
 .btn-block,Button Block,Creates a block level button that spans the entire width of the parent element.,CSS,buttons-sizes,bootstrap,,".btn, .btn-color",-,"button,  a, input"
+.btn-block-xs,Button Block for mobile devices,Creates a block level button that spans the entire width of the parent element in mobile screens.,CSS,buttons-sizes,bootstrap,,".btn, .btn-color",-,"button,  a, input"
 .btn-danger,Button Danger,It defaults to a red background button. Which Indicates danger or a negative action.,CSS,buttons-options,bootstrap,,".btn, .btn-color",-,"button,  a, input"
 .btn-default,Button Default,It defaults to a white background button with dark gray border.,CSS,buttons,bootstrap,,".btn, .btn-color",-,"button,  a, input"
 .btn-group,Button Group,Smushes multiple buttons together to make a pill shape. Each button is separated by a vertical line.,Component,btn-groups,bootstrap,,".btn-group-justified, .btn-group-lg,  .btn-group-sm, .btn-group-xs, .btn-group-vertical",-,div
