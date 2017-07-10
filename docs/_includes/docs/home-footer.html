@@ -40,7 +40,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Select Theme</h4>
         </div>
-        <div class="modal-body">
+        <div class="modal-body text-center">
         </a>
         </div>
       </div>
@@ -54,3 +54,12 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="{{site.github.url}}/assets/js/style-switcher.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		if(window.innerWidth < 992) {
+			var themeselect = $('#themeSelector').html();
+			$('#themeSelector').remove();
+			$('#themeModal .modal-body').append(themeselect);
+		}
+	});
+</script>

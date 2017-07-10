@@ -1,31 +1,35 @@
 css:
+    - title: Simple Page Layout 
+      menu-title: Page Layout
+      slug: page-layout
+
     - title: Containers
       menu-title: Containers
       slug: containers
       menu: 
       - title: Fluid Container
         menu-title: Fluid Container
-        slug: container-fluid
+        slug: containers-fluid
 
       - title: Smooth Container
         menu-title: Smooth Container
-        slug: container-smooth
+        slug: containers-smooth
 
       - title: Container Sizes
         menu-title: Container Sizes
-        slug: container-sizes
+        slug: containers-sizes
 
       - title: Login Container
         menu-title: Login Container
-        slug: container-login
+        slug: containers-login
 
       - title: Table Container
         menu-title: Table Container
-        slug: container-table
+        slug: containers-table
 
       - title: Flex Container
         menu-title: Flex Container
-        slug: container-flex
+        slug: containers-flex
 
     - title: Grid system
       menu-title: Grid system
@@ -238,6 +242,10 @@ css:
         - title: Responsive Padding
           menu-title: Padding
           slug: responsive-utilities-padding
+          
+        - title: Responsive Alignments
+          menu-title: Alignment
+          slug: responsive-utilities-alignment
           
         - title: Responsive Font Size
           menu-title: Font Size

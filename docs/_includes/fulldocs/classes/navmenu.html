@@ -1,5 +1,12 @@
-<div class="navmenu navbar-inverse navmenu-fixed-left offcanvas-xs mt-xs-50">
-        <ul class="nav navbar-nav">
-            <li><a href="#">.text-center</a></li>
-        </ul>
-    </div>
+<div class="navmenu navbar-default navmenu-fixed-left offcanvas-xs mt-xs-50">
+    <ul class="nav navbar-nav">
+        {% for item in site.data.classes %}
+            <li class="{% if item.class-name == page.slug %} active {% endif %}">
+                    {% assign filename = item.class-name | remove: "." %}
+                <a href="{{site.github.url}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">
+                    {{ item.class-name }}
+                </a>
+            </li>      
+        {% endfor %}
+    </ul>
+</div>

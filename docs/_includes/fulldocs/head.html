@@ -12,9 +12,17 @@
     <style>
         @media (min-width: 768px) {
             body {
-                padding-left: 240px;
+                margin-left: 240px;
+            }
+            .navmenu-fixed-left ~ .footer,
+            .navmenu-fixed-right ~ .footer {
+                width: calc(100% - 240px);
             }
         }
+
+       body {
+           margin-bottom: 160px;
+       }
 
     </style>
 

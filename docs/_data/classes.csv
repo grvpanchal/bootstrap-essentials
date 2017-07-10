@@ -1,27 +1,27 @@
 class-name,title,description,top-category,category,origin,use-cases,chained-class,parent-class,element
-td .active,Table Row Active,"The active class is applied to the navigation element the user is currently viewing. In the case of your code, the user is viewing the profile. It will serve as a guide or reminder to where in the website the visitor is in. That is why the active class is applied, which comes handy when viewing a website with many navigation links.",CSS,tables-contextual-classes,bootstrap,,-,.table,"<td>, <tr>"
-.navbar-nav li .active,Navbar Link Active,"The active class is applied to the navigation element the user is currently viewing. In the case of your code, the user is viewing the profile. It will serve as a guide or reminder to where in the website the visitor is in. That is why the active class is applied, which comes handy when viewing a website with many navigation links.",Component,navbar,bootstrap,,-,".navbar-nav, .nav",<li>
-.list-group-item .active,List Group Item Active,Adds a blue background color to the active list item in a list group,Component,list-group-contextual-classes,bootstrap,,.list-group-item,.list-group,"<li>, <button>, <a>"
-.btn .active,Button Active,"Adds a blue background color to simulate a ""pressed"" button",CSS,buttons-active,bootstrap,,.btn,-,"<input>, <button>, <a>"
-.progress-bar .active,Progress Bar active,Animates a striped progress bar,Component,progress-animated,bootstrap,,.progress-bar,.progress,<div>
-.dropdown .active,Dropdown link active,Adds a blue background color to the active dropdown item in a dropdown,Component,dropdowns,bootstrap,,-,.dropdown,<li>
-.pagination .active,Pagination Link active,Adds a blue background color to the active pagination link (to highlight the current page),Component,pagination,bootstrap,,-,.pagination,<li>
+td .active,Table Row Active,"The active class is applied to the navigation element the user is currently viewing. In the case of your code, the user is viewing the profile. It will serve as a guide or reminder to where in the website the visitor is in. That is why the active class is applied, which comes handy when viewing a website with many navigation links.",CSS,tables-contextual-classes,bootstrap,,-,.table,"td, tr"
+.navbar-nav li .active,Navbar Link Active,"The active class is applied to the navigation element the user is currently viewing. In the case of your code, the user is viewing the profile. It will serve as a guide or reminder to where in the website the visitor is in. That is why the active class is applied, which comes handy when viewing a website with many navigation links.",Component,navbar,bootstrap,,-,".navbar-nav, .nav",li
+.list-group-item .active,List Group Item Active,Adds a blue background color to the active list item in a list group,Component,list-group-contextual-classes,bootstrap,,.list-group-item,.list-group,"li, button, a"
+.btn .active,Button Active,"Adds a blue background color to simulate a ""pressed"" button",CSS,buttons-active,bootstrap,,.btn,-,"input, button, a"
+.progress-bar .active,Progress Bar active,Animates a striped progress bar,Component,progress-animated,bootstrap,,.progress-bar,.progress,div
+.dropdown .active,Dropdown link active,Adds a blue background color to the active dropdown item in a dropdown,Component,dropdowns,bootstrap,,-,.dropdown,li
+.pagination .active,Pagination Link active,Adds a blue background color to the active pagination link (to highlight the current page),Component,pagination,bootstrap,,-,.pagination,li
 .affix,Affix ,"The affix plugin toggles position: fixed; on and off, emulating the effect found with position: sticky;. The sub navigation on the right is a live demo of the affix plugin.",Javascript,affix,bootstrap,,-,-,-
-.alert,Alert,"Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Alerts are available for any length of text, as well as an optional dismiss button.",Component,alerts,bootstrap,,alert-color,-,<div>
-.alert-danger,Alert Danger, alert-danger class is red alert box Indicates a dangerous or potentially negative action. Add the class .alert-danger to the .alert base class to create error or danger alerts.,Component,alerts,bootstrap,,.alert,-,<div>
-.alert-dismissable,Alert Dismissable,Similar to a well it is a box with a border and padding. The .alert class adds the padding and margin. Defaults as red background color.,Component,alerts,bootstrap,,.alert,-,<div>
-.alert-info,Alert Info,Similar to a well it is a box with a border and padding. The .alert class adds the padding and margin. Defaults as blue background color.,Component,alerts,bootstrap,,.alert,-,<div>
-.alert-link,Alert Link,When you add links inside alert this class matches the font color to the parent alert class.,Component,alerts,bootstrap,,.alert,-,<div>
-.alert-success,Alert Success,Similar to a well it is a box with a border and padding. The .alert class adds the padding and margin. Defaults as green background color.,Component,alerts,bootstrap,,.alert,-,<div>
-.alert-warning,Alert Warning,Similar to a well it is a box with a border and padding. The .alert class adds the padding and margin. Defaults as yellow background color.,Component,alerts,bootstrap,,.alert,-,<div>
-.avatar,Avatar,"initial avatar class. This class includes all the features like avatar font size, alignment. The default size of this avatar is 32px",Component,avatar,bootstrap-essentials,,-,-,"<span>, <div>"
-.avatar-16,Avatar 16px,"Avatar class is basically used for profile image display (sizes), avatar-16 vill be the initial class( sizes goes from small to high)",Component,avatar,bootstrap-essentials,,.avatar,-,"<span>, <div>"
-.avatar-24,Avatar 24px,"Avatar class is basically used for profile image display (sizes), avatar-24 vill be the next class of avatar-16( sizes goes from small to high)",Component,avatar,bootstrap-essentials,,.avatar,-,"<span>, <div>"
-.avatar-32,Avatar 32px,"Avatar class is basically used for profile image display (sizes), avatar-32 vill be the next class of avatar-24( sizes goes from small to high)",Component,avatar,bootstrap-essentials,,.avatar,-,"<span>, <div>"
-.avatar-48,Avatar 48px,"Avatar class is basically used for profile image display (sizes), avatar-48 vill be the next class of avatar-32( sizes goes from small to high)",Component,avatar,bootstrap-essentials,,.avatar,-,"<span>, <div>"
-.avatar-64,Avatar 64px,"Avatar class is basically used for profile image display (sizes), avatar-64 vill be the next class of avatar-48( sizes goes from small to high)",Component,avatar,bootstrap-essentials,,.avatar,-,"<span>, <div>"
-.avatar-96,Avatar 96px,"Avatar class is basically used for profile image display (sizes), avatar-96 vill be the next class of avatar-64( sizes goes from small to high)",Component,avatar,bootstrap-essentials,,.avatar,-,"<span>, <div>"
-.avatar-128,Avatar 128px,"Avatar class is basically used for profile image display (sizes), avatar-128 vill be the next class of avatar-96( sizes goes from small to high)",Component,avatar,bootstrap-essentials,,.avatar,-,"<span>, <div>"
+.alert,Alert,"Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. Alerts are available for any length of text, as well as an optional dismiss button.",Component,alerts,bootstrap,,alert-color,-,div
+.alert-danger,Alert Danger, alert-danger class is red alert box Indicates a dangerous or potentially negative action. Add the class .alert-danger to the .alert base class to create error or danger alerts.,Component,alerts,bootstrap,,.alert,-,div
+.alert-dismissable,Alert Dismissable,Similar to a well it is a box with a border and padding. The .alert class adds the padding and margin. Defaults as red background color.,Component,alerts,bootstrap,,.alert,-,div
+.alert-info,Alert Info,Similar to a well it is a box with a border and padding. The .alert class adds the padding and margin. Defaults as blue background color.,Component,alerts,bootstrap,,.alert,-,div
+.alert-link,Alert Link,When you add links inside alert this class matches the font color to the parent alert class.,Component,alerts,bootstrap,,.alert,-,div
+.alert-success,Alert Success,Similar to a well it is a box with a border and padding. The .alert class adds the padding and margin. Defaults as green background color.,Component,alerts,bootstrap,,.alert,-,div
+.alert-warning,Alert Warning,Similar to a well it is a box with a border and padding. The .alert class adds the padding and margin. Defaults as yellow background color.,Component,alerts,bootstrap,,.alert,-,div
+.avatar,Avatar,"initial avatar class. This class includes all the features like avatar font size, alignment. The default size of this avatar is 32px",Component,avatar,bootstrap-essentials,,-,-,"span, div, img"
+.avatar-16,Avatar 16px,Avatar class for 16 px. Commonly used to display number of users  invoved in an activity,Component,avatar,bootstrap-essentials,,.avatar,-,"span, div, img"
+.avatar-24,Avatar 24px,Avatar class of 24px. This size is  used to display subscriptions in navigaton or active users,Component,avatar,bootstrap-essentials,,.avatar,-,"span, div, img"
+.avatar-32,Avatar 32px,Standard Avatar size for navbar or navmenu,Component,avatar,bootstrap-essentials,,.avatar,-,"span, div, img"
+.avatar-48,Avatar 48px,Avatar class for 48 px. Best used in media object and list ,Component,avatar,bootstrap-essentials,,.avatar,-,"span, div, img"
+.avatar-64,Avatar 64px,Avatar class for 64 px. Can be used in media object or profile page,Component,avatar,bootstrap-essentials,,.avatar,-,"span, div, img"
+.avatar-96,Avatar 96px,An alternate avatar size for navbar dropdown (gmail) for almost 100px ,Component,avatar,bootstrap-essentials,,.avatar,-,"span, div, img"
+.avatar-128,Avatar 128px,standard avatar size for profile page,Component,avatar,bootstrap-essentials,,.avatar,-,"span, div, img"
 .b,Border,".b is border class, Border option provides the ability to sectionize a content and display in better way. Here .b provides border for all sides.",CSS,borders,bootstrap-essentials,,-,-,*
 .b-0,No Border,".b-0 is no border class, it does not provide a border, the class .b-0 will remove all the borders.",CSS,borders-no-border,bootstrap-essentials,,-,-,*
 .bt,Border Top,".bt is a border class, which only provides border on top. bt stands for border top.",CSS,borders,bootstrap-essentials,,-,-,*
@@ -32,323 +32,317 @@ td .active,Table Row Active,"The active class is applied to the navigation eleme
 .bb-0,No Border Bottom,.bb-0 class will remove only bottom border.,CSS,borders-no-border,bootstrap-essentials,,-,-,*
 .bl,Border Left,.bl class will work with left side border.,CSS,borders,bootstrap-essentials,,-,-,*
 .bl-0,No Border Left,.bl-0 class will remove only left side border.,CSS,borders-no-border,bootstrap-essentials,,-,-,*
-.btn-file,File input Button,Button for file input,CSS,Button,bootstrap-essentials,,-,-,*
-.btn-circle,Buttons Circle,.btn-circle class is used to make the buttons in circle shape.,CSS,buttons-circle,bootstrap-essentials,,".btn, .btn-color",-,"<button>
-<input>
-<a>"
-.btn-rounded,Button Rounded,.btn-rounded class will convert the left and right edges in rounded shape.,CSS,buttons-rounded,bootstrap-essentials,,".btn, .btn-color",-,"<button>
-<input>
-<a>"
-.btn-outline,Button Outline,.btn-outline class is used to make the buttons with outline.,CSS,buttons-outline,bootstrap-essentials,,".btn, .btn-color",-,"<button>
-<input>
-<a>"
-.bg-img,Background Image Cover,This class includes the basic configuration required to set a background cover image on a selected element. You just need to define background-image CSS property along with this class.,CSS,helpers,bootstrap-essentials,,-,-,<div>
-.bg-jumbotron,Jumbotron Background Color,"jumbotron Background color, .bg-jumbotron class is used to make the background color in light gray(jumbotron color).",CSS,helpers,bootstrap-essentials,,-,-,<div>
-.bg-transparent,Transparent Background Color,"Make background transparent. Its a utility that can be used on list groups, tabs, panel heading.",CSS,helpers,bootstrap-essentials,,-,-,<div>
-.bg-well,Well Background color, .bg-well class is used to make the background color in well color.,CSS,helpers,bootstrap-essentials,,-,-,<div>
-.bg-white,White Background Color,.br-white will make the background color to white.,CSS,helpers,bootstrap-essentials,,-,-,<div>
-.badge,Badge,Used to show new or unread messages or items like the iOS red icon showing new messages or email.,Component,badges,bootstrap,,-,-,<span>
-.bg-danger,Danger Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a orange background color to an element.",CSS,helper-classes-backgrounds,bootstrap,,-,-,<div>
-.bg-info,Info Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a light-blue background color to an element. Represents some information",CSS,helper-classes-backgrounds,bootstrap,,-,-,<div>
-.bg-primary,Primary Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a blue background color to an element.",CSS,helper-classes-backgrounds,bootstrap,,-,-,<div>
-.bg-success,Success Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a green background color to an element. Which indicates success or a positive action.",CSS,helper-classes-backgrounds,bootstrap,,-,-,<div>
-.bg-warning,Warning Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a yellow background color to an element. ",CSS,helper-classes-backgrounds,bootstrap,,-,-,<div>
-.breadcrumb,Breadcrumbs,A pagination. Indicates the current page's location within a navigational hierarchy,Component,breadcrumbs,bootstrap,,-,-,<ol>
-.btn,Common Button Class ,This class creates a basic button (gray background and rounded corners) and also sets the spacing and size of the button.,CSS,buttons,bootstrap,,-,-,"<button>,  <a>, <input>"
-.btn-block,Button Block,Creates a block level button that spans the entire width of the parent element.,CSS,buttons-sizes,bootstrap,,".btn, .btn-color",-,"<button>,  <a>, <input>"
-.btn-danger,Button Danger,It defaults to a red background button. Which Indicates danger or a negative action.,CSS,buttons-options,bootstrap,,".btn, .btn-color",-,"<button>,  <a>, <input>"
-.btn-default,Button Default,It defaults to a white background button with dark gray border.,CSS,buttons-tags,bootstrap,,".btn, .btn-color",-,"<button>,  <a>, <input>"
-.btn-group,Button Group,Smushes multiple buttons together to make a pill shape. Each button is separated by a vertical line.,Component,btn-groups,bootstrap,,".btn-group-justified, .btn-group-lg,  .btn-group-sm, .btn-group-xs, .btn-group-vertical",-,<div>
+.btn-file,File input Button,Button for file input,CSS,buttons,bootstrap-essentials,,-,-,*
+.btn-circle,Buttons Circle,.btn-circle class is used to make the buttons in circle shape.,CSS,buttons-circle,bootstrap-essentials,,".btn, .btn-color",-,"button
+input
+a"
+.btn-rounded,Button Rounded,.btn-rounded class will convert the left and right edges in rounded shape.,CSS,buttons-rounded,bootstrap-essentials,,".btn, .btn-color",-,"button
+input
+a"
+.btn-outline,Button Outline,.btn-outline class is used to make the buttons with outline.,CSS,buttons-outline,bootstrap-essentials,,".btn, .btn-color",-,"button
+input
+a"
+.bg-img,Background Image Cover,This class includes the basic configuration required to set a background cover image on a selected element. You just need to define background-image CSS property along with this class.,CSS,helpers,bootstrap-essentials,,-,-,div
+.bg-jumbotron,Jumbotron Background Color,"jumbotron Background color, .bg-jumbotron class is used to make the background color in light gray(jumbotron color).",CSS,helpers,bootstrap-essentials,,-,-,div
+.bg-transparent,Transparent Background Color,"Make background transparent. Its a utility that can be used on list groups, tabs, panel heading.",CSS,helpers,bootstrap-essentials,,-,-,div
+.bg-well,Well Background color, .bg-well class is used to make the background color in well color.,CSS,helpers,bootstrap-essentials,,-,-,div
+.bg-white,White Background Color,.br-white will make the background color to white.,CSS,helpers,bootstrap-essentials,,-,-,div
+.badge,Badge,Used to show new or unread messages or items like the iOS red icon showing new messages or email.,Component,badges,bootstrap,,-,-,span
+.bg-danger,Danger Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a orange background color to an element.",CSS,helpers,bootstrap,,-,-,div
+.bg-info,Info Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a light-blue background color to an element. Represents some information",CSS,helpers,bootstrap,,-,-,div
+.bg-primary,Primary Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a blue background color to an element.",CSS,helpers,bootstrap,,-,-,div
+.bg-success,Success Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a green background color to an element. Which indicates success or a positive action.",CSS,helpers,bootstrap,,-,-,div
+.bg-warning,Warning Background Color,"Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes. It adds a yellow background color to an element. ",CSS,helpers,bootstrap,,-,-,div
+.breadcrumb,Breadcrumbs,A pagination. Indicates the current pages location within a navigational hierarchy,Component,breadcrumbs,bootstrap,,-,-,ol
+.btn,Common Button Class ,This class creates a basic button (gray background and rounded corners) and also sets the spacing and size of the button.,CSS,buttons,bootstrap,,-,-,"button,  a, input"
+.btn-block,Button Block,Creates a block level button that spans the entire width of the parent element.,CSS,buttons-sizes,bootstrap,,".btn, .btn-color",-,"button,  a, input"
+.btn-danger,Button Danger,It defaults to a red background button. Which Indicates danger or a negative action.,CSS,buttons-options,bootstrap,,".btn, .btn-color",-,"button,  a, input"
+.btn-default,Button Default,It defaults to a white background button with dark gray border.,CSS,buttons,bootstrap,,".btn, .btn-color",-,"button,  a, input"
+.btn-group,Button Group,Smushes multiple buttons together to make a pill shape. Each button is separated by a vertical line.,Component,btn-groups,bootstrap,,".btn-group-justified, .btn-group-lg,  .btn-group-sm, .btn-group-xs, .btn-group-vertical",-,div
 .btn-group-justified,Justified Button Group,Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.,Component,btn-groups-justified,bootstrap,,".btn-group
-",-,<div>
+",-,div
 .btn-group-lg,Large Button Group,Large button group (makes all buttons in a button group larger - increased font-size and padding),Component,btn-groups-sizing,bootstrap,,".btn-group
-",-,<div>
+",-,div
 .btn-group-sm,Small Button Group,Small button group (makes all buttons in a button group smaller),Component,btn-groups-sizing,bootstrap,,".btn-group
-",-,<div>
+",-,div
 .btn-group-xs,Extra Small Button Group,Extra small button group (makes all buttons in a button group extra small),Component,btn-groups-sizing,bootstrap,,".btn-group
-",-,<div>
+",-,div
 .btn-group-vertical,Vertical Button Group,Make a set of buttons appear vertically stacked rather than horizontally.,Component,btn-groups-vertical,bootstrap,,".btn-group
-",-,<div>
-.btn-info,Info Button ,Button for information on a topic like terms and conditions. Default color is light blue.,CSS,buttons-options,bootstrap,,".btn, .btn-outline, .btn-circle, btn-sm, btn-xs, btn-lg, .btn-rounded",-,"<button>, <a>, <input>,"
-.btn-link,Link Button,Keeps the spacing set with the .btn class but removes the outer border. Makes a button look like a link (get button behavior),CSS,buttons-options,bootstrap,,.btn,,"<button>, <a>, <input>,"
-.btn-lg,Large Button,"Fancy larger or smaller buttons? Add .btn-lg, .btn-sm, or .btn-xs for additional sizes.",CSS,buttons-options,bootstrap,,".btn, .btn-color",-,"<button>, <a>, <input>,"
-.btn-primary,Primary Button,Use for the primary action in a set. Which indicates with Blue color button.,CSS,buttons-options,bootstrap,,".btn, .btn-outline, .btn-circle, btn-sm, btn-xs, btn-lg, .btn-rounded",-,"<button>, <a>, <input>,"
-.btn-sm,Small Button,"btn-sm is a fancy larger or smaller buttons? Add .btn-lg, .btn-sm, or .btn-xs for additional sizes.",CSS,buttons-options,bootstrap,,".btn, .btn-color",-,"<button>, <a>, <input>,"
-.btn-success,Success Button,btn-success by defaults to a green background button with dark border. Which represents positive action.,CSS,buttons-options,bootstrap,,".btn, .btn-outline, .btn-circle, btn-sm, btn-xs, btn-lg, .btn-rounded",-,"<button>, <a>, <input>,"
-.btn-warning,Warning Button,By defaults btn-warning is to a yellow background button with dark border. Which represents warning or a negative action.,CSS,buttons-options,bootstrap,,".btn, .btn-outline, .btn-circle, btn-sm, btn-xs, btn-lg, .btn-rounded",-,"<button>, <a>, <input>,"
-.btn-xs,Extra Small Button,"btn-xs is a fancy larger or smaller buttons? Add .btn-lg, .btn-sm, or .btn-xs for additional sizes. xs indicates Extra small button.",CSS,buttons-options,bootstrap,,".btn, .btn-color",-,"<button>, <a>, <input>,"
-.caption,Image Caption,"Adds a caption text inside a thumbnail, but could be used elsewhere.",Component,thumbnails,bootstrap,,-,.thumbnail,<div>
-.caret,Dropdown and Dropup Caret,"Caret class creates a  arrow icon , Used in dropdown menus to show open and closed states.",Component,dropdowns,bootstrap,,-,.dropdown,<span>
-.carousel,Carousel Slider," Parent carousel class making it position relative, which creates a carousel (slideshow).",Javascript,carousel,bootstrap,,.slide,-,<div>
-.carousel-caption,Carousel Caption,It creates a caption text for each slide item in the carousel.,Javascript,optional-captions,bootstrap,,-,.item,<div>
-.carousel-control,Carousel Control,Container which is added to each next and previous anchors.,Javascript,optional-captions,bootstrap,,".left, .right",.carousel,<a>
-.carousel-indicators,Carousel Indicators,"Adds little dots/indicators at the bottom of each slide (which indicates how many slides there is in the carousel, and which slide the user are currently viewing)",Javascript,optional-captions,bootstrap,,-,.carousel,<ol>
-.carousel-inner,Carousel Inner, It is a div wrapper that contains the carousel slide items.,Javascript,optional-captions,bootstrap,,-,.carousel,<div>
+",-,div
+.btn-info,Info Button ,Button for information on a topic like terms and conditions. Default color is light blue.,CSS,buttons-options,bootstrap,,".btn, .btn-outline, .btn-circle, btn-sm, btn-xs, btn-lg, .btn-rounded",-,"button, a, input,"
+.btn-link,Link Button,Keeps the spacing set with the .btn class but removes the outer border. Makes a button look like a link (get button behavior),CSS,buttons-options,bootstrap,,.btn,,"button, a, input,"
+.btn-lg,Large Button,"Fancy larger or smaller buttons? Add .btn-lg, .btn-sm, or .btn-xs for additional sizes.",CSS,buttons-options,bootstrap,,".btn, .btn-color",-,"button, a, input,"
+.btn-primary,Primary Button,Use for the primary action in a set. Which indicates with Blue color button.,CSS,buttons-options,bootstrap,,".btn, .btn-outline, .btn-circle, btn-sm, btn-xs, btn-lg, .btn-rounded",-,"button, a, input,"
+.btn-sm,Small Button,"btn-sm is a fancy larger or smaller buttons? Add .btn-lg, .btn-sm, or .btn-xs for additional sizes.",CSS,buttons-options,bootstrap,,".btn, .btn-color",-,"button, a, input,"
+.btn-success,Success Button,btn-success by defaults to a green background button with dark border. Which represents positive action.,CSS,buttons-options,bootstrap,,".btn, .btn-outline, .btn-circle, btn-sm, btn-xs, btn-lg, .btn-rounded",-,"button, a, input,"
+.btn-warning,Warning Button,By defaults btn-warning is to a yellow background button with dark border. Which represents warning or a negative action.,CSS,buttons-options,bootstrap,,".btn, .btn-outline, .btn-circle, btn-sm, btn-xs, btn-lg, .btn-rounded",-,"button, a, input,"
+.btn-xs,Extra Small Button,"btn-xs is a fancy larger or smaller buttons? Add .btn-lg, .btn-sm, or .btn-xs for additional sizes. xs indicates Extra small button.",CSS,buttons-options,bootstrap,,".btn, .btn-color",-,"button, a, input,"
+.caption,Image Caption,"Adds a caption text inside a thumbnail, but could be used elsewhere.",Component,thumbnails,bootstrap,,-,.thumbnail,div
+.caret,Dropdown and Dropup Caret,"Caret class creates a  arrow icon , Used in dropdown menus to show open and closed states.",Component,dropdowns,bootstrap,,-,.dropdown,span
+.carousel,Carousel Slider," Parent carousel class making it position relative, which creates a carousel (slideshow).",Javascript,carousel,bootstrap,,.slide,-,div
+.carousel-caption,Carousel Caption,It creates a caption text for each slide item in the carousel.,Javascript,carousel,bootstrap,,-,.item,div
+.carousel-control,Carousel Control,Container which is added to each next and previous anchors.,Javascript,carousel,bootstrap,,".left, .right",.carousel,a
+.carousel-indicators,Carousel Indicators,"Adds little dots/indicators at the bottom of each slide (which indicates how many slides there is in the carousel, and which slide the user are currently viewing)",Javascript,carousel,bootstrap,,-,.carousel,ol
+.carousel-inner,Carousel Inner, It is a div wrapper that contains the carousel slide items.,Javascript,carousel,bootstrap,,-,.carousel,div
 .center-block,Centered Block,Centers any element (Sets an element to display:block with margin-right:auto and margin-left:auto),Javascript,helpers,bootstrap,,-,-,*
-.checkbox,Input Checkbox Class,"Form checkbox wrapper - Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.",Javascript,buttons-checkbox-radio,bootstrap,,-,-,<div>
-.checkbox-inline,Inline Checkbox,"Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.",CSS,checkboxes-and-radios,bootstrap,,-,-,<label>
-.clearfix,Float Clearfix,Used to clear floats by adding .cleafix to the parent element. It adds a pseudo element with clear:both property.,CSS,helper-classes-clearfix,bootstrap,,-,.row,<div>
-.close,Close button,Use the generic close icon for dismissing content like modals and alerts.,CSS,helper-classes-close,bootstrap,,-,-,"<button>, <a>"
-.col-breakpoint-size,Column Responsive Grid,"Responsive grid (span 1-12 column). Extra small devices Phones (< 768px), Small devices Tablets (≥768px), Medium devices Desktops (≥992px), Large devices Desktops (≥1200px). Column values can be 1-12.",CSS,grid,bootstrap,"https://codepen.io/poojalm/pen/qjEqBw  , https://codepen.io/poojalm/pen/OgPXXE",-,.row,<div>
-.col-breakpoint-offset-size,Column Offset Option,Move columns to the right. These classes increase the left margin of a column by * columns,CSS,grid,bootstrap,,.col-breakpoint-size,.row,<div>
-.col-breakpoint-pull-size,Column Pull Option,Changes the order of the grid columns,CSS,grid,bootstrap,https://codepen.io/poojalm/pen/vZEwgE?editors=1000,.col-breakpoint-size,.row,<div>
-.col-breakpoint-push-size,Column Push Option,Changes the order of the grid columns,CSS,grid,bootstrap,https://codepen.io/poojalm/pen/vZEwgE?editors=1000,.col-breakpoint-size,.row,<div>
-.collapse,Element Collapsed,Indicates collapsible content - which can be hidden or shown on demand,CSS,collapse,bootstrap,,-,-,<div>
-.collapse .in,Open Collapse Element ,Show the collapsible content by default,CSS,collapse,bootstrap,,-,-,<div>
-.container,Simple Container,Fixed width container with widths determined by screen sites. Equal margin on the left and right.,CSS,containers,bootstrap,,-,-,<div>
-.container-fluid,Fluid Container,A container that spans the full width of the screen,CSS,containers,bootstrap,https://codepen.io/poojalm/pen/WjPzxJ,-,-,<div>
-.container-flex,Flex Container,Uses display flex. This was created to adjust the footer link of panel as per text in grid system. Flex is not supported for Internet Explorer Browser,CSS,containers,bootstrap-essentials,https://codepen.io/poojalm/pen/rmXyyQ,-,.container,<div>
-.container-login,Login Container,Simple Login Container,CSS,containers,bootstrap-essentials,https://codepen.io/poojalm/pen/qjEZwb,.container,-,<div>
-.container-login-2,2 Column Login Container,2 Column Login container for Descriptive text or social login,CSS,containers,bootstrap-essentials,https://codepen.io/poojalm/pen/KmONqL,.container,-,<div>
-.container-md,Medium Size Container,Container size of 970px ,CSS,containers,bootstrap-essentials,https://codepen.io/poojalm/pen/PmMWNv,.container,-,<div>
-.container-sm,Small Size Container,Container size of 750px,CSS,containers,bootstrap-essentials,https://codepen.io/poojalm/pen/Lywxxr,.container,-,<div>
-.container-smooth,Smooth Container,prevent container size jumping at media query breakpoints,CSS,containers,bootstrap-essentials,https://codepen.io/poojalm/pen/BZyKVw,.container,-,<div>
-.container-table,Table Container,"Displays grid as table, table-row and table-cell. It was specifically designed to center align-content. The limition of this grid is that you cannot to total xolumsize of more than 12. It is good to use with row split of full page height Content ",CSS,containers,bootstrap-essentials,https://codepen.io/poojalm/pen/bWXqqR & https://codepen.io/poojalm/pen/awOzRY,-,.container,<div>
-.container-xs,Extra Small Size Container,Container size of 480px,CSS,containers,bootstrap-essentials,https://codepen.io/poojalm/pen/KqwzrG,.container,-,<div>
-.control-label,Form Label,In forms this classes is added to form labels to allow the label to be used for form validation.,forms-control-validation,forms,bootstrap,,-,.form-group,<label>
-.danger,Table Danger row,Adds a red background to the table row (<tr> or table cell (<td>). Indicates a dangerous or potentially negative action,Contextual classes,tables,bootstrap,,-,.table,"<tr>, <td>"
-.btn .disabled,Button Disabled,"Disables a button (adds opacity and a ""no-parking-sign"" icon on hover)",CSS,Button element,bootstrap,,.btn,-,"<button>, <a>, <input>"
-.dropdown .disabled,Dropdown Disabled,"Disables a dropdown item (adds a grey text color and a ""no-parking-sign"" icon on hover)",Component,Disabled menu items,bootstrap,,-,.dropdown,<li>
-.pagination .disabled,Pagination Disabled,"Disables a pagination link (cannot be clicked - adds a grey text color and a ""no-parking-sign"" icon on hover)",Component,Disabled and active states,bootstrap,,-,.pagination,<li>
-.list-group .disabled,List Group Item Disabled,"Disables a list item in a list group (cannot be clicked - adds a grey background color and a ""no-parking-sign"" icon on hover)",Component,Disabled items,bootstrap,,.list-group-item,.list-group,<li>
-.divider,Dropdown Divider,Used to separate links in the dropdown menu with a thin horizontal border,Component,dropdowns,bootstrap,,-,.dropdown,<li>
-.dl-horizontal,Horizontal Description List,"Lines up the terms <dt> and descriptions <dd> in <dl> elements side-by-side. Starts off like default <dl>s, but when the browser window expands, it will line up side-by-side",CSS,type,bootstrap,,-,-,<dl>
-.dropdown,Dropdown Class,"This class gives you the ability to add a dropdown to navbar, tabs, and pills so you can display a dropdown of additional navigation.",Component,dropdowns,bootstrap,,-,-,<div>
-.dropdown-header,Dropdown Header,Used to add headers inside the dropdown menu,Component,Headers,bootstrap,,-,.dropdown-menu,<li>
-.dropdown-menu,Dropdown Menu Class,Adds the default styles for the dropdown menu container,Component,Alignment,bootstrap,,-,.dropdown,<ul>
-.dropdown-menu-right,Right Align Dropdown,Right-aligns a dropdown menu,Component,Alignment,bootstrap,,.dropdown-menu,.dropdown,<ul>
-.dropdown-submenu,Dropdown Submenu,Create a submenu for a dropdown menu,Component,Alignment,bootstrap-essentials,,-,.dropdown-menu,<div>
-.dropdown-toggle,Dropdown toggle link,Used on the button that should hide and show (toggle) the dropdown menu,Component,dropdowns,bootstrap,,-,.dropdown,"<button>, <a>"
-.dropup,Dropup,Indicates a dropup menu (upwards instead of downwards),Component,dropdowns,bootstrap,,-,-,<div>
-.embed-responsive,Responsive Embedded Content,Container for embedded content. Makes videos or slideshows scale properly on any device,Component,responsive-embed,bootstrap,,-,-,<div>
-.embed-responsive-16by9,Responsive Embedded 16 by 9 Resolution,Container for embedded content. Creates an 16:9 aspect ratio embedded content,Component,responsive-embed,bootstrap,,.embed-responsive,-,<div>
-.embed-responsive-4by3,Responsive Embedded 4 by 3 Resolution,Container for embedded content. Creates an 4:3 aspect ratio embedded content,Component,responsive-embed,bootstrap,,.embed-responsive,-,<div>
-.embed-responsive-item,Responsive Embedded Item,Used inside .embed-responsive. Scales the video nicely to the parent element,Component,responsive-embed,bootstrap,,-,.embed-responsive,<iframe>
+.checkbox,Input Checkbox Class,"Form checkbox wrapper - Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.",Javascript,buttons-checkbox-radio,bootstrap,,-,-,div
+.checkbox-inline,Inline Checkbox,"Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.",CSS,checkboxes-and-radios,bootstrap,,-,-,label
+.clearfix,Float Clearfix,Used to clear floats by adding .cleafix to the parent element. It adds a pseudo element with clear:both property.,CSS,helpers,bootstrap,,-,.row,div
+.close,Close button,Use the generic close icon for dismissing content like modals and alerts.,CSS,helpers,bootstrap,,-,-,"button, a"
+.col-breakpoint-size,Column Responsive Grid,"Responsive grid (span 1-12 column). Extra small devices Phones (< 768px), Small devices Tablets (≥768px), Medium devices Desktops (≥992px), Large devices Desktops (≥1200px). Column values can be 1-12.",CSS,grid,bootstrap,"https://codepen.io/poojalm/pen/qjEqBw  , https://codepen.io/poojalm/pen/OgPXXE",-,.row,div
+.col-breakpoint-offset-size,Column Offset Option,Move columns to the right. These classes increase the left margin of a column by * columns,CSS,grid,bootstrap,,.col-breakpoint-size,.row,div
+.col-breakpoint-pull-size,Column Pull Option,Changes the order of the grid columns,CSS,grid,bootstrap,https://codepen.io/poojalm/pen/vZEwgE?editors=1000,.col-breakpoint-size,.row,div
+.col-breakpoint-push-size,Column Push Option,Changes the order of the grid columns,CSS,grid,bootstrap,https://codepen.io/poojalm/pen/vZEwgE?editors=1000,.col-breakpoint-size,.row,div
+.collapse,Element Collapsed,Indicates collapsible content - which can be hidden or shown on demand,CSS,collapse,bootstrap,,-,-,div
+.collapse .in,Open Collapse Element ,Show the collapsible content by default,CSS,collapse,bootstrap,,-,-,div
+.container,Simple Container,Fixed width container with widths determined by screen sites. Equal margin on the left and right.,CSS,containers,bootstrap,,-,-,div
+.container-fluid,Fluid Container,A container that spans the full width of the screen,CSS,containers-fluid,bootstrap,https://codepen.io/poojalm/pen/WjPzxJ,-,-,div
+.container-flex,Flex Container,Uses display flex. This was created to adjust the footer link of panel as per text in grid system. Flex is not supported for Internet Explorer Browser,CSS,containers-flex,bootstrap-essentials,https://codepen.io/poojalm/pen/rmXyyQ,-,.container,div
+.container-login,Login Container,Simple Login Container,CSS,containers-login,bootstrap-essentials,https://codepen.io/poojalm/pen/qjEZwb,.container,-,div
+.container-login-2,2 Column Login Container,2 Column Login container for Descriptive text or social login,CSS,containers-login,bootstrap-essentials,https://codepen.io/poojalm/pen/KmONqL,.container,-,div
+.container-md,Medium Size Container,Container size of 970px ,CSS,containers-sizes,bootstrap-essentials,https://codepen.io/poojalm/pen/PmMWNv,.container,-,div
+.container-sm,Small Size Container,Container size of 750px,CSS,containers-sizes,bootstrap-essentials,https://codepen.io/poojalm/pen/Lywxxr,.container,-,div
+.container-smooth,Smooth Container,prevent container size jumping at media query breakpoints,CSS,containers-smooth,bootstrap-essentials,https://codepen.io/poojalm/pen/BZyKVw,.container,-,div
+.container-table,Table Container,"Displays grid as table, table-row and table-cell. It was specifically designed to center align-content. The limition of this grid is that you cannot to total xolumsize of more than 12. It is good to use with row split of full page height Content ",CSS,containers-table,bootstrap-essentials,https://codepen.io/poojalm/pen/bWXqqR & https://codepen.io/poojalm/pen/awOzRY,-,.container,div
+.container-xs,Extra Small Size Container,Container size of 480px,CSS,containers-sizes,bootstrap-essentials,https://codepen.io/poojalm/pen/KqwzrG,.container,-,div
+.control-label,Form Label,In forms this classes is added to form labels to allow the label to be used for form validation.,forms-control-validation,forms,bootstrap,,-,.form-group,label
+.danger,Table Danger row,Adds a red background to the table row (<tr> or table cell (<td>). Indicates a dangerous or potentially negative action,Contextual classes,tables-contextual-classes,bootstrap,,-,.table,"tr, td"
+.btn .disabled,Button Disabled,"Disables a button (adds opacity and a ""no-parking-sign"" icon on hover)",CSS,buttons-disabled,bootstrap,,.btn,-,"button, a, input"
+.dropdown .disabled,Dropdown Disabled,"Disables a dropdown item (adds a grey text color and a ""no-parking-sign"" icon on hover)",Component,dropdowns-disabled,bootstrap,,-,.dropdown,li
+.pagination .disabled,Pagination Disabled,"Disables a pagination link (cannot be clicked - adds a grey text color and a ""no-parking-sign"" icon on hover)",Component,pagination,bootstrap,,-,.pagination,li
+.list-group .disabled,List Group Item Disabled,"Disables a list item in a list group (cannot be clicked - adds a grey background color and a ""no-parking-sign"" icon on hover)",Component,list-group-disabled,bootstrap,,.list-group-item,.list-group,li
+.divider,Dropdown Divider,Used to separate links in the dropdown menu with a thin horizontal border,Component,dropdowns-divider,bootstrap,,-,.dropdown,li
+.dl-horizontal,Horizontal Description List,"Lines up the terms <dt> and descriptions <dd> in <dl> elements side-by-side. Starts off like default <dl>s, but when the browser window expands, it will line up side-by-side",CSS,type-lists,bootstrap,,-,-,dl
+.dropdown,Dropdown Class,"This class gives you the ability to add a dropdown to navbar, tabs, and pills so you can display a dropdown of additional navigation.",Component,dropdowns,bootstrap,,-,-,div
+.dropdown-header,Dropdown Header,Used to add headers inside the dropdown menu,Component,dropdowns-headers,bootstrap,,-,.dropdown-menu,li
+.dropdown-menu,Dropdown Menu Class,Adds the default styles for the dropdown menu container,Component,dropdowns,bootstrap,,-,.dropdown,ul
+.dropdown-menu-right,Right Align Dropdown,Right-aligns a dropdown menu,Component,dropdowns-alignment,bootstrap,,.dropdown-menu,.dropdown,ul
+.dropdown-submenu,Dropdown Submenu,Create a submenu for a dropdown menu,Component,dropdowns,bootstrap-essentials,,-,.dropdown-menu,div
+.dropdown-toggle,Dropdown toggle link,Used on the button that should hide and show (toggle) the dropdown menu,Component,dropdowns,bootstrap,,-,.dropdown,"button, a"
+.dropup,Dropup,Indicates a dropup menu (upwards instead of downwards),Component,dropdowns,bootstrap,,-,-,div
+.embed-responsive,Responsive Embedded Content,Container for embedded content. Makes videos or slideshows scale properly on any device,Component,responsive-embed,bootstrap,,-,-,div
+.embed-responsive-16by9,Responsive Embedded 16 by 9 Resolution,Container for embedded content. Creates an 16:9 aspect ratio embedded content,Component,responsive-embed,bootstrap,,.embed-responsive,-,div
+.embed-responsive-4by3,Responsive Embedded 4 by 3 Resolution,Container for embedded content. Creates an 4:3 aspect ratio embedded content,Component,responsive-embed,bootstrap,,.embed-responsive,-,div
+.embed-responsive-item,Responsive Embedded Item,Used inside .embed-responsive. Scales the video nicely to the parent element,Component,responsive-embed,bootstrap,,-,.embed-responsive,iframe
 .alert .fade,Fade Animation,Adds a fading effect when closing an alert box,CSS,alerts,bootstrap,,,,
-.form-control,Form Control,"Used on input, textarea, and select elements to span the entire width of the page and make them responsive",Component,Input groups,bootstrap,,-,.form-group,"<input>, <select>, <textarea>"
-.form-control-feedback,Form Validation Feedback,A form validation class.,Component,Input groups,bootstrap,,.glyphicon,".form-group, .has-feedback",<span>
-.form-control-static,Form Static Content,"Lets you add plain text to the right of a label. For example, Email label could have help text.",Component,Input groups,bootstrap,,-,.form-group,<p>
-.form-group,Form Group,Container for form input and label,CSS,Input groups,bootstrap,,-,".form-inline, .form-horizontal",<div>
-.form-inline,Inline Form,Makes a <form> left-aligned with inline-block controls (This only applies to forms within viewports that are at least 768px wide),CSS,forms,bootstrap,,-,-,<form>
-.form-horizontal,Horizontal form elements,Aligns labels and groups of form controls in a horizontal layout,CSS,forms,bootstrap,,-,-,<form>
-.gutter-justified,Justified Grid Gutter,Justifies the gutter width in left and right,CSS,gutter,bootstrap-essentials,,.row,".container, .container-*",<div>
-.gutter-0,No gutter in grid,Removes gutter from grid,CSS,gutter,bootstrap-essentials,https://codepen.io/poojalm/pen/XgJLOK?editors=1000,.row,".container, .container-*",<div>
-.gutter-5,Gutter width of 5px in grid,Applies 5 pixel gutter on grid,CSS,gutter,bootstrap-essentials,https://codepen.io/poojalm/pen/jwPEPO?editors=1000,.row,".container, .container-*",<div>
-.gutter-10,Gutter width of 10px in grid,Applies 10 pixel gutter on grid,CSS,gutter,bootstrap-essentials,,.row,".container, .container-*",<div>
-.gutter-15,Gutter width of 15px in grid,Applies 15 pixel gutter on grid,CSS,gutter,bootstrap-essentials,,.row,".container, .container-*",<div>
-.gutter-20,Gutter width of 20px in grid,Applies 20 pixel gutter on grid,CSS,gutter,bootstrap-essentials,https://codepen.io/poojalm/pen/XgbWRW?editors=1000,.row,".container, .container-*",<div>
-.footer,Footer ,Simple footer class,Component,footer,bootstrap-essentials,,-,-,<footer>
-.fileinput,File Input,File Input Element wrapper,CSS,forms,bootstrap-essentials,,.input-group,-,<div>
-.fileinput-preview,File Input Preview,Image preview of uploaded file,CSS,forms,bootstrap-essentials,,".fileinput-exists, .thumbnail",.fileinput,<div>
-.fill,Fill ,fill the image in an element using width and height of 100%,CSS,helpers,bootstrap-essentials,,-,-,<img>
+.form-control,Form Control,"Used on input, textarea, and select elements to span the entire width of the page and make them responsive",Component,forms,bootstrap,,-,.form-group,"input, select, textarea"
+.form-control-feedback,Form Validation Feedback,A form validation class.,Component,forms-control-validation,bootstrap,,.glyphicon,".form-group, .has-feedback",span
+.form-control-static,Form Static Content,"Lets you add plain text to the right of a label. For example, Email label could have help text.",Component,forms-controls-static,bootstrap,,-,.form-group,p
+.form-group,Form Group,Container for form input and label,CSS,forms,bootstrap,,-,".form-inline, .form-horizontal",div
+.form-inline,Inline Form,Makes a <form> left-aligned with inline-block controls (This only applies to forms within viewports that are at least 768px wide),CSS,forms-inline,bootstrap,,-,-,form
+.form-horizontal,Horizontal form elements,Aligns labels and groups of form controls in a horizontal layout,CSS,forms,bootstrap,,-,-,form
+.gutter-justified,Justified Grid Gutter,Justifies the gutter width in left and right,CSS,gutter,bootstrap-essentials,,.row,".container, .container-*",div
+.gutter-0,No gutter in grid,Removes gutter from grid,CSS,gutter,bootstrap-essentials,https://codepen.io/poojalm/pen/XgJLOK?editors=1000,.row,".container, .container-*",div
+.gutter-5,Gutter width of 5px in grid,Applies 5 pixel gutter on grid,CSS,gutter,bootstrap-essentials,https://codepen.io/poojalm/pen/jwPEPO?editors=1000,.row,".container, .container-*",div
+.gutter-10,Gutter width of 10px in grid,Applies 10 pixel gutter on grid,CSS,gutter,bootstrap-essentials,,.row,".container, .container-*",div
+.gutter-15,Gutter width of 15px in grid,Applies 15 pixel gutter on grid,CSS,gutter,bootstrap-essentials,,.row,".container, .container-*",div
+.gutter-20,Gutter width of 20px in grid,Applies 20 pixel gutter on grid,CSS,gutter,bootstrap-essentials,https://codepen.io/poojalm/pen/XgbWRW?editors=1000,.row,".container, .container-*",div
+.footer,Footer ,Simple footer class,Component,footer,bootstrap-essentials,,-,-,footer
+.fileinput,File Input,File Input Element wrapper,CSS,forms,bootstrap-essentials,,.input-group,-,div
+.fileinput-preview,File Input Preview,Image preview of uploaded file,CSS,forms,bootstrap-essentials,,".fileinput-exists, .thumbnail",.fileinput,div
+.fill,Fill ,fill the image in an element using width and height of 100%,CSS,helpers,bootstrap-essentials,,-,-,img
 .full-height,Full Height,makes element of 100% height,CSS,helpers,bootstrap-essentials,,-,-,*
-.fs-{breakpoint}-{size},Responsive Font Size,Responsive font size utility,CSS,responsive-utilities,bootstrap-essentials,,-,-,"<h*>, <p>, <span>, <label>"
-.fixed-width-right,Right Sidebar width,Allows to place a fixed with responsive sidebar on the right side of the content ,CSS,page-layout,bootstrap-essentials,,.page-main,-,<main>
-.glyphicon,Glyphicon Font Class,Creates an icon. Bootstrap provides 260 free glyphicons from the Glyphicons Halflings set,Component,glyphicons,bootstrap,,-,-,"<i>, <span>"
-.has-danger,Danger Form Validation,"Adds a red color to the label and a red border to the input, as well as an error icon inside the input (used together with .has-feedback)",CSS,forms-control-validation,bootstrap,,.form-group,-,<div>
-.has-feedback,Input Feedback Icon,"Adds feedback icons for inputs (checkmark, warning and error signs)",CSS,forms-control-validation,bootstrap,,.form-group,-,<div>
-.has-success,Success Form Validation,"Adds a green color to the label and a green border to the input, as well as a checkmark icon inside the input (used together with .has-feedback)",CSS,forms-control-validation,bootstrap,,.form-group,-,<div>
-.has-warning,Warning Form Validation,"Adds a yellow/orange color to the label and a yellow/orange border to the input, as well as a checkmark icon inside the input (used together with .has-feedback)",CSS,forms-control-validation,bootstrap,,.form-group,-,<div>
-.has-sticky-footer,Generate a Sticky footer,Allow Footer to be sticky at the bottom of page,CSS,footer,bootstrap-essentials,,-,-,<html>
-.help-block,Form Help Text,A block of help text that breaks onto a new line and may extend beyond one line.,CSS,forms,bootstrap,,-,.form-group,<span>
-.hidden,Hidden,Forces an element to be hidden (display:none),CSS,Showing and hiding content,bootstrap,,-,-,*
-.hidden-size,Responsive Hidden,Hides content depending on screen size,CSS,"Available classes
-",bootstrap,,-,-,*
-.hide,Hide,This class is the same as hidden but is deprecated so use .hidden instead,CSS,Showing and hiding content,bootstrap,,-,-,*
-.h1-.h6,Headings,Apply heading styles to other elements. Make a paragraph look like an h1.,CSS,Typography,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,*
-.icon-bar,Hamburger Icon,Used in the navbar to create a hamburger menu (three horizontal bars),CSS,navbar,bootstrap,,-,.navbar-toggle,<span>
-.icon-next,Carousel Next,"Unicode icon (arrow pointing right), used in carousels. This is often replaced with a glyphicon",CSS,carousel,bootstrap,,-,.carousel-control,<span>
-.icon-prev,Carousel Previous,"Unicode icon (arrow pointing left), used in carousels. This is often replaced with a glyphicon",CSS,carousel,bootstrap,,-,.carousel-control,<span>
-.img-circle,Circle Image,Shapes an image to a circle (not supported in IE8 and earlier),CSS,Image shapes,bootstrap,,-,-,<img>
-.img-responsive,Responsive image,Makes a image responsive. The image resizes with the width of screen. the maximum size of image is always the size resolution of image.,CSS,Responsive images,bootstrap,,-,-,<img>
-.img-rounded,Rounded Image,It adds rounded corners to an image.,CSS,Image shapes,bootstrap,,-,-,<img>
-.img-thumbnail,Image Thumbnail,Shapes an image to a thumbnail (borders),CSS,images,bootstrap,,-,-,<img>
+.fs-breakpoint-size,Responsive Font Size,Responsive font size utility,CSS,responsive-utilities,bootstrap-essentials,,-,-,"h*, p, span, label"
+.fixed-width-right,Right Sidebar width,Allows to place a fixed with responsive sidebar on the right side of the content ,CSS,page-layout,bootstrap-essentials,,.page-main,-,main
+.glyphicon,Glyphicon Font Class,Creates an icon. Bootstrap provides 260 free glyphicons from the Glyphicons Halflings set,Component,glyphicons,bootstrap,,-,-,"i, span"
+.has-danger,Danger Form Validation,"Adds a red color to the label and a red border to the input, as well as an error icon inside the input (used together with .has-feedback)",CSS,forms-control-validation,bootstrap,,.form-group,-,div
+.has-feedback,Input Feedback Icon,"Adds feedback icons for inputs (checkmark, warning and error signs)",CSS,forms-control-validation,bootstrap,,.form-group,-,div
+.has-success,Success Form Validation,"Adds a green color to the label and a green border to the input, as well as a checkmark icon inside the input (used together with .has-feedback)",CSS,forms-control-validation,bootstrap,,.form-group,-,div
+.has-warning,Warning Form Validation,"Adds a yellow/orange color to the label and a yellow/orange border to the input, as well as a checkmark icon inside the input (used together with .has-feedback)",CSS,forms-control-validation,bootstrap,,.form-group,-,div
+.has-sticky-footer,Generate a Sticky footer,Allow Footer to be sticky at the bottom of page,CSS,footer-sticky,bootstrap-essentials,,-,-,html
+.help-block,Form Help Text,A block of help text that breaks onto a new line and may extend beyond one line.,CSS,forms-help-text,bootstrap,,-,.form-group,span
+.hidden,Hidden,Forces an element to be hidden (display:none),CSS,responsive-utilities-classes,bootstrap,,-,-,*
+.hidden-breakpoint,Responsive Hidden,Hides content depending on screen size,CSS,responsive-utilities-classes,bootstrap,,-,-,*
+.hide,Hide,This class is the same as hidden but is deprecated so use .hidden instead,CSS,responsive-utilities-classes,bootstrap,,-,-,*
+.h1-.h6,Headings,Apply heading styles to other elements. Make a paragraph look like an h1.,CSS,type,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,*
+.icon-bar,Hamburger Icon,Used in the navbar to create a hamburger menu (three horizontal bars),CSS,navbar,bootstrap,,-,.navbar-toggle,span
+.icon-next,Carousel Next,"Unicode icon (arrow pointing right), used in carousels. This is often replaced with a glyphicon",CSS,carousel,bootstrap,,-,.carousel-control,span
+.icon-prev,Carousel Previous,"Unicode icon (arrow pointing left), used in carousels. This is often replaced with a glyphicon",CSS,carousel,bootstrap,,-,.carousel-control,span
+.img-circle,Circle Image,Shapes an image to a circle (not supported in IE8 and earlier),CSS,images-shapes,bootstrap,,-,-,img
+.img-responsive,Responsive image,Makes a image responsive. The image resizes with the width of screen. the maximum size of image is always the size resolution of image.,CSS,images,bootstrap,,-,-,img
+.img-rounded,Rounded Image,It adds rounded corners to an image.,CSS,images-shapes,bootstrap,,-,-,img
+.img-thumbnail,Image Thumbnail,Shapes an image to a thumbnail (borders),CSS,images,bootstrap,,-,-,img
 .fade .in,Fade Animate class,Fades in tabs,CSS,tabs,bootstrap,,,,
-.info,Table Info,Adds a light-blue background to the table row (<tr> or table cell (<td>). Indicates a neutral informative change or action,CSS,tables,bootstrap,,-,.table,"<td>, <tr>"
-.initialism,Initialism,Displays the text inside an <abbr> element in a slightly smaller font size,CSS,type,bootstrap,,-,-,<abbr>
-.input-group,Input Group,"Container to enhance an input by adding an icon, text or a button in front or behind it as a ""help text""",Component,input-group,bootstrap,,-,-,<div>
-.input-group-lg,Large Input Group,input-group-lg class is used for large input group,Component,input-group,bootstrap,,.input-group,-,<div>
-.input-group-sm,Small Input Group,input-group-sm class is used for small input group,Component,input-group,bootstrap,,.input-group,-,<div>
-.input-group-addon,Input Group Addon,"Together with the .input-group class, this class makes it possible to add an icon or help text next to the input field",Component,input-group,bootstrap,,-,input-group,<span>
-.input-group-btn,Input Group Button,"Together with the .input-group class, this class attaches a button next to an input. Often used as a search bar",Component,input-group,bootstrap,,-,input-group,<span>
-.input-lg,Large Input,"Set heights using classes like .input-lg, and set widths using grid column classes like .col-lg-*.",Component,Control sizing,bootstrap,,.form-control,.form-group,"<input>, <select>"
-.input-sm,Small Input Group,"Set heights using classes like .input-lg, and set widths using grid column classes like .col-lg-*.",Component,Control sizing,bootstrap,,.form-control,.form-group,"<input>, <select>"
+.info,Table Info,Adds a light-blue background to the table row (<tr> or table cell (<td>). Indicates a neutral informative change or action,CSS,tables,bootstrap,,-,.table,"td, tr"
+.initialism,Initialism,Displays the text inside an <abbr> element in a slightly smaller font size,CSS,type,bootstrap,,-,-,abbr
+.input-group,Input Group,"Container to enhance an input by adding an icon, text or a button in front or behind it as a ""help text""",Component,input-group,bootstrap,,-,-,div
+.input-group-lg,Large Input Group,input-group-lg class is used for large input group,Component,input-groups-sizing,bootstrap,,.input-group,-,div
+.input-group-sm,Small Input Group,input-group-sm class is used for small input group,Component,input-groups-sizing,bootstrap,,.input-group,-,div
+.input-group-addon,Input Group Addon,"Together with the .input-group class, this class makes it possible to add an icon or help text next to the input field",Component,input-group,bootstrap,,-,input-group,span
+.input-group-btn,Input Group Button,"Together with the .input-group class, this class attaches a button next to an input. Often used as a search bar",Component,input-groups-buttons,bootstrap,,-,input-group,span
+.input-lg,Large Input,"Set heights using classes like .input-lg, and set widths using grid column classes like .col-lg-*.",Component,forms-control-sizes,bootstrap,,.form-control,.form-group,"input, select"
+.input-sm,Small Input Group,"Set heights using classes like .input-lg, and set widths using grid column classes like .col-lg-*.",Component,forms-control-sizes,bootstrap,,.form-control,.form-group,"input, select"
 .invisible,Invisibile,"Makes an element invisible (visibility:hidden). Note: Even though the element is invisible, it will take up space on the page",CSS,helpers,bootstrap,,-,-,*
-.item,Carousel Item,Class added to each carousel item. May be text or images,Javascript,carousel,bootstrap,,-,.carousel-inner,<div>
-.jumbotron,Jumbotron,Creates a padded grey box with rounded corners that enlarges the font sizes of the text inside it. Creates a big box for calling extra attention to some special content or information,Component,jumbotron,bootstrap,,-,-,<div>
-.label,Label,"Adds a grey rounded box to an element. Provides additional information about something (e.g. ""New"")",Component,labels,bootstrap,,-,-,<span>
-.label-danger,Danger Label,Change color of the label by adding label-danger class for  Red label.,CSS,labels,bootstrap,,-,.label,<span>
-.label-info,Info Label, Change color of the label by adding label-info class for Light-blue label,CSS,labels,bootstrap,,-,.label,<span>
-.label-success,Success Label,Change color of the label by adding  label-success class for Green label,CSS,labels,bootstrap,,-,.label,<span>
-.label-warning,Warning Label,Change color of the label by adding label-warning class for Yellow label,CSS,labels,bootstrap,,-,.label,<span>
-.lead,Lead Text,Increase the font size and line height of a paragraph. Good to use on the first paragraph of an article to improve readability.,CSS,type,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <span>"
-.left,Carousel Left Control,Used to identify the left carousel control,Javascript,carousel,bootstrap,,.carousel-control,.carousel,<a>
-.list-group,List Group,Creates a bordered list group for <li> elements,Component,list-group,bootstrap,,-,-,"<ul>, <div>"
-.list-group-item,List Group Item,Added to each <li> element in the list group,Component,list-group,bootstrap,,-,.list-group,"<li>, <a>, <button>"
-.list-group-item-heading,List Group Item Heading,Creates a list group heading (used on other elements besides <li>),Component,list-group,bootstrap,,-,.list-group-item,<h*>
-.list-group-item-text,List Group Item Text,Used for item text inside the list group (used on other elements besides <li>),Component,list-group,bootstrap,,-,.list-group-item,<p>
-.list-group-item-danger,Danger List Group Item ,Red background color for a list item in a list group,Component,list-group,bootstrap,,.list-group-item,.list-group,"<li>, <a>, <button>"
-.list-group-item-info,Info List Group Item,Light-blue background color for a list item in a list group,Component,list-group,bootstrap,,.list-group-item,.list-group,"<li>, <a>, <button>"
-.list-group-item-success,Success List Group Item,Green background color for a list item in a list group,Component,list-group,bootstrap,,.list-group-item,.list-group,"<li>, <a>, <button>"
-.list-group-item-warning,Warning List Group Item,Yellow background color for a list item in a list group,Component,list-group,bootstrap,,.list-group-item,.list-group,"<li>, <a>, <button>"
-.list-inline,Inline List,Places all list items on a single line (horizontal menu),CSS,tabs,bootstrap,,-,-,<ul>
-.list-unstyled,Unstyled List,"Removes all default list-style (bullets, left margin, etc.) styling from a <ul> or <ol> list",CSS,type,bootstrap,,-,-,<ul>
-.mark,Mark Text,Highlights text: Highlighted text,CSS,type,bootstrap,,-,-,<span>
-.media,Media Object,"For highlighting a run of text due to its relevance in another context, use the mark tag.",Component,media,bootstrap,,-,.media-list,"<div>, <ul>"
-.media-body,Media Class,Text that should appear next to a media object,Component,media,bootstrap,,-,.media,<div>
-.media-heading,Media Heading,Creates a heading inside the media object,Component,media,bootstrap,,-,.media,<div>
-.media-list,Media List,Nested media lists would be good used as comments,Component,media,bootstrap,,-,-,<ul>
-.media-left,Media object Left,Aligns media object to Left in comments or news feed,Component,media,bootstrap,,-,.media,<div>
-.media-right,Media Object Right,Aligns media object to Right in comments or news feed,Component,media,bootstrap,,-,.media,<div>
-.media-object,Media Object,Class added to a media component image.,Component,media,bootstrap,,-,".media-left, .media-right",<img>
-.modal,Modal,Identifies the content as a modal and brings focus to it,Javascript,modals,bootstrap,,-,-,<div>
-.modal-body,Modal Body,The modal body content class : Header - Body - Footer,Javascript,modals,bootstrap,,-,.modal-content,<div>
-.modal-content,Modal Content,"Styles the modal (border, background-color, etc). Inside this, add the modal's header, body and footer, if needed",Javascript,modals,bootstrap,,-,.modal-dialog,<div>
-.modal-dialog,Modal Dialog,Sets the proper width and margin of the modal,Javascript,modals,bootstrap,,-,.modal,<div>
-.modal-footer,Modal Footer,The footer of the modal (often contains an action button and a close button),Javascript,modals,bootstrap,,-,.modal-content,<div>
-.modal-header,Modal Header,The header of the modal (often contains a title and a close button),Javascript,modals,bootstrap,,-,.modal-content,<div>
-.modal-lg,Large Modal ,It makes a model wider or Large modal (wider than default),Javascript,modals,bootstrap,,.modal-dialog,.modal,<div>
-.modal-open,Open Modal ,Javascript adds this class to the body tag to prevent scrolling with the modal is open.,Javascript,modals,bootstrap,,-,-,<div>
-.modal-sm,Small Modal,Makes the modal not as wide or Small modal (less width),Javascript,modals,bootstrap,,.modal-dialog,.modal,<div>
-.modal-title,Modal Title,The title of the modal,Javascript,modals,bootstrap,,-,.modal-header,<div>
-.mt-navbar-height,Navbar Height Margin Top,"Helper Class to adjust margin to of navmenu, body or wrapper as per navbar height while using a Fixed Navbar",Component,navbar-helpers,bootstrap-essentials,,-,-,"<body>, <div>"
-.mb-navbar-height,Navbar Height Margin Bottom,"Helper Class to adjust margin to of navmenu, body or wrapper as per navbar height while using a Bottom Fixed Navbar",Component,navbar-helpers,bootstrap-essentials,,-,-,"<body>, <div>"
-.m-breakpoint-size,Responsive Margin,Responsive margin at all side of element,CSS,responsive-utilities,bootstrap-essentials,,-,-,*
-.mt-breakpoint-size,Responsive Margin top,Responsive margin at top of element,CSS,responsive-utilities,bootstrap-essentials,,-,-,*
-.mr-breakpoint-size,Responsive Margin Right,Responsive margin at right of element,CSS,responsive-utilities,bootstrap-essentials,,-,-,*
-.mb-breakpoint-size,Responsive Margin Bottom,Responsive margin at bottom of element,CSS,responsive-utilities,bootstrap-essentials,,-,-,*
-.ml-breakpoint-size,Responsive Margin Left,Responsive margin at left of element,CSS,responsive-utilities,bootstrap-essentials,,-,-,*
-.nav-tabs,Tabs,"Class added to enable Bootstrap tabs, simply we can say navigation menu.",Component,tabs,bootstrap,,.nav,-,<ul>
-.nav-pills,Pills,Indicates a pill menu,Component,Pills,bootstrap,,.nav,-,<ul>
-.navbar-nav,Navbar Navigation List,Used on a <ul> container that contains the list items with links inside a navigation bar,Component,"navbar
-Buttons",bootstrap,,.nav,-,<ul>
-.nav-justified,Justified Navigation,Centers tabs/pills. Note that on screens smaller than 768px the items are stacked (content will remain centered),Component,Justified,bootstrap,,".nav,
+.item,Carousel Item,Class added to each carousel item. May be text or images,Javascript,carousel,bootstrap,,-,.carousel-inner,div
+.jumbotron,Jumbotron,Creates a padded grey box with rounded corners that enlarges the font sizes of the text inside it. Creates a big box for calling extra attention to some special content or information,Component,jumbotron,bootstrap,,-,-,div
+.label,Label,"Adds a grey rounded box to an element. Provides additional information about something (e.g. ""New"")",Component,labels,bootstrap,,-,-,span
+.label-danger,Danger Label,Change color of the label by adding label-danger class for  Red label.,CSS,labels,bootstrap,,-,.label,span
+.label-info,Info Label, Change color of the label by adding label-info class for Light-blue label,CSS,labels,bootstrap,,-,.label,span
+.label-success,Success Label,Change color of the label by adding  label-success class for Green label,CSS,labels,bootstrap,,-,.label,span
+.label-warning,Warning Label,Change color of the label by adding label-warning class for Yellow label,CSS,labels,bootstrap,,-,.label,span
+.lead,Lead Text,Increase the font size and line height of a paragraph. Good to use on the first paragraph of an article to improve readability.,CSS,type,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, span"
+.left,Carousel Left Control,Used to identify the left carousel control,Javascript,carousel,bootstrap,,.carousel-control,.carousel,a
+.list-group,List Group,Creates a bordered list group for <li> elements,Component,list-group,bootstrap,,-,-,"ul, div"
+.list-group-item,List Group Item,Added to each <li> element in the list group,Component,list-group,bootstrap,,-,.list-group,"li, a, button"
+.list-group-item-heading,List Group Item Heading,Creates a list group heading (used on other elements besides <li>),Component,list-group-custom-content,bootstrap,,-,.list-group-item,h*
+.list-group-item-text,List Group Item Text,Used for item text inside the list group (used on other elements besides <li>),Component,list-group-custom-content,bootstrap,,-,.list-group-item,p
+.list-group-item-danger,Danger List Group Item ,Red background color for a list item in a list group,Component,list-group-contextual-classes,bootstrap,,.list-group-item,.list-group,"li, a, button"
+.list-group-item-info,Info List Group Item,Light-blue background color for a list item in a list group,Component,list-group-contextual-classes,bootstrap,,.list-group-item,.list-group,"li, a, button"
+.list-group-item-success,Success List Group Item,Green background color for a list item in a list group,Component,list-group-contextual-classes,bootstrap,,.list-group-item,.list-group,"li, a, button"
+.list-group-item-warning,Warning List Group Item,Yellow background color for a list item in a list group,Component,list-group-contextual-classes,bootstrap,,.list-group-item,.list-group,"li, a, button"
+.list-inline,Inline List,Places all list items on a single line (horizontal menu),CSS,type-lists,bootstrap,,-,-,ul
+.list-unstyled,Unstyled List,"Removes all default list-style (bullets, left margin, etc.) styling from a <ul> or <ol> list",CSS,type-lists,bootstrap,,-,-,ul
+.mark,Mark Text,Highlights text: Highlighted text,CSS,type-inline-text,bootstrap,,-,-,span
+.media,Media Object,"For highlighting a run of text due to its relevance in another context, use the mark tag.",Component,media,bootstrap,,-,.media-list,"div, ul"
+.media-body,Media Class,Text that should appear next to a media object,Component,media,bootstrap,,-,.media,div
+.media-heading,Media Heading,Creates a heading inside the media object,Component,media,bootstrap,,-,.media,div
+.media-list,Media List,Nested media lists would be good used as comments,Component,media-list,bootstrap,,-,-,ul
+.media-left,Media object Left,Aligns media object to Left in comments or news feed,Component,media,bootstrap,,-,.media,div
+.media-right,Media Object Right,Aligns media object to Right in comments or news feed,Component,media,bootstrap,,-,.media,div
+.media-object,Media Object,Class added to a media component image.,Component,media,bootstrap,,-,".media-left, .media-right",img
+.modal,Modal,Identifies the content as a modal and brings focus to it,Javascript,modals,bootstrap,,-,-,div
+.modal-body,Modal Body,The modal body content class : Header - Body - Footer,Javascript,modals,bootstrap,,-,.modal-content,div
+.modal-content,Modal Content,"Styles the modal (border, background-color, etc). Inside this, add the modals header, body and footer, if needed",Javascript,modals,bootstrap,,-,.modal-dialog,div
+.modal-dialog,Modal Dialog,Sets the proper width and margin of the modal,Javascript,modals,bootstrap,,-,.modal,div
+.modal-footer,Modal Footer,The footer of the modal (often contains an action button and a close button),Javascript,modals,bootstrap,,-,.modal-content,div
+.modal-header,Modal Header,The header of the modal (often contains a title and a close button),Javascript,modals,bootstrap,,-,.modal-content,div
+.modal-lg,Large Modal ,It makes a model wider or Large modal (wider than default),Javascript,modals,bootstrap,,.modal-dialog,.modal,div
+.modal-open,Open Modal ,Javascript adds this class to the body tag to prevent scrolling with the modal is open.,Javascript,modals,bootstrap,,-,-,div
+.modal-sm,Small Modal,Makes the modal not as wide or Small modal (less width),Javascript,modals,bootstrap,,.modal-dialog,.modal,div
+.modal-title,Modal Title,The title of the modal,Javascript,modals,bootstrap,,-,.modal-header,div
+.mt-navbar-height,Navbar Height Margin Top,"Helper Class to adjust margin to of navmenu, body or wrapper as per navbar height while using a Fixed Navbar",Component,navbar-helpers,bootstrap-essentials,,-,-,"body, div"
+.mb-navbar-height,Navbar Height Margin Bottom,"Helper Class to adjust margin to of navmenu, body or wrapper as per navbar height while using a Bottom Fixed Navbar",Component,navbar-helpers,bootstrap-essentials,,-,-,"body, div"
+.m-breakpoint-size,Responsive Margin,Responsive margin at all side of element,CSS,responsive-utilities-margin,bootstrap-essentials,,-,-,*
+.mt-breakpoint-size,Responsive Margin top,Responsive margin at top of element,CSS,responsive-utilities-margin,bootstrap-essentials,,-,-,*
+.mr-breakpoint-size,Responsive Margin Right,Responsive margin at right of element,CSS,responsive-utilities-margin,bootstrap-essentials,,-,-,*
+.mb-breakpoint-size,Responsive Margin Bottom,Responsive margin at bottom of element,CSS,responsive-utilities-margin,bootstrap-essentials,,-,-,*
+.ml-breakpoint-size,Responsive Margin Left,Responsive margin at left of element,CSS,responsive-utilities-margin,bootstrap-essentials,,-,-,*
+.nav-tabs,Tabs,"Class added to enable Bootstrap tabs, simply we can say navigation menu.",Component,nav-tabs,bootstrap,,.nav,-,ul
+.nav-pills,Pills,Indicates a pill menu,Component,nav-pills,bootstrap,,.nav,-,ul
+.navbar-nav,Navbar Navigation List,Used on a <ul> container that contains the list items with links inside a navigation bar,Component,navbar-default,bootstrap,,.nav,-,ul
+.nav-justified,Justified Navigation,Centers tabs/pills. Note that on screens smaller than 768px the items are stacked (content will remain centered),Component,nav-justified,bootstrap,,".nav,
 .nav-tabs,
-.nav-pills",.navbar,<ul>
-.nav-stacked,Stacked Navigation,Vertically stack tabs or pills,Component,Pills,bootstrap,,.nav,-,<ul>
-.navbar,Common Navbar Class,Creates a navigation header bar.,Component,navbar,bootstrap,,-,-,<nav>
-.navbar-brand,Brand Text or Logo Class of Navbar,Added to a link or a header element inside the navbar to represent a logo or a header,Component,navbar,bootstrap,,-,.navbar,<a>
-.navbar-btn,Navbar Button,Vertically aligns a button inside a navbar,Component,Buttons,bootstrap,,".btn, .btn-color",.navbar,"<button>, <a>"
-.navbar-collapse,Collapsable Navbar Menu,Collapses the navbar (hidden and replaced with a menu/hamburger icon on mobile phones and small tablets),Component,Default navbar,bootstrap,,.collapse,.navbar,<div>
-.navbar-default,Default Navbar Theme Classs,Creates a default navigation bar (light-grey background color),Component,Default navbar,bootstrap,,".navbar, .footer, .navmenu",-,<nav>
-.navbar-fixed-bottom,Bottom Fixed Navbar,Makes the navbar stay at the bottom of the screen (sticky/fixed),Component,Fixed to bottom,bootstrap,,".navbar, .navbar-default, navbar-inverse ",-,<nav>
-.navbar-fixed-top,Top Fixed Navbar,Makes the navbar stay at the top of the screen (sticky/fixed),Component,Fixed to top,bootstrap,,".navbar, .footer, .navmenu",-,<nav>
-.navbar-form,Navbar Form,Added to form elements inside the navbar to vertically center them (proper padding),Component,Forms,bootstrap,,".navbar-left, .navbar-right, ",.navbar,<form>
-.navbar-header,Navbar Header,Added to a container element that contains the link/element that represent a logo or a header,Component,navbar,bootstrap,,-,.navbar,<div>
-.navbar-inverse,Inverse Navbar Theme,Creates a black navigation bar (instead of light-grey),Component,Inverted navbar,bootstrap,,".navmenu, .footer, .navbar",-,"<nav>, <footer>"
-.navbar-left,Left Align Navbar Menu,"Aligns nav links, forms, buttons, or text, in the navbar to the left",Component,Component alignment,bootstrap,,".navbar-text, .nav-btn, .nav-form,  ",.navbar,"<form>, <a>, <button>, <p>"
-.navbar-link,Navbar Link,"Styles an element to look like a link inside the navbar (anchors get proper padding and an underline on hover, while other elements like p or span gets a default hover effect - white color in an inversed navbar and a black color in a default navbar)",Component,Non-nav links,bootstrap,,-,.navbar,<a>
-.navbar-nav,Navbar Navigation Menu,Used on a <ul> container that contains the list items with links inside a navigation bar,Component,"navbar
-Buttons",bootstrap,,-,.navbar,<ul>
-.navbar-right,Right Align Navbar,"Aligns nav links, forms, buttons, or text in the navbar to the right.",Component,Component alignment,bootstrap,,".navbar-text, .nav-btn, .nav-form,  ",.navbar,<ul>
-.navbar-static-top,Top Static Navbar,"Removes left, top and right borders (rounded corners) from the navbar (default navbar has a gray border and a 4px border-radius by default)",,Static top,bootstrap,,".navbar, .navbar-default",-,<nav>
-.navbar-text,Navbar Text,Vertical align any elements inside the navbar that are not links (ensures proper padding),Component,Text,bootstrap,,".navbar-right, .navbar-left",.navbar,<p>
-.navbar-toggle,Navbar Toggle Link,Styles the button that should open the navbar on small screens. Often used together with three .icon-bar classes to indicate a toggleable menu icon (hamburger/bars),Component,navbar,bootstrap,,".pull-right, .pull-left, .collapse",.navbar,<button>
-.nav-justified-xs,Justified Navigation for mobile screen,This class justified tabs and pill in small screen. Justified Tabs is common in apps and similar feature can be used this class,Component,Justified,bootstrap-essentials,,".nav,
+.nav-pills",.navbar,ul
+.nav-stacked,Stacked Navigation,Vertically stack tabs or pills,Component,nav-pills,bootstrap,,.nav,-,ul
+.navbar,Common Navbar Class,Creates a navigation header bar.,Component,navbar,bootstrap,,-,-,nav
+.navbar-brand,Brand Text or Logo Class of Navbar,Added to a link or a header element inside the navbar to represent a logo or a header,Component,navbar-brand-image,bootstrap,,-,.navbar,a
+.navbar-btn,Navbar Button,Vertically aligns a button inside a navbar,Component,navbar-buttons,bootstrap,,".btn, .btn-color",.navbar,"button, a"
+.navbar-collapse,Collapsable Navbar Menu,Collapses the navbar (hidden and replaced with a menu/hamburger icon on mobile phones and small tablets),Component,navbar-default,bootstrap,,.collapse,.navbar,div
+.navbar-default,Default Navbar Theme Classs,Creates a default navigation bar (light-grey background color),Component,navbar-default,bootstrap,,".navbar, .footer, .navmenu",-,nav
+.navbar-fixed-bottom,Bottom Fixed Navbar,Makes the navbar stay at the bottom of the screen (sticky/fixed),Component,navbar-fixed-bottom,bootstrap,,".navbar, .navbar-default, navbar-inverse ",-,nav
+.navbar-fixed-top,Top Fixed Navbar,Makes the navbar stay at the top of the screen (sticky/fixed),Component,navbar-fixed-top,bootstrap,,".navbar, .footer, .navmenu",-,nav
+.navbar-form,Navbar Form,Added to form elements inside the navbar to vertically center them (proper padding),Component,navbar-forms,bootstrap,,".navbar-left, .navbar-right, ",.navbar,form
+.navbar-header,Navbar Header,Added to a container element that contains the link/element that represent a logo or a header,Component,navbar,bootstrap,,-,.navbar,div
+.navbar-inverse,Inverse Navbar Theme,Creates a black navigation bar (instead of light-grey),Component,navbar-inverted,bootstrap,,".navmenu, .footer, .navbar",-,"nav, footer"
+.navbar-left,Left Align Navbar Menu,"Aligns nav links, forms, buttons, or text, in the navbar to the left",Component,navbar-component-alignment,bootstrap,,".navbar-text, .nav-btn, .nav-form,  ",.navbar,"form, a, button, p"
+.navbar-link,Navbar Link,"Styles an element to look like a link inside the navbar (anchors get proper padding and an underline on hover, while other elements like p or span gets a default hover effect - white color in an inversed navbar and a black color in a default navbar)",Component,navbar-links,bootstrap,,-,.navbar,a
+.navbar-nav,Navbar Navigation Menu,Used on a <ul> container that contains the list items with links inside a navigation bar,Component,navbar-default,bootstrap,,-,.navbar,ul
+.navbar-right,Right Align Navbar,"Aligns nav links, forms, buttons, or text in the navbar to the right.",Component,navbar-component-alignment,bootstrap,,".navbar-text, .nav-btn, .nav-form,  ",.navbar,ul
+.navbar-static-top,Top Static Navbar,"Removes left, top and right borders (rounded corners) from the navbar (default navbar has a gray border and a 4px border-radius by default)",,navbar-static-top,bootstrap,,".navbar, .navbar-default",-,nav
+.navbar-text,Navbar Text,Vertical align any elements inside the navbar that are not links (ensures proper padding),Component,navbar-text,bootstrap,,".navbar-right, .navbar-left",.navbar,p
+.navbar-toggle,Navbar Toggle Link,Styles the button that should open the navbar on small screens. Often used together with three .icon-bar classes to indicate a toggleable menu icon (hamburger/bars),Component,navbar,bootstrap,,".pull-right, .pull-left, .collapse",.navbar,button
+.nav-justified-xs,Justified Navigation for mobile screen,This class justified tabs and pill in small screen. Justified Tabs is common in apps and similar feature can be used this class,Component,navbar,bootstrap-essentials,,".nav,
 .nav-tabs,
-.nav-pills",.navbar,<ul>
-.navmenu,Common Navmenu Class,Creates a Vertical Navigation Menu of 240px ,Component,navmenu,bootstrap-essentials,,".navbar-default, navmenu-fixed-left, navmenu-fixed-right.",-,<nav>
-.navmenu-fixed-left,Left Fixed Navmenu,Creates a fixed Navigation Menu at left of page. a responsive padding or margin of 240px is required to body or wrapper,Component,navmenu,bootstrap-essentials,,".navmenu, .navmenu-default",-,<nav>
-.navmenu-fixed-right,Right Fixed Navmenu,Creates a fixed Navigation Menu at Right of page. a responsive padding or margin of 240px is required to body or wrapper,Component,navmenu,bootstrap-essentials,,".navmenu, .navmenu-default",-,<nav>
-.no-underline,No Underline,"Removes under line for normal, hover and visited states",CSS,type,bootstrap-essentials,,-,-,<a>
-.navbar-slide-nav,Navbar Slide Support Class,Allow Container and container fluid navbar to slide in mobile resolution,Component,navbar,bootstrap-essentials,,,,
-.navbar-right-static,Static Navbar Content in Right,Allows to add non responsive navbar item in right.,Component,Static right,bootstrap-essentials,,-,.navbar,<div>
-.navbar-justified,Justified Navbar,Created a justified Navbar (like Apple Website). Navbar-brand is not required while using this class on .navbar-nav,Component,navbar,bootstrap-essentials,,.navbar-collapse,.navbar,<div>
-.carousel .next,Carousel Next,Used in the carousel control to identity the next control,Javasccript,carousel,bootstrap,,.carousel-control,.carousel,<a>
-.pager .next,Pager Next,Used to align pager buttons to the right side of the page (next button),Javasccript,pagination,bootstrap,,-,.pager,<li>
-.offcanvas,Offcanvas,Offcanvas helps navbar and Navmenu to slide in ,Javasccript,"Get started
-Examples",bootstrap-essentials,,".navbar-slide, .navmenu-fixed-left, .navmenu-fixed-right, .navmenu",-,<nav>
-.offcanvas-breakpoint,Responsive Offcanvas,Allow Navmenu toggle at any breakpoint,Javasccript,navmenu,bootstrap-essentials,,".navbar-slide, .navmenu-fixed-left, .navmenu-fixed-right, .navmenu",,
-.page,Common Page Class,Common page class,CSS,page-layout,bootstrap-essentials,,-,-,<main>
-.page-main,Page Main,Class designed to support sidebar. It is recommended to use this class on <main> tag,CSS,page-layout,bootstrap-essentials,,-,-,<main>
-.page-content,Page Content,Place content of your page in this wrapper,CSS,page-layout,bootstrap-essentials,,-,".page, .page-main",<div>
-.page-sidebar,Page Sidebar,Creates Sidebar of page of width 240px. This sidebar is of fixed width till small size screen.,CSS,page-layout,bootstrap-essentials,,-,".page, .page-main",<aside>
-.page-header,Page Header,Adds a horizontal line under the heading (+ adds some extra space around the element),CSS,type,bootstrap,,-,".page, .page-main",<div>
-.pager,Pager,class added to a ul which contains li's with anchors. Good for previous and next buttons.,Component,pagination,bootstrap,,-,-,<ul>
-.pagination,Pagination,Creates a pagination (Useful when you have a web site with lots of pages. Used on <ul> elements),Component,pagination,bootstrap,,".pagination-lg, .pagination-sm",-,<ul>
-.pagination-lg,Large Pagination,Large pagination (each pagination link gets a font-size of 18px. Default is 14px),Component,Sizing,bootstrap,,.pagination,-,<ul>
-.pagination-sm,Small Pagination,Small pagination (each pagination link gets a font-size of 12px. Default is 14px),Component,Sizing,bootstrap,,.pagination,-,<ul>
-.panel,Common Panel Class,"Change the color of the panel by adding the following: default, primary, info, warning, danger.",Component,panels,bootstrap,,.panel-default,-,<div>
-.panel-body,Panel Body,Panel body can contain text content and has padding of 15px in all sides. Class added to the panel body because there is also a panel heading.,Component,With tables,bootstrap,,-,".panel, .panel-collapse",<div>
-.panel-collapse,Collapsable Panel,Collapsible panel (toggle between hiding and showing panel(s)),Component,panels,bootstrap,,-,".panel, .panel-color",<div>
-.panel-danger,Danger Panel,"We can change the color of the panel by adding the panel-danger class , Red color. Indicates danger",Component,panels,bootstrap,,.panel,-,<div>
-.panel-info,Info Panel,"We can change the color of the panel by adding the panel-info class , Light-blue panel. Indicates information",Component,panels,bootstrap,,.panel,-,<div>
-.panel-success,Success Panel,"We can change the color of the panel by adding the panel-success class , Green panel. Indicates success",Component,panels,bootstrap,,.panel,-,<div>
-.panel-warning,Warning Panel,"We can change the color of the panel by adding the panel-warning class , Yellow panel. Indicates warning",Component,panels,bootstrap,,.panel,-,<div>
-.panel-footer,Panel Footer,Creates a panel footer (light background color),Component,Panel with footer,bootstrap,,-,.panel,<div>
-.panel-group,Panel Group,Used to group many panels together. This removes the bottom margin below each panel,Component,panels,bootstrap,,-,-,<div>
-.panel-heading,Panel Heading,Creates a panel header (light background color),Component,Panel with heading,bootstrap,,-,.panel,"<div>, <h1> to <h6>"
-.panel-title,Panel Title,Used inside a .panel-heading to adjust the styling of the text (removes margins and adds a font-size of 16px),Component,Panel with heading,bootstrap,,-,.panel,"<div>, <h1> to <h6>"
-.pre-scrollable,Scrollable Pre tag,Makes a <pre> element scrollable (max-height of 350px and provide a y-axis scrollbar),CSS,"Code
-Basic block",bootstrap,,-,-,<pre>
-.prev,Carousel Previous,"Used in carousels to indicate a ""previous"" link",Javasccript,carousel,bootstrap,,.carousel-control,.carousel,<a>
-.previous,Pager Previous,Used to align pager buttons to the left side of the page (previous button),Component,pager,bootstrap,,-,.pager,<a>
-.progress,Common Progress Class,"Container for progress bars, with % indication.",Component,Stacked,bootstrap,,-,-,<div>
-.progress-bar,Progress bar,Creates a progress bar,Component,progress-bars,bootstrap,,"progress-bar-color, progress-bar-striped",.progress,<div>
-.progress-bar-danger,Danger Progress Bar,Red progress bar. Indicates danger,Component,progress-bars,bootstrap,,".progress-bar, .progress-bar-striped",.progress,<div>
-.progress-bar-info,Info Progress Bar,Light-blue progress bar. Indicates information,Component,progress-bars,bootstrap,,".progress-bar, .progress-bar-striped",.progress,<div>
-.progress-bar-striped,Striped Progress Bar,Creates a striped progress bar,Component,progress-bars,bootstrap,,".progress-bar, progress-bar-color",.progress,<div>
-.progress-bar-success,Success Progress Bar,Green progress bar. Indicates success,Component,progress-bars,bootstrap,,".progress-bar, .progress-bar-striped",.progress,<div>
-.progress-bar-warning,Warning Progress Bar,Yellow progress bar. Indicates warning,Component,progress-bars,bootstrap,,".progress-bar, .progress-bar-striped",.progress,<div>
-.pull-left,Float Left,"Float an element to the left, pulling an element to left.",CSS,Quick floats,bootstrap,,-,-,<div>
-.pull-right,Float Right,"Float an element to the right, its pulling an element to right side.",CSS,Quick floats,bootstrap,,-,-,<div>
-.pt-navbar-height,Navbar Height Padding Top,"Helper Class to adjust padding top of navmenu, body or wrapper as per navbar height while using a Fixed Navbar",Component,navbar-helpers,bootstrap-essentials,,-,-,"<body>, <div>"
-.pt-navbar-height,Navbar Height padding Bottom,"Helper Class to adjust padding bottom of navmenu, body or wrapper as per navbar height while using a Bottom Fixed Navbar",Component,navbar-helpers,bootstrap-essentials,,-,-,"<body>, <div>"
-.p-breakpoint-size,Responsive Padding,Responsive padding at all side of element,CSS,responsive-utilities,bootstrap-essentials,,,,
-.pt-breakpoint-size,Responsive Padding Top,Responsive padding at top of element,CSS,responsive-utilities,bootstrap-essentials,,-,-,<div>
-.pr-breakpoint-size,Responsive Padding Right,Responsive padding at right of element,CSS,responsive-utilities,bootstrap-essentials,,-,-,<div>
-.pb-breakpoint-size,Responsive Padding Bottom,Responsive padding at bottom of element,CSS,responsive-utilities,bootstrap-essentials,,-,-,<div>
-.pl-breakpoint-size,Responsive Padding Left,Responsive padding at left of element,CSS,responsive-utilities,bootstrap-essentials,,-,-,<div>
-.carousel .right,Carousel Right,Used to identify the right carousel control,Javasccript,carousel,bootstrap,,.carousel-control,.carousel,<a>
-.row,Grid Row,Container for responsive columns,CSS,grid,bootstrap,,".row-split, .row-flex, .gutter-*",".container, container-*",<div>
-.row-flex,Flex Row,Converts a normal grid row to flex row,CSS,containers-flex,bootstrap-essentials,,.row,".container, .container-*",<div>
-.row-split,Border split or divider for grid,Divides grid columns by using borders to the right of column. THe borders are responsive and only work when column size is below 12,CSS,borders,bootstrap-essentials,"https://codepen.io/poojalm/pen/awOzRY , https://codepen.io/poojalm/pen/pwJJVV?editors=1000",.row,".container, .container-*",<div>
-.separated,Separated List,Used for inline list. The separator is |,CSS,helpers,,,.list-inline,-,<ul>
+.nav-pills",.navbar,ul
+.navmenu,Common Navmenu Class,Creates a Vertical Navigation Menu of 240px ,Component,navmenu,bootstrap-essentials,,".navbar-default, navmenu-fixed-left, navmenu-fixed-right.",-,nav
+.navmenu-fixed-left,Left Fixed Navmenu,Creates a fixed Navigation Menu at left of page. a responsive padding or margin of 240px is required to body or wrapper,Component,navmenu-fixed,bootstrap-essentials,,".navmenu, .navmenu-default",-,nav
+.navmenu-fixed-right,Right Fixed Navmenu,Creates a fixed Navigation Menu at Right of page. a responsive padding or margin of 240px is required to body or wrapper,Component,navmenu-fixed,bootstrap-essentials,,".navmenu, .navmenu-default",-,nav
+.no-underline,No Underline,"Removes under line for normal, hover and visited states",CSS,type,bootstrap-essentials,,-,-,a
+.navbar-slide-nav,Navbar Slide Support Class,Allow Container and container fluid navbar to slide in mobile resolution,Component,navbar-slide,bootstrap-essentials,,,,
+.navbar-right-static,Static Navbar Content in Right,Allows to add non responsive navbar item in right.,Component,navbar-right-static,bootstrap-essentials,,-,.navbar,div
+.navbar-justified,Justified Navbar,Created a justified Navbar (like Apple Website). Navbar-brand is not required while using this class on .navbar-nav,Component,navbar,bootstrap-essentials,,.navbar-collapse,.navbar,div
+.carousel .next,Carousel Next,Used in the carousel control to identity the next control,Javasccript,carousel,bootstrap,,.carousel-control,.carousel,a
+.pager .next,Pager Next,Used to align pager buttons to the right side of the page (next button),Javasccript,pagination-pager,bootstrap,,-,.pager,li
+.offcanvas,Offcanvas,Offcanvas helps navbar and Navmenu to slide in ,Javasccript,navmenu-offcanvas,bootstrap-essentials,,".navbar-slide, .navmenu-fixed-left, .navmenu-fixed-right, .navmenu",-,nav
+.offcanvas-breakpoint,Responsive Offcanvas,Allow Navmenu toggle at any breakpoint,Javasccript,navmenu-offcanvas,bootstrap-essentials,,".navbar-slide, .navmenu-fixed-left, .navmenu-fixed-right, .navmenu",,
+.page,Common Page Class,Common page class,CSS,page-layout,bootstrap-essentials,,-,-,main
+.page-main,Page Main,Class designed to support sidebar. It is recommended to use this class on <main> tag,CSS,page-layout,bootstrap-essentials,,-,-,main
+.page-content,Page Content,Place content of your page in this wrapper,CSS,page-layout,bootstrap-essentials,,-,".page, .page-main",div
+.page-sidebar,Page Sidebar,Creates Sidebar of page of width 240px. This sidebar is of fixed width till small size screen.,CSS,page-layout,bootstrap-essentials,,-,".page, .page-main",aside
+.page-header,Page Header,Adds a horizontal line under the heading (+ adds some extra space around the element),CSS,type-headings,bootstrap,,-,".page, .page-main",div
+.pager,Pager,class added to a ul which contains li with anchors. Good for previous and next buttons.,Component,pagination-pager,bootstrap,,-,-,ul
+.pagination,Pagination,Creates a pagination (Useful when you have a web site with lots of pages. Used on <ul> elements),Component,pagination,bootstrap,,".pagination-lg, .pagination-sm",-,ul
+.pagination-lg,Large Pagination,Large pagination (each pagination link gets a font-size of 18px. Default is 14px),Component,pagination,bootstrap,,.pagination,-,ul
+.pagination-sm,Small Pagination,Small pagination (each pagination link gets a font-size of 12px. Default is 14px),Component,pagination,bootstrap,,.pagination,-,ul
+.panel,Common Panel Class,"Change the color of the panel by adding the following: default, primary, info, warning, danger.",Component,panels,bootstrap,,.panel-default,-,div
+.panel-body,Panel Body,Panel body can contain text content and has padding of 15px in all sides. Class added to the panel body because there is also a panel heading.,Component,panels,bootstrap,,-,".panel, .panel-collapse",div
+.panel-collapse,Collapsable Panel,Collapsible panel (toggle between hiding and showing panel(s)),Component,panels,bootstrap,,-,".panel, .panel-color",div
+.panel-danger,Danger Panel,"We can change the color of the panel by adding the panel-danger class , Red color. Indicates danger",Component,panels-alternatives,bootstrap,,.panel,-,div
+.panel-info,Info Panel,"We can change the color of the panel by adding the panel-info class , Light-blue panel. Indicates information",Component,panels-alternatives,bootstrap,,.panel,-,div
+.panel-success,Success Panel,"We can change the color of the panel by adding the panel-success class , Green panel. Indicates success",Component,panels-alternatives,bootstrap,,.panel,-,div
+.panel-warning,Warning Panel,"We can change the color of the panel by adding the panel-warning class , Yellow panel. Indicates warning",Component,panels-alternatives,bootstrap,,.panel,-,div
+.panel-footer,Panel Footer,Creates a panel footer (light background color),Component,panels-footer,bootstrap,,-,.panel,div
+.panel-group,Panel Group,Used to group many panels together. This removes the bottom margin below each panel,Component,panels,bootstrap,,-,-,div
+.panel-heading,Panel Heading,Creates a panel header (light background color),Component,panels-heading,bootstrap,,-,.panel,"div, h1 to h6"
+.panel-title,Panel Title,Used inside a .panel-heading to adjust the styling of the text (removes margins and adds a font-size of 16px),Component,panels-heading,bootstrap,,-,.panel,"div, h1 to h6"
+.pre-scrollable,Scrollable Pre tag,Makes a <pre> element scrollable (max-height of 350px and provide a y-axis scrollbar),CSS,code-block,bootstrap,,-,-,pre
+.prev,Carousel Previous,"Used in carousels to indicate a ""previous"" link",Javasccript,carousel,bootstrap,,.carousel-control,.carousel,a
+.previous,Pager Previous,Used to align pager buttons to the left side of the page (previous button),Component,pagination-pager,bootstrap,,-,.pager,a
+.progress,Common Progress Class,"Container for progress bars, with % indication.",Component,progress-stacked,bootstrap,,-,-,div
+.progress-bar,Progress bar,Creates a progress bar,Component,progress,bootstrap,,"progress-bar-color, progress-bar-striped",.progress,div
+.progress-bar-danger,Danger Progress Bar,Red progress bar. Indicates danger,Component,progress-alternatives,bootstrap,,".progress-bar, .progress-bar-striped",.progress,div
+.progress-bar-info,Info Progress Bar,Light-blue progress bar. Indicates information,Component,progress-alternatives,bootstrap,,".progress-bar, .progress-bar-striped",.progress,div
+.progress-bar-striped,Striped Progress Bar,Creates a striped progress bar,Component,progress-alternatives,bootstrap,,".progress-bar, progress-bar-color",.progress,div
+.progress-bar-success,Success Progress Bar,Green progress bar. Indicates success,Component,progress-alternatives,bootstrap,,".progress-bar, .progress-bar-striped",.progress,div
+.progress-bar-warning,Warning Progress Bar,Yellow progress bar. Indicates warning,Component,progress-alternatives,bootstrap,,".progress-bar, .progress-bar-striped",.progress,div
+.pull-left,Float Left,"Float an element to the left, pulling an element to left.",CSS,helpers,bootstrap,,-,-,div
+.pull-right,Float Right,"Float an element to the right, its pulling an element to right side.",CSS,helpers,bootstrap,,-,-,div
+.pt-navbar-height,Navbar Height Padding Top,"Helper Class to adjust padding top of navmenu, body or wrapper as per navbar height while using a Fixed Navbar",Component,navbar-helpers,bootstrap-essentials,,-,-,"body, div"
+.pt-navbar-height,Navbar Height padding Bottom,"Helper Class to adjust padding bottom of navmenu, body or wrapper as per navbar height while using a Bottom Fixed Navbar",Component,navbar-helpers,bootstrap-essentials,,-,-,"body, div"
+.p-breakpoint-size,Responsive Padding,Responsive padding at all side of element,CSS,responsive-utilities-padding,bootstrap-essentials,,,,
+.pt-breakpoint-size,Responsive Padding Top,Responsive padding at top of element,CSS,responsive-utilities-padding,bootstrap-essentials,,-,-,div
+.pr-breakpoint-size,Responsive Padding Right,Responsive padding at right of element,CSS,responsive-utilities-padding,bootstrap-essentials,,-,-,div
+.pb-breakpoint-size,Responsive Padding Bottom,Responsive padding at bottom of element,CSS,responsive-utilities-padding,bootstrap-essentials,,-,-,div
+.pl-breakpoint-size,Responsive Padding Left,Responsive padding at left of element,CSS,responsive-utilities-padding,bootstrap-essentials,,-,-,div
+.carousel .right,Carousel Right,Used to identify the right carousel control,Javasccript,carousel,bootstrap,,.carousel-control,.carousel,a
+.row,Grid Row,Container for responsive columns,CSS,grid,bootstrap,,".row-split, .row-flex, .gutter-*",".container, container-*",div
+.row-flex,Flex Row,Converts a normal grid row to flex row,CSS,containers-flex,bootstrap-essentials,,.row,".container, .container-*",div
+.row-split,Border split or divider for grid,Divides grid columns by using borders to the right of column. THe borders are responsive and only work when column size is below 12,CSS,borders-row-split,bootstrap-essentials,"https://codepen.io/poojalm/pen/awOzRY , https://codepen.io/poojalm/pen/pwJJVV?editors=1000",.row,".container, .container-*",div
+.separated,Separated List,Used for inline list. The separator is |,CSS,helpers,,,.list-inline,-,ul
 .show,Show,Shows an element (display:block),CSS,helpers,bootstrap,,-,-,*
-.small,Small Text,"Creates a lighter, secondary text in any heading",CSS,type,bootstrap,,-,-,"<p>, <span>, <label>"
-.sr-only,Screen Reader Only,Hides an element on all devices except for screen readers,CSS,helpers,bootstrap,,-,-,"<p>, <span>, <label>"
-.sr-only-focusable,Focusable Screen Reader Only,Hides an element on all devices except for screen readers,CSS,helpers,bootstrap,,-,-,"<p>, <span>, <label>"
-.success,Table Success,Adds a green background color to a table row (<tr> or table cell (<td>). Indicates success or a positive action,CSS,tables,bootstrap,,-,.table,"<td>, <tr>"
-.tab-content,Tab Content,Used together with .tab-pane to creates toggleable/dynamic tabs/pills,Component,tabs,bootstrap,,-,.nav-tabs,<div>
-.tab-pane,Tab Pane,Used together with .tab-content to creates toggleable/dynamic tabs/pills,Component,tabs,bootstrap,,.active,.tab-content,<div>
-.tabs-left,Left Sided Tabs,Tabs on Left side of the Content,Component,tabs,bootstrap-essentials,,-,.tabs-container,<div>
-.tabs-right,Right Sided Tabs,Tabs on Right side of the content,Component,tabs,bootstrap-essentials,,-,.tabs-container,<div>
-.table,Table,"Adds basic styling to a table (padding, bottom borders, etc)",CSS,tables,bootstrap,,".table-hover, .table-striped, .table-border, .table-condensed",.table-responsive,<table>
-.table-bordered,Bordered Table,Adds borders on all sides of the table and cells,CSS,Bordered table,bootstrap,,.table,-,<table>
-.table-condensed,Condensed Table,Makes a table more compact by cutting cell padding in half,CSS,Condensed table,bootstrap,,.table,-,<table>
-.table-striped,Striped Table,add zebra-striping to any table row within the <tbody>,CSS,Striped rows,bootstrap,,.table,-,<table>
-.table-hover,Table with Row Hover,Creates a hoverable table (adds a grey background color on table rows on hover),CSS,Hover rows,bootstrap,,.table,-,<table>
-.table-responsive,Responsive Table,Makes a table responsive (adds a horizontal scrollbar when needed),CSS,Responsive tables,bootstrap,,-,-,<div>
-.text-capitalize,Capitalize Text,"Indicates capitalized text, this class will allow us to make the text in capital letters.",CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>"
-.text-center,Center Align Text,"It aligns our text to center, or Center-aligns text",CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>"
-.text-danger,Danger Color Text,text-danger class applys red color to text which Indicates danger.,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>"
-.text-hide,Hide Text,Hides text (helps replace an element's text content with a background image),CSS,Image replacement,bootstrap,,-,-,"<h*>, <p>, <div>, <span>"
-.text-info,Info Color Text,Light-blue text color. Indicates information,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <span>, <h*>"
-.text-justify,Justified Text,Indicates justified text,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <h*>"
-.text-left,Left Align Text,Aligns the text to the left,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <h*>"
-.text-lowercase,Lowercase Text,Changes text to lowercase,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <h*>"
-.text-muted,Muted Color Text,text-muted class turns the text to Grey color.,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <span>, <h*>"
-.text-nowrap,Nowrap Text,Prevents the text from wrapping,CSS,Helper Classes,bootstrap,,-,-,"<p>, <div>, <h*>"
-.text-primary,Primary Color Text,text-primary class turns the text to blue color.,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <span>, <h*>"
-.text-right,Right Align Text,Aligns text to the right,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <h*>"
-.text-success,Success Color Text,Green text color. Indicates success,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <span>, <h*>"
-.text-uppercase,Uppercase Text,Makes text uppercase,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <h*>"
-.text-warning,Warning Color Text,Yellow/orange text color. Indicates warning,CSS,Helper Classes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"<p>, <div>, <span>, <h*>"
-.text-breakpoint-center,Responsive Text Center,Supports Center Text Alignment as per breakpoint,CSS,Helper Classes,bootstrap-essentials,,-,-,"<p>, <div>, <span>, <h*>"
-.text-breakpoint-left,Responsive Text Left,Supports Left Text Alignment as per breakpoint,CSS,Helper Classes,bootstrap-essentials,,-,-,"<p>, <div>, <span>, <h*>"
-.text-breakpoint-right,Responsive Text Right,Supports Right Text Alignment as per breakpoint,CSS,Helper Classes,bootstrap-essentials,,-,-,"<p>, <div>, <span>, <h*>"
-.thumbnail,Thumbnail,Adds a border around an element (often images or videos) to make it look like a thumbnail,Component,images,bootstrap,,-,-,"<a>, <div>"
-.vertical-middle,Vertical Middle,"Utility class to vertical middle align a table-cell, inline block and inline element",CSS,helpers,bootstrap-essentials,,-,-,"<div>, <tr>"
-.vertical-top,Vertical Top,"Utility class to vertical top align a table-cell, inline block and inline element",CSS,helpers,bootstrap-essentials,,-,-,"<div>, <tr>"
-.vertical-bottom,Vertical Bottom,"Utility class to vertical bottom align a table-cell, inline block and inline element",CSS,helpers,bootstrap-essentials,,-,-,"<div>, <tr>"
-.visible-size,Responsive Visibility Classes,Deprecated as of v3.2.0. Used to show and/or hide content by device. Note: Use .hidden-* instead,CSS,Available classes,bootstrap,,-,-,*
-.visible-print-block,Print Visible,Displays the element (display:block) in print (pre)view,CSS,Print classes,bootstrap,,-,-,*
-.visible-print-inline,Print Visible Inline,Displays the element (display:inline) in print (pre)view,CSS,Print classes,bootstrap,,-,-,*
-.visible-print-inline-block,Print Visible Inline Block,Displays the element (display:inline-block) in print (pre)view,CSS,Print classes,bootstrap,,-,-,*
-.hidden-print,Hidden in Print,Hides the element (display:none) in print (pre)view,CSS,Print classes,bootstrap,,-,-,*
-.warning,Table Warning Row,Adds a yellow background color to the table row (<tr> or table cell (<td>). Indicates a warning,CSS,"Contextual classes
-",bootstrap,,-,.table,"<td>, <tr>"
-.well,Well,Wells are good for insetting some content. The default styling adds a border box and inner padding.,CSS,Default well,bootstrap,,".well-lg, .well-sm",-,<div>
-.well-lg,Large Well,Wells are good for insetting some content. The default styling adds a border box and inner padding. This class doubles the padding.,CSS,Optional classes,bootstrap,,.well,-,<div>
-.well-sm,Small Well,Wells are good for insetting some content. The default styling adds a border box and inner padding. This class decreases the padding.,CSS,Optional classes,bootstrap,,.well,-,<div>
-blockquote,Blockquote,quoting blocks of content from another source within your document.,CSS,type,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,<blockquote>
+.small,Small Text,"Creates a lighter, secondary text in any heading",CSS,type,bootstrap,,-,-,"p, span, label"
+.sr-only,Screen Reader Only,Hides an element on all devices except for screen readers,CSS,helpers,bootstrap,,-,-,"p, span, label"
+.sr-only-focusable,Focusable Screen Reader Only,Hides an element on all devices except for screen readers,CSS,helpers,bootstrap,,-,-,"p, span, label"
+.success,Table Success,Adds a green background color to a table row (<tr> or table cell (<td>). Indicates success or a positive action,CSS,tables-contextual-classes,bootstrap,,-,.table,"td, tr"
+.tab-content,Tab Content,Used together with .tab-pane to creates toggleable/dynamic tabs/pills,Component,tabs,bootstrap,,-,.nav-tabs,div
+.tab-pane,Tab Pane,Used together with .tab-content to creates toggleable/dynamic tabs/pills,Component,tabs,bootstrap,,.active,.tab-content,div
+.tabs-left,Left Sided Tabs,Tabs on Left side of the Content,Component,tabs,bootstrap-essentials,,-,.tabs-container,div
+.tabs-right,Right Sided Tabs,Tabs on Right side of the content,Component,tabs,bootstrap-essentials,,-,.tabs-container,div
+.table,Table,"Adds basic styling to a table (padding, bottom borders, etc)",CSS,tables,bootstrap,,".table-hover, .table-striped, .table-border, .table-condensed",.table-responsive,table
+.table-bordered,Bordered Table,Adds borders on all sides of the table and cells,CSS,tables-bordered,bootstrap,,.table,-,table
+.table-condensed,Condensed Table,Makes a table more compact by cutting cell padding in half,CSS,tables-condensed,bootstrap,,.table,-,table
+.table-striped,Striped Table,add zebra-striping to any table row within the <tbody>,CSS,tables-striped,bootstrap,,.table,-,table
+.table-hover,Table with Row Hover,Creates a hoverable table (adds a grey background color on table rows on hover),CSS,tables-hover-rows,bootstrap,,.table,-,table
+.table-responsive,Responsive Table,Makes a table responsive (adds a horizontal scrollbar when needed),CSS,tables-responsive,bootstrap,,-,-,div
+.text-capitalize,Capitalize Text,"Indicates capitalized text, this class will allow us to make the text in capital letters.",CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div"
+.text-center,Center Align Text,"It aligns our text to center, or Center-aligns text",CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div"
+.text-danger,Danger Color Text,text-danger class applys red color to text which Indicates danger.,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div"
+.text-hide,Hide Text,Hides text (helps replace an elements text content with a background image),CSS,helpers,bootstrap,,-,-,"h*, p, div, span"
+.text-info,Info Color Text,Light-blue text color. Indicates information,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, span, h*"
+.text-justify,Justified Text,Indicates justified text,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, h*"
+.text-left,Left Align Text,Aligns the text to the left,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, h*"
+.text-lowercase,Lowercase Text,Changes text to lowercase,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, h*"
+.text-muted,Muted Color Text,text-muted class turns the text to Grey color.,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, span, h*"
+.text-nowrap,Nowrap Text,Prevents the text from wrapping,CSS,helpers,bootstrap,,-,-,"p, div, h*"
+.text-primary,Primary Color Text,text-primary class turns the text to blue color.,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, span, h*"
+.text-right,Right Align Text,Aligns text to the right,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, h*"
+.text-success,Success Color Text,Green text color. Indicates success,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, span, h*"
+.text-uppercase,Uppercase Text,Makes text uppercase,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, h*"
+.text-warning,Warning Color Text,Yellow/orange text color. Indicates warning,CSS,helpers,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,"p, div, span, h*"
+.text-breakpoint-center,Responsive Text Center,Supports Center Text Alignment as per breakpoint,CSS,helpers,bootstrap-essentials,,-,-,"p, div, span, h*"
+.text-breakpoint-left,Responsive Text Left,Supports Left Text Alignment as per breakpoint,CSS,helpers,bootstrap-essentials,,-,-,"p, div, span, h*"
+.text-breakpoint-right,Responsive Text Right,Supports Right Text Alignment as per breakpoint,CSS,helpers,bootstrap-essentials,,-,-,"p, div, span, h*"
+.thumbnail,Thumbnail,Adds a border around an element (often images or videos) to make it look like a thumbnail,Component,images,bootstrap,,-,-,"a, div"
+.vertical-middle,Vertical Middle,"Utility class to vertical middle align a table-cell, inline block and inline element",CSS,helpers,bootstrap-essentials,,.row,".container-table, .table","div, tr"
+.vertical-top,Vertical Top,"Utility class to vertical top align a table-cell, inline block and inline element",CSS,helpers,bootstrap-essentials,,.row,".container-table, .table","div, tr"
+.vertical-bottom,Vertical Bottom,"Utility class to vertical bottom align a table-cell, inline block and inline element",CSS,helpers,bootstrap-essentials,,.row,".container-table, .table","div, tr"
+.visible-breakpoint,Responsive Visibility Classes,Deprecated as of v3.2.0. Used to show and/or hide content by device. Note: Use .hidden-* instead,CSS,responsive-utilities-classes,bootstrap,,-,-,*
+.visible-print-block,Print Visible,Displays the element (display:block) in print (pre)view,CSS,responsive-utilities-print,bootstrap,,-,-,*
+.visible-print-inline,Print Visible Inline,Displays the element (display:inline) in print (pre)view,CSS,responsive-utilities-print,bootstrap,,-,-,*
+.visible-print-inline-block,Print Visible Inline Block,Displays the element (display:inline-block) in print (pre)view,CSS,responsive-utilities-print,bootstrap,,-,-,*
+.hidden-print,Hidden in Print,Hides the element (display:none) in print (pre)view,CSS,responsive-utilities-print,bootstrap,,-,-,*
+.warning,Table Warning Row,Adds a yellow background color to the table row (<tr> or table cell (<td>). Indicates a warning,CSS,tables-contextual-classes,bootstrap,,-,.table,"td, tr"
+.well,Well,Wells are good for insetting some content. The default styling adds a border box and inner padding.,CSS,wells,bootstrap,,".well-lg, .well-sm",-,div
+.well-lg,Large Well,Wells are good for insetting some content. The default styling adds a border box and inner padding. This class doubles the padding.,CSS,wells,bootstrap,,.well,-,div
+.well-sm,Small Well,Wells are good for insetting some content. The default styling adds a border box and inner padding. This class decreases the padding.,CSS,wells,bootstrap,,.well,-,div
+blockquote,Blockquote,quoting blocks of content from another source within your document.,CSS,type-blockquotes,bootstrap,https://codepen.io/poojalm/pen/yXNYqm?editors=1000,-,-,blockquote

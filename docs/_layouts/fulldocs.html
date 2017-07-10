@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-sticky-footer">
 {% include fulldocs/head.html %}
 
 <body id="body" class="pt-navbar-height">
@@ -28,6 +28,16 @@
 <div class="row">
     <div class="col-xs-12 col-lg-10">
         {{content}}
+        <p>
+            <span class="h5"><strong>Related classes:</strong></span>
+            <ul class="list-inline separated text-muted">
+            {% assign classes = site.data.classes | where_exp:"class", "class.category == page.slug" %}
+            {% for class in classes %}
+                {% assign filename = class.class-name | remove: "." %}
+                <li><a href="{{site.github.url}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">{{ class.class-name }} </a></li>
+            {% endfor %}
+            </ul>
+        </p>
         {% include fulldocs/more-options.html %}
     </div>
     <div class="col-lg-2 hidden-lg">

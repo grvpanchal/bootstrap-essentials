@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" class="has-sticky-footer">
 {% include fulldocs/head.html %}
 
 <body id="body" class="pt-navbar-height" style="margin-bottom:160px;">
@@ -14,8 +14,8 @@
         {% if tag == 'bootstrap' %} label-info {% endif %}
         {% if tag == 'bootstrap-essentials' %} label-warning {% endif %}
         {% if tag == 'jasny' %} label-danger {% endif %}
-        {% if tag == 'css' %} label-default {% endif %}
-        {% if tag == 'component' %} label-success {% endif %}
+        {% if tag == 'CSS' %} label-default {% endif %}
+        {% if tag == 'Component' %} label-success {% endif %}
         ">{{ tag }}</span>
     {% endfor %}
 </div>
@@ -38,9 +38,41 @@
     {{page.description}}
 </p>
 <hr/>
-<h2>Use Cases</h2>
-            <!--Main Content -->
-            {{content}}
+<div class="container container-xs">
+    <h3 class="text-center">Usage Information</h3>
+    <div class="row">
+        <div class="container-table">
+            <div class="row row-split text-center gutter-10 vertical-middle">
+                <div class="col-sm-4">
+                    <h4>Chained Classes</h4>
+                    {% assign classes = page.chained-class | split: ", " %}
+
+                    {% for class in classes %}
+                        <code>{{ class }}</code> 
+                    {% endfor %}
+                </div>
+                <div class="col-sm-4">
+                    <h4>Parent Classes</h4>
+                    {% assign classes = page.parent-class | split: ", " %}
+
+                    {% for class in classes %}
+                        <code>{{ class }}</code> 
+                    {% endfor %}
+                </div>
+                <div class="col-sm-4">
+                    <h4>Elements</h4>
+                    {% assign elements = page.element | split: ", " %}
+
+                    {% for element in elements %}
+                        <code>&lt;{{ element }}&gt;</code> 
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--Main Content -->
+    {{content}}
          
     </div>
     {% include fulldocs/footer.html %}

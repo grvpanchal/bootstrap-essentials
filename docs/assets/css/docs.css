@@ -19,7 +19,7 @@
  */
 
 body {
-  position: relative; /* For scrollspy */
+  /*position: relative;  For scrollspy */
 }
 
 /* Keep code small in tables on account of limited space */
@@ -33,35 +33,6 @@ h2 code,
 h3 code,
 h4 code {
   background-color: inherit;
-}
-
-/* Outline button for use within the docs */
-.btn-outline {
-  color: #563d7c;
-  background-color: transparent;
-  border-color: #563d7c;
-}
-.btn-outline:hover,
-.btn-outline:focus,
-.btn-outline:active {
-  color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
-}
-
-/* Inverted outline button (white on dark) */
-.btn-outline-inverse {
-  color: #fff;
-  background-color: transparent;
-  border-color: #cdbfe3;
-}
-.btn-outline-inverse:hover,
-.btn-outline-inverse:focus,
-.btn-outline-inverse:active {
-  color: #563d7c;
-  text-shadow: none;
-  background-color: #fff;
-  border-color: #fff;
 }
 
 /* Bootstrap "B" icon */
@@ -1629,4 +1600,124 @@ h1[id] {
   a[href]:after {
     content: "" !important;
   }
+}
+
+.bs-navbar-top-example,
+.bs-navbar-bottom-example {
+    z-index: 1;
+    padding: 0;
+    overflow: hidden;
+    /* cut the drop shadows off */
+}
+
+.bs-navbar-top-example .navbar-header,
+.bs-navbar-bottom-example .navbar-header {
+    margin-left: 0;
+}
+
+.bs-navbar-top-example .navbar-fixed-top,
+.bs-navbar-bottom-example .navbar-fixed-bottom {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bs-navbar-top-example {
+    padding-bottom: 45px;
+}
+
+.bs-navbar-top-example:after {
+    top: auto;
+    bottom: 15px;
+}
+
+.bs-navbar-top-example .navbar-fixed-top {
+    top: -1px;
+}
+
+.bs-navbar-bottom-example {
+    padding-top: 45px;
+}
+
+.bs-navbar-bottom-example .navbar-fixed-bottom {
+    bottom: -1px;
+}
+
+.bs-navbar-bottom-example .navbar {
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .bs-navbar-top-example .navbar-fixed-top,
+    .bs-navbar-bottom-example .navbar-fixed-bottom {
+        position: absolute;
+    }
+    .bs-navbar-top-example {
+        border-radius: 0 0 4px 4px;
+    }
+    .bs-navbar-bottom-example {
+        border-radius: 4px 4px 0 0;
+    }
+}
+
+.bs-navmenu-fixed-example {
+    height: 200px;
+    position: relative;
+}
+
+.bs-navmenu-fixed-example:after {
+    left: 255px;
+}
+
+.bs-navmenu-offcanvas-example {
+    min-height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bs-navmenu-offcanvas-example:after {
+    display: none;
+}
+
+.bs-navmenu-offcanvas-example>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 70px 30px 15px 30px;
+}
+
+.bs-navmenu-offcanvas-example p {
+    color: #bbb;
+}
+
+.bs-navmenu-fixed-example .navmenu-fixed-left,
+.bs-navmenu-offcanvas-example .navmenu-fixed-left,
+.bs-navmenu-offcanvas-example .navbar-fixed-top {
+    position: absolute;
+    z-index: 1;
+}
+
+.bs-navmenu-offcanvas-example .navmenu-fixed-left {
+    -webkit-transform: translate(-240px, 0);
+    transform: translate(-240px, 0);
+}
+
+.bs-navmenu-offcanvas-example .navbar-toggle {
+    float: left;
+    margin-left: 15px;
+    display: block;
+}
+
+pre>code {
+    background-color: #f5f5f5 !important;
+    white-space: pre;
+    overflow-x: initial !important;
+    padding: 0 !important;
+    margin: 0;
+}
+
+#myNavmenuCanvas .navmenu-modal {
+    background-color: transparent;
 }
