@@ -1,1 +1,1 @@
-Sitemap: http://www.bootstrapessentials.com/sitemap.xml
+Sitemap: http://bootstrapessentials.com/sitemap.xml
