@@ -1,0 +1,2661 @@
+<!DOCTYPE html>
+<html lang="en" class="has-sticky-footer">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warning Label - Documentation - Bootstrap Essentials</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/dist/css/bootstrap-essentials.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+    <link rel="stylesheet" href="/assets/css/docs.css" />
+    <style>
+        @media (max-width: 767px) {
+            .navmenu.pt-navbar-height {
+                margin-top: 0;
+            }
+        }
+        @media (min-width: 768px) {
+            body {
+                margin-left: 240px;
+            }
+            .navmenu-fixed-left ~ .footer,
+            .navmenu-fixed-right ~ .footer {
+                width: calc(100% - 240px);
+            }
+            
+        }
+
+       body {
+           margin-bottom: 160px;
+       }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Begin Jekyll SEO tag v2.1.0 -->
+<meta property="og:title" content="Warning Label" />
+<meta name="description" content="Change color of the label by adding label-warning class for Yellow label" />
+<meta property="og:description" content="Change color of the label by adding label-warning class for Yellow label" />
+<link rel="canonical" href="http://www.bootstrapessentials.com/fulldocs/classes/label-warning/" />
+<meta property="og:url" content="http://www.bootstrapessentials.com/fulldocs/classes/label-warning/" />
+<meta property="og:site_name" content="Bootstrap Essentials" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "Warning Label",
+"description": "Change color of the label by adding label-warning class for Yellow label",
+"url": "http://www.bootstrapessentials.com/fulldocs/classes/label-warning/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body id="body" class="pt-navbar-height" style="margin-bottom:160px;" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+    <!-- Navigation -->
+<header role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+	<meta itemprop="name" content="Warning Label"/>
+    <meta itemprop="description" content="Change color of the label by adding label-warning class for Yellow label "/>
+    <meta itemprop="keywords" content="classes, , CSS"/>
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-slide-nav mb-xs-0" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+	
+		<div class="navbar-right-static">
+				
+			<ul class="nav navbar-nav">
+				<li class="visible-xs">
+					<a href="#navmenu" data-toggle="offcanvas" class="fs-xs-1-4"> <i class="fa fa-book"></i></a>
+				</li>
+			</ul>
+			
+		</div>
+
+		<div class="navbar-header"> <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#navbar" aria-expanded="false"
+				aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+			<span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<a class="navbar-brand" href="/fulldocs">Bootstrap <span class="hidden-sm hidden-md hidden-lg ">Docs</span> <span class="hidden-xs">Documentation</span></a>
+		</div>
+		<div id="navbar" class="navbar-slide offcanvas">
+			<ul class="nav navbar-nav">
+				<li ><a href="/fulldocs/css" itemprop="url"><span itemprop="name">CSS</span></a></li>
+				<li ><a href="/fulldocs/components" itemprop="url"><span itemprop="name">Components</span></a></li>
+				<li  class="active" ><a href="/fulldocs/classes" itemprop="url"><span itemprop="name">Classes</span></a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip" title="Bootstrap 3.3.7"><i class="fa fa-download"></i> BS 3.3.7</a></li>
+				<li><a href="https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.5.0/bootstrap-essentials-0.5.0-dist.zip" title="Bootstrap Essentials 0.5.0"><i class="fa fa-download"></i> BSE 0.5.0</a></li>
+			</ul>
+		</div>
+		<!--/.nav-collapse -->
+	</nav>
+</header>
+    <nav class="navmenu navbar-default navmenu-fixed-left offcanvas-xs mt-navbar-height" id="navmenu">
+    <ul class="nav navbar-nav">
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/td-active">
+                    td .active
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-nav-li-active">
+                    .navbar-nav li .active
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group-item-active">
+                    .list-group-item .active
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-active">
+                    .btn .active
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/progress-bar-active">
+                    .progress-bar .active
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dropdown-active">
+                    .dropdown .active
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pagination-active">
+                    .pagination .active
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/affix">
+                    .affix
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/alert">
+                    .alert
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/alert-danger">
+                    .alert-danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/alert-dismissable">
+                    .alert-dismissable
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/alert-info">
+                    .alert-info
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/alert-link">
+                    .alert-link
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/alert-success">
+                    .alert-success
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/alert-warning">
+                    .alert-warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/avatar">
+                    .avatar
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/avatar-16">
+                    .avatar-16
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/avatar-24">
+                    .avatar-24
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/avatar-32">
+                    .avatar-32
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/avatar-48">
+                    .avatar-48
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/avatar-64">
+                    .avatar-64
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/avatar-96">
+                    .avatar-96
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/avatar-128">
+                    .avatar-128
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/b">
+                    .b
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/b-0">
+                    .b-0
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bt">
+                    .bt
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bt-0">
+                    .bt-0
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/br">
+                    .br
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/br-0">
+                    .br-0
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bb">
+                    .bb
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bb-0">
+                    .bb-0
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bl">
+                    .bl
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bl-0">
+                    .bl-0
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-file">
+                    .btn-file
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-circle">
+                    .btn-circle
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-rounded">
+                    .btn-rounded
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-outline">
+                    .btn-outline
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-img">
+                    .bg-img
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-jumbotron">
+                    .bg-jumbotron
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-transparent">
+                    .bg-transparent
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-well">
+                    .bg-well
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-white">
+                    .bg-white
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/badge">
+                    .badge
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-danger">
+                    .bg-danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-info">
+                    .bg-info
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-primary">
+                    .bg-primary
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-success">
+                    .bg-success
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/bg-warning">
+                    .bg-warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/breadcrumb">
+                    .breadcrumb
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn">
+                    .btn
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-block">
+                    .btn-block
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-block-xs">
+                    .btn-block-xs
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-danger">
+                    .btn-danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-default">
+                    .btn-default
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-group">
+                    .btn-group
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-group-justified">
+                    .btn-group-justified
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-group-lg">
+                    .btn-group-lg
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-group-sm">
+                    .btn-group-sm
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-group-xs">
+                    .btn-group-xs
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-group-vertical">
+                    .btn-group-vertical
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-info">
+                    .btn-info
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-link">
+                    .btn-link
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-lg">
+                    .btn-lg
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-primary">
+                    .btn-primary
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-sm">
+                    .btn-sm
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-success">
+                    .btn-success
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-warning">
+                    .btn-warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-xs">
+                    .btn-xs
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/caption">
+                    .caption
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/caret">
+                    .caret
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/carousel">
+                    .carousel
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/carousel-caption">
+                    .carousel-caption
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/carousel-control">
+                    .carousel-control
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/carousel-indicators">
+                    .carousel-indicators
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/carousel-inner">
+                    .carousel-inner
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/center-block">
+                    .center-block
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/checkbox">
+                    .checkbox
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/checkbox-inline">
+                    .checkbox-inline
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/clearfix">
+                    .clearfix
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/close">
+                    .close
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/col-breakpoint-size">
+                    .col-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/col-breakpoint-offset-size">
+                    .col-breakpoint-offset-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/col-breakpoint-pull-size">
+                    .col-breakpoint-pull-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/col-breakpoint-push-size">
+                    .col-breakpoint-push-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/collapse">
+                    .collapse
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/collapse-in">
+                    .collapse .in
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container">
+                    .container
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container-fluid">
+                    .container-fluid
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container-flex">
+                    .container-flex
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container-login">
+                    .container-login
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container-login-2">
+                    .container-login-2
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container-md">
+                    .container-md
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container-sm">
+                    .container-sm
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container-smooth">
+                    .container-smooth
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container-table">
+                    .container-table
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/container-xs">
+                    .container-xs
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/control-label">
+                    .control-label
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/danger">
+                    .danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/btn-disabled">
+                    .btn .disabled
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dropdown-disabled">
+                    .dropdown .disabled
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pagination-disabled">
+                    .pagination .disabled
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group-disabled">
+                    .list-group .disabled
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/divider">
+                    .divider
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dl-horizontal">
+                    .dl-horizontal
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dropdown">
+                    .dropdown
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dropdown-header">
+                    .dropdown-header
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dropdown-menu">
+                    .dropdown-menu
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dropdown-menu-right">
+                    .dropdown-menu-right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dropdown-submenu">
+                    .dropdown-submenu
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dropdown-toggle">
+                    .dropdown-toggle
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/dropup">
+                    .dropup
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/embed-responsive">
+                    .embed-responsive
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/embed-responsive-16by9">
+                    .embed-responsive-16by9
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/embed-responsive-4by3">
+                    .embed-responsive-4by3
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/embed-responsive-item">
+                    .embed-responsive-item
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/alert-fade">
+                    .alert .fade
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/form-control">
+                    .form-control
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/form-control-feedback">
+                    .form-control-feedback
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/form-control-static">
+                    .form-control-static
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/form-group">
+                    .form-group
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/form-inline">
+                    .form-inline
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/form-horizontal">
+                    .form-horizontal
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/gutter-justified">
+                    .gutter-justified
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/gutter-0">
+                    .gutter-0
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/gutter-5">
+                    .gutter-5
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/gutter-10">
+                    .gutter-10
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/gutter-15">
+                    .gutter-15
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/gutter-20">
+                    .gutter-20
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/footer">
+                    .footer
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/fileinput">
+                    .fileinput
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/fileinput-preview">
+                    .fileinput-preview
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/fill">
+                    .fill
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/full-height">
+                    .full-height
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/fs-breakpoint-size">
+                    .fs-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/fixed-width-right">
+                    .fixed-width-right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/glyphicon">
+                    .glyphicon
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/has-danger">
+                    .has-danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/has-feedback">
+                    .has-feedback
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/has-success">
+                    .has-success
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/has-warning">
+                    .has-warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/has-sticky-footer">
+                    .has-sticky-footer
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/help-block">
+                    .help-block
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/hidden">
+                    .hidden
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/hidden-breakpoint">
+                    .hidden-breakpoint
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/hide">
+                    .hide
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/h1-h6">
+                    .h1-.h6
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/icon-bar">
+                    .icon-bar
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/icon-next">
+                    .icon-next
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/icon-prev">
+                    .icon-prev
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/img-circle">
+                    .img-circle
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/img-responsive">
+                    .img-responsive
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/img-rounded">
+                    .img-rounded
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/img-thumbnail">
+                    .img-thumbnail
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/fade-in">
+                    .fade .in
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/info">
+                    .info
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/initialism">
+                    .initialism
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/input-group">
+                    .input-group
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/input-group-lg">
+                    .input-group-lg
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/input-group-sm">
+                    .input-group-sm
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/input-group-addon">
+                    .input-group-addon
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/input-group-btn">
+                    .input-group-btn
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/input-lg">
+                    .input-lg
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/input-sm">
+                    .input-sm
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/invisible">
+                    .invisible
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/item">
+                    .item
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/jumbotron">
+                    .jumbotron
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/label">
+                    .label
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/label-danger">
+                    .label-danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/label-info">
+                    .label-info
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/label-success">
+                    .label-success
+                </a>
+            </li>      
+        
+            <li class=" active ">
+                    
+                <a href="/fulldocs/classes/label-warning">
+                    .label-warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/lead">
+                    .lead
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/left">
+                    .left
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group">
+                    .list-group
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group-item">
+                    .list-group-item
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group-item-heading">
+                    .list-group-item-heading
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group-item-text">
+                    .list-group-item-text
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group-item-danger">
+                    .list-group-item-danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group-item-info">
+                    .list-group-item-info
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group-item-success">
+                    .list-group-item-success
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-group-item-warning">
+                    .list-group-item-warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-inline">
+                    .list-inline
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/list-unstyled">
+                    .list-unstyled
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/mark">
+                    .mark
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/media">
+                    .media
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/media-body">
+                    .media-body
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/media-heading">
+                    .media-heading
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/media-list">
+                    .media-list
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/media-left">
+                    .media-left
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/media-right">
+                    .media-right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/media-object">
+                    .media-object
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal">
+                    .modal
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal-body">
+                    .modal-body
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal-content">
+                    .modal-content
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal-dialog">
+                    .modal-dialog
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal-footer">
+                    .modal-footer
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal-header">
+                    .modal-header
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal-lg">
+                    .modal-lg
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal-open">
+                    .modal-open
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal-sm">
+                    .modal-sm
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/modal-title">
+                    .modal-title
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/mt-navbar-height">
+                    .mt-navbar-height
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/mb-navbar-height">
+                    .mb-navbar-height
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/m-breakpoint-size">
+                    .m-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/mt-breakpoint-size">
+                    .mt-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/mr-breakpoint-size">
+                    .mr-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/mb-breakpoint-size">
+                    .mb-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/ml-breakpoint-size">
+                    .ml-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/nav-tabs">
+                    .nav-tabs
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/nav-pills">
+                    .nav-pills
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-nav">
+                    .navbar-nav
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/nav-justified">
+                    .nav-justified
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/nav-stacked">
+                    .nav-stacked
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar">
+                    .navbar
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-brand">
+                    .navbar-brand
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-btn">
+                    .navbar-btn
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-collapse">
+                    .navbar-collapse
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-default">
+                    .navbar-default
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-fixed-bottom">
+                    .navbar-fixed-bottom
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-fixed-top">
+                    .navbar-fixed-top
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-form">
+                    .navbar-form
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-header">
+                    .navbar-header
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-inverse">
+                    .navbar-inverse
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-left">
+                    .navbar-left
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-link">
+                    .navbar-link
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-nav">
+                    .navbar-nav
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-right">
+                    .navbar-right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-static-top">
+                    .navbar-static-top
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-text">
+                    .navbar-text
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-toggle">
+                    .navbar-toggle
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/nav-justified-xs">
+                    .nav-justified-xs
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navmenu">
+                    .navmenu
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navmenu-fixed-left">
+                    .navmenu-fixed-left
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navmenu-fixed-right">
+                    .navmenu-fixed-right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/no-underline">
+                    .no-underline
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-slide-nav">
+                    .navbar-slide-nav
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-right-static">
+                    .navbar-right-static
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-justified">
+                    .navbar-justified
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/carousel-next">
+                    .carousel .next
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pager-next">
+                    .pager .next
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/offcanvas">
+                    .offcanvas
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/offcanvas-breakpoint">
+                    .offcanvas-breakpoint
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/page">
+                    .page
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/page-main">
+                    .page-main
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/page-content">
+                    .page-content
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/page-sidebar">
+                    .page-sidebar
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/page-header">
+                    .page-header
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pager">
+                    .pager
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pagination">
+                    .pagination
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pagination-lg">
+                    .pagination-lg
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pagination-sm">
+                    .pagination-sm
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel">
+                    .panel
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-body">
+                    .panel-body
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-collapse">
+                    .panel-collapse
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-danger">
+                    .panel-danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-info">
+                    .panel-info
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-success">
+                    .panel-success
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-warning">
+                    .panel-warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-footer">
+                    .panel-footer
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-group">
+                    .panel-group
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-heading">
+                    .panel-heading
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-title">
+                    .panel-title
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pre-scrollable">
+                    .pre-scrollable
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/prev">
+                    .prev
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/previous">
+                    .previous
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/progress">
+                    .progress
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/progress-bar">
+                    .progress-bar
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/progress-bar-danger">
+                    .progress-bar-danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/progress-bar-info">
+                    .progress-bar-info
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/progress-bar-striped">
+                    .progress-bar-striped
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/progress-bar-success">
+                    .progress-bar-success
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/progress-bar-warning">
+                    .progress-bar-warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pull-left">
+                    .pull-left
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pull-right">
+                    .pull-right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pt-navbar-height">
+                    .pt-navbar-height
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pt-navbar-height">
+                    .pt-navbar-height
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/p-breakpoint-size">
+                    .p-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pt-breakpoint-size">
+                    .pt-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pr-breakpoint-size">
+                    .pr-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pb-breakpoint-size">
+                    .pb-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/pl-breakpoint-size">
+                    .pl-breakpoint-size
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/carousel-right">
+                    .carousel .right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/row">
+                    .row
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/row-flex">
+                    .row-flex
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/row-split">
+                    .row-split
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/separated">
+                    .separated
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/show">
+                    .show
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/small">
+                    .small
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/sr-only">
+                    .sr-only
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/sr-only-focusable">
+                    .sr-only-focusable
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/success">
+                    .success
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/tab-content">
+                    .tab-content
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/tab-pane">
+                    .tab-pane
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/tabs-left">
+                    .tabs-left
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/tabs-right">
+                    .tabs-right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/table">
+                    .table
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/table-bordered">
+                    .table-bordered
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/table-condensed">
+                    .table-condensed
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/table-striped">
+                    .table-striped
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/table-hover">
+                    .table-hover
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/table-responsive">
+                    .table-responsive
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-capitalize">
+                    .text-capitalize
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-center">
+                    .text-center
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-danger">
+                    .text-danger
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-hide">
+                    .text-hide
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-info">
+                    .text-info
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-justify">
+                    .text-justify
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-left">
+                    .text-left
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-lowercase">
+                    .text-lowercase
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-muted">
+                    .text-muted
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-nowrap">
+                    .text-nowrap
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-primary">
+                    .text-primary
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-right">
+                    .text-right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-success">
+                    .text-success
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-uppercase">
+                    .text-uppercase
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-warning">
+                    .text-warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-breakpoint-center">
+                    .text-breakpoint-center
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-breakpoint-left">
+                    .text-breakpoint-left
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/text-breakpoint-right">
+                    .text-breakpoint-right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/thumbnail">
+                    .thumbnail
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/vertical-middle">
+                    .vertical-middle
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/vertical-top">
+                    .vertical-top
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/vertical-bottom">
+                    .vertical-bottom
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/visible-breakpoint">
+                    .visible-breakpoint
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/visible-print-block">
+                    .visible-print-block
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/visible-print-inline">
+                    .visible-print-inline
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/visible-print-inline-block">
+                    .visible-print-inline-block
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/hidden-print">
+                    .hidden-print
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/warning">
+                    .warning
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/well">
+                    .well
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/well-lg">
+                    .well-lg
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/well-sm">
+                    .well-sm
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/blockquote">
+                    blockquote
+                </a>
+            </li>      
+        
+    </ul>
+</nav>
+    
+    <div class="container-fluid pl-sm-30 pr-sm-30 pb-xs-50">
+            <div class="pull-right p-sm-20 hidden-xs">
+    
+        <span class="label 
+         label-info 
+        
+        
+        
+        
+        ">bootstrap</span>
+    
+        <span class="label 
+        
+        
+        
+         label-default 
+        
+        ">CSS</span>
+    
+</div>
+<div class="page-header">
+    <h1>Warning Label <small><code>.label-warning</code></small></h1>
+    
+  <ol class="breadcrumb hidden-xs"  vocab="http://schema.org/" typeof="BreadcrumbList">
+    
+    
+      
+
+      
+
+      
+
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/"><span property="name">Home</span><meta property="position" content="1" /></a>
+      </li>
+    
+      
+
+      
+
+      
+
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/fulldocs/"><span property="name">Full Documentation</span><meta property="position" content="2" /></a>
+      </li>
+    
+      
+
+      
+
+      
+
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/fulldocs/classes/"><span property="name">Classes</span><meta property="position" content="3" /></a>
+      </li>
+    
+      
+
+      
+
+      
+        <li class="breadcrumb-item" property="itemListElement" typeof="ListItem"><span property="name">Warning Label</span><meta property="position" content="4" /></li>
+        
+
+  </ol>
+
+<!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
+<style>
+nav.breadcrumbs.bootstrap {
+  /* from Twitter Bootstrap 4 */
+  /* If you already use Twitter, you do not need these css lines above, cause they already in Twitter Bootstrap */
+  /* Additions: image integration */
+}
+nav.breadcrumbs.bootstrap ol {
+  margin-left: 0
+}
+nav.breadcrumbs.bootstrap .breadcrumb {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #f1f2ed;
+  border-radius: 0.25rem;
+}
+nav.breadcrumbs.bootstrap .breadcrumb::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item {
+  float: left;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #818a91;
+  content: "/";
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item-active {
+  color: #818a91;
+}
+
+nav.breadcrumbs.bootstrap .breadcrumb a.breadcrumb-item:after {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  content: "/";
+  text-decoration: none;
+}
+nav.breadcrumbs.bootstrap .breadcrumb .icon:after {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #818a91;
+  content: "/";
+}
+nav.breadcrumbs.bootstrap .breadcrumb .icon {
+  display: inline-block;
+}
+nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
+  height: 0.7rem;
+  width: 0.7rem;
+}
+</style>
+    
+</div>
+<div class="row">
+    <div class="col-xs-12 col-lg-9">
+<h2>Description</h2>
+<p class="lead">
+    Change color of the label by adding label-warning class for Yellow label
+</p>
+<hr/>
+<div class="container container-xs">
+    <h3 class="text-center">Usage Information</h3>
+    <div class="row">
+        <div class="container-table">
+            <div class="row row-split text-center gutter-10 vertical-middle">
+                <div class="col-sm-4">
+                    <h4>Chained Classes</h4>
+                    
+
+                    
+                        <code>-</code> 
+                    
+                </div>
+                <div class="col-sm-4">
+                    <h4>Parent Classes</h4>
+                    
+
+                    
+                        <code>.label</code> 
+                    
+                </div>
+                <div class="col-sm-4">
+                    <h4>Elements</h4>
+                    
+
+                    
+                        <code>&lt;span&gt;</code> 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--Main Content -->
+    
+    </div>
+    <div class="col-lg-3 visible-lg">
+
+    </div>
+</div>
+         
+    </div>
+    <footer class="footer pb-xs-30 navbar-default" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+	<meta itemprop="name" content="Webpage footer for Warning Label"/>
+	<meta itemprop="description" content="Bootstrap Essentials designed by @grvpanchal and maintained by Söoryen Innovation Labs"/>
+	<meta itemprop="keywords" content="grvpanchal, mdo, fat, bootstrap, bootstrap-essentials"/>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="list-inline">
+					<li>
+						<h4><a href="http://github.com/grvpanchal/bootstrap-essentials" >GitHub</a></h4>
+					</li>
+					<li>
+						<h4><a href="/fulldocs/#examples" >Classes</a></h4>
+					</li>
+					<li>
+						<h4><a href="http://twitter.com/grvpanchal" >Twitter</a></h4>
+					</li>
+					<li>
+						<h4><a href="/about" >About</a></h4>
+					</li>
+				</ul>
+				<p class="text-right pull-right">Bootstrap Essentials designed by <a href="http://twitter.com/grvpanchal">@grvpanchal</a> and maintained by <a href="http://www.sooryen.com/">Söoryen
+                Innovation Labs</a>.<br> Bootstrap developed by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>					and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#body" title="Scroll to Top" class="
+		hidden-xs
+		btn 
+		btn-lg
+		btn-primary
+		btn-circle
+		action-btn" data-toggle="scroll" data-spy="affix" data-offset-top="100"> <i class="glyphicon glyphicon-chevron-up"></i>
+</a>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/dist/js/bootstrap-essentials.min.js"></script>
+<script type="text/javascript" src="/assets/js/docs.min.js"></script>
+</body>
+
+</html>

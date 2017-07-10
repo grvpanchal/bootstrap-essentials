@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="has-sticky-footer">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Javascript - Bootstrap Essentials</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/dist/css/bootstrap-essentials.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/googlecode.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+    <link href="" rel="stylesheet" id="bs-css">
+    <link href="" rel="stylesheet" id="bse-css">
+    <link rel="stylesheet" href="/assets/css/style.min.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Begin Jekyll SEO tag v2.1.0 -->
+<meta property="og:title" content="Javascript" />
+<meta name="description" content="Bring Bootstrap’s components to life with custom jQuery plugins. Easily include them all, or one by one." />
+<meta property="og:description" content="Bring Bootstrap’s components to life with custom jQuery plugins. Easily include them all, or one by one." />
+<link rel="canonical" href="http://www.bootstrapessentials.com/javascript/" />
+<meta property="og:url" content="http://www.bootstrapessentials.com/javascript/" />
+<meta property="og:site_name" content="Bootstrap Essentials" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "Javascript",
+"description": "Bring Bootstrap’s components to life with custom jQuery plugins. Easily include them all, or one by one.",
+"url": "http://www.bootstrapessentials.com/javascript/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="20" id="body" class="pt-navbar-height" style="margin-bottom:160px;" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+    <header role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+	<meta itemprop="name" content="Javascript"/>
+    <meta itemprop="description" content="Bring Bootstrap's components to life with custom jQuery plugins. Easily include them all, or one by one."/>
+    <meta itemprop="keywords" content="css-framework, bootstrap, bootstrap-essentials, javascript, jQuery, plugins"/>
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-slide-nav mb-xs-0" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+		<div class="container">
+			<div class="navbar-right-static">
+				
+				<ul class="nav navbar-nav">
+					<li class="hidden-md hidden-lg">
+						<a href="#" data-toggle="modal" data-target="#themeModal" class="fs-xs-1-4"><i class="fa fa-paint-brush"></i></a>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="navbar-header"> <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#navbar" aria-expanded="false"
+				    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="../">Bootstrap Essentials</a>
+			</div>
+			<div id="navbar" class="navbar-slide offcanvas">
+				<ul class="nav navbar-nav">
+					<li ><a href="/getting-started" itemprop="url"><span itemprop="name">Getting Started</span></a></li>
+					<li ><a href="/css">CSS</a></li>
+					<li ><a href="/components" itemprop="url"><span itemprop="name">Components</span></a></li>
+					<li  class="active" ><a href="/javascript" itemprop="url"><span itemprop="name">JavaScript</span></a></li>
+					<li ><a href="/fulldocs" itemprop="url"><span itemprop="name">Full Docs</span></a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden-xs hidden-sm">
+        <a href="javascript:void(0);" id="themeSelector">
+            <select id="change-css" class="selectpicker" data-live-search="true">
+                <option value="cerulean">Cerulean</option>
+                <option value="cosmo">Cosmo</option>
+                <option value="default" selected>Default</option>
+                <option value="flatly">Flatly</option>
+                <option value="journal">Journal</option>
+                <option value="lumen">Lumen</option>
+                <option value="readable">Readable</option>
+                <option value="sandstone">Sandstone</option>
+                <option value="simplex">Simplex</option>
+                <option value="spacelab">Spacelab</option>
+                <option value="united">United</option>
+                <option value="yeti">Yeti</option>
+            </select>
+        </a>
+    </li>
+				</ul>
+				
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+</header>
+    <div class="jumbotron">
+        <div class="container text-xs-center text-sm-left">
+            <h1>Javascript</h1>
+            <p>Bring Bootstrap's components to life with custom jQuery plugins. Easily include them all, or one by one.</p>
+        </div>
+    </div>
+    <div class="container pb-xs-50">
+        <div class="row">
+            <!--Main Content -->
+                    <div class="col-sm-9" role="main">
+                            <section id="offcanvas">
+                    <h1 class="page-header">Off canvas <small>offcanvas.js</small></h2>
+                    <div id="offcanvas-example">
+                        <h2>Example</h2>
+                        <p>The offcanvas plugin allows you to hide an element from sight and than show it by moving either that or any other element. It's intended to be used for off canvas navigation, like push menus.</p>
+                        <div class="panel panel-default">
+                            <div class="panel-body bs-navmenu-offcanvas-example">
+                                <div id="myNavmenuCanvas" class="" style="">
+                                    <nav id="myNavmenu" class="navmenu navbar-default navmenu-fixed-left offcanvas" role="navigation">
+                                        <a class="navbar-brand" href="#">Brand</a>
+                                        <ul class="nav navbar-nav">
+                                            <li class="active"><a href="#">Home</a></li>
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="navbar navbar-default navbar-fixed-top">
+                                        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="#myNavmenuCanvas" data-placement="left">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in aliquet nisl. Praesent sed leo congue, fringilla eros eu, tempus metus. Nam mollis odio ipsum, non vehicula ipsum accumsan sodales. Morbi varius vitae elit euismod cursus. Donec
+                                        a dapibus justo, in facilisis nisi. Suspendisse ut turpis dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui risus, tincidunt at odio ut, ultrices dignissim ipsum. Cras ultrices erat nec leo luctus varius. Nulla
+                                        sollicitudin tincidunt nulla, ut porta mauris volutpat vitae. Suspendisse ornare dolor sit amet massa venenatis pulvinar.</p>
+                                </div>
+                            </div>
+                            <!-- /example -->
+                            <div class="panel-footer pb-xs-0">
+                                <pre class="p-xs-0 b-0 mb-xs-0"><code class="html" >
+&lt;nav id=&quot;myNavmenu&quot; class=&quot;navmenu navbar-default navmenu-fixed-left offcanvas&quot; role=&quot;navigation&quot;&gt;
+            ...
+&lt;/nav&gt;
+&lt;div class=&quot;navbar navbar-default navbar-fixed-top&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;offcanvas&quot; data-target=&quot;#myNavmenu&quot; data-canvas=&quot;body&quot;&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+                        </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="offcanvas-usage">
+                    <h2>Usage</h2>
+                        <p>Add <code>.offcanvas</code> to hide an element. Alternatively add <code>.offcanvas-*</code> to hide an element up to a specific viewport width. Adding the <code>.offcanvas</code> class is not required. You may also hide an element by any other means.</p>
+                        <p>The effect works best for elements positioned to the top, bottom, left or right of the window, either with absolute or fixed positioning.</p>
+                        <p>When shown, the plugin adds <code>.canvas-slid</code> to the element that has slid.</p>
+                        
+                        <h3>Via data attributes</h3>
+                        <p>Add <code>data-toggle="offcanvas"</code> and a <code>data-target</code> to control, assigning it to show and hide the target element. The <code>data-target</code> attribute accepts a CSS selector to apply the collapse to.</p>
+                        <p>Optionally add a <code>data-canvas</code> attribute to slide a canvas instead of only the target element. For a push menu set <code>data-canvas="body"</code>.
+
+                        </p><h3>Via JavaScript</h3>
+                        <p>Call the input mask via javascript:</p>
+                        <div class="highlight"><pre><code class="js" >$('.navmenu').offcanvas()</code></pre></div>
+
+                        <h3>Options</h3>
+                        <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                            <th style="width: 100px;">Name</th>
+                            <th style="width: 50px;">type</th>
+                            <th style="width: 100px;">default</th>
+                            <th>description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>canvas</td>
+                            <td>string</td>
+                            <td>false</td>
+                            <td>If set, the canvas will be moved on show and hide instead of the target element. This creates alternative effects.</td>
+                            </tr>
+                            <tr>
+                            <td>toggle</td>
+                            <td>boolean</td>
+                            <td>true</td>
+                            <td>Toggles the off canvas element on invocation</td>
+                            </tr>
+                            <tr>
+                            <td>placement</td>
+                            <td>string</td>
+                            <td>'auto'</td>
+                            <td>Where to position the element at the start of the animation. For example, if placement is "left", the element will slide from left to right. The default option "auto" guesses the placement based on position and dimension.</td>
+                            </tr>
+                            <tr>
+                            <td>autohide</td>
+                            <td>boolean</td>
+                            <td>true</td>
+                            <td>Hide the off canvas element if clicked anywhere other that the element.</td>
+                            </tr>
+                            <tr>
+                            <td>recalc</td>
+                            <td>boolean</td>
+                            <td>true</td>
+                            <td>Calculate if off canvas should be disabled for this viewport width on window resize. If your elements always gets hidden on window resize, try setting this to false.</td>
+                            </tr>
+                            <tr>
+                            <td>disableScrolling</td>
+                            <td>boolean</td>
+                            <td>true</td>
+                            <td>Disable scrolling when the off canvas element is shown, by setting overflow to hidden for the body.</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                        <div class="bs-callout bs-callout-danger">
+                        <h4>Graceful degradation</h4>
+                        <p>For browsers that don't support transform (mainly IE8), the <code>target</code> option is ignored. In that case, the plugin will always slide the target element. In that case <code>.canvas-slid</code> will be added to the target element instead.</p>
+                        </div>
+                        
+
+                        <h3>Methods</h3>
+                        <h4>.offcanvas(options)</h4>
+                        <p>Initializes the off canvas element with an optional options.</p>
+                        <h4>.offcanvas('toggle')</h4>
+                        <p>Toggles an off canvas element to shown or hidden.</p>
+                        <h4>.offcanvas('show')</h4>
+                        <p>Shows an off canvas element.</p>
+                        <h4>.offcanvas('hide')</h4>
+                        <p>Hides an off canvas element.</p>
+                        
+                        <h3>Events</h3>
+                        <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th style="width: 150px;">Event Type</th>
+                                <th>Description</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>show.bs.offcanvas</td>
+                                <td>This event fires immediately when the show instance method is called.</td>
+                            </tr>
+                            <tr>
+                                <td>shown.bs.offcanvas</td>
+                                <td>This event is fired when the target has been made visible to the user (will wait for CSS transitions to complete).</td>
+                            </tr>
+                            <tr>
+                                <td>hide.bs.offcanvas</td>
+                                <td>This event is fired immediately when the hide instance method has been called.</td>
+                            </tr>
+                            <tr>
+                                <td>hidden.bs.offcanvas</td>
+                                <td>This event is fired when the modal has finished being hidden from the user (will wait for CSS transitions to complete).</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- ./bs-table-responsive -->
+                    </div>
+                </section>
+             <section id="fileinput">
+                    <h1 class="page-header">File input <small>fileinput.js</small></h1>
+
+                    <div id="fileinput-examples">
+                    <h2>Examples</h2>
+                    <p>The file input plugin allows you to create a visually appealing file or image input widgets. This plugin is essential as it provide uniform look and feel to <code>input[type="file"]</code> element in all browsers.</p>
+
+                    <h3>File input widgets</h3>
+                    <div class="bs-example">
+                        <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                            <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                            <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file"></span>
+                            <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                        </div>
+                    </div>
+                    <div class="highlight"><pre><code class="html" >
+&lt;div class=&quot;fileinput fileinput-new input-group&quot; data-provides=&quot;fileinput&quot;&gt;
+    &lt;div class=&quot;form-control&quot; data-trigger=&quot;fileinput&quot;&gt;
+        &lt;i class=&quot;glyphicon glyphicon-file fileinput-exists&quot;&gt;&lt;/i&gt; 
+        &lt;span class=&quot;fileinput-filename&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;input-group-addon btn btn-default btn-file&quot;&gt;
+        &lt;span class=&quot;fileinput-new&quot;&gt;Select file&lt;/span&gt;
+        &lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;/span&gt;
+        &lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;
+    &lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;input-group-addon btn btn-default fileinput-exists&quot; data-dismiss=&quot;fileinput&quot;&gt;Remove&lt;/a&gt;
+&lt;/div&gt;
+                    </code></pre></div>
+
+                    <div class="bs-example">
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <span class="btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file"></span>
+                            <span class="fileinput-filename"></span>
+                            <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+                        </div>
+                    </div>
+                    <div class="highlight"><pre><code class="html">
+&lt;div class=&quot;fileinput fileinput-new&quot; data-provides=&quot;fileinput&quot;&gt;
+    &lt;span class=&quot;btn btn-default btn-file&quot;&gt;
+        &lt;span class=&quot;fileinput-new&quot;&gt;Select file&lt;/span&gt;
+        &lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;/span&gt;
+        &lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;
+    &lt;/span&gt;
+    &lt;span class=&quot;fileinput-filename&quot;&gt;&lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;close fileinput-exists&quot; data-dismiss=&quot;fileinput&quot; style=&quot;float: none&quot;&gt;&amp;times;&lt;/a&gt;
+&lt;/div&gt;
+                    </code></pre></div>
+                    <h3>Image upload widgets</h3>
+                    <p>When uploading an image, it's possible to show a thumbnail instead of the filename.</p>
+                    <div class="bs-example">
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                            <div>
+                                <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file"></span>
+                                <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight"><pre><code class="html" >
+&lt;div class=&quot;fileinput fileinput-new&quot; data-provides=&quot;fileinput&quot;&gt;
+    &lt;div class=&quot;fileinput-preview thumbnail&quot; data-trigger=&quot;fileinput&quot; style=&quot;width: 200px; height: 150px;&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;
+        &lt;span class=&quot;btn btn-default btn-file&quot;&gt;
+            &lt;span class=&quot;fileinput-new&quot;&gt;Select image&lt;/span&gt;
+            &lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;/span&gt;
+            &lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;
+        &lt;/span&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-default fileinput-exists&quot; data-dismiss=&quot;fileinput&quot;&gt;Remove&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div>
+
+                    <div class="bs-example">
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                <img data-src="holder.js/100%x100%" alt="100%x100%" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTkwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijk1IiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE5MHgxNDA8L3RleHQ+PC9zdmc+"
+                                    style="height: 100%; width: 100%; display: block;">
+                            </div>
+                            <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+                            <div>
+                                <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file"></span>
+                                <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight"><pre><code class="html">
+&lt;div class=&quot;fileinput fileinput-new&quot; data-provides=&quot;fileinput&quot;&gt;
+    &lt;div class=&quot;fileinput-new thumbnail&quot; style=&quot;width: 200px; height: 150px;&quot;&gt;
+        &lt;img data-src=&quot;holder.js/100%x100%&quot; alt=&quot;...&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;fileinput-preview fileinput-exists thumbnail&quot; style=&quot;max-width: 200px; max-height: 150px;&quot;&gt;&lt;/div&gt;
+    &lt;div&gt;
+        &lt;span class=&quot;btn btn-default btn-file&quot;&gt;
+            &lt;span class=&quot;fileinput-new&quot;&gt;Select image&lt;/span&gt;
+            &lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;/span&gt;
+            &lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;
+        &lt;/span&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-default fileinput-exists&quot; data-dismiss=&quot;fileinput&quot;&gt;Remove&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;          
+</code></pre></div>
+
+                    <div class="bs-callout bs-callout-warning">
+                        <p>Image preview only works in IE10+, FF3.6+, Safari6.0+, Chrome6.0+ and Opera11.1+. In older browsers the filename is shown instead.</p>
+                    </div>
+
+                    <hr class="bs-docs-separator">
+                    </div>
+                    <div id="fileinput-usage">
+                    <h2>Usage</h2>
+                    <p>Add <code>.fileinput</code> to the container. Elements inside the container with <code>.fileinput-new</code> and <code>.fileinput-exists</code> are shown or hidden based on the current state. A preview of the selected file is placed
+                        in <code>.fileinput-preview</code>. The text of <code>.fileinput-filename</code> gets set to the name of the selected file.</p>
+                    <p>The file input widget should be placed in a regular <code>&lt;form&gt;</code> replacing a standard <code>&lt;input type="file"&gt;</code>. The server side code should handle the file upload as normal.</p>
+
+                    <h3>Via data attributes</h3>
+                    <p>Add <code>data-provides="fileinput"</code> to the <code>.fileinput</code> element. Implement a button to clear the file with <code>data-dismiss="fileinput"</code>. Add <code>data-trigger="fileinput"</code> to any element within the
+                        <code>.fileinput</code> widget to trigger the file dialog.</p>
+
+                    <h3>Via JavaScript</h3>
+                    <pre class="prettyprint linenums">$('.fileinput').fileinput()</pre>
+
+                    <h3>Layout</h3>
+                    <p>Using the given elements, you can layout the upload widget the way you want, either with a fixed <code>width</code> and <code>height</code> or with <code>max-width</code> and <code>max-height</code>.</p>
+
+                    <h3>Options</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th style="width: 100px;">Name</th>
+                                    <th style="width: 50px;">type</th>
+                                    <th>description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>string</td>
+                                    <td>Use this option instead of setting the <code>name</code> attribute on the <code>&lt;input&gt;</code> element to prevent it from being part of the post data when not changed.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Methods</h3>
+                    <h4>.fileinput(options)</h4>
+                    <p>Initializes a file upload widget.</p>
+                    <h4>.fileinput('clear')</h4>
+                    <p>Clear the selected file.</p>
+                    <h4>.fileinput('reset')</h4>
+                    <p>Reset the form element to the original value.</p>
+
+                    <h3>Events</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th style="width: 150px;">Event Type</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>change.bs.fileinput</td>
+                                    <td>This event is fired after a file is selected.</td>
+                                </tr>
+                                <tr>
+                                    <td>clear.bs.fileinput</td>
+                                    <td>This event is fired when the file input is cleared.</td>
+                                </tr>
+                                <tr>
+                                    <td>reset.bs.fileinput</td>
+                                    <td>This event is fired when the file input is reset.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <!-- ./bs-table-responsive -->
+                </section>
+        </div>
+        <!--Nav Bar -->
+        <aside class="col-sm-3" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs">
+                <ul class="nav bs-docs-sidenav">
+                    <li class="active"> <a href="#offcanvas" data-toggle="scroll">Off canvas</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#offcanvas-example" data-toggle="scroll">Example</a></li>
+                            <li><a href="#offcanvas-usage" data-toggle="scroll">Usage</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="#fileinput" data-toggle="scroll">File Input</a>
+                        <ul class="nav nav-stacked">
+                            <li><a href="#fileinput-examples" data-toggle="scroll">Example</a></li>
+                            <li><a href="#fileinput-usage" data-toggle="scroll">Usage</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+</div>
+        </div>
+    </div>
+    <footer class="footer pb-xs-30 navbar-inverse" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+	<meta itemprop="name" content="Webpage footer for Javascript"/>
+  <meta itemprop="description" content="Bootstrap Essentials designed by @grvpanchal and maintained by Söoryen Innovation Labs"/>
+  <meta itemprop="keywords" content="grvpanchal, mdo, fat, bootstrap, bootstrap-essentials"/>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="list-inline">
+					<li>
+						<h4><a href="http://github.com/grvpanchal/bootstrap-essentials" >GitHub</a></h4>
+					</li>
+					<li>
+						<h4><a href="/getting-started/#examples" >Examples</a></h4>
+					</li>
+					<li>
+						<h4><a href="http://twitter.com/grvpanchal" >Twitter</a></h4>
+					</li>
+					<li>
+						<h4><a href="/about" >About</a></h4>
+					</li>
+				</ul>
+				<p class="text-right pull-right">Bootstrap Essentials designed by <a href="http://twitter.com/grvpanchal">@grvpanchal</a> and maintained by <a href="http://www.sooryen.com/">Söoryen
+                Innovation Labs</a>.<br> Bootstrap developed by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>					and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#body" title="Scroll to Top" class="
+		hidden-xs
+		btn 
+		btn-lg
+		btn-primary
+		btn-circle
+		action-btn" data-toggle="scroll" data-spy="affix" data-offset-top="100"> <i class="glyphicon glyphicon-chevron-up"></i>
+</a>
+ <!-- Modal -->
+  <div class="modal fade" id="themeModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Select Theme</h4>
+        </div>
+        <div class="modal-body text-center">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/dist/js/bootstrap-essentials.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="/assets/js/style-switcher.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		var bsDocs = $('.bs-docs-sidebar > .nav').offset();
+		$(window).scroll(function () {
+			if (bsDocs.top < $(window).scrollTop()) {
+				$('.bs-docs-sidebar > .nav').addClass('affix');
+			} else {
+				$('.bs-docs-sidebar > .nav').removeClass('affix');
+			}
+		});
+	});
+	$(document).ready(function () {
+		$('pre code').each(function (i, e) {
+			hljs.highlightBlock(e)
+		});
+		if(window.innerWidth < 992) {
+			var themeselect = $('#themeSelector').html();
+			$('#themeSelector').remove();
+			$('#themeModal .modal-body').append(themeselect);
+		}
+	});
+</script>
+</body>
+
+</html>

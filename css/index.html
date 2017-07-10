@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en" class="has-sticky-footer">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> CSS - Bootstrap Essentials</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/dist/css/bootstrap-essentials.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/googlecode.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css">
+    <link href="" rel="stylesheet" id="bs-css">
+    <link href="" rel="stylesheet" id="bse-css">
+    <link rel="stylesheet" href="/assets/css/style.min.css" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Begin Jekyll SEO tag v2.1.0 -->
+<meta property="og:title" content="CSS" />
+<meta name="description" content="Essential and common classes for bootstrap for faster web development" />
+<meta property="og:description" content="Essential and common classes for bootstrap for faster web development" />
+<link rel="canonical" href="http://www.bootstrapessentials.com/css/" />
+<meta property="og:url" content="http://www.bootstrapessentials.com/css/" />
+<meta property="og:site_name" content="Bootstrap Essentials" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "CSS",
+"description": "Essential and common classes for bootstrap for faster web development",
+"url": "http://www.bootstrapessentials.com/css/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar" data-offset="20" id="body" class="pt-navbar-height" style="margin-bottom:160px;" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+    <header role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+	<meta itemprop="name" content="CSS"/>
+    <meta itemprop="description" content="Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes."/>
+    <meta itemprop="keywords" content="css, classes, html, forms, gutter, container, bootstrap-essentials, extension"/>
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-slide-nav mb-xs-0" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+		<div class="container">
+			<div class="navbar-right-static">
+				
+				<ul class="nav navbar-nav">
+					<li class="hidden-md hidden-lg">
+						<a href="#" data-toggle="modal" data-target="#themeModal" class="fs-xs-1-4"><i class="fa fa-paint-brush"></i></a>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="navbar-header"> <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#navbar" aria-expanded="false"
+				    aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="../">Bootstrap Essentials</a>
+			</div>
+			<div id="navbar" class="navbar-slide offcanvas">
+				<ul class="nav navbar-nav">
+					<li ><a href="/getting-started" itemprop="url"><span itemprop="name">Getting Started</span></a></li>
+					<li  class="active" ><a href="/css">CSS</a></li>
+					<li ><a href="/components" itemprop="url"><span itemprop="name">Components</span></a></li>
+					<li ><a href="/javascript" itemprop="url"><span itemprop="name">JavaScript</span></a></li>
+					<li ><a href="/fulldocs" itemprop="url"><span itemprop="name">Full Docs</span></a></li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="hidden-xs hidden-sm">
+        <a href="javascript:void(0);" id="themeSelector">
+            <select id="change-css" class="selectpicker" data-live-search="true">
+                <option value="cerulean">Cerulean</option>
+                <option value="cosmo">Cosmo</option>
+                <option value="default" selected>Default</option>
+                <option value="flatly">Flatly</option>
+                <option value="journal">Journal</option>
+                <option value="lumen">Lumen</option>
+                <option value="readable">Readable</option>
+                <option value="sandstone">Sandstone</option>
+                <option value="simplex">Simplex</option>
+                <option value="spacelab">Spacelab</option>
+                <option value="united">United</option>
+                <option value="yeti">Yeti</option>
+            </select>
+        </a>
+    </li>
+				</ul>
+				
+			</div>
+			<!--/.nav-collapse -->
+		</div>
+	</nav>
+</header>
+    <div class="jumbotron">
+        <div class="container text-xs-center text-sm-left">
+            <h1>CSS</h1>
+            <p>Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes.</p>
+        </div>
+    </div>
+    <div class="container pb-xs-50">
+        <div class="row">
+            <!--Main Content -->
+            <div class="col-sm-9">
+    <section id="overview">
+    <h1 class="page-header">Overview</h2>
+        <p> Bootstrap is a great front end development framework to create brilliant sites. However, being a
+            developer, we need more customization options that are fast to implement. By studying different
+            types of website, it is understood the further CSS classes are required to support a fast development experience. </p>
+</section>
+                    <section id="pagelayout">
+                    <h1 class="page-header">Page Layout</h2>
+                        <p>Internet has evolved a lot since first website was made. Hence, the <a href="#">W3C</a> has laid down standards to make html content accesscible and user-friendly to all users. Layout options and the standards implementented to make content acessible by assistive technologies.</p>
+                        
+                        <div class="alert alert-info">
+                            Below is a sample of standard layout to address landmark region for users of assistive technologies.
+                        </div>
+                        
+                                                <pre><code class="html">
+    &lt;header role=&quot;banner&quot;&gt;
+
+        &lt;nav class=&quot;navbar navbar-default&quot; role=&quot;navigation&quot;&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Brand Name&lt;/a&gt;
+            &lt;form class=&quot;navbar-form&quot; role=&quot;search&quot;&gt;...&lt;/form&gt;
+        &lt;/nav&gt;
+
+    &lt;/header&gt;
+
+    &lt;main role=&quot;main&quot; class=&quot;page page-main&quot;&gt;
+
+        &lt;div class=&quot;page-heading&quot;&gt;
+            &lt;p&gt;Page Title and breadcrumbs Go Here&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;aside role=&quot;complementary&quot; class=&quot;page-sidebar&quot;&gt;
+            &lt;p&gt;Page sidebar goes here.&lt;/p&gt;
+        &lt;/aside&gt;
+
+        &lt;div class=&quot;page-content&quot;&gt;
+            &lt;p&gt;Page content goes here.&lt;/p&gt;
+        &lt;/div&gt;
+
+    &lt;/main&gt;
+
+    &lt;footer role=&quot;contentinfo&quot;&gt;
+        &lt;p&gt;Put copyright, etc. here.&lt;/p&gt;
+    &lt;/footer&gt;
+                        </code></pre>
+                        <p>
+                            <a href="../examples/layout.html" class="btn btn-warning">Click here</a> to check an example.
+                        </p>
+                </section>
+                    <section id="containers">
+                    <h1 class="page-header">Containers</h2>
+                        <p class="lead">Currently Bootstrap 3.3.7 support <code>.container</code> and <code>container-fluid</code> classes.
+                            We have extended the support to suit the page needs.</p>
+                        <div id="smooth">
+                            <h2>Smooth</h2>
+                            <p>As per jasny suggestions, we have added <code>.container-smooth</code> a container to use the
+                                same <code>max-width</code> for all view-port sizes. This means that the container size won't
+                                jump at media query breakpoints.</p>
+                            <pre><code class="css">
+    .container-smooth {
+        max-width: 1170px;
+    }
+    @media (min-width: 1px) {
+        .container-smooth {
+            width: auto;
+        }
+    }
+                        </code></pre>
+                        </div>
+                        <div id="table">
+                            <h2>Table</h2>
+                            <p><code>.container-table</code> provides a better option to to <code>vertical-align:
+                  middle</code> for <code>col-*</code></p>
+                            <div class="alert alert-danger">
+                                <strong>Note:</strong> You need to add <code>.vertical-middle text-center</code> and define
+                                height to make in align it in middle.
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <style>
+                                        @media (min-width: 768px) {
+                                            #contable {
+                                                height: 200px;
+                                            }
+                                        }
+                                        
+                                        #contable,
+                                        #contable .row,
+                                        #contable .row>div {
+                                            border: 1px solid #333;
+                                        }
+                                    </style>
+                                    <div class="container-table" id="contable">
+                                        <div class="row vertical-middle text-center">
+                                            <div class="col-sm-4 col-md-8 col-lg-4 text-center">
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                            </div>
+                                            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                            </div>
+                                            <div class="col-sm-4 hidden-md col-lg-4 text-center">
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                                <p>Some content</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer pb-xs-0 ">
+                                    <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;style&gt;
+        @media (min-width: 768px) {
+            #contable {
+                height: 200px;
+            }
+        }
+        #contable,
+        #contable .row,
+        #contable .row &gt; div {
+            border: 1px solid #333;
+        }
+    &lt;/style&gt;
+
+    &lt;div class=&quot;container-table&quot; id=&quot;contable&quot;&gt;
+        &lt;div class=&quot;row vertical-middle text-center&quot; &gt;
+            &lt;div class=&quot;col-sm-4 col-md-8 col-lg-4 text-center&quot;&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 col-md-4 col-lg-4 text-center&quot;&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 hidden-md col-lg-4 text-center&quot;&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+                &lt;p&gt;Some content&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;      
+                        </code></pre>
+                                </div>
+                            </div>
+                            <div class="alert alert-danger">
+                                <strong>Note:</strong> <code>.container-table</code> can only manage 12 columns in a <code>.row</code>.
+                                further rows are required to adjust additional columns
+                            </div>
+                            <h3>Full Page</h3>
+                            <p>Another use of container is to generate full height and width container with text in center.
+                                The table functions just like <a href="http://alvarotrigo.com/fullPage/">fullpage.js</a>                                with minimal amount of CSS.</p>
+                            <p>Please <a href="../examples/fullpage.html" target="_blank">Click here</a> to view the Demo</p>
+                        </div>
+                        <div id="flex">
+                            <h2>Flex</h2>
+                            <p>Flex container helps to make columns to even heights. Below is an examples for the implementation
+                                on panels, wells and thumbnails </p>
+                            <div class="alert alert-danger">
+                                <strong>Note:</strong> You need to use flex-col and flex-grow to make footer / action buttons
+                                to align at the bottom. These classes are best to adjust the body-row of a 3 rowed element.
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <div class="container-flex">
+                                        <div class="row gutter-20 gutter-justified">
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="panel panel-default flex-col">
+                                                    <div class="panel-heading">Title flex-col</div>
+                                                    <div class="panel-body flex-grow">Content here -- div with .flex-grow</div>
+                                                    <div class="panel-footer">Footer</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">Title</div>
+                                                    <div class="panel-body">Content here -- div with no footer</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="thumbnail">
+                                                    Duis pharetra varius quam sit amet vulputate.
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-3">
+                                                <div class="well">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. Quisque mauris augue,
+                                                    molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet
+                                                    felis dolor, in sagittis nisi.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer p-xs-0">
+                                    <pre class="b-0 p-xs-0 mb-xs-0"><code class="html">        
+    &lt;div class="container-flex" &gt;
+        &lt;div class="row"&gt;
+            &lt;div class="col-md-3"&gt;
+                &lt;div class="panel panel-default flex-col"&gt;
+                    &lt;div class="panel-heading"&gt;Title flex-col&lt;/div&gt;
+                    &lt;div class="panel-body flex-grow"&gt;Content here -- div with .flex-grow&lt;/div&gt;
+                    &lt;div class="panel-footer"&gt;Footer&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-3"&gt;
+                &lt;div class="panel panel-default"&gt;
+                    &lt;div class="panel-heading"&gt;Title&lt;/div&gt;
+                    &lt;div class="panel-body"&gt;Content here -- div with no footer&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-3"&gt;
+                &lt;div class="thumbnail"&gt;
+                    Duis pharetra varius quam sit amet vulputate.
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="col-md-3"&gt;
+                &lt;div class="well"&gt;
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis pharetra varius quam sit amet vulputate. Quisque 
+                    mauris augue, molestie tincidunt condimentum vitae, 
+                    gravida a libero. Aenean sit amet felis dolor, in 
+                    sagittis nisi.
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                        </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="login">
+                            <h2>Login</h2>
+                            <p>Currenlty, Login containers exists in 2 types: standard center-align login box and 2 column login
+                                box. See the below examples to understand the layout</p>
+                            <h3>Standard login box</h3>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="container-login text-center">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div>
+                                                    <h1 class="logo-name">Example</h1>
+                                                </div>
+                                                <h3>Welcome to Example</h3>
+                                                <p>Designed this css after observing more than 1000 website login methods.
+                                                </p>
+                                                <p>Login in. To see it in action.</p>
+                                                <form class="m-t" role="form" action="index.html">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" placeholder="Username" required="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" class="form-control" placeholder="Password" required="">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                                    <a href="#"><small>Forgot password?</small></a>
+                                                    <p class="text-muted text-center"><small>Do not have an account?</small></p>
+                                                    <a class="btn btn-default btn-block" href="#">Create an account</a>
+                                                </form>
+                                                <p class="mt-xs-5"> <small>framework based on Bootstrap 3 © 2016</small> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer p-xs-0">
+                                    <pre class="b-0 p-xs-0 mb-xs-0"><code class="html">  
+    &lt;div class=&quot;container-login&quot;&gt;
+        ...
+    &lt;/div&gt; 
+                                </code></pre>
+                                </div>
+                            </div>
+                            <h3>2 Columns login box</h3>
+                            <p>Two column login container is commonly used to support feature like Social Login options. Login
+                                system have been essential in web development. Hence, Login-container of <code>300px</code>                                and <code>800px</code> are commonly used by several websites.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <div class="container-login-2 center-block">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h2 class="font-weight-bold">Welcome to Example</h2>
+                                                <p>
+                                                    Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views.
+                                                </p>
+                                                <p>
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                                    text ever since the 1500s.
+                                                </p>
+                                                <p>
+                                                    When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                                </p>
+                                                <p>
+                                                    <small>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</small>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-body">
+                                                        <form class="mt-xs-15" role="form" action="index.html">
+                                                            <div class="form-group">
+                                                                <input type="email" class="form-control" placeholder="Username" required="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="password" class="form-control" placeholder="Password" required="">
+                                                            </div>
+                                                            <button type="submit" class="btn btn-primary btn-block">Login</button>
+                                                            <a href="#">
+                                                                <small>Forgot password?</small>
+                                                            </a>
+                                                            <p class="text-muted text-center">
+                                                                <small>Do not have an account?</small>
+                                                            </p>
+                                                            <a class="btn btn-default btn-block" href="#">Create an account</a>
+                                                        </form>
+                                                        <p class="m-t">
+                                                            <small>Framework based on Bootstrap 3 &copy; 2016</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                Copyright Example Company
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <small>© 2014-2015</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer p-xs-0">
+                                    <pre class="b-0 p-xs-0 mb-xs-0"><code class="html">
+    &lt;div class=&quot;container-login-2&quot;&gt;
+        ...
+    &lt;/div&gt;
+                                </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="reading-sizes">
+                            <h2>Reading Sizes</h2>
+                            <p>When it comes to reading sites, large container
+                                 sizes make it uneasy to read text on reading sites like wiki, 
+                                 blog, journal. furthermore, using offset in grid system, makes the reading
+                                 width inconsistent at breakpoints. Therefore, Classes for different 
+                                 size containers have been added to make container widths customizable.
+                                 You can also use container-smooth along with these sizes.</p>
+                            <div class="table-responsive">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Size</th>
+                                        <th>Class</th>
+                                        <th>width</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Normal Container</td>
+                                        <td><code>.container</code></td>
+                                        <td>1170px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Medium Container</td>
+                                        <td><code>.container-md</code></td>
+                                        <td>970px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Small Container</td>
+                                        <td><code>.container-sm</code></td>
+                                        <td>750px</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Extra Small Container</td>
+                                        <td><code>.container-xs</code></td>
+                                        <td>480px</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                    <section id="spacing">
+                    <h1 class="page-header">Responsive Spacing</h2>
+                        <p class="lead">Responsive Spacing allows you to modify the margin and padding of any component as per breakpoint</p>
+                        <div id="margin">
+                            <h2>Margin</h2>
+                            <p>We have include margin options of <code>0,5,10,15,20,30,40,50</code> pixel to easily manage the
+                                look as per resolution. </p>
+                            <div class="well text-center">
+                                <table class="enter-block text-center" align="center">
+                                    <thead>
+                                        <tr>
+                                            <th>Direction</th>
+                                            <th></th>
+                                            <th>Breakpoint</th>
+                                            <th></th>
+                                            <th>Size (px)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class=" pl-xs-30 pr-xs-30">
+                                                <h4>m</h4>
+                                                <h4>mt</h4>
+                                                <h4>mr</h4>
+                                                <h4>mb</h4>
+                                                <h4>ml</h4>
+                                            </td>
+                                            <td>
+                                                <h1> - </h1>
+                                            </td>
+                                            <td class=" pl-xs-30 pr-xs-30">
+                                                <h4>xs</h4>
+                                                <h4>sm</h4>
+                                                <h4>md</h4>
+                                                <h4>lg</h4>
+                                            </td>
+                                            <td>
+                                                <h1> - </h1>
+                                            </td>
+                                            <td class=" pl-xs-30 pr-xs-30">
+                                                <h4>0</h4>
+                                                <h4>5</h4>
+                                                <h4>10</h4>
+                                                <h4>15</h4>
+                                                <h4>20</h4>
+                                                <h4>30</h4>
+                                                <h4>40</h4>
+                                                <h4>50</h4>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="padding">
+                            <h2>Padding</h2>
+                            <p>Similarly, padding options are available with same pixel sizes</p>
+                            <div class="well text-center">
+                                <table class="enter-block text-center" align="center">
+                                    <thead>
+                                        <tr>
+                                            <th>Direction</th>
+                                            <th></th>
+                                            <th>Breakpoint</th>
+                                            <th></th>
+                                            <th>Size (px)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class=" pl-xs-30 pr-xs-30">
+                                                <h4>p</h4>
+                                                <h4>pt</h4>
+                                                <h4>pr</h4>
+                                                <h4>pb</h4>
+                                                <h4>pl</h4>
+                                            </td>
+                                            <td>
+                                                <h1> - </h1>
+                                            </td>
+                                            <td class=" pl-xs-30 pr-xs-30">
+                                                <h4>xs</h4>
+                                                <h4>sm</h4>
+                                                <h4>md</h4>
+                                                <h4>lg</h4>
+                                            </td>
+                                            <td>
+                                                <h1> - </h1>
+                                            </td>
+                                            <td class=" pl-xs-30 pr-xs-30">
+                                                <h4>0</h4>
+                                                <h4>5</h4>
+                                                <h4>10</h4>
+                                                <h4>15</h4>
+                                                <h4>20</h4>
+                                                <h4>30</h4>
+                                                <h4>40</h4>
+                                                <h4>50</h4>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                </section>
+                    <section id="buttons">
+                    <h1 class="page-header">Buttons</h2>
+                        <div id="outline">
+                            <h2>Outline</h2>
+                            <p>Button Outline is a long awaited feature of bootstrap now added in bootstrap v4. As v4 is in
+                                alpha stage, here is a quick support by this project.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <button class="btn btn-default btn-outline">Button</button>
+                                    <button class="btn btn-primary btn-outline">Button</button>
+                                    <button class="btn btn-success btn-outline">Button</button>
+                                    <button class="btn btn-info btn-outline">Button</button>
+                                    <button class="btn btn-warning btn-outline">Button</button>
+                                    <button class="btn btn-danger btn-outline">Button</button>
+                                </div>
+                                <div class="panel-footer p-xs-0 mb-xs-0">
+                                    <pre class="b-0  mb-xs-0"><code class="html">
+  &lt;button class="btn btn-default btn-outline" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-primary btn-outline" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-success btn-outline" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-info    btn-outline" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-warning btn-outline" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-danger btn-outline" &gt;Button&lt;/button&gt;
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rblock">
+                            <h2>Responsive Block</h2>
+                            <p>It is favorable to have a full-width button for mobile devices. Hence, <code>.btn-block-xs</code>                                allows you to configure full-width button just for mobile devices.</p>
+                            <div class="alert alert-info">
+                                <strong>Note:</strong> <code>.btn-block-xs</code> will only work on xs devices (i.e. mobile)
+                                and the class will not be used in other breakpoint.
+                            </div>
+                            <pre><code class="html">&lt;button class="btn btn-primary btn-block-xs" &gt;Button&lt;/button&gt; </code></pre>
+                        </div>
+                        <div id="rounded">
+                            <h2>Rounded</h2>
+                            <p><code>.btn-rounded</code> class converts left and right edges to rounded shape</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <button class="btn btn-default btn-rounded">Button</button>
+                                    <button class="btn btn-primary btn-rounded">Button</button>
+                                    <button class="btn btn-success btn-rounded">Button</button>
+                                    <button class="btn btn-info    btn-rounded">Button</button>
+                                    <button class="btn btn-warning btn-rounded">Button</button>
+                                    <button class="btn btn-danger btn-rounded">Button</button>
+                                </div>
+                                <div class="panel-footer p-xs-0 mb-xs-0">
+                                    <pre class="b-0  mb-xs-0"><code class="html">
+  &lt;button class="btn btn-default btn-rounded" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-primary btn-rounded" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-success btn-rounded" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-info    btn-rounded" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-warning btn-rounded" &gt;Button&lt;/button&gt;
+  &lt;button class="btn btn-danger btn-rounded" &gt;Button&lt;/button&gt;
+                                </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="circle">
+                            <h2>Circle</h2>
+                            <p><code>.btn-circle</code> enable you to create buttons with icons.&nbsp;</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <button class="btn btn-default btn-circle" type="button"><i class="fa fa-check"></i>
+                                            </button>
+                                    <button class="btn btn-primary btn-circle" type="button"><i class="fa fa-list"></i>
+                                            </button>
+                                    <button class="btn btn-success btn-circle" type="button"><i class="fa fa-link"></i>
+                                            </button>
+                                    <button class="btn btn-info btn-circle" type="button"><i class="fa fa-check"></i>
+                                            </button>
+                                    <button class="btn btn-warning btn-circle" type="button"><i class="fa fa-times"></i>
+                                            </button>
+                                    <button class="btn btn-danger btn-circle" type="button"><i class="fa fa-heart"></i>
+                                            </button>
+                                    <button class="btn btn-danger btn-circle btn-outline" type="button"><i class="fa fa-heart"></i>
+                                            </button>
+                                    <br>
+                                    <br>
+                                    <button class="btn btn-default btn-circle btn-lg" type="button"><i class="fa fa-check"></i>
+                                            </button>
+                                    <button class="btn btn-primary btn-circle btn-lg" type="button"><i class="fa fa-list"></i>
+                                            </button>
+                                    <button class="btn btn-success btn-circle btn-lg" type="button"><i class="fa fa-link"></i>
+                                            </button>
+                                    <button class="btn btn-info btn-circle btn-lg" type="button"><i class="fa fa-check"></i>
+                                            </button>
+                                    <button class="btn btn-warning btn-circle btn-lg" type="button"><i class="fa fa-times"></i>
+                                            </button>
+                                    <button class="btn btn-danger btn-circle btn-lg" type="button"><i class="fa fa-heart"></i>
+                                            </button>
+                                    <button class="btn btn-danger btn-circle btn-lg btn-outline" type="button"><i class="fa fa-heart"></i>
+                                            </button>
+                                            <br>
+                                            <br>
+                                            <button class="btn btn-default btn-circle btn-lg" ><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></button>
+  <button class="btn btn-primary btn-circle btn-lg" ><i class="glyphicon glyphicon-music" aria-hidden="true"></i></button>
+  <button class="btn btn-success btn-circle btn-lg" ><i class="glyphicon glyphicon-chevron-up" aria-hidden="true"></i></button>
+  <button class="btn btn-info btn-circle btn-lg" ><i class="glyphicon glyphicon-chevron-down" aria-hidden="true"></i></button>
+  <button class="btn btn-warning btn-circle btn-lg" ><i class="glyphicon glyphicon-volume-off" aria-hidden="true"></i></button>
+  <button class="btn btn-danger btn-circle btn-lg" ><i class="glyphicon glyphicon-volume-up" aria-hidden="true"></i></button>
+                                </div>
+                                <div class="panel-footer p-xs-0 mb-xs-0">
+                                    <pre class="b-0  mb-xs-0"><code class="html">
+  &lt;button class="btn btn-default btn-circle btn-lg" &gt;&lt;i class="glyphicon glyphicon-plus" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="btn btn-primary btn-circle btn-lg" &gt;&lt;i class="glyphicon glyphicon-music" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="btn btn-success btn-circle btn-lg" &gt;&lt;i class="glyphicon glyphicon-chevron-up" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="btn btn-info btn-circle btn-lg" &gt;&lt;i class="glyphicon glyphicon-chevron-down" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="btn btn-warning btn-circle btn-lg" &gt;&lt;i class="glyphicon glyphicon-volume-off" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class="btn btn-danger btn-circle btn-lg" &gt;&lt;i class="glyphicon glyphicon-volume-up" aria-hidden="true"&gt;&lt;/i&gt;&lt;/button&gt;
+                                </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="action">
+                            <h2>Action</h2>
+                            <p>Action button is a floating button at bottom right or left corner. The concept of floating Action
+                                button is from <a href="https://developer.android.com/design/material/index.html" target="_blank">Android material design</a>.
+                                These action button is also helpful in creating a "back to top" similar to one on this page</p>
+                            <pre><code class="html">  
+    &lt;button class="btn btn-default btn-circle btn-lg action-btn" &gt;
+        &lt;span class="glyphicon glyphicon-plus" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+                            </code></pre>
+                        </div>
+                </section>
+    <section id="rtext">
+                    <h1 class="page-header">Responsive Text</h2>
+                        <div id="align">
+                            <h2>Align</h2>
+                            <p>Responsive align is better alternate for text that require center align in mobile devices. below
+                                is an example</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <p class="text-xs-left">Left aligned text on all viewport sizes.</p>
+                                    <p class="text-xs-center">Center aligned text on all viewport sizes.</p>
+                                    <p class="text-xs-right">Right aligned text on all viewport sizes.</p>
+                                    <p class="text-sm-left">Left aligned text on viewports sized SM (small) or wider.</p>
+                                    <p class="text-md-left">Left aligned text on viewports sized MD (medium) or wider.</p>
+                                    <p class="text-lg-left">Left aligned text on viewports sized LG (large) or wider.</p>
+                                    <p class="text-xl-left">Left aligned text on viewports sized XL (extra-large) or wider.</p>
+                                </div>
+                                <div class="panel-footer p-xs-0 mb-xs-0">
+                                    <pre class=" mb-xs-0 b-0"><code class="html">  
+    &lt;p class=&quot;text-xs-left&quot;&gt;Left aligned text on all viewport sizes.&lt;/p&gt;
+    &lt;p class=&quot;text-xs-center&quot;&gt;Center aligned text on all viewport sizes.&lt;/p&gt;
+    &lt;p class=&quot;text-xs-right&quot;&gt;Right aligned text on all viewport sizes.&lt;/p&gt;
+
+    &lt;p class=&quot;text-sm-left&quot;&gt;Left aligned text on viewports sized SM (small) or wider.&lt;/p&gt;
+    &lt;p class=&quot;text-md-left&quot;&gt;Left aligned text on viewports sized MD (medium) or wider.&lt;/p&gt;
+    &lt;p class=&quot;text-lg-left&quot;&gt;Left aligned text on viewports sized LG (large) or wider.&lt;/p&gt;
+    &lt;p class=&quot;text-xl-left&quot;&gt;Left aligned text on viewports sized XL (extra-large) or wider.&lt;/p&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="fs">
+                            <h2>Responsive Font Size</h2>
+                            <p>Responsive text size give better option for representation of headers and pargraphs in different
+                                forms of device. Responsive text helps to provide better readable text for any width device
+                            </p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <span class="fs-xs-0-5">fs-xs-0-5</span>
+                                        <hr/>
+                                        <span class="fs-xs-0-6">fs-xs-0-6</span>
+                                        <hr/>
+                                        <span class="fs-xs-0-7">fs-xs-0-7</span>
+                                        <hr/>
+                                        <span class="fs-xs-0-8">fs-xs-0-8</span>
+                                        <hr/>
+                                        <span class="fs-xs-0-9">fs-xs-0-9</span>
+                                        <hr/>
+                                        <span class="fs-xs-1-0">fs-xs-1-0</span>
+                                        <hr/>
+                                        <span class="fs-xs-1-1">fs-xs-1-1</span>
+                                        <hr/>
+                                        <span class="fs-xs-1-2">fs-xs-1-2</span>
+                                        <hr/>
+                                        <span class="fs-xs-1-3">fs-xs-1-3</span>
+                                        <hr/>
+                                        <span class="fs-xs-1-4">fs-xs-1-4</span>
+                                        <hr/>
+                                        <span class="fs-xs-1-5">fs-xs-1-5</span>
+                                        <hr/>
+                                        <span class="fs-xs-1-6">fs-xs-1-6</span>
+                                        <hr/>
+                                        <span class="fs-xs-1-8">fs-xs-1-8</span>
+                                        <hr/>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <span class="fs-sm-1-9">fs-sm-1-9</span>
+                                        <hr/>
+                                        <span class="fs-sm-2-0">fs-sm-2-0</span>
+                                        <hr/>
+                                        <span class="fs-sm-2-2">fs-sm-2-2</span>
+                                        <hr/>
+                                        <span class="fs-sm-2-4">fs-sm-2-4</span>
+                                        <hr/>
+                                        <span class="fs-sm-2-6">fs-sm-2-6</span>
+                                        <hr/>
+                                        <span class="fs-sm-2-8">fs-sm-2-8</span>
+                                        <hr/>
+                                        <span class="fs-sm-3-0">fs-sm-3-0</span>
+                                        <hr/>
+                                        <span class="fs-sm-3-2">fs-sm-3-2</span>
+                                        <hr/>
+                                        <span class="fs-sm-4-0">fs-sm-4-0</span>
+                                        <hr/>
+                                    </div>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">  
+    &lt;span class="fs-sm-2-0"&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                    <section id="gutter">
+                    <h1 class="page-header">Gutter</h2>
+                        <p>Gutter option is to support websites that use cards (well/panel/thumbnail) to represent their sections.</p>
+                        <div class="alert alert-info">
+                            <code>.gutter-justified</code> do not work for width below 768px.
+                        </div>
+                        <div class="alert alert-danger">
+                            <strong>Note:</strong> Gutter is best applied on <code>.row</code> class.
+                        </div>
+                        <style>
+                            .box {
+                                padding: 25px 0;
+                                background-color: #aaa;
+                                text-align: center;
+                            }
+                        </style>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                <div class="col-sm-6" style="border-right: 1px solid #ccc;">
+                                    <h4>Normal</h4>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row ">
+                                                <div class="col-xs-4">
+                                                    <div class="box">default </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">default </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">default </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-0">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-0</div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-0</div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-0</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-5 ">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-5 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-5 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-5 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-10 ">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-10 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-10 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-10 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-15 ">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-15 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-15 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-15 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-20 ">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-20 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-20 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-20 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4>Justified</h4>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row  gutter-justified">
+                                                <div class="col-xs-4">
+                                                    <div class="box">default </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">default </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">default </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-0   gutter-justified">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-0 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-0 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-0 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-5   gutter-justified">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-5 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-5 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-5 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-10   gutter-justified">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-10 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-10 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-10 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-15 gutter-justified">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-15 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-15 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-15 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-body">
+                                            <div class="row gutter-20   gutter-justified">
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-20 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-20 </div>
+                                                </div>
+                                                <div class="col-xs-4">
+                                                    <div class="box">gutter-20 </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer mb-xs-0 p-xs-0">
+                                <pre class="b-0 mb-xs-0"><code class="html">  
+    &lt;div class="row gutter-20"&gt;
+        &lt;div class="col-xs-4"&gt;...&lt;/div&gt;
+        &lt;div class="col-xs-4"&gt;...&lt;/div&gt;
+        &lt;div class="col-xs-4"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="row gutter-20 gutter-justified"&gt;
+        &lt;div class="col-xs-4"&gt;...&lt;/div&gt;
+        &lt;div class="col-xs-4"&gt;...&lt;/div&gt;
+        &lt;div class="col-xs-4"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+                                </code></pre>
+                            </div>
+                        </div>
+                </section>
+    <section id="responsive-utilities">
+    <h1 class="page-header">Responsive utilities</h1>
+    <div id="break">
+        <h2>Break</h2>
+        Break Classes are designed to break a fixed width item to 100% width at a specific viewpoint. These are additional utilites made specific to modifying exsiting component where elements were given a non-responsive characteristic width. Available classes are:
+        
+        <ul class="list-unstyled">
+            <li><code>.break-xs</code></li>
+            <li><code>.break-sm</code></li>
+            <li><code>.break-md</code></li>
+            <li><code>.break-lg</code></li>
+        </ul>
+            
+    </div>
+</section>
+    <section id="borders">
+    <h1 class="page-header">Borders</h1>
+    <p>Border option provides the ability to sectionize a content and display in better way. Below are the options included in this
+    project.</p>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+            <div class="col-lg-2">
+
+                <div class="panel-body bg-warning mb-xs-20 p-xs-50 b">
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+
+                <div class="panel-body bg-warning mb-xs-20 p-xs-50 bt">
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+
+                <div class="panel-body bg-warning mb-xs-20 p-xs-50 br">
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+
+                <div class="panel-body bg-warning mb-xs-20 p-xs-50 bb">
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+
+                <div class="panel-body bg-warning mb-xs-20 p-xs-50 bl">
+                </div>
+
+            </div>
+        </div>
+        <div class="panel-footer mb-xs-0 p-xs-0">
+            <pre class="b-0 mb-xs-0"><code class="html">
+&lt;div class=&quot;b&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bt&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;br&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bl&quot;&gt;
+&lt;/div&gt;
+                                    </code></pre>
+        </div>
+    </div>
+    <div id="rowsplit">
+        <h2>Row Split</h2>
+        <p><code>.row-split</code> class has been designed to implement vertical divide in bootstrap grid system.</p>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+               <div class="container-table mt-xs-50 mb-xs-50">
+                    <div class="row row-split vertical-middle">
+                        <div class="col-sm-4 col-xs-12 text-center">
+                            <p>Duis nisi ad eiusmod deserunt adipisicing fugiat et quis mollit ut sunt Lorem.</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 text-center">
+                            <p>Ad deserunt Lorem Lorem esse et aute et mollit occaecat labore pariatur. Sunt labore ex eu eiusmod exercitation qui.</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-12 text-center">
+                            <p>Officia cupidatat occaecat sint amet officia nostrud laboris sunt fugiat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer mb-xs-0 p-xs-0">
+                <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;div class=&quot;container-table mt-xs-50 mb-xs-50&quot;&gt;
+        &lt;div class=&quot;row row-split vertical-middle&quot;&gt;
+            &lt;div class=&quot;col-sm-4 col-xs-12 text-center&quot;&gt;
+                &lt;p&gt;Duis nisi ad eiusmod deserunt adipisicing fugiat et quis mollit ut sunt Lorem.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 col-xs-12 text-center&quot;&gt;
+                &lt;p&gt;Ad deserunt Lorem Lorem esse et aute et mollit occaecat labore pariatur. Sunt labore ex eu eiusmod exercitation qui.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-sm-4 col-xs-12 text-center&quot;&gt;
+                &lt;p&gt;Officia cupidatat occaecat sint amet officia nostrud laboris sunt fugiat.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    </code></pre>
+            </div>
+        </div>
+        <p>Checkout the <a href="../examples/borders.html">example</a> to learn more</p>
+    </div>
+    <div id="noborder">
+        <h2>No Border</h2>
+        <p>No border class <code>.b-0</code>, <code>.bt-0</code>, <code>.br-0</code>, <code>.bb-0</code> and <code>.bl-0</code>            provide useful customisation option to remove the borders. Below are the examples for elements without border.</p>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                <div class="col-lg-2">
+                    <div class="panel panel-danger b-0">
+                        <div class="panel-body bg-warning p-xs-50">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="panel panel-danger bt-0">
+                        <div class="panel-body bg-warning p-xs-50">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="panel panel-danger br-0">
+                        <div class="panel-body bg-warning p-xs-50">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="panel panel-danger bb-0">
+                        <div class="panel-body bg-warning p-xs-50">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="panel panel-danger bl-0">
+                        <div class="panel-body bg-warning p-xs-50">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer mb-xs-0 p-xs-0">
+                <pre class="b-0 mb-xs-0"><code class="html">
+&lt;div class=&quot;b-0&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bt-0&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;br-0&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bb-0&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;bl-0&quot;&gt;
+&lt;/div&gt;
+                                    </code></pre>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                <div class="col-sm-3">
+                    <div class="well b-0">
+                        Here is a Deep well but well has no borders
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="panel panel-primary b-0">
+                        <div class="panel-heading">
+                            <label class="panel-title">Panel title</label>
+                        </div>
+                        <div class="panel-body">
+                            Panel content
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-group b-0">
+                        <li class="list-group-item">Item 1 <span class="badge">5</span></li>
+                        <li class="list-group-item">Item 2 <span class="badge">4</span></li>
+                        <li class="list-group-item">Item 3 <span class="badge">3</span></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail b-0"> <img alt="100%x100" src="http://www.leapcms.com/images/100pixels1.gif" data-holder-rendered="true" style="height: 100px; width: 100%; display: block;">
+                        <div class="caption">
+                            <h3>Thumb</h3>
+                            <p><a href="#" class="btn btn-primary btn-block" role="button">Button</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer mb-xs-0 p-xs-0">
+                <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;div class="... b-0"&gt; 
+        ... 
+    &lt;/div&gt;
+     </code></pre>
+                                </div>
+                            </div>
+                        </div>
+</section>
+    <section id="helper">
+                    <h1 class="page-header">Helper Classes</h1>
+                        <div id="fileinput">
+                            <h2>File Input</h2>
+                            <p>This Jasny designed file input allows you have uniform file input design for all browsers.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body mb-xs-0 pb-xs-0">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <img src="../assets/img/fileinput.jpg" class="img-responsive" alt="file Input">
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;div class=&quot;fileinput fileinput-new input-group&quot; data-provides=&quot;fileinput&quot;&gt;
+        &lt;div class=&quot;form-control&quot; data-trigger=&quot;fileinput&quot;&gt;
+            &lt;i class=&quot;glyphicon glyphicon-file fileinput-exists&quot;&gt;&lt;/i&gt; &lt;span class=&quot;fileinput-filename&quot;&gt;&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;input-group-addon btn btn-default btn-file&quot;&gt;
+            &lt;span class=&quot;fileinput-new&quot;&gt;Select file&lt;/span&gt;
+            &lt;span class=&quot;fileinput-exists&quot;&gt;Change&lt;/span&gt;
+            &lt;input type=&quot;file&quot; name=&quot;...&quot;&gt;
+        &lt;/span&gt;
+        &lt;a href=&quot;#&quot; class=&quot;input-group-addon btn btn-default fileinput-exists&quot; data-dismiss=&quot;fileinput&quot;&gt;Remove&lt;/a&gt;
+    &lt;/div&gt;
+
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="progress">
+                            <h2>Progress Bar</h2>
+                            <div class="panel panel-default">
+                                <div class="panel-body well b-0 mb-xs-0 pb-xs-0">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <code>.progress-xs</code> for Some Task
+                                                <h2>30% Complete</h2>
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+                                                        <span class="sr-only">70% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="panel">
+                                            <div class="panel-body">
+                                                <code>.progress-sm</code> for Some Task
+                                                <h2>70% Complete</h2>
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                                        <span class="sr-only">70% Complete</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">  
+    &lt;div class=&quot;progress progress-xs&quot;&gt;
+        &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot;
+            aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;70% Complete&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="list">
+                            <h2>List</h2>
+                            <h3>Seperated Links</h3>
+                            <p>List seperated by dashes is a common feature used for links in footer. Some website also use
+                                such seperated list above navigation bar as Quick link. Below is an example of additional
+                                class added to <code>.list-inline</code></p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <ul class="list-inline separated">
+                                        <li>abcd</li>
+                                        <li>abcdefg</li>
+                                        <li>abcdef</li>
+                                    </ul>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">  
+    &lt;ul class="list-inline separated"&gt; 
+        ... 
+    &lt;/ul&gt;
+                                </code></pre>
+                                </div>
+                            </div>
+                            <h3>Center Align List </h3>
+                            <p>Center align a bullet list is a tricky thing to achieve. Neither <code>text-align: center</code>                                nor <code>margin:auto</code> would be perfectly able to center align a bullet list. Thus
+                                <code>.list-center</code> is added to display list as table in mobile devices. Below is an
+                                example for center aligned bullet list.</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <ul class="center-list-xs">
+                                        <li>abcd</li>
+                                        <li>abcdefg</li>
+                                        <li>abcdef</li>
+                                    </ul>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">  
+    &lt;ul class="center-list-xs"&gt; 
+        ... 
+    &lt;/ul&gt;
+                            </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="nounderline">
+                            <h2>No Underline</h2>
+                            <p>Underline below links make you feel that it is a hyperlink. but sometimes we just dont
+                                 require underline. In that case you can use <code>.no-undeline</code> to remove the undeline</p>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5 class="text-muted font-weight-bold mb-xs-30">EXAMPLE</h5>
+                                    <p><a href="#" >Normal Link</a></p>
+                                    <p><a href="#" class="no-underline">Link with no underline</a></p>
+                                    </ul>
+                                </div>
+                                <div class="panel-footer mb-xs-0 p-xs-0">
+                                    <pre class="b-0 mb-xs-0"><code class="html">
+    &lt;p&gt;&lt;a href=&quot;#&quot; &gt;Normal Link&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;no-underline&quot;&gt;Link with no underline&lt;/a&gt;&lt;/p&gt;
+                                </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+</div>
+ 
+<!--Nav Bar -->
+<aside class="col-sm-3" role="complementary">
+    <nav class="bs-docs-sidebar hidden-print hidden-xs">
+        <ul class="nav bs-docs-sidenav">
+            <li class="active"> <a data-toggle="scroll" href="#overview">Overview</a>
+                <ul class="nav nav-stacked">
+                </ul>
+            </li>
+            <li> <a data-toggle="scroll" href="#pagelayout">Page Layout</a>
+            <li> <a data-toggle="scroll" href="#containers">Containers</a>
+                <ul class="nav nav-stacked">
+                    <li><a data-toggle="scroll" href="#smooth">Smooth</a></li>
+                    <li><a data-toggle="scroll" href="#table">Table</a></li>
+                    <li><a data-toggle="scroll" href="#flex">Flex</a></li>
+                    <li><a data-toggle="scroll" href="#login">Login</a></li>
+                </ul>
+            </li>
+            <li> <a data-toggle="scroll" href="#spacing">Responsive Spacing</a>
+                <ul class="nav nav-stacked">
+                    <li><a data-toggle="scroll" href="#margin">Margin</a></li>
+                    <li><a data-toggle="scroll" href="#padding">Padding</a></li>
+                </ul>
+            </li>
+            <li> <a data-toggle="scroll" href="#buttons">Buttons</a>
+                <ul class="nav nav-stacked">
+                    <li><a data-toggle="scroll" href="#outline">Outline</a></li>
+                    <li><a data-toggle="scroll" href="#rblock">Responsive Block</a></li>
+                    <li><a data-toggle="scroll" href="#rounded">Rounded</a></li>
+                    <li><a data-toggle="scroll" href="#circle">Circle</a></li>
+                    <li><a data-toggle="scroll" href="#action">Action</a></li>
+                </ul>
+            </li>
+            <li> <a data-toggle="scroll" href="#rtext">Responsive Text</a>
+                <ul class="nav nav-stacked">
+                    <li><a data-toggle="scroll" href="#align">Align</a></li>
+                    <li><a data-toggle="scroll" href="#fs">Responsive Font Size</a></li>
+                </ul>
+            </li>
+            <li> <a data-toggle="scroll" href="#gutter">Gutter</a> </li>
+            <li> <a data-toggle="scroll" href="#responsive-utilities">Responsive utilities</a>
+                <ul class="nav nav-stacked">
+                    <li><a data-toggle="scroll" href="#break">Break</a></li>
+                </ul>
+            </li>
+            <li> <a data-toggle="scroll" href="#borders">Borders</a>
+                <ul class="nav nav-stacked">
+                    <li><a data-toggle="scroll" href="#rowsplit">Row Split</a></li>
+                    <li><a data-toggle="scroll" href="#noborder">No Border</a></li>
+                </ul>
+            </li>
+            <li> <a data-toggle="scroll" href="#helper">Helper Classes</a>
+                <ul class="nav nav-stacked">
+                    <li><a data-toggle="scroll" href="#fileinput">File Input</a></li>
+                    <li><a data-toggle="scroll" href="#progress">Progress</a></li>
+                    <li><a data-toggle="scroll" href="#list">List</a></li>
+                    <li><a data-toggle="scroll" href="#nounderline">No Underline</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</aside>
+          
+        </div>
+    </div>
+    <footer class="footer pb-xs-30 navbar-inverse" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+	<meta itemprop="name" content="Webpage footer for CSS"/>
+  <meta itemprop="description" content="Bootstrap Essentials designed by @grvpanchal and maintained by Söoryen Innovation Labs"/>
+  <meta itemprop="keywords" content="grvpanchal, mdo, fat, bootstrap, bootstrap-essentials"/>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="list-inline">
+					<li>
+						<h4><a href="http://github.com/grvpanchal/bootstrap-essentials" >GitHub</a></h4>
+					</li>
+					<li>
+						<h4><a href="/getting-started/#examples" >Examples</a></h4>
+					</li>
+					<li>
+						<h4><a href="http://twitter.com/grvpanchal" >Twitter</a></h4>
+					</li>
+					<li>
+						<h4><a href="/about" >About</a></h4>
+					</li>
+				</ul>
+				<p class="text-right pull-right">Bootstrap Essentials designed by <a href="http://twitter.com/grvpanchal">@grvpanchal</a> and maintained by <a href="http://www.sooryen.com/">Söoryen
+                Innovation Labs</a>.<br> Bootstrap developed by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>					and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#body" title="Scroll to Top" class="
+		hidden-xs
+		btn 
+		btn-lg
+		btn-primary
+		btn-circle
+		action-btn" data-toggle="scroll" data-spy="affix" data-offset-top="100"> <i class="glyphicon glyphicon-chevron-up"></i>
+</a>
+ <!-- Modal -->
+  <div class="modal fade" id="themeModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Select Theme</h4>
+        </div>
+        <div class="modal-body text-center">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/dist/js/bootstrap-essentials.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="/assets/js/style-switcher.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		var bsDocs = $('.bs-docs-sidebar > .nav').offset();
+		$(window).scroll(function () {
+			if (bsDocs.top < $(window).scrollTop()) {
+				$('.bs-docs-sidebar > .nav').addClass('affix');
+			} else {
+				$('.bs-docs-sidebar > .nav').removeClass('affix');
+			}
+		});
+	});
+	$(document).ready(function () {
+		$('pre code').each(function (i, e) {
+			hljs.highlightBlock(e)
+		});
+		if(window.innerWidth < 992) {
+			var themeselect = $('#themeSelector').html();
+			$('#themeSelector').remove();
+			$('#themeModal .modal-body').append(themeselect);
+		}
+	});
+</script>
+</body>
+
+</html>

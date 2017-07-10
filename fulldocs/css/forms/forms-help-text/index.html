@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" class="has-sticky-footer">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Control Help text - Documentation - Bootstrap Essentials</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/dist/css/bootstrap-essentials.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+    <link rel="stylesheet" href="/assets/css/docs.css" />
+    <style>
+        @media (max-width: 767px) {
+            .navmenu.pt-navbar-height {
+                margin-top: 0;
+            }
+        }
+        @media (min-width: 768px) {
+            body {
+                margin-left: 240px;
+            }
+            .navmenu-fixed-left ~ .footer,
+            .navmenu-fixed-right ~ .footer {
+                width: calc(100% - 240px);
+            }
+            
+        }
+
+       body {
+           margin-bottom: 160px;
+       }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Begin Jekyll SEO tag v2.1.0 -->
+<meta property="og:title" content="Form Control Help text" />
+<meta name="description" content="Essential and common classes for bootstrap for faster web development" />
+<meta property="og:description" content="Essential and common classes for bootstrap for faster web development" />
+<link rel="canonical" href="http://www.bootstrapessentials.com/fulldocs/css/forms/forms-help-text/" />
+<meta property="og:url" content="http://www.bootstrapessentials.com/fulldocs/css/forms/forms-help-text/" />
+<meta property="og:site_name" content="Bootstrap Essentials" />
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "Form Control Help text",
+"description": "Essential and common classes for bootstrap for faster web development",
+"url": "http://www.bootstrapessentials.com/fulldocs/css/forms/forms-help-text/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body id="body" class="pt-navbar-height" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+    <!-- Navigation -->
+<header role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+	<meta itemprop="name" content="Form Control Help text"/>
+    <meta itemprop="description" content=" css "/>
+    <meta itemprop="keywords" content="css, , "/>
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-slide-nav mb-xs-0" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+	
+		<div class="navbar-right-static">
+				
+			<ul class="nav navbar-nav">
+				<li class="visible-xs">
+					<a href="#navmenu" data-toggle="offcanvas" class="fs-xs-1-4"> <i class="fa fa-book"></i></a>
+				</li>
+			</ul>
+			
+		</div>
+
+		<div class="navbar-header"> <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#navbar" aria-expanded="false"
+				aria-controls="navbar">
+			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+			<span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<a class="navbar-brand" href="/fulldocs">Bootstrap <span class="hidden-sm hidden-md hidden-lg ">Docs</span> <span class="hidden-xs">Documentation</span></a>
+		</div>
+		<div id="navbar" class="navbar-slide offcanvas">
+			<ul class="nav navbar-nav">
+				<li  class="active" ><a href="/fulldocs/css" itemprop="url"><span itemprop="name">CSS</span></a></li>
+				<li ><a href="/fulldocs/components" itemprop="url"><span itemprop="name">Components</span></a></li>
+				<li ><a href="/fulldocs/classes" itemprop="url"><span itemprop="name">Classes</span></a></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip" title="Bootstrap 3.3.7"><i class="fa fa-download"></i> BS 3.3.7</a></li>
+				<li><a href="https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.5.0/bootstrap-essentials-0.5.0-dist.zip" title="Bootstrap Essentials 0.5.0"><i class="fa fa-download"></i> BSE 0.5.0</a></li>
+			</ul>
+		</div>
+		<!--/.nav-collapse -->
+	</nav>
+</header>
+    <nav class="navmenu navbar-default navmenu-fixed-left offcanvas-xs mt-navbar-height" id="navmenu">
+    <ul class="nav navbar-nav">
+        
+            
+            <li class="">
+                <a href="/fulldocs/css/page-layout">
+                    Page Layout
+                </a>
+            </li>
+            
+        
+            
+            
+            <li class="dropdown  ">
+                <a href="/fulldocs/css/containers/" class="dropdown-toggle  disabled " role="button" aria-haspopup="true" aria-expanded="false">Containers <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    
+                    <li class=""><a href="/fulldocs/css/containers/containers-fluid">Fluid Container</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/containers/containers-smooth">Smooth Container</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/containers/containers-sizes">Container Sizes</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/containers/containers-login">Login Container</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/containers/containers-table">Table Container</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/containers/containers-flex">Flex Container</a></li>
+                    
+                </ul>
+            </li>
+            
+        
+            
+            <li class="">
+                <a href="/fulldocs/css/grid">
+                    Grid system
+                </a>
+            </li>
+            
+        
+            
+            <li class="">
+                <a href="/fulldocs/css/gutter">
+                    Gutter
+                </a>
+            </li>
+            
+        
+            
+            
+            <li class="dropdown  ">
+                <a href="/fulldocs/css/type/" class="dropdown-toggle  disabled " role="button" aria-haspopup="true" aria-expanded="false">Typography <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    
+                    <li class=""><a href="/fulldocs/css/type/type-headings">Headings</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/type/type-inline-text">Inline text elements</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/type/type-alignment">Alignment classes</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/type/type-transformation">Transformation classes</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/type/type-abbreviations">Abbreviations</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/type/type-addresses">Addresses</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/type/type-blockquotes">Blockquotes</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/type/type-lists">Lists</a></li>
+                    
+                </ul>
+            </li>
+            
+        
+            
+            
+            <li class="dropdown  ">
+                <a href="/fulldocs/css/code/" class="dropdown-toggle  disabled " role="button" aria-haspopup="true" aria-expanded="false">Code <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    
+                    <li class=""><a href="/fulldocs/css/code/code-inline">Inline</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/code/code-user-input">User input</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/code/code-block">Basic block</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/code/code-variables">Variables</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/code/code-sample-output">Sample output</a></li>
+                    
+                </ul>
+            </li>
+            
+        
+            
+            
+            <li class="dropdown  ">
+                <a href="/fulldocs/css/tables/" class="dropdown-toggle  disabled " role="button" aria-haspopup="true" aria-expanded="false">Tables <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    
+                    <li class=""><a href="/fulldocs/css/tables/tables-striped">Striped rows</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/tables/tables-bordered">Bordered table</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/tables/tables-hover-rows">Hover rows</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/tables/tables-condensed">Condensed table</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/tables/tables-contextual-classes">Contextual classes</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/tables/tables-responsive">Responsive tables</a></li>
+                    
+                </ul>
+            </li>
+            
+        
+            
+            
+            <li class="dropdown  open  ">
+                <a href="/fulldocs/css/forms/" class="dropdown-toggle  disabled " role="button" aria-haspopup="true" aria-expanded="false">Forms <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-inline">Inline form</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-horizontal">Horizontal form</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-controls">Supported controls</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-control-file">File Input Control</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-controls-static">Static control</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-control-focus">Focus state</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-control-disabled">Disabled state</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-control-readonly">Readonly state</a></li>
+                    
+                    <li class=" active "><a href="/fulldocs/css/forms/forms-help-text">Help text</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-control-validation">Validation states</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/forms/forms-control-sizes">Control sizing</a></li>
+                    
+                </ul>
+            </li>
+            
+        
+            
+            
+            <li class="dropdown  ">
+                <a href="/fulldocs/css/buttons/" class="dropdown-toggle  disabled " role="button" aria-haspopup="true" aria-expanded="false">Buttons <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    
+                    <li class=""><a href="/fulldocs/css/buttons/buttons-options">Options</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/buttons/buttons-sizes">Sizes</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/buttons/buttons-outline">Outline</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/buttons/buttons-rounded">Rounded</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/buttons/buttons-circle">Circle</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/buttons/buttons-action">Action</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/buttons/buttons-active">Active state</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/buttons/buttons-disabled">Disabled state</a></li>
+                    
+                </ul>
+            </li>
+            
+        
+            
+            
+            <li class="dropdown  ">
+                <a href="/fulldocs/css/images/" class="dropdown-toggle  disabled " role="button" aria-haspopup="true" aria-expanded="false">Images <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    
+                    <li class=""><a href="/fulldocs/css/images/images-shapes">Image shapes</a></li>
+                    
+                </ul>
+            </li>
+            
+        
+            
+            <li class="">
+                <a href="/fulldocs/css/helpers">
+                    Helper Classes
+                </a>
+            </li>
+            
+        
+            
+            
+            <li class="dropdown  ">
+                <a href="/fulldocs/css/responsive-utilities/" class="dropdown-toggle  disabled " role="button" aria-haspopup="true" aria-expanded="false">Responsive Classes <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    
+                    <li class=""><a href="/fulldocs/css/responsive-utilities/responsive-utilities-classes">Visibility Classes</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/responsive-utilities/responsive-utilities-print">Print classes</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/responsive-utilities/responsive-utilities-margin">Margin</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/responsive-utilities/responsive-utilities-padding">Padding</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/responsive-utilities/responsive-utilities-alignment">Alignment</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/responsive-utilities/responsive-utilities-font-size">Font Size</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/responsive-utilities/responsive-utilities-tests">Test cases</a></li>
+                    
+                </ul>
+            </li>
+            
+        
+            
+            
+            <li class="dropdown  ">
+                <a href="/fulldocs/css/borders/" class="dropdown-toggle  disabled " role="button" aria-haspopup="true" aria-expanded="false">Borders <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    
+                    <li class=""><a href="/fulldocs/css/borders/borders-row-split">Row Split</a></li>
+                    
+                    <li class=""><a href="/fulldocs/css/borders/borders-no-border">No Border</a></li>
+                    
+                </ul>
+            </li>
+            
+        
+    </ul>
+</nav>
+    
+    <div class="container-fluid pl-sm-30 pr-sm-30 pb-xs-50">
+            <div class="pull-right p-sm-20 hidden-xs">
+    
+</div>
+<div class="page-header">
+    <h1>Form Control Help text <small><code></code></small></h1>
+    
+  <ol class="breadcrumb hidden-xs"  vocab="http://schema.org/" typeof="BreadcrumbList">
+    
+    
+      
+
+      
+
+      
+
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/"><span property="name">Home</span><meta property="position" content="1" /></a>
+      </li>
+    
+      
+
+      
+
+      
+
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/fulldocs/"><span property="name">Full Documentation</span><meta property="position" content="2" /></a>
+      </li>
+    
+      
+
+      
+
+      
+
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/fulldocs/css/"><span property="name">CSS</span><meta property="position" content="3" /></a>
+      </li>
+    
+      
+
+      
+
+      
+
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+          <a property="item" typeof="WebPage" href="/fulldocs/css/forms/"><span property="name">Forms</span><meta property="position" content="4" /></a>
+      </li>
+    
+      
+
+      
+
+      
+        <li class="breadcrumb-item" property="itemListElement" typeof="ListItem"><span property="name">Form Control Help text</span><meta property="position" content="5" /></li>
+        
+
+  </ol>
+
+<!-- This is an example of CSS. Maybe you want to implement the css code into your main css file or modify it as you want -->
+<style>
+nav.breadcrumbs.bootstrap {
+  /* from Twitter Bootstrap 4 */
+  /* If you already use Twitter, you do not need these css lines above, cause they already in Twitter Bootstrap */
+  /* Additions: image integration */
+}
+nav.breadcrumbs.bootstrap ol {
+  margin-left: 0
+}
+nav.breadcrumbs.bootstrap .breadcrumb {
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #f1f2ed;
+  border-radius: 0.25rem;
+}
+nav.breadcrumbs.bootstrap .breadcrumb::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item {
+  float: left;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #818a91;
+  content: "/";
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
+nav.breadcrumbs.bootstrap .breadcrumb-item-active {
+  color: #818a91;
+}
+
+nav.breadcrumbs.bootstrap .breadcrumb a.breadcrumb-item:after {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  content: "/";
+  text-decoration: none;
+}
+nav.breadcrumbs.bootstrap .breadcrumb .icon:after {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #818a91;
+  content: "/";
+}
+nav.breadcrumbs.bootstrap .breadcrumb .icon {
+  display: inline-block;
+}
+nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
+  height: 0.7rem;
+  width: 0.7rem;
+}
+</style>
+
+</div>
+
+<!--Main Content -->
+<div class="row">
+    <div class="col-xs-12 col-lg-10">
+          <p>Block level help text for form controls.</p>
+  <div class="bs-callout bs-callout-info" id="callout-help-text-accessibility">
+    <h4>Associating help text with form controls</h4>
+    <p>Help text should be explicitly associated with the form control it relates to using the <code>aria-describedby</code> attribute. This will ensure that assistive technologies – such as screen readers – will announce this help text when the user focuses or enters the control.</p>
+  </div>
+  <div class="bs-example" data-example-id="simple-help-text">
+    <form>
+      <div class="form-group">
+        <label for="inputHelpBlock">Input with help text</label>
+        <input type="text" id="inputHelpBlock" class="form-control" aria-describedby="helpBlock">
+      </div>
+      <span id="helpBlock" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+    </form>
+  </div><!-- /.bs-example -->
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"inputHelpBlock"</span><span class="nt">&gt;</span>Input with help text<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"inputHelpBlock"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-describedby=</span><span class="s">"helpBlock"</span><span class="nt">&gt;</span>
+...
+<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"helpBlock"</span> <span class="na">class=</span><span class="s">"help-block"</span><span class="nt">&gt;</span>A block of help text that breaks onto a new line and may extend beyond one line.<span class="nt">&lt;/span&gt;</span></code></pre></figure>
+</div>
+        <p>
+            
+            
+                <span class="h5"><strong>Related classes:</strong></span>
+                <ul class="list-inline separated text-muted">
+                
+                    
+                    <li><a href="/fulldocs/classes/help-block">.help-block </a></li>
+                
+                </ul>
+            
+            
+        </p>
+        
+
+    </div>
+    <div class="col-lg-2 hidden-lg">
+
+    </div>
+</div>
+    </div>
+<footer class="footer pb-xs-30 navbar-default" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+	<meta itemprop="name" content="Webpage footer for Form Control Help text"/>
+	<meta itemprop="description" content="Bootstrap Essentials designed by @grvpanchal and maintained by Söoryen Innovation Labs"/>
+	<meta itemprop="keywords" content="grvpanchal, mdo, fat, bootstrap, bootstrap-essentials"/>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="list-inline">
+					<li>
+						<h4><a href="http://github.com/grvpanchal/bootstrap-essentials" >GitHub</a></h4>
+					</li>
+					<li>
+						<h4><a href="/fulldocs/#examples" >Classes</a></h4>
+					</li>
+					<li>
+						<h4><a href="http://twitter.com/grvpanchal" >Twitter</a></h4>
+					</li>
+					<li>
+						<h4><a href="/about" >About</a></h4>
+					</li>
+				</ul>
+				<p class="text-right pull-right">Bootstrap Essentials designed by <a href="http://twitter.com/grvpanchal">@grvpanchal</a> and maintained by <a href="http://www.sooryen.com/">Söoryen
+                Innovation Labs</a>.<br> Bootstrap developed by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>					and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#body" title="Scroll to Top" class="
+		hidden-xs
+		btn 
+		btn-lg
+		btn-primary
+		btn-circle
+		action-btn" data-toggle="scroll" data-spy="affix" data-offset-top="100"> <i class="glyphicon glyphicon-chevron-up"></i>
+</a>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/dist/js/bootstrap-essentials.min.js"></script>
+<script type="text/javascript" src="/assets/js/docs.min.js"></script>
+
+</body>
+
+</html>
+

@@ -1646,24 +1646,8 @@ body:not(.bse-no-conflict) [class*="container"] > .navbar-toggle.pull-left {
   background-color: transparent;
 }
 
-.bg-well {
-  background-color: #f5f5f5;
-}
-
-.bg-jumbotron {
-  background-color: #eee;
-}
-
-.bg-img {
-  background-color: #414141;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: cover;
-          background-size: cover;
-}
-
 .text-white {
-  color: #fff !important;
+  color: #fff;
 }
 
 .vertical-middle > * {
