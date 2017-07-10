@@ -1,5 +1,5 @@
 
-  <ol class="breadcrumb hidden-xs" {% if (page.url == '/') and (site.breadcrumbs.root.hide) %}{{ 'style="display: none;"' }}{% endif %} vocab="http://schema.org/" typeof="BreadcrumbList">
+  <ol class="breadcrumb hide" {% if (page.url == '/') and (site.breadcrumbs.root.hide) %}{{ 'style="display: none;"' }}{% endif %} vocab="http://schema.org/" typeof="BreadcrumbList">
     {% assign position = 0 %}
     {% for crumbitem in breadcrumbs %}
       {% assign position = position  | plus: 1 %}
