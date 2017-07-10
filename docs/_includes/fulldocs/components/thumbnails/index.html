@@ -1,0 +1,42 @@
+<div class="bs-docs-section">
+
+  <p class="lead">Extend Bootstrap's <a href="../css/#grid">grid system</a> with the thumbnail component to easily display grids of images, videos, text, and more.</p>
+  <p>If you're looking for Pinterest-like presentation of thumbnails of varying heights and/or widths, you'll need to use a third-party plugin such as <a href="http://masonry.desandro.com">Masonry</a>, <a href="http://isotope.metafizzy.co">Isotope</a>, or <a href="http://salvattore.com">Salvattore</a>.</p>
+
+  <h2 id="thumbnails-default">Default example</h2>
+  <p>By default, Bootstrap's thumbnails are designed to showcase linked images with minimal required markup.</p>
+  <div class="bs-example" data-example-id="simple-thumbnails">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
+        </a>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img data-src="holder.js/100%x180" alt="Generic placeholder thumbnail">
+        </a>
+      </div>
+    </div>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="..." alt="...">
+    </a>
+  </div>
+  ...
+</div>
+{% endhighlight %}
+</div>

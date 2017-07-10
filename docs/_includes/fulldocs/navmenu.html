@@ -1,0 +1,23 @@
+<nav class="navmenu navbar-default navmenu-fixed-left offcanvas-xs mt-navbar-height" id="navmenu">
+    <ul class="nav navbar-nav">
+        {% for item in site.data.fulldocs[page.category] %}
+            {% if item.menu %}
+            {% assign open = item.menu | where_exp:"i", "i.slug == page.slug" %}
+            <li class="dropdown {% if open[0].slug == page.slug %} open {% endif %} {% if item.slug == page.slug %} open {% endif %}">
+                <a href="{{site.github.url}}/fulldocs/{{page.category}}/{{item.slug}}/" class="dropdown-toggle {% if item.slug != page.slug %} disabled {% endif %}" role="button" aria-haspopup="true" aria-expanded="false">{{ item.menu-title }} <span class="caret"></span></a>
+                <ul class="dropdown-menu navbar-nav">
+                    {% for subitem in item.menu %}
+                    <li class="{% if subitem.slug == page.slug %} active {% endif %}"><a href="{{site.github.url}}/fulldocs/{{page.category}}/{{item.slug}}/{{ subitem.slug }}">{{ subitem.menu-title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% else %}
+            <li class="{% if item.slug == page.slug %} active {% endif %}">
+                <a href="{{site.github.url}}/fulldocs/{{page.category}}/{{ item.slug }}">
+                    {{ item.menu-title }}
+                </a>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

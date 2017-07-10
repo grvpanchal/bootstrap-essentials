@@ -1,0 +1,18 @@
+  <p>Stylized implementation of HTML's <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover and to users of assistive technologies.</p>
+
+  <h3>Basic abbreviation</h3>
+  <div class="bs-example" data-example-id="simple-abbr">
+    <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+  </div>
+{% highlight html %}
+<abbr title="attribute">attr</abbr>
+{% endhighlight %}
+
+  <h3>Initialism</h3>
+  <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+  <div class="bs-example" data-example-id="simple-initialism">
+    <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+  </div>
+{% highlight html %}
+<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+{% endhighlight %}

@@ -1,0 +1,229 @@
+  <p>Examples of standard form controls supported in an example form layout.</p>
+
+  <h3>Inputs</h3>
+  <p>Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.</p>
+  <div class="bs-callout bs-callout-danger" id="callout-input-needs-type">
+    <h4>Type declaration required</h4>
+    <p>Inputs will only be fully styled if their <code>type</code> is properly declared.</p>
+  </div>
+  <div class="bs-example" data-example-id="text-form-control">
+    <form>
+      <input type="text" class="form-control" placeholder="Text input">
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<input type="text" class="form-control" placeholder="Text input">
+{% endhighlight %}
+  <div class="bs-callout bs-callout-info" id="callout-xref-input-group">
+    <h4>Input groups</h4>
+    <p>To add integrated text or buttons before and/or after any text-based <code>&lt;input&gt;</code>, <a href="../components/#input-groups">check out the input group component</a>.</p>
+  </div>
+
+  <h3>Textarea</h3>
+  <p>Form control which supports multiple lines of text. Change <code>rows</code> attribute as necessary.</p>
+  <div class="bs-example" data-example-id="textarea-form-control">
+    <form>
+      <textarea class="form-control" rows="3" placeholder="Textarea"></textarea>
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<textarea class="form-control" rows="3"></textarea>
+{% endhighlight %}
+
+  <h3>Checkboxes and radios</h3>
+  <p>Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many.</p>
+  <p>Disabled checkboxes and radios are supported, but to provide a "not-allowed" cursor on hover of the parent <code>&lt;label&gt;</code>, you'll need to add the <code>.disabled</code> class to the parent <code>.radio</code>, <code>.radio-inline</code>, <code>.checkbox</code>, or <code>.checkbox-inline</code>.</p>
+  <h4>Default (stacked)</h4>
+  <div class="bs-example" data-example-id="block-checkboxes-radios">
+    <form>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="">
+          Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      <div class="checkbox disabled">
+        <label>
+          <input type="checkbox" value="" disabled>
+          Option two is disabled
+        </label>
+      </div>
+      <br>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          Option one is this and that&mdash;be sure to include why it's great
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          Option two can be something else and selecting it will deselect option one
+        </label>
+      </div>
+      <div class="radio disabled">
+        <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+          Option three is disabled
+        </label>
+      </div>
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="checkbox disabled">
+  <label>
+    <input type="checkbox" value="" disabled>
+    Option two is disabled
+  </label>
+</div>
+
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Option one is this and that&mdash;be sure to include why it's great
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Option two can be something else and selecting it will deselect option one
+  </label>
+</div>
+<div class="radio disabled">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+    Option three is disabled
+  </label>
+</div>
+{% endhighlight %}
+
+  <h4>Inline checkboxes and radios</h4>
+  <p>Use the <code>.checkbox-inline</code> or <code>.radio-inline</code> classes on a series of checkboxes or radios for controls that appear on the same line.</p>
+  <div class="bs-example" data-example-id="inline-checkboxes-radios">
+    <form>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+      </label>
+    </form>
+    <br>
+    <form>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+      </label>
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+</label>
+{% endhighlight %}
+
+  <h4>Checkboxes and radios without label text</h4>
+  <p>Should you have no text within the <code>&lt;label&gt;</code>, the input is positioned as you'd expect. <strong>Currently only works on non-inline checkboxes and radios.</strong> Remember to still provide some form of label for assistive technologies (for instance, using <code>aria-label</code>).</p>
+  <div class="bs-example" data-example-id="checkboxes-radios-without-labels">
+    <form>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" id="blankCheckbox" value="option1" aria-label="Checkbox without label text">
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="Radio button without label text">
+        </label>
+      </div>
+    </form>
+  </div>
+{% highlight html %}
+<div class="checkbox">
+  <label>
+    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
+  </label>
+</div>
+{% endhighlight %}
+
+  <h3>Selects</h3>
+  <p>Note that many native select menus—namely in Safari and Chrome—have rounded corners that cannot be modified via <code>border-radius</code> properties.</p>
+  <div class="bs-example" data-example-ids="select-form-control">
+    <form>
+      <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </form>
+  </div><!-- /.bs-example -->
+{% highlight html %}
+<select class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+{% endhighlight %}
+
+  <p>For <code>&lt;select&gt;</code> controls with the <code>multiple</code> attribute, multiple options are shown by default.</p>
+
+  <div class="bs-example" data-example-ids="select-multiple-form-control">
+    <form>
+      <select multiple class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </form>
+  </div><!-- /.bs-example -->
+
+{% highlight html %}
+<select multiple class="form-control">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+{% endhighlight %}

@@ -1,0 +1,13 @@
+<div class="bs-docs-section">
+  <p>Includes over 250 glyphs in font format from the Glyphicon Halflings set. <a href="http://glyphicons.com/">Glyphicons</a> Halflings are normally not available for free, but their creator has made them available for Bootstrap free of cost. As a thank you, we only ask that you include a link back to <a href="http://glyphicons.com/">Glyphicons</a> whenever possible.</p>
+  <div class="bs-glyphicons">
+    <ul class="bs-glyphicons-list">
+      {% for iconClassName in site.data.glyphicons %}
+        <li>
+          <span class="glyphicon {{ iconClassName }}" aria-hidden="true"></span>
+          <span class="glyphicon-class">glyphicon {{ iconClassName }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+  <p>For quoting blocks of content from another source within your document.</p>
+
+  <h3>Default blockquote</h3>
+  <p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For straight quotes, we recommend a <code>&lt;p&gt;</code>.</p>
+  <div class="bs-example" data-example-id="simple-blockquote">
+    <blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+    </blockquote>
+  </div>
+{% highlight html %}
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+{% endhighlight %}
+
+  <h3>Blockquote options</h3>
+  <p>Style and content changes for simple variations on a standard <code>&lt;blockquote&gt;</code>.</p>
+
+  <h4>Naming a source</h4>
+  <p>Add a <code>&lt;footer&gt;</code> for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+  <div class="bs-example" data-example-id="blockquote-cite">
+    <blockquote>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+{% highlight html %}
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+{% endhighlight %}
+
+  <h4>Alternate displays</h4>
+  <p>Add <code>.blockquote-reverse</code> for a blockquote with right-aligned content.</p>
+  <div class="bs-example" style="overflow: hidden;" data-example-id="blockquote-reverse">
+    <blockquote class="blockquote-reverse">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+  </div>
+{% highlight html %}
+<blockquote class="blockquote-reverse">
+  ...
+</blockquote>
+{% endhighlight %}
+

@@ -1,0 +1,33 @@
+<div class="bs-docs-section">
+
+  <p>Use the button classes on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+  <form class="bs-example" data-example-id="btn-tags">
+    <a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input">
+    <input class="btn btn-default" type="submit" value="Submit">
+  </form>
+{% highlight html %}
+<a class="btn btn-default" href="#" role="button">Link</a>
+<button class="btn btn-default" type="submit">Button</button>
+<input class="btn btn-default" type="button" value="Input">
+<input class="btn btn-default" type="submit" value="Submit">
+{% endhighlight %}
+
+  <div class="bs-callout bs-callout-warning" id="callout-buttons-context-usage">
+    <h4>Context-specific usage</h4>
+    <p>While button classes can be used on <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements, only <code>&lt;button&gt;</code> elements are supported within our nav and navbar components.</p>
+  </div>
+
+  <div class="bs-callout bs-callout-warning" id="callout-buttons-anchor-accessibility">
+    <h4>Links acting as buttons</h4>
+    <p>If the <code>&lt;a&gt;</code> elements are used to act as buttons – triggering in-page functionality, rather than navigating to another document or section within the current page – they should also be given an appropriate <code>role="button"</code>.</p>
+  </div>
+
+  <div class="bs-callout bs-callout-warning" id="callout-buttons-ff-height">
+    <h4>Cross-browser rendering</h4>
+    <p>As a best practice, <strong>we highly recommend using the <code>&lt;button&gt;</code> element whenever possible</strong> to ensure matching cross-browser rendering.</p>
+    <p>Among other things, there's <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=697451">a bug in Firefox &lt;30</a> that prevents us from setting the <code>line-height</code> of <code>&lt;input&gt;</code>-based buttons, causing them to not exactly match the height of other buttons on Firefox.</p>
+  </div>
+
+</div>

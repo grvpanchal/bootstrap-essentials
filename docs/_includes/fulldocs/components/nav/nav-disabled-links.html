@@ -1,0 +1,21 @@
+  <p>For any nav component (tabs or pills), add <code>.disabled</code> for <strong>gray links and no hover effects</strong>.</p>
+
+  <div class="bs-callout bs-callout-warning" id="callout-navs-anchor-disabled">
+    <h4>Link functionality not impacted</h4>
+    <p>This class will only change the <code>&lt;a&gt;</code>'s appearance, not its functionality. Use custom JavaScript to disable links here.</p>
+  </div>
+
+  <div class="bs-example" data-example-id="disabled-nav-link">
+    <ul class="nav nav-pills">
+      <li role="presentation"><a href="#">Clickable link</a></li>
+      <li role="presentation"><a href="#">Clickable link</a></li>
+      <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+    </ul>
+  </div>
+{% highlight html %}
+<ul class="nav nav-pills">
+  ...
+  <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+  ...
+</ul>
+{% endhighlight %}
