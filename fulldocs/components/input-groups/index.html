@@ -10,7 +10,6 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'/>
     <link rel='stylesheet' href='/dist/css/bootstrap-essentials.min.css'/>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/googlecode.min.css" />
     <link rel="stylesheet" href="/assets/css/docs.css" />
     <style>
         @media (max-width: 767px) {
@@ -82,6 +81,9 @@
 			<ul class="nav navbar-nav">
 				<li class="visible-xs">
 					<a href="#navmenu" data-toggle="offcanvas" class="fs-xs-1-4"> <i class="fa fa-book"></i></a>
+				</li>
+				<li>
+					<a data-toggle="modal" href='#search_modal' class="fs-xs-1-4"> <i class="fa fa-search"></i></a>
 				</li>
 			</ul>
 			
@@ -763,6 +765,48 @@ nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
 		action-btn" data-toggle="scroll" data-spy="affix" data-offset-top="100"> <i class="glyphicon glyphicon-chevron-up"></i>
 </a>
 </div>
+<script>
+    (function() {
+        var cx = '017629286757809281113:2ddg8o4mx8c';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+</script>
+<div class="modal fade" id="search_modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="z-index: 1; top: 1px; position: relative; right: 4px;">&times;</button>
+            <div class="modal-body">
+                <style>
+                    /* Bootstrap FIX*/
+                    .reset-box-sizing,
+                    .reset-box-sizing *,
+                    .reset-box-sizing *:before,
+                    .reset-box-sizing *:after,
+                    .gsc-inline-block {
+                    -webkit-box-sizing: content-box;
+                    -moz-box-sizing: content-box;
+                    box-sizing: content-box;
+                    }
+                    input.gsc-input,
+                    .gsc-input-box,
+                    .gsc-input-box-hover,
+                    .gsc-input-box-focus,
+                    .gsc-search-button {
+                    box-sizing: content-box;
+                    line-height: normal;
+                    }
+                </style>
+                <gcse:search></gcse:search>    
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/dist/js/bootstrap-essentials.min.js"></script>
