@@ -79,12 +79,14 @@
 		<div class="navbar-right-static">
 				
 			<ul class="nav navbar-nav">
+				
 				<li class="visible-xs">
 					<a href="#navmenu" data-toggle="offcanvas" class="fs-xs-1-4"> <i class="fa fa-book"></i></a>
 				</li>
 				<li>
 					<a data-toggle="modal" href='#search_modal' class="fs-xs-1-4"> <i class="fa fa-search"></i></a>
 				</li>
+				
 			</ul>
 			
 		</div>
@@ -102,7 +104,7 @@
 				<li  class="active" ><a href="/fulldocs/classes" itemprop="url"><span itemprop="name">Classes</span></a></li>
 			</ul>
 			
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right mr-sm-0">
 				<li><a href="https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip" title="Bootstrap 3.3.7"><i class="fa fa-download"></i> BS 3.3.7</a></li>
 				<li><a href="https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.5.0/bootstrap-essentials-0.5.0-dist.zip" title="Bootstrap Essentials 0.5.0"><i class="fa fa-download"></i> BSE 0.5.0</a></li>
 			</ul>
@@ -111,6 +113,12 @@
 	</nav>
 </header>
     <nav class="navmenu navbar-default navmenu-fixed-left offcanvas-xs mt-navbar-height" id="navmenu">
+    
+    <div class="form-group has-feedback m-xs-20">
+        <input type="search" name="search" id="search" id="input1/(\w+)/\u\1/g" class="form-control" value="" required="required" title="">
+        <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+    </div>
+    
     <ul class="nav navbar-nav">
         
             <li class="">
@@ -500,6 +508,13 @@
         
             <li class="">
                     
+                <a href="/fulldocs/classes/btn-toolbar">
+                    .btn-toolbar
+                </a>
+            </li>      
+        
+            <li class="">
+                    
                 <a href="/fulldocs/classes/btn-group-justified">
                     .btn-group-justified
                 </a>
@@ -824,6 +839,13 @@
                     
                 <a href="/fulldocs/classes/list-group-disabled">
                     .list-group .disabled
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/nav-disabled">
+                    .nav .disabled
                 </a>
             </li>      
         
@@ -1690,13 +1712,6 @@
         
             <li class="">
                     
-                <a href="/fulldocs/classes/navbar-nav">
-                    .navbar-nav
-                </a>
-            </li>      
-        
-            <li class="">
-                    
                 <a href="/fulldocs/classes/navbar-right">
                     .navbar-right
                 </a>
@@ -1762,6 +1777,13 @@
                     
                 <a href="/fulldocs/classes/navbar-slide-nav">
                     .navbar-slide-nav
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/navbar-slide">
+                    navbar-slide
                 </a>
             </li>      
         
@@ -1888,6 +1910,20 @@
                     
                 <a href="/fulldocs/classes/panel-collapse">
                     .panel-collapse
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-default">
+                    .panel-default
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/panel-primary">
+                    .panel-primary
                 </a>
             </li>      
         
@@ -2084,6 +2120,20 @@
                     
                 <a href="/fulldocs/classes/carousel-right">
                     .carousel .right
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/radio">
+                    .radio
+                </a>
+            </li>      
+        
+            <li class="">
+                    
+                <a href="/fulldocs/classes/radio-inline">
+                    .radio-inline
                 </a>
             </li>      
         
@@ -2677,6 +2727,7 @@ nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
 		action-btn" data-toggle="scroll" data-spy="affix" data-offset-top="100"> <i class="glyphicon glyphicon-chevron-up"></i>
 </a>
 </div>
+
 <script>
     (function() {
         var cx = '017629286757809281113:2ddg8o4mx8c';
@@ -2693,26 +2744,6 @@ nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="z-index: 1; top: 1px; position: relative; right: 4px;">&times;</button>
             <div class="modal-body">
-                <style>
-                    /* Bootstrap FIX*/
-                    .reset-box-sizing,
-                    .reset-box-sizing *,
-                    .reset-box-sizing *:before,
-                    .reset-box-sizing *:after,
-                    .gsc-inline-block {
-                    -webkit-box-sizing: content-box;
-                    -moz-box-sizing: content-box;
-                    box-sizing: content-box;
-                    }
-                    input.gsc-input,
-                    .gsc-input-box,
-                    .gsc-input-box-hover,
-                    .gsc-input-box-focus,
-                    .gsc-search-button {
-                    box-sizing: content-box;
-                    line-height: normal;
-                    }
-                </style>
                 <gcse:search></gcse:search>    
             </div>
         </div>
@@ -2723,6 +2754,25 @@ nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/dist/js/bootstrap-essentials.min.js"></script>
 <script type="text/javascript" src="/assets/js/docs.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#search").keyup(function() {
+            var _this = this;
+            var value = $(_this).val();
+            
+            $(".navmenu .navbar-nav > li").each(function() {
+                if ($(this).text().trim().search(value) > -1) {
+                    console.log($(this).text().trim());
+                    $(this).removeClass('hide');
+                }
+                else {
+                    $(this).addClass('hide');
+                }
+            });
+
+        });
+    });
+</script>
 </body>
 
 </html>
