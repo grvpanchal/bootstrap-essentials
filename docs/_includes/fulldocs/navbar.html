@@ -8,12 +8,14 @@
 		<div class="navbar-right-static">
 				
 			<ul class="nav navbar-nav">
+				{% if(page.slug != 'fulldocs') %}
 				<li class="visible-xs">
 					<a href="#navmenu" data-toggle="offcanvas" class="fs-xs-1-4"> <i class="fa fa-book"></i></a>
 				</li>
 				<li>
 					<a data-toggle="modal" href='#search_modal' class="fs-xs-1-4"> <i class="fa fa-search"></i></a>
 				</li>
+				{% endif %}
 			</ul>
 			
 		</div>
@@ -31,7 +33,7 @@
 				<li {% if page.category == "classes" %} class="active" {% endif %}><a href="{{site.github.url}}/fulldocs/classes" itemprop="url"><span itemprop="name">Classes</span></a></li>
 			</ul>
 			
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right mr-sm-0">
 				<li><a href="{{site.download.bootstrap}}" title="Bootstrap {{site.bootstrap_version}}"><i class="fa fa-download"></i> BS {{site.bootstrap_version}}</a></li>
 				<li><a href="{{site.download.dist}}" title="Bootstrap Essentials {{site.current_version}}"><i class="fa fa-download"></i> BSE {{site.current_version}}</a></li>
 			</ul>

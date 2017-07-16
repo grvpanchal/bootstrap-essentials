@@ -1,0 +1,60 @@
+<footer class="footer pb-xs-30 navbar-default" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+	<meta itemprop="name" content="Webpage footer for {{page.title}}"/>
+	<meta itemprop="description" content="Bootstrap Essentials designed by @grvpanchal and maintained by Söoryen Innovation Labs"/>
+	<meta itemprop="keywords" content="grvpanchal, mdo, fat, bootstrap, bootstrap-essentials"/>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="list-inline">
+					<li>
+						<h4><a href="http://github.com/grvpanchal/bootstrap-essentials" >GitHub</a></h4>
+					</li>
+					<li>
+						<h4><a href="{{site.github.url}}/fulldocs/#examples" >Classes</a></h4>
+					</li>
+					<li>
+						<h4><a href="http://twitter.com/grvpanchal" >Twitter</a></h4>
+					</li>
+					<li>
+						<h4><a href="{{site.github.url}}/about" >About</a></h4>
+					</li>
+				</ul>
+				<p class="text-right pull-right">Bootstrap Essentials designed by <a href="http://twitter.com/grvpanchal">@grvpanchal</a> and maintained by <a href="http://www.sooryen.com/">Söoryen
+                Innovation Labs</a>.<br> Bootstrap developed by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>					and <a href="https://twitter.com/fat" target="_blank">@fat</a>.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#body" title="Scroll to Top" class="
+		hidden-xs
+		btn 
+		btn-lg
+		btn-primary
+		btn-circle
+		action-btn" data-toggle="scroll" data-spy="affix" data-offset-top="100"> <i class="glyphicon glyphicon-chevron-up"></i>
+</a>
+</div>
+{% include search.html %}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{site.github.url}}/dist/js/bootstrap-essentials.min.js"></script>
+<script type="text/javascript" src="{{site.github.url}}/assets/js/docs.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#search").keyup(function() {
+            var _this = this;
+            var value = $(_this).val();
+            
+            $(".navmenu .navbar-nav > li").each(function() {
+                if ($(this).text().trim().search(value) > -1) {
+                    console.log($(this).text().trim());
+                    $(this).removeClass('hide');
+                }
+                else {
+                    $(this).addClass('hide');
+                }
+            });
+
+        });
+    });
+</script>
