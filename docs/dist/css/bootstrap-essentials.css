@@ -1521,7 +1521,7 @@ body:not(.bse-no-conflict) [class*="container"] > .navbar-toggle.pull-left {
     padding-top: 14px !important;
     margin-top: 9px;
     font-size: 12px;
-    line-height: 1.42857 !important;
+    line-height: 1.428571429 !important;
     color: #777 !important;
     border-top: 1px solid #e5e5e5;
   }
