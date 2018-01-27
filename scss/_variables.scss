@@ -166,6 +166,7 @@ $screen-phone:               $screen-xs-min !global;
     //Background Colors
     $well-bg:                     #f5f5f5 !global;
     $jumbotron-bg:                #eee !global;
+    
 }
 
 $grid-breakpoints-custom: (
@@ -209,15 +210,23 @@ $font-values : (
 
 // margin and padding values array
 $space-values : (
-  0,
-  5,
-  10,
-  15,
-  20,
-  30,
-  40,
-  50
+  0: 0,
+  1: 5,
+  2: 10,
+  3: 15,
+  4: 25,
+  5: 50
 ) !default;
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge((
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+), $sizes);
+// stylelint-enable
 
 //== Containers
 $container-xs:                      480px !default;
@@ -244,12 +253,15 @@ $btn-circle-size-lg: 50px;
 //== Navmenu
 
 // Basics of a navmenu
-$zindex-navmenu-fixed:              1030 !global;
+$zindex-sticky:                     1020 !default;
+$zindex-fixed:                      1030 !default;
+$zindex-navmenu-fixed:              $zindex-fixed !default;
 $navmenu-width:                     240px !default;
 $navmenu-margin-vertical:           (0.5 * 20px) !default;
 
 // Navbar Slide variables
-$navbar-slide-trasition: 0.35s;
+$navbar-slide-trasition:             0.35s;
 
 //Borders
-$default-border-color: $panel-inner-border;
+$default-border-color:              $panel-inner-border !default;
+$border-radius:                     $border-radius-base !default;
