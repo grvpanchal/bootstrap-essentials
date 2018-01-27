@@ -13,8 +13,12 @@ $breakpoints: $grid-breakpoints-custom;
         @if($breakpoint-value==0) {
             @each $attr-short,
             $attr-long in $prefixes {
-                @each $value in $values {
-                    .#{$attr-short}-#{$breakpoint-name}-#{$value} {
+                @each $name,
+                $value in $values {
+                    .#{$attr-short}-#{$name} {
+                        #{$attr-long}: #{$value}px !important;
+                    }
+                    .#{$attr-short}-#{$breakpoint-name}-#{$name} {
                         #{$attr-long}: #{$value}px !important;
                     }
                 }
@@ -24,8 +28,9 @@ $breakpoints: $grid-breakpoints-custom;
         @else {
             @media (min-width: $breakpoint-value) {
                 @each $attr-short, $attr-long in $prefixes {
-                    @each $value in $values {
-                        .#{$attr-short}-#{$breakpoint-name}-#{$value} {
+                    @each $name,
+                    $value in $values {
+                        .#{$attr-short}-#{$breakpoint-name}-#{$name} {
                             #{$attr-long}: #{$value}px !important;
                         }
                     }
