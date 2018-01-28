@@ -53,6 +53,13 @@
 .navmenu .navbar-nav {
     margin: 0;
     margin-bottom: $navmenu-margin-vertical;
+
+    .dropdown .caret {
+        float: right;
+        margin-top: 0.6em;
+        margin-right: 0.5em;
+    }
+
     &.dropdown-menu {
         background-color: transparent;
         position: static;
