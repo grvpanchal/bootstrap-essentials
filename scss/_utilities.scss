@@ -23,19 +23,19 @@
 }
 
 .bg-white {
-    background-color: #fff;
+    background-color: #fff !important;
 }
 
 .bg-transparent {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .bg-well {
-    background-color: $well-bg;
+    background-color: $well-bg !important;
 }
 
 .bg-jumbotron {
-    background-color: $jumbotron-bg;
+    background-color: $jumbotron-bg !important;
 }
 
 .bg-img {
