@@ -208,25 +208,6 @@ $font-values : (
   '4.0'
 ) !default;
 
-// margin and padding values array
-$space-values : (
-  0: 0,
-  1: 5,
-  2: 10,
-  3: 15,
-  4: 25,
-  5: 50
-) !default;
-
-// This variable affects the `.h-*` and `.w-*` classes.
-$sizes: () !default;
-$sizes: map-merge((
-  25: 25%,
-  50: 50%,
-  75: 75%,
-  100: 100%
-), $sizes);
-// stylelint-enable
 
 //== Containers
 $container-xs:                      480px !default;

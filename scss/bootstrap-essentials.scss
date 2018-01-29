@@ -5,10 +5,8 @@
 @import "mixins";
 @import "page";
 @import "tabs";
-@import "panel";
 //@import "timeline";
 //@import "agile-board";
-@import "border";
 @import "gutter";
 @import "list";
 @import "avatar";
@@ -18,20 +16,13 @@
 @import "fileinput";
 @import "footer";
 //Button CSS
-@import "buttons/circle";
-@import "buttons/outline";
-@import "buttons/rounded";
 @import "buttons/block";
 @import "buttons/action";
 // Text CSS
-@import "text/align";
 @import "text/size";
-@import "text/weight";
 // Container CSS
 @import "containers/sizes";
 @import "containers/smooth";
-@import "containers/flex";
-@import "containers/table";
 @import "containers/login";
 // Navigation Addons
 @import "navbar/slide";
@@ -41,8 +32,3 @@
 @import "navbar/spacing";
 //Spacing CSS
 @import "utilities";
-@import "spacing";
-@import "display";
-@import "float";
-@import "position";
-@import "sizing";
