@@ -9,7 +9,7 @@
         {% for item in site.data.classes %}
             <li class="{% if item.class-name == page.class %} active {% endif %}">
                     {% assign filename = item.class-name | remove: "." %}
-                <a href="{{site.github.url}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">
+                <a href="{{site.url}}/{{site.baseurl}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">
                     {{ item.class-name }}
                 </a>
             </li>      

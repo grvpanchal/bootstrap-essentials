@@ -9,7 +9,8 @@ title: Bootstrap Essentials
 description: Essential and common classes for bootstrap for faster web development
 
 # Server
-url:              http://bootstrapessentials.com
+url:     http://bootstrapessentials.com
+baseurl: /v4
 
 author:
   twitter: grvpanchal
