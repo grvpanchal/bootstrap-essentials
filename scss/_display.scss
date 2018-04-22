@@ -1,3 +1,7 @@
+$breakpoints: $grid-breakpoints-custom;
+@if $use-bootstrap {
+    $breakpoints: $grid-breakpoints;
+}
 // stylelint-disable declaration-no-important
 
 //
@@ -42,76 +46,81 @@
     }
   }
 
-  .d-#{$breakpoint-name}-none {
-    display: none !important;
-  }
+  @else {
+    @media (min-width: $breakpoint-value) {
 
-  .d-#{$breakpoint-name}-inline {
-    display: inline !important;
-  }
+      .d-#{$breakpoint-name}-none {
+        display: none !important;
+      }
 
-  .d-#{$breakpoint-name}-inline-block {
-    display: inline-block !important;
-  }
+      .d-#{$breakpoint-name}-inline {
+        display: inline !important;
+      }
 
-  .d-#{$breakpoint-name}-block {
-    display: block !important;
-  }
+      .d-#{$breakpoint-name}-inline-block {
+        display: inline-block !important;
+      }
 
-  .d-#{$breakpoint-name}-table {
-    display: table !important;
-  }
+      .d-#{$breakpoint-name}-block {
+        display: block !important;
+      }
 
-  .d-#{$breakpoint-name}-table-row {
-    display: table-row !important;
-  }
+      .d-#{$breakpoint-name}-table {
+        display: table !important;
+      }
 
-  .d-#{$breakpoint-name}-table-cell {
-    display: table-cell !important;
-  }
+      .d-#{$breakpoint-name}-table-row {
+        display: table-row !important;
+      }
 
-  .d-#{$breakpoint-name}-flex {
-    display: flex !important;
-  }
+      .d-#{$breakpoint-name}-table-cell {
+        display: table-cell !important;
+      }
 
-  .d-#{$breakpoint-name}-inline-flex {
-    display: inline-flex !important;
-  }
+      .d-#{$breakpoint-name}-flex {
+        display: flex !important;
+      }
 
-  .d-#{$breakpoint-name}-none {
-    display: none !important;
-  }
+      .d-#{$breakpoint-name}-inline-flex {
+        display: inline-flex !important;
+      }
 
-  .d-#{$breakpoint-name}-inline {
-    display: inline !important;
-  }
+      .d-#{$breakpoint-name}-none {
+        display: none !important;
+      }
 
-  .d-#{$breakpoint-name}-inline-block {
-    display: inline-block !important;
-  }
+      .d-#{$breakpoint-name}-inline {
+        display: inline !important;
+      }
 
-  .d-#{$breakpoint-name}-block {
-    display: block !important;
-  }
+      .d-#{$breakpoint-name}-inline-block {
+        display: inline-block !important;
+      }
 
-  .d-#{$breakpoint-name}-table {
-    display: table !important;
-  }
+      .d-#{$breakpoint-name}-block {
+        display: block !important;
+      }
 
-  .d-#{$breakpoint-name}-table-row {
-    display: table-row !important;
-  }
+      .d-#{$breakpoint-name}-table {
+        display: table !important;
+      }
 
-  .d-#{$breakpoint-name}-table-cell {
-    display: table-cell !important;
-  }
+      .d-#{$breakpoint-name}-table-row {
+        display: table-row !important;
+      }
 
-  .d-#{$breakpoint-name}-flex {
-    display: flex !important;
-  }
+      .d-#{$breakpoint-name}-table-cell {
+        display: table-cell !important;
+      }
 
-  .d-#{$breakpoint-name}-inline-flex {
-    display: inline-flex !important;
+      .d-#{$breakpoint-name}-flex {
+        display: flex !important;
+      }
+
+      .d-#{$breakpoint-name}-inline-flex {
+        display: inline-flex !important;
+      }
+    }
   }
 }
 

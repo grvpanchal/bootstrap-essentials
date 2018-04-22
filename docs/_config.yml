@@ -16,18 +16,18 @@ author:
 
 encoding:         UTF-8
 
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
 # Custom vars
 bootstrap_version: 3.3.7
-current_version:  0.6.0
+current_version:  0.7.1
 repository:       https://github.com/grvpanchal/bootstrap-essentials
 
 download:
-  source:         https://github.com/grvpanchal/bootstrap-essentials/archive/v0.6.0.zip
-  dist:           https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.6.0/bootstrap-essentials-0.6.0-dist.zip
+  source:         https://github.com/grvpanchal/bootstrap-essentials/archive/v0.7.1.zip
+  dist:           https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.7.1/bootstrap-essentials-0.6.0-dist.zip
   bootstrap:       https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip
 
 exclude: 

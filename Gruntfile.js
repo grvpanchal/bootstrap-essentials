@@ -43,7 +43,7 @@ module.exports = function (grunt) {
         cssmin: {
             dist: {
                 options: {
-                    banner: ''
+                    banner: '<%= banner %>'
                 },
                 files: {
                     'dist/css/<%= pkg.name %>.min.css': ['dist/css/<%= pkg.name %>.css']
@@ -51,7 +51,7 @@ module.exports = function (grunt) {
             },
             docs: {
                 options: {
-                    banner: ''
+                    banner: '<%= banner %>'
                 },
                 files: {
                     'docs/assets/css/style.min.css': ['docs/assets/css/style.css']
