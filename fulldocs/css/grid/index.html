@@ -40,7 +40,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!-- Begin Jekyll SEO tag v2.3.0 -->
+    <!-- Begin Jekyll SEO tag v2.4.0 -->
+<meta name="generator" content="Jekyll v3.7.0" />
 <meta property="og:title" content="Grid system" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Essential and common classes for bootstrap for faster web development" />
@@ -49,19 +50,19 @@
 <meta property="og:url" content="http://bootstrapessentials.com/fulldocs/css/grid/" />
 <meta property="og:site_name" content="Bootstrap Essentials" />
 <script type="application/ld+json">
-{"name":null,"description":"Essential and common classes for bootstrap for faster web development","url":"http://bootstrapessentials.com/fulldocs/css/grid/","headline":"Grid system","dateModified":null,"datePublished":null,"sameAs":null,"@type":"WebPage","author":null,"image":null,"publisher":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+{"description":"Essential and common classes for bootstrap for faster web development","@type":"WebPage","url":"http://bootstrapessentials.com/fulldocs/css/grid/","headline":"Grid system","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102336229-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  gtag('config', 'UA-102336229-1');
+  ga('create', 'UA-102336229-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
-
 </head>
 
 <body id="body" class="pt-navbar-height" itemscope="itemscope" itemtype="https://schema.org/WebPage">
@@ -103,7 +104,7 @@
 			
 			<ul class="nav navbar-nav navbar-right mr-sm-0">
 				<li><a href="https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip" title="Bootstrap 3.3.7"><i class="fa fa-download"></i> BS 3.3.7</a></li>
-				<li><a href="https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.6.0/bootstrap-essentials-0.6.0-dist.zip" title="Bootstrap Essentials 0.6.0"><i class="fa fa-download"></i> BSE 0.6.0</a></li>
+				<li><a href="https://github.com/grvpanchal/bootstrap-essentials/releases/download/v0.7.1/bootstrap-essentials-0.6.0-dist.zip" title="Bootstrap Essentials 0.7.1"><i class="fa fa-download"></i> BSE 0.7.1</a></li>
 			</ul>
 		</div>
 		<!--/.nav-collapse -->
@@ -842,57 +843,57 @@ nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
 
   <h3>Mixins</h3>
   <p>Mixins are used in conjunction with the grid variables to generate semantic CSS for individual grid columns.</p>
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Creates a wrapper for a series of columns
-</span><span class="err">.</span><span class="na">make-row</span><span class="err">(@</span><span class="na">gutter</span><span class="p">:</span> <span class="o">@</span><span class="n">grid-gutter-width</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// Then clear the floated columns
-</span>  <span class="nc">.clearfix</span><span class="o">()</span><span class="p">;</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Creates a wrapper for a series of columns</span>
+<span class="err">.</span><span class="na">make-row</span><span class="err">(@</span><span class="na">gutter</span><span class="p">:</span> <span class="o">@</span><span class="n">grid-gutter-width</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Then clear the floated columns</span>
+  <span class="nc">.clearfix</span><span class="o">()</span><span class="p">;</span>
 
   <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-sm-min</span><span class="p">)</span> <span class="p">{</span>
     <span class="nl">margin-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">-2</span><span class="p">);</span>
     <span class="nl">margin-right</span><span class="p">:</span> <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">-2</span><span class="p">);</span>
   <span class="p">}</span>
 
-  <span class="c1">// Negative margin nested rows out to align the content of columns
-</span>  <span class="nc">.row</span> <span class="p">{</span>
+  <span class="c1">// Negative margin nested rows out to align the content of columns</span>
+  <span class="nc">.row</span> <span class="p">{</span>
     <span class="nl">margin-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">-2</span><span class="p">);</span>
     <span class="nl">margin-right</span><span class="p">:</span> <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">-2</span><span class="p">);</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Generate the extra small columns
-</span><span class="nc">.make-xs-column</span><span class="o">(@</span><span class="nt">columns</span><span class="p">;</span> <span class="k">@gutter</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grid-gutter-width</span><span class="o">)</span> <span class="p">{</span>
+<span class="c1">// Generate the extra small columns</span>
+<span class="nc">.make-xs-column</span><span class="o">(@</span><span class="nt">columns</span><span class="p">;</span> <span class="k">@gutter</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grid-gutter-width</span><span class="o">)</span> <span class="p">{</span>
   <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
-  <span class="c1">// Prevent columns from collapsing when empty
-</span>  <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
-  <span class="c1">// Inner gutter via padding
-</span>  <span class="nl">padding-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="c1">// Prevent columns from collapsing when empty</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+  <span class="c1">// Inner gutter via padding</span>
+  <span class="nl">padding-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
   <span class="nl">padding-right</span><span class="p">:</span> <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
 
-  <span class="c1">// Calculate width based on number of columns available
-</span>  <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">grid-float-breakpoint</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Calculate width based on number of columns available</span>
+  <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">grid-float-breakpoint</span><span class="p">)</span> <span class="p">{</span>
     <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
     <span class="nl">width</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">((</span><span class="o">@</span><span class="n">columns</span> <span class="o">/</span> <span class="o">@</span><span class="n">grid-columns</span><span class="p">));</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Generate the small columns
-</span><span class="nc">.make-sm-column</span><span class="o">(@</span><span class="nt">columns</span><span class="p">;</span> <span class="k">@gutter</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grid-gutter-width</span><span class="o">)</span> <span class="p">{</span>
+<span class="c1">// Generate the small columns</span>
+<span class="nc">.make-sm-column</span><span class="o">(@</span><span class="nt">columns</span><span class="p">;</span> <span class="k">@gutter</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grid-gutter-width</span><span class="o">)</span> <span class="p">{</span>
   <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
-  <span class="c1">// Prevent columns from collapsing when empty
-</span>  <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
-  <span class="c1">// Inner gutter via padding
-</span>  <span class="nl">padding-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="c1">// Prevent columns from collapsing when empty</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+  <span class="c1">// Inner gutter via padding</span>
+  <span class="nl">padding-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
   <span class="nl">padding-right</span><span class="p">:</span> <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
 
-  <span class="c1">// Calculate width based on number of columns available
-</span>  <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-sm-min</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Calculate width based on number of columns available</span>
+  <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-sm-min</span><span class="p">)</span> <span class="p">{</span>
     <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
     <span class="nl">width</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">((</span><span class="o">@</span><span class="n">columns</span> <span class="o">/</span> <span class="o">@</span><span class="n">grid-columns</span><span class="p">));</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Generate the small column offsets
-</span><span class="nc">.make-sm-column-offset</span><span class="o">(@</span><span class="nt">columns</span><span class="o">)</span> <span class="p">{</span>
+<span class="c1">// Generate the small column offsets</span>
+<span class="nc">.make-sm-column-offset</span><span class="o">(@</span><span class="nt">columns</span><span class="o">)</span> <span class="p">{</span>
   <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-sm-min</span><span class="p">)</span> <span class="p">{</span>
     <span class="nl">margin-left</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">((</span><span class="o">@</span><span class="n">columns</span> <span class="o">/</span> <span class="o">@</span><span class="n">grid-columns</span><span class="p">));</span>
   <span class="p">}</span>
@@ -908,24 +909,24 @@ nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Generate the medium columns
-</span><span class="nc">.make-md-column</span><span class="o">(@</span><span class="nt">columns</span><span class="p">;</span> <span class="k">@gutter</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grid-gutter-width</span><span class="o">)</span> <span class="p">{</span>
+<span class="c1">// Generate the medium columns</span>
+<span class="nc">.make-md-column</span><span class="o">(@</span><span class="nt">columns</span><span class="p">;</span> <span class="k">@gutter</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grid-gutter-width</span><span class="o">)</span> <span class="p">{</span>
   <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
-  <span class="c1">// Prevent columns from collapsing when empty
-</span>  <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
-  <span class="c1">// Inner gutter via padding
-</span>  <span class="nl">padding-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="c1">// Prevent columns from collapsing when empty</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+  <span class="c1">// Inner gutter via padding</span>
+  <span class="nl">padding-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
   <span class="nl">padding-right</span><span class="p">:</span> <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
 
-  <span class="c1">// Calculate width based on number of columns available
-</span>  <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-md-min</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Calculate width based on number of columns available</span>
+  <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-md-min</span><span class="p">)</span> <span class="p">{</span>
     <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
     <span class="nl">width</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">((</span><span class="o">@</span><span class="n">columns</span> <span class="o">/</span> <span class="o">@</span><span class="n">grid-columns</span><span class="p">));</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Generate the medium column offsets
-</span><span class="nc">.make-md-column-offset</span><span class="o">(@</span><span class="nt">columns</span><span class="o">)</span> <span class="p">{</span>
+<span class="c1">// Generate the medium column offsets</span>
+<span class="nc">.make-md-column-offset</span><span class="o">(@</span><span class="nt">columns</span><span class="o">)</span> <span class="p">{</span>
   <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-md-min</span><span class="p">)</span> <span class="p">{</span>
     <span class="nl">margin-left</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">((</span><span class="o">@</span><span class="n">columns</span> <span class="o">/</span> <span class="o">@</span><span class="n">grid-columns</span><span class="p">));</span>
   <span class="p">}</span>
@@ -941,24 +942,24 @@ nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Generate the large columns
-</span><span class="nc">.make-lg-column</span><span class="o">(@</span><span class="nt">columns</span><span class="p">;</span> <span class="k">@gutter</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grid-gutter-width</span><span class="o">)</span> <span class="p">{</span>
+<span class="c1">// Generate the large columns</span>
+<span class="nc">.make-lg-column</span><span class="o">(@</span><span class="nt">columns</span><span class="p">;</span> <span class="k">@gutter</span><span class="nd">:</span> <span class="o">@</span><span class="nt">grid-gutter-width</span><span class="o">)</span> <span class="p">{</span>
   <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
-  <span class="c1">// Prevent columns from collapsing when empty
-</span>  <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
-  <span class="c1">// Inner gutter via padding
-</span>  <span class="nl">padding-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
+  <span class="c1">// Prevent columns from collapsing when empty</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">1px</span><span class="p">;</span>
+  <span class="c1">// Inner gutter via padding</span>
+  <span class="nl">padding-left</span><span class="p">:</span>  <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
   <span class="nl">padding-right</span><span class="p">:</span> <span class="p">(</span><span class="o">@</span><span class="n">gutter</span> <span class="o">/</span> <span class="m">2</span><span class="p">);</span>
 
-  <span class="c1">// Calculate width based on number of columns available
-</span>  <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-lg-min</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Calculate width based on number of columns available</span>
+  <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-lg-min</span><span class="p">)</span> <span class="p">{</span>
     <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
     <span class="nl">width</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">((</span><span class="o">@</span><span class="n">columns</span> <span class="o">/</span> <span class="o">@</span><span class="n">grid-columns</span><span class="p">));</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Generate the large column offsets
-</span><span class="nc">.make-lg-column-offset</span><span class="o">(@</span><span class="nt">columns</span><span class="o">)</span> <span class="p">{</span>
+<span class="c1">// Generate the large column offsets</span>
+<span class="nc">.make-lg-column-offset</span><span class="o">(@</span><span class="nt">columns</span><span class="o">)</span> <span class="p">{</span>
   <span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="o">:</span> <span class="o">@</span><span class="n">screen-lg-min</span><span class="p">)</span> <span class="p">{</span>
     <span class="nl">margin-left</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">((</span><span class="o">@</span><span class="n">columns</span> <span class="o">/</span> <span class="o">@</span><span class="n">grid-columns</span><span class="p">));</span>
   <span class="p">}</span>
