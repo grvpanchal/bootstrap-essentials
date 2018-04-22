@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-essentials",
-  "version": "0.6.0",
+  "version": "0.7.1",
   "description": "Essential and common classes for bootstrap for faster web development",
   "main": "index.js",
   "scripts": {
