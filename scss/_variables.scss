@@ -27,6 +27,7 @@ $screen-phone:               $screen-xs-min !global;
     $brand-warning:         #f0ad4e !global;
     $brand-danger:          #d9534f !global;
 
+    $text-color:              $gray-dark !global;
     $font-size-base:          14px !global;
     $font-size-large:         ceil(($font-size-base * 1.25)) !global; // ~18px
     $font-size-small:         ceil(($font-size-base * 0.85)) !global; // ~12px
