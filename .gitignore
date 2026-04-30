@@ -2,3 +2,4 @@
 /.sass-cache
 /.vscode
 Gemfile.lock
+package-lock.json
