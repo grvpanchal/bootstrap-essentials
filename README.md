@@ -3,6 +3,8 @@
 ![Bower version](https://img.shields.io/bower/v/bootstrap-essentials.svg)
 [![npm version](https://img.shields.io/npm/v/bootstrap-essentials.svg)](https://www.npmjs.com/package/bootstrap-essentials)
 
+> **Project status: Archived.** This project is no longer under active development. The 1.0.0 release is the final version and targets the last release of Bootstrap 3 (v3.4.1). No new features, fixes, or Bootstrap 4/5 support will be added. Existing releases remain available on npm and Bower for legacy use.
+
 This project is specifically designed as an extention for bootstrap to provide a comprehensive support for building interfaces. It contains essential and common classes for bootstrap for faster web development.
 
 ## Prerequisites
