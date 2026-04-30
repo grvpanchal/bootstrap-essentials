@@ -21,7 +21,7 @@ description: Listing all bootstrap and bootstrap essentials classes.
         {% for item in site.data.classes %}
             <li>
                 {% assign filename = item.class-name | remove: "." %}
-                <a href="{{site.github.url}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">
+                <a href="{{ site.baseurl }}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">
                     {{ item.class-name }}
                 </a>
             </li>      

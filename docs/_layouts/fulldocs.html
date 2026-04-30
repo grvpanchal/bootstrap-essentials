@@ -35,7 +35,7 @@
                 <ul class="list-inline separated text-muted">
                 {% for class in classes %}
                     {% assign filename = class.class-name | remove: "." %}
-                    <li><a href="{{site.github.url}}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">{{ class.class-name }} </a></li>
+                    <li><a href="{{ site.baseurl }}/fulldocs/classes/{{ filename | replace: ' ', '-'}}">{{ class.class-name }} </a></li>
                 {% endfor %}
                 </ul>
             {% endif %}
