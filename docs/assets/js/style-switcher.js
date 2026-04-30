@@ -23,34 +23,49 @@ function eraseCookie(name) {
     createCookie(name, "", -1);
 }
 
+function themeUrl(theme) {
+    if (!theme || theme === 'default') return '';
+    return 'https://maxcdn.bootstrapcdn.com/bootswatch/3.4.1/' + theme + '/bootstrap.min.css';
+}
+
+function applyTheme(theme) {
+    var bs = document.getElementById('bs-css');
+    if (bs) bs.href = themeUrl(theme);
+    // The bse-css slot held a per-theme bootstrap-essentials build that was
+    // hosted on themes.bootstrapessentials.com (now retired). Bootswatch only
+    // ships a Bootstrap CSS, so we leave bse-css empty and rely on the stock
+    // bootstrap-essentials build loaded earlier in <head>.
+    var bse = document.getElementById('bse-css');
+    if (bse) bse.href = '';
+}
+
 document.addEventListener('DOMContentLoaded', function () {
 
+    var themeSelect = document.getElementById('change-css');
+
     if (readCookie('css')) {
-        var bs = document.getElementById('bs-css');
-        var bse = document.getElementById('bse-css');
-        var cookieCSS = readCookie('css')
-        var themeSelect = document.getElementById('change-css');
-        bs.href = 'http://themes.bootstrapessentials.com/dist/themes/' + cookieCSS + '/css/' + cookieCSS + '-bootstrap.css';
-        bse.href = 'http://themes.bootstrapessentials.com/dist/themes/' + cookieCSS + '/css/' + cookieCSS + '-bootstrap-essentials.css';
-        var opts = themeSelect.options;
-        for (var opt, j = 0; opt = opts[j]; j++) {
-            if (opt.value == cookieCSS) {
-                themeSelect.selectedIndex = j;
-                break;
+        var cookieCSS = readCookie('css');
+        applyTheme(cookieCSS);
+        if (themeSelect) {
+            var opts = themeSelect.options;
+            for (var opt, j = 0; opt = opts[j]; j++) {
+                if (opt.value == cookieCSS) {
+                    themeSelect.selectedIndex = j;
+                    break;
+                }
             }
         }
     }
 
-    var element = document.getElementById('change-css'); // <a herf="#" id="change-css" rel="file.css">Click Here</a>
-    element.addEventListener('change', function (event) {
-        var bs = document.getElementById('bs-css');
-        var bse = document.getElementById('bse-css');
-        bs.href = 'http://themes.bootstrapessentials.com/dist/themes/' + this.options[this.selectedIndex].value + '/css/' + this.options[this.selectedIndex].value + '-bootstrap.css';
-        bse.href = 'http://themes.bootstrapessentials.com/dist/themes/' + this.options[this.selectedIndex].value + '/css/' + this.options[this.selectedIndex].value + '-bootstrap-essentials.css';
-        if (readCookie('css')) {
-            eraseCookie('css');
-        }
-        createCookie('css', this.options[this.selectedIndex].value, 365);
-        event.preventDefault();
-    }, false);
+    if (themeSelect) {
+        themeSelect.addEventListener('change', function (event) {
+            var theme = this.options[this.selectedIndex].value;
+            applyTheme(theme);
+            if (readCookie('css')) {
+                eraseCookie('css');
+            }
+            createCookie('css', theme, 365);
+            event.preventDefault();
+        }, false);
+    }
 })

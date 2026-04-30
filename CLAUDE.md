@@ -49,9 +49,9 @@ Three small plugins, each self-contained: `offcanvas.js`, `scrollto.js`, `filein
 
 ## Documentation site (`docs/`)
 
-The `docs/` directory is a standalone Jekyll site published at `bootstrapessentials.com` (`docs/CNAME`). Layout:
+The `docs/` directory is a standalone Jekyll site published at `https://grvpanchal.me/bootstrap-essentials/`. The site lives under a subpath, so `_config.yml` sets both `url: https://grvpanchal.me` and `baseurl: /bootstrap-essentials`. Every internal link in `_includes/`, `_layouts/`, and `_data/` must use `{{ site.baseurl }}` (not the empty `{{site.github.url}}` legacy variable, which has all been migrated). Layout:
 
-- `_config.yml` — site config; **`current_version` and `bootstrap_version` are duplicated here** and must be updated alongside `package.json`/`bower.json` on a release.
+- `_config.yml` — site config; **`current_version` and `bootstrap_version` are duplicated here** and must be updated alongside `package.json`/`bower.json` on a release. `url` + `baseurl` define where the site is served — change them together if the site moves.
 - `_layouts/`, `_includes/`, `_data/`, `_plugins/` — standard Jekyll structure. `_includes/docs/` and `_includes/fulldocs/` hold the per-component fragments referenced from `components.html`, `css.html`, `javascript.html`, and `fulldocs/`.
 - `assets/` — hand-written docs CSS/JS (the docs site does **not** consume the SCSS sources directly).
 - `dist/` — generated; populated by the Grunt `copy:docs` task. Don't edit by hand; rerun `grunt`.
