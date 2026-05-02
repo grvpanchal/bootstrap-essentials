@@ -1,0 +1,60 @@
+name: Deploy docs to Pages
+
+# The Jekyll site lives in docs/ (with the Gemfile at the repo root).
+# This workflow builds it and publishes via the modern GitHub Pages
+# Actions flow. To enable, set Settings → Pages → "Build and deployment"
+# → Source: "GitHub Actions".
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'docs/**'
+      - 'Gemfile'
+      - '.github/workflows/jekyll.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one in-flight Pages deploy at a time; let queued runs finish so
+# we don't drop a deploy mid-publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll
+        # baseurl comes from docs/_config.yml (/bootstrap-essentials).
+        run: bundle exec jekyll build --source docs --destination _site
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
